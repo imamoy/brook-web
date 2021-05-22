@@ -1478,11 +1478,21 @@ html > body img:not(.img-no-full) {
 
 @media screen and (max-width: 767px) {
   .share-row {
-    text-align: center;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    margin-bottom: 20px; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-bottom: 10px; }
+    .share-row span {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50px;
+              flex: 0 0 50px;
+      line-height: 45px; }
+    .share-row button {
+      max-width: 54px; } }
 
 @media screen and (min-width: 1200px) {
   .full-hero {
