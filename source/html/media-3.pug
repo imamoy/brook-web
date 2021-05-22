@@ -1,0 +1,54 @@
+//- index.pug
+extends ./include/new-layout.pug
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 隨手可及的導電物品，也會讓孩子暴露於觸電風險
+                        .row
+                            .col-6.text-left
+                                a.tag.t-primary.mr-2(href='#' title='觸電風險') #觸電風險
+                                a.tag.t-primary.mr-2(href='#' title='居家用電') #居家用電
+                                a.tag.t-primary.mr-2(href='#' title='插座安全墊片') #插座安全墊片
+                            .col-6.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2021/5/08
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            p 幼童在家中玩耍時，由於父母一時的不注意，不慎將不鏽鋼的勺子，捅進了臥室的電源插座，有可能導致觸電暈厥；嚴重的話，甚至致命。
+                            p 家中常出現的勺子、剪刀、甚至筆等導電物品，不可任意插入插座內，此危險舉動非常容易導致觸電。
+                            br
+                            img.img-fluid(src='styles/images/media-3-content.jpg', alt='觸電風險')
+                            br
+                            br
+                            p 一般常見避免「插座觸電」的解決方式，有下列兩項：
+                            ul
+                                li 勿將手指或電器插頭以外的金屬、導電物品插入插座中，以免造成觸電
+                                li 牆壁上不常使用的插座，先行利用插座安全墊片封閉，以防發生意外
+                            
+                            p ※ 部份資料與圖片來源: Sharp HealthCare | IKEA
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="隨手可及的導電物品，也會讓孩子暴露於觸電風險 - Brook Livin" data-description="家中常出現的勺子、剪刀、甚至筆等導電物品，也會讓孩子暴露於觸電風險…" data-image="styles/images/media-3-list.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="隨手可及的導電物品，也會讓孩子暴露於觸電風險 - Brook Livin" data-description="家中常出現的勺子、剪刀、甚至筆等導電物品，也會讓孩子暴露於觸電風險…" data-image="styles/images/media-3-list.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="隨手可及的導電物品，也會讓孩子暴露於觸電風險 - Brook Livin" data-description="家中常出現的勺子、剪刀、甚至筆等導電物品，也會讓孩子暴露於觸電風險…" data-image="styles/images/media-3-list.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="medias") 回到列表
+                        
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多最新消息
+                        +main-card('','styles/images/media-4-list.jpg','media-4','2021/5/12','Brook Livin 成功研發全國第一台「居家用電防災神器」','一週以來，全台高溫直飆 30 度，使民眾居家用電量大增。依據消防署最新火災統計數據，「電氣走火案件…')
+                        +main-card('','styles/images/media-1-list.jpg','media-1','2021/5/10','在公司上班，與居家生活，如何正確用電？用電安全？','無形的電流，常因企業內與家庭中，各種電器、環境、人為因素，造成電器火災，危及生命健康與財產損壞。')
+                        +main-card('','styles/images/media-2-list.jpg','media-2','2021/5/09','冬天在家吃火鍋很溫暖！但「用電超載」可不妙！','民眾當時正在煮火鍋，因為同時使用電磁爐、烤箱等大功率電器產品，導致用電過量，引發電線走火。')
+                        

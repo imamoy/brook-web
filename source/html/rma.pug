@@ -1,0 +1,117 @@
+//- index.pug
+extends ./include/layout.pug
+block plugins-js
+    script(src="scripts/plugins/smtp.js") 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.js") 
+    script(src="scripts/default/rma.js")
+
+block content
+    main#page.wrapper(aria-live='polite' aria-atomic='true' style='position: relative;')
+        .page-hero.mini
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center RMA維修保固服務申請
+                .page-hero_img
+                    img(src='styles/images/contact-banner.jpg', alt='情境圖')
+        article.page-inner.mx-auto(style='max-width: 960px;')
+            .container
+                p.text-center 填妥下列表格，Brook的服務人員將會儘速處理您的維修保固需求。
+                .t-red.text-right * 號為必填項目
+                hr.my-3.my-md-4
+                form#rma-form.needs-validation(novalidate)
+                    .row
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='store') #[span.t-red *] 原始購買商店
+                                input#store.form-control(type='text' name='store' required)
+                                .invalid-feedback 請填寫內容
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='productType') #[span.t-red *] 產品系列
+                                select#productType.form-control(name='productType' required)
+                                    option(value="") 請選擇 
+                                    option(value='1') 居家安全
+                                .invalid-feedback 請選擇項目
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='product') #[span.t-red *] 產品
+                                select#product.form-control(name="product" required)
+                                    option(value="") 請選擇
+                                    option(value='1') WIRECARE 宅電防護員
+                                    option(value="2") BROOK紫外線消毒盒
+                                .invalid-feedback 請選擇項目
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='question') #[span.t-red *] 問題類型
+                                select#question.form-control(name='question' required)
+                                    option(value="") 請選擇
+                                    option(value='1') 支援性
+                                    option(value='2') 韌體更新支援
+                                    option(value='3') 損壞
+                                .invalid-feedback 請選擇項目
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='buyTime') #[span.t-red *] 何時購買的?
+                                input#buyTime.form-control(type='text' name='buyTime' required)
+                                .invalid-feedback 請填寫內容
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='single') #[span.t-red *] 產品的廠牌和型號？
+                                textarea#single.form-control(name="single", cols="30", rows="10" placeholder='(廠牌)+(型號)' required)
+                                .invalid-feedback 請填寫內容
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='detail') #[span.t-red *] 細節說明
+                                textarea#detail.form-control(name="detail", cols="30", rows="10" placeholder='您可以將產品的細部介紹連結貼於此' required)
+                                .invalid-feedback 請填寫內容
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='main') #[span.t-red *] 主旨
+                                input#main.form-control(type='text' name='main' required)
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='tel') 照片上傳 #[span.t-red 產品後方資訊] (JPG, PNG, BMP, 可同時選擇最多上傳3張，總檔案15MB以內)
+                                .form-group.row
+                                    .col-12.col-md-6.mb-2
+                                        input#files.form-control-file.my-2(type='file' name='files' accept='image/png, image/jpeg, image/bmp' multiple required)
+                                        .invalid-feedback.file-feedback 請至少上傳1個檔案
+                                        
+                    hr.my-3.my-md-4.my-mt-0
+                    .f-textTitle.mb-3 聯絡資訊
+                    .row
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='name') #[span.t-red *] 姓名
+                                input#name.form-control(type='text' name='name' required)
+                                .invalid-feedback 請填寫內容
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='country') #[span.t-red *] 國家
+                                select#country.form-control(name='country' required)
+                                    option(value='') 請選擇
+                                    +country
+                                .invalid-feedback 請選擇項目
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='address') 聯絡地址
+                                input#address.form-control(type='text' name='address')
+                                .invalid-feedback 請填寫內容
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='tel') #[span.t-red *] 聯絡電話
+                                input#tel.form-control(type='text' name='tel' required)
+                                .invalid-feedback 請填寫內容
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='mail') #[span.t-red *] E-mail
+                                input#mail.form-control(type='mail' name='mail' required)
+                                .invalid-feedback 請填寫內容
+                        //- .col-12.col-md-6.mb-2
+                        //-     .form-group
+                        //-         label.fw-500.mb-0(for='tel') #[span.t-red *] 驗證碼
+                        //-         .d-flex.align-items-center
+                        //-             input#tel.form-control(type='text' required)
+                        //-             img.img-no-full.ml-2(src="styles/images/code.png", alt="" width='100px')
+                    .d-flex.justify-content-center.mt-3.mt-lg-5
+                        #clear-btn.main-btn.btn-border-primary.mr-2.ml-0 清除
+                        button.main-btn.btn-primary.mr-0.ml-2(type="submit") 送出

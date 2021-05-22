@@ -1,0 +1,59 @@
+header#header
+    .container
+        .row
+            .col-6.col-lg-4.text-left.d-lg-flex.align-items-center
+                a.logo(href='../index' title='Wirecard' rel='nofollow')
+                    h1.logo-pic
+                        img(src="../styles/images/brook-logo.png", alt="")
+            .col-6.col-lg-8.text-right.d-flex.justify-content-end.align-items-center
+                .menu
+                    ui.list-inline
+                        li.list-inline-item
+                            a(href='../about' title='品牌介紹' rel='nofollow') 品牌介紹
+                        li.list-inline-item
+                            .product-hover
+                                .product-toggle.inner-menu-toggle 產品介紹
+                                .product-sub-menu.text-left
+                                    .container
+                                        .col-12
+                                            .fw-600.t-primary.f-text-big.mb-2 居家安全
+                                            ul#product-menu-nav.nav.flex-column
+                                                li.nav-item.active
+                                                    a.nav-link.f-text-big.pl-0(href='../product/wirecare' title='WIRECARE 宅電防護員' rel='nofollow') WIRECARE 宅電防護員
+                                                    img.product-menu-pic.img-no-full.img-h100(src='../styles/images/wirecare-product-2.png', alt='WIRECARE 宅電防護員')
+                                                li.nav-item
+                                                    a.nav-link.f-text-big.pl-0(href='https://www.brookaccessory.com/Brook_Livin/Products/UV_SHELL_Box/' target='_blank' title='BROOK 紫外線消毒盒' rel='nofollow') BROOK 紫外線消毒盒
+                                                    img.product-menu-pic.img-no-full.img-h100(src='../styles/images/product-1.png', alt="")
+                        li.list-inline-item
+                            .menu-hover
+                                .menu-toggle.inner-menu-toggle 最新消息
+                                .menu-sub-menu
+                                    //- a.news-link(href="./news") 品牌消息
+                                    a.medias-link(href="../medias" title='媒體報導' rel='nofollow') 媒體報導
+                                    a.activities-link(href="../activities" title='活動特區' rel='nofollow') 活動特區
+                                    //- a.unboxes-link(href="./unboxes") 開箱介紹
+                        //- li.list-inline-item
+                        //-     a(href='' target="_blank") 官方商城
+                        li.list-inline-item
+                            .menu-hover
+                                .menu-toggle.inner-menu-toggle 客戶服務
+                                .menu-sub-menu
+                                    //- a(href="./store") 經銷商據點
+                                    a(href="../warranty" title='保固資訊' rel='nofollow') 保固資訊
+                                    a(href="../return" title='退換貨流程' rel='nofollow') 退換貨流程
+                                    a(href="../qa" title='常見Q&A' rel='nofollow') 常見Q&A
+                .lang-row
+                    button.lang-btn
+                        i.icon-earth
+                        span 繁體中文
+                        i.icon-arrow-b
+                    .lang-menu
+                        ui.list-unstyled
+                            li
+                                a(href='#') 繁體中文
+                            //- li
+                            //-     a(href='#') English
+                .hamburger
+                    span.line
+                    span.line
+                    span.line

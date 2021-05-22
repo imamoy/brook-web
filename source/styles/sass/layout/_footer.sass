@@ -1,0 +1,54 @@
+/* ==========================================================================
+		footer
+ ==========================================================================*/
+#footer
+	background-color: #06181E
+	color: $white
+	a,p
+		color: $white
+		font-weight: 300
+		transition: opacity .25s
+		&:hover
+			opacity: .5
+	.copyright
+		font-weight: 300
+	hr
+		border-color: $white
+	i
+		font-size: 28px
+	.nav-link
+		padding: .4rem 1rem
+	.contact-us
+		display: flex
+		align-items: center
+		&::before
+			content: ''
+			display: inline-block
+			width: 26%
+			height: 1px
+			background-color: rgba($white,.9)
+		span
+			margin: 0 20px 0 10px
+
+.goTop
+	width: 45px
+	height: 45px
+	position: fixed
+	right: 30px
+	bottom: 30px
+	background-color: $primary-color
+	border-radius: 50%
+	padding: 10px
+	transition: opacity .25s
+	text-align: center
+	a
+		text-align: center
+		color: $white!important
+		margin-top: -5px !important
+	.goTopBtn
+		background-color: transparent
+		border: none
+		outline: none
+		cursor: pointer
+	&:hover
+		opacity: .7

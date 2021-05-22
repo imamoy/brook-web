@@ -1,0 +1,104 @@
+//- index.pug
+extends ./include/layout.pug
+block page-css
+    link(rel="stylesheet" type="text/css" href="styles/index.css")
+
+//- block plugins-js
+//-     script(src="scripts/data/index.js") 
+
+    
+block content
+    main#index.wrapper
+        section.full-hero.dots-inner
+            mixin full-hero-item
+                .full-hero_item
+                    .full-hero_bg
+                        img(src="styles/images/index-banner.jpg", alt="")
+                    .full-hero_inner
+                        .container
+                            .row
+                                .col-12.col-xl-5.offset-xl-1.d-flex.align-items-center
+                                    .full-hero_product
+                                        img(src="styles/images/wirecare-product.png", alt="")
+                                .col-12.col-xl-6
+                                    .full-hero_text
+                                        .f-textTitle-big.hight-light 新品上市
+                                        h1.f-heroTitle-big.full-hero_text-title 一鍵解開#[br]居家電線檢測
+                                        h5.full-hero_text-text 內政部消防署統計，用電不慎引起火災是起火原因前三名，簡單步驟就可以測出家中插座與延長線老化程度，安全科技，打造更放心的優質生活！
+                                        a.main-btn.btn-white.ml-auto.mr-5(href="product/wirecare") 了解更多
+            +full-hero-item
+        section#news-section.py-4.py-lg-5.mt-3.mt-lg-5
+            .container.highlight-bg
+                h2.f-sc-title.text-center.mb-0 最新消息
+                .news-slider.slider-3.greenBorder-arrows.my-lg-5.px-lg-4.pb-3.pb-lg-0
+                    +main-card('','styles/images/media-4-list.jpg','media-4','2021/5/12','Brook Livin 成功研發全國第一台「居家用電防災神器」','一週以來，全台高溫直飆 30 度，使民眾居家用電量大增。依據消防署最新火災統計數據，「電氣走火案件…')
+                    +main-card('','styles/images/media-1-list.jpg','media-1','2021/5/10','在公司上班，與居家生活，如何正確用電？用電安全？','無形的電流，常因企業內與家庭中，各種電器、環境、人為因素，造成電器火災，危及生命健康與財產損壞。')
+                    +main-card('','styles/images/media-2-list.jpg','media-2','2021/5/09','冬天在家吃火鍋很溫暖！但「用電超載」可不妙！','民眾當時正在煮火鍋，因為同時使用電磁爐、烤箱等大功率電器產品，導致用電過量，引發電線走火。')
+                    +main-card('','styles/images/media-3-list.jpg','media-3','2021/5/08','隨手可及的導電物品，也會讓孩子暴露於觸電風險','家中常出現的勺子、剪刀、甚至筆等導電物品，也會讓孩子暴露於觸電風險…')
+                a.main-btn.btn-primary(href='medias') 了解更多
+        section#activity-section.py-4.py-lg-5
+            .container
+                h2.f-sc-title.text-center 活動特區
+                .activity-slider.slider-2.my-lg-4.gray-arrows.pb-4.pb-lg-0
+                    +activity-card('styles/images/act-1-list-index.jpg','activity-1','2021/5/10','水電施工-溝通很重要-其實不用諜對諜','企業與家庭的電器施工，為何水電師傅沒有照要求執行?廠商報價這樣，會不會太貴?')
+                    +activity-card('styles/images/act-2-list-index.jpg','activity-2','2021/5/10','觸電/淹水/高壓電擊/靜電: 如何發生與預防?','淹水時若水淹過插座，人在插座附近觸電機會很高！如果人站遠一點則不會觸電。而水是導體，理論上應該再遠都會電到，那為何只有電源附近的人會電到?')
+                a.main-btn.btn-primary.mt-5(href='activities') 了解更多
+
+        //- section.py-4.py-lg-5.px-2.px-lg-0
+            .container
+                .banner-slider.greenBorder-arrows.dots-inner
+                    .banner-slider_item
+                        .row.no-gutters
+                            .col-12
+                                .banner-ad
+                                    .row.no-gutters
+                                        .col-12.col-lg-6
+                                            .banner-ad_text.mt-4.mt-lg-0
+                                                h5.f-bannerTitle.t-dark.fw-600 Brook紫外線消毒盒#[br]安心除菌  隨手可淨
+                                                p.mt-2.mb-lg-5 生活中看不見的隱形殺手，總悄悄的稍一不留意就入侵我們的體內，然而將隨身物品用紫外線殺菌，可避免病菌經物體表面傳播，進而減少細菌對我們身體的危害，BROOK 紫外線消毒盒因此誕生。
+                                                a.main-btn.btn-primary.ml-0.d-none.d-xl-table 了解更多
+                                        .col-12.col-lg-6
+                                            .banner-ad_pic
+                                                img(src='styles/images/product-1a.png', alt='產品圖')
+                                        .col-12.d-lg-none.mb-5.px-3.pb-2
+                                            a.main-btn.btn-primary 了解更多
+                    .banner-slider_item
+                        .row.no-gutters
+                            .col-12
+                                .banner-ad
+                                    .row.no-gutters
+                                        .col-12.col-lg-6
+                                            .banner-ad_text
+                                                h5.f-bannerTitle.t-dark.fw-600 Brook紫外線消毒盒#[br]安心除菌  隨手可淨
+                                                p.mt-2.mb-lg-5 生活中看不見的隱形殺手，總悄悄的稍一不留意就入侵我們的體內，然而將隨身物品用紫外線殺菌，可避免病菌經物體表面傳播，進而減少細菌對我們身體的危害，BROOK 紫外線消毒盒因此誕生。
+                                                a.main-btn.btn-primary.ml-0.d-none.d-xl-table 了解更多
+                                        .col-12.col-lg-6
+                                            .banner-ad_pic
+                                                img(src='styles/images/product-1a.png', alt='產品圖')
+                                        .col-12.d-lg-none.mb-5.px-3.pb-2
+                                            a.main-btn.btn-primary 了解更多
+                .banner-ad-slider
+                    div
+                        .row.no-gutters
+                            .col-12.col-lg-6
+                                +activity-card('','styles/images/pic-4.jpg')
+                            .col-12.col-lg-6
+                                +activity-card('','styles/images/pic-2.jpg')
+                    div
+                        .row.no-gutters
+                            .col-12.col-lg-6
+                                +activity-card('','styles/images/pic-4.jpg')
+                            .col-12.col-lg-6
+                                +activity-card('','styles/images/pic-2.jpg')
+
+        //- section#media-section.py-4.py-lg-5.mb-3.mb-lg-5
+        //-     .container
+        //-         h2.f-sc-title.text-center 媒體報導
+        //-         .media-slider.slider-3.my-lg-4.gray-arrows.pb-3.pb-lg-0
+        //-             +main-card('','styles/images/pic-1.jpg','media')
+        //-             +main-card('','styles/images/pic-2.jpg','media')
+        //-             +main-card('','styles/images/pic-3.jpg','media')
+        //-             +main-card('','styles/images/pic-1.jpg','media')
+        //-             +main-card('','styles/images/pic-2.jpg','media')
+        //-             +main-card('','styles/images/pic-3.jpg','media')
+        //-         a.main-btn.btn-primary(href='medias') 了解更多

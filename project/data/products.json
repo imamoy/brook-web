@@ -1,0 +1,14 @@
+[   
+    {
+        "id": 1,
+        "brand": "WIRECARE 宅電防護員",
+        "href": "product/wirecare.html",
+        "pic": "styles/images/wirecare-product-2.png"
+    },
+    {
+        "id": 2,
+        "brand": "BROOK 紫外線消毒盒",
+        "href": "https://www.brookaccessory.com/Brook_Livin/Products/UV_SHELL_Box/",
+        "pic": "styles/images/product-1.png"
+    }
+]

@@ -1,0 +1,339 @@
+//- index.pug
+extends ../include/product-layout.pug
+
+block page-css
+    link(rel='stylesheet' type='text/css' href='../styles/wirecare-info.css')
+
+block plugins-js
+    script(src="../scripts/default/wirecare-info.js")
+
+block content
+    main#wirecare-info.wrapper
+        .block-main-banner
+            .content
+                img(src='../styles/images/wirecare-info/reuseImages/wireCare3.png' alt='' srcset='')
+                p 一鍵解開居家電線檢測
+                .click-button
+                    .slide
+                        .slide-dot
+                            .dot
+                    span 點擊看更多
+            .block-demo-video2
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/UIcJ9TRAUEo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen')
+        .block-secret
+            .block-secret-warning
+                .container
+                    .subtitle 發現驚人秘密
+                    .title
+                        span 大量用電的時代
+                        br
+                        span 每日隨手一插的秘密是...
+                    .condition
+                        .examination
+                            .product
+                                .begin
+                                    img(src='../styles/images/wirecare-info/reuseImages/redfinger.svg' alt='')
+                                    span 開始檢測
+                        .list.d-flex.w-100.justify-content-around
+                            .condition-item
+                                div
+                                    span 難以察覺的
+                                    br
+                                    span 插座老化
+                                .exclamation-check
+                                    img(src='../styles/images/wirecare-info/reuseImages/exclamation.svg' alt='')
+                                span.warning 出現高溫
+                            .condition-item
+                                div
+                                    span 灰塵滿佈的
+                                    br
+                                    span 鬆弛插座
+                                .exclamation-check
+                                    img(src='../styles/images/wirecare-info/reuseImages/exclamation.svg' alt='')
+                                span.warning 電線走火
+                            .condition-item
+                                div
+                                    span 常見老宅的
+                                    br
+                                    span 房型複雜
+                                .exclamation-check
+                                    img(src='../styles/images/wirecare-info/reuseImages/exclamation.svg' alt='')
+                                span.warning 配電過載
+                        .wire-plug
+                            .wire
+                                .wire--brand
+                                .wire--gray
+                            .position-relative
+                                img.d-block(src='../styles/images/wirecare-info/reuseImages/plug.svg' alt='')
+                                .wire-clickme.position-absolute.text-center.w-100 點我
+            .block-secret-check
+                .container
+                    .subtitle 發現驚人秘密
+                    .title
+                        span 隱藏在插座後的
+                        br
+                        span 用電危險因素
+                        .message
+                            img(src='../styles/images/wirecare-info/reuseImages/message-circle.png' alt='')
+                    .condition
+                        .examination
+                            .product
+                                .finished
+                                    img(src='../styles/images/wirecare-info/reuseImages/greenfinger.svg' alt='')
+                                    span 結束檢測
+                        .list.d-flex.w-100.justify-content-around
+                            .condition-item
+                                div
+                                    span 難以察覺的
+                                    br
+                                    span 插座老化
+                                .exclamation-check
+                                    img(src='../styles/images/wirecare-info/reuseImages/check.svg' alt='')
+                                span.check 出現高溫
+                            .condition-item
+                                div
+                                    span 灰塵滿佈的
+                                    br
+                                    span 鬆弛插座
+                                .exclamation-check
+                                    img(src='../styles/images/wirecare-info/reuseImages/check.svg' alt='')
+                                span.check 電線走火
+                            .condition-item
+                                div
+                                    span 常見老宅的
+                                    br
+                                    span 房型複雜
+                                .exclamation-check
+                                    img(src='../styles/images/wirecare-info/reuseImages/check.svg' alt='')
+                                span.check 配電過載
+                        .wire-plug
+                            .wire
+                            img(src='../styles/images/wirecare-info/reuseImages/plug-check.svg' alt='')
+        .block-video
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/tDz5naLQQCY' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen')
+        .block-newLiving
+            .content
+                p 我們提供的是
+                p 安全無虞的新生活
+        .block-warning
+            .container
+                .barChart
+                    .barChart-content
+                        .subtitle 居家用電安全, 你注意了嗎
+                        .title
+                            span 電器因素佔全年度
+                            br
+                            span 火災主因第三名
+                        .content
+                            p
+                                b 遺留火種:9,845件(31%)
+                            p
+                                b 爐火烹調:3,591件(14%)
+                            p
+                                b 電器因素:2,871件(13%)
+                    .barChart-chart
+                        img.chart-mobile(src='../styles/images/wirecare-info/mobile/barChart.svg' alt='')
+                        img.chart-desktop(src='../styles/images/wirecare-info/desktop/barChart.png' alt='')
+                .pieChart
+                    .pieChart-content
+                        .title
+                            span 老房佔電器因素
+                            br
+                            span 是導致火災的主因之一
+                        .content
+                            p
+                                b 台灣30年老房比例
+                            p
+                                b 2009年約為206萬宅, 占整體比重約26%
+                            p
+                                b 2019年約為423萬宅, 占整體比重約48%
+                            .percentage 10年快速成長22%
+                            p
+                                b 數據資料來源 : 內政部2019年度
+                    .pieChart-chart
+                        div
+                            .chart
+                                p 2009
+                                img(src='../styles/images/wirecare-info/reuseImages/pieChart2009.svg' alt='' srcset='')
+                            .list
+                                .list--gray
+                                    .gray
+                                        .dot
+                                        span 74%
+                                    span 其他綜合
+                                .list--brand
+                                    .brand
+                                        .dot
+                                        span 26%
+                                    span 老房
+                        div
+                            .chart
+                                p 2019
+                                img(src='../styles/images/wirecare-info/reuseImages/pieChart2019.svg' alt='' srcset='')
+                            .list
+                                .list--gray
+                                    .gray
+                                        .dot
+                                        span 52%
+                                    span 其他綜合
+                                .list--brand
+                                    .brand
+                                        .dot
+                                        span 48%
+                                    span 老房
+        .block-slick
+            .slick-item.slick-item1
+                .container
+                    .subtitle 一鍵檢測
+                    .title 危機雷達
+                    .content
+                        p 一鍵即測, 獨立判斷每個插座狀態
+                        p 用電安全毫無防漏!
+            .slick-item.slick-item2
+                .container
+                    .subtitle 超迅速檢測
+                    .title 10秒護10年
+                    .content
+                        p 立即了解用電安全, 保障生活品質
+                        p MIT研發及製造, 安心加倍!
+            .slick-item.slick-item3
+                .container
+                    .subtitle 體積不占空間
+                    .title 安全"小"幫手
+                    .content
+                        p 一手掌握x摺疊插腳好收納
+                        br
+            .slick-item.slick-item4
+                .container
+                    .subtitle 簡易燈號, 辨識超簡單
+                    .title 用電安全紅綠燈
+                    .content
+                        p 簡易判斷, 將困難數據簡化!
+                        p 科技小白、3C白癡都能輕鬆上手
+        .block-step
+            .step-item.step-item1
+                .container
+                    .subtitle 極簡的操作步驟
+                    .step-item-title
+                        .title.text-nowrap 步驟一：
+                        .title 將WIRECARE插入欲檢測插座
+            .step-item.step-item2
+                .container
+                    .subtitle 極簡的操作步驟
+                    .step-item-title
+                        .title.text-nowrap 步驟二：
+                        .title 等待10秒檢測
+            .step-item.step-item3
+                .container
+                    .subtitle 極簡的操作步驟
+                    .step-item-title
+                        .title.text-nowrap 步驟三：
+                        .title LED顯示燈表示測試結果
+            .step-item.step-item4
+                .container
+                    .subtitle 極簡的操作步驟
+                    .step-item-title
+                        .title.text-nowrap 步驟四：
+                        .title 重新檢測, 請按上方重測鍵
+        .block-light
+            .container
+                .subtitle 隨時檢驗
+                .title 用電安全紅綠燈
+                .undertext 想測就測用電安全隨時把關!
+                .light-box-desktop
+                    img.light-animate(src='../styles/images/wirecare-info/desktop/light.gif' alt='')
+                .light-box-mobile
+                    img.light-animate(src='../styles/images/wirecare-info/mobile/light.gif' alt='')
+        .block-certification
+            .container
+                .subtitle 產品經國際認證, 專業認可
+                .title 安規認證
+                .certification
+                    img(src='../styles/images/001_RoHS-左.png' alt='')
+                    img(src='../styles/images/002_FCC-中.png' alt='')
+                    img(src='../styles/images/003_CE-右.png' alt='')
+        //- .block-recommendation
+        //-     .container
+        //-         .subtitle 用電安全守護員招募中!
+        //-         .title 好評推薦
+        //-         .recommendation
+        //-             a(href='https://livin.brookaccessory.com/unboxing' target='blank')
+        //-                 img(src='../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+        //-                 p 3C達人 廖阿輝
+        //-             a(href='https://livin.brookaccessory.com/unboxing' target='blank')
+        //-                 img(src='../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+        //-                 p 3C達人 廖阿輝
+        //-             a(href='https://livin.brookaccessory.com/unboxing' target='blank')
+        //-                 img(src='../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+        //-                 p 3C達人 廖阿輝
+        //-             a(href='https://livin.brookaccessory.com/unboxing' target='blank')
+        //-                 img(src='../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+        //-                 p 就差你1人
+        .block-intelligence
+            .content
+                p 以科技守護幸福
+                p 智能護電，安心生活
+        .block-spec
+            .container
+                img.product.order-2(src='../styles/images/wirecare-info/reuseImages/product.png' alt='')
+                .spec-list.order-1
+                    .title 規格說明
+                    .spec
+                        p 顏色：白色
+                        p 插頭：台灣規格﹐可折疊收納式產品
+                        p 尺寸：長10cm ✕ 寬10cm ✕ 高3.5cm
+                        p 偵測電壓範圍：100 - 240V
+                        p 偵測頻率範圍：50 - 60Hz
+                        p 材質：PC
+                        p 重量：約190克
+                        p 產地：台灣
+                        p 產品市價：#[span.price NT$2,580]
+                .ref.d-flex.justify-content-between.order-3
+                    .ref-item
+                        img(src='../styles/images/wirecare-info/reuseImages/small1.svg' alt='')
+                        p 折疊插腳
+                    .ref-item
+                        img(src='../styles/images/wirecare-info/reuseImages/small2.svg' alt='')
+                        p 台灣製造
+                    .ref-item
+                        img(src='../styles/images/wirecare-info/reuseImages/small3.svg' alt='')
+                        p 極簡美學
+                    .ref-item
+                        img(src='../styles/images/wirecare-info/reuseImages/small4.svg' alt='')
+                        p 方便收納
+        .block-info
+            .container
+                .title 最新消息
+                .info-card
+                    .info-card-item
+                        a(href='https://www.surveycake.com/s/M0qoV?fbclid' target='blank')
+                            img(src='../styles/images/wirecare-info/reuseImages/info1.png' alt='')
+                            .card-title 嘖嘖募資開始!
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date Coming Soon!
+                    .info-card-item
+                        a(href='https://www.facebook.com/brooklivin' target='blank')
+                            img(src='../styles/images/wirecare-info/reuseImages/info2.png' alt='')
+                            .card-title 支持用電安全品牌!
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/05/10
+                    //- .info-card-item
+                    //-     a(href='https://livin.brookaccessory.com/store.html' target='blank')
+                    //-         img(src='../styles/images/wirecare-info/reuseImages/info3.png' alt='')
+                    //-         .card-title 購買據點
+                    //-         .footer.d-flex.justify-content-between
+                    //-             .new NEW
+                    //-             .date 2021/04/07
+                    .info-card-item
+                        a(href='https://livin.brookaccessory.com/qa-wirecare' target='blank')
+                            img(src='../styles/images/wirecare-info/reuseImages/info4.png' alt='')
+                            .card-title 常見問題的QA
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/05/10
+                .footer
+                    img(src='../styles/images/wirecare-info/reuseImages/footer-logo.png' alt='')
+                    img(src='../styles/images/wirecare-info/reuseImages/footer-wirecare.png' alt='')
+

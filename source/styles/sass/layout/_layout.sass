@@ -1,0 +1,970 @@
+html,body
+    width: 100%
+    margin: 0
+    padding: 0
+    font-size: 16px
+    font-family: 'Noto Sans TC','Roboto', sans-serif
+    color: $text
+    line-height: 1.6
+    overflow-x: hidden
+
+p
+    font-weight: 300
+    color: $text
+
+a
+    color: #3E505F
+    text-decoration: none!important
+    transition: color .25s
+    +min-notebook
+        &:hover
+            color: $primary-color
+
+a.t-primary
+    +min-notebook
+        &:hover
+            color: $text
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+    line-height: 1.4
+
+html>/**/body
+    img:not(.img-no-full)
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.main-select input:focus, .main-select select:focus, .main-select.form-control:focus, button:focus
+    border: none
+    box-shadow: 0 0 0 0
+    outline: none !important
+
+.block
+    background-color: $line-color
+
+.after-h-line
+    width: 1px
+    height: 80px
+    background-color: $line-color
+    +max-padpro
+        height: 50px
+
+.container
+    +min-padpro
+        max-width: 90vw
+    +min-notebook
+        max-width: 1080px
+    +min-pc
+        max-width: 1400px
+    +max-pad
+        padding-left: 20px
+        padding-right: 20px
+
+.rounded-0
+    border-radius: 0 0 0 0 !important
+
+.bg-y-light
+    background-color: $light-yellow
+.bg-second
+    background-color: #E4E4EB
+.bg-light
+    background-color: $light-blue
+.t-primary
+    color: $primary-color
+.t-primary-dk
+    color: #008884 !important
+.t-dark
+    color: $dark
+.t-red
+    color: red
+
+.f-en
+    font-family: 'Roboto', sans-serif
+
+// f14
+.f-mini
+    font-size: $font-mini
+// f16
+.f-text
+    font-size: $font-text
+// f18
+.f-text-big
+    font-size: $font-text-big
+// f20
+.f-textSubTitle
+    font-size: $f-textSubTitle
+// f22
+.f-textTitle
+    font-size: $f-textTitle
+
+// f30
+.f-textTitle-big
+    font-size: $f-textTitle-big
+    +max-notebook
+        font-size: $f-textTitle-big * 0.9
+    +max-notebook-mini
+        font-size: $f-textTitle-big * 0.8
+    +max-padpro
+        font-size: $f-textTitle-big
+    +max-pad
+        font-size: $f-textTitle-big * 0.7
+    +max-phonemini
+        font-size: $f-textTitle-big * 0.6
+// f36
+.f-sc-title
+    font-size: $f-sc-title
+    font-weight: $f-bold
+    color: $dark
+    +max-notebook
+        font-size: $f-sc-title * 0.9
+    +max-notebook-mini 
+        font-size: $f-sc-title * 0.85
+    +max-padpro
+        font-size: $f-sc-title
+    +max-pad
+        font-size: $f-sc-title * 0.8
+    +max-phonemini
+        font-size: $f-sc-title * 0.6
+// f46
+.f-bannerTitle
+    font-size: $f-bannerTitle
+    font-weight: $f-heavy
+    +max-notebook
+        font-size: $f-bannerTitle * 0.8
+    +max-notebook-mini
+        font-size: $f-bannerTitle * 0.7
+    +max-padpro
+        font-size: $f-bannerTitle
+    +max-pad
+        font-size: $f-bannerTitle * 0.6
+    +max-phonemini
+        font-size: $f-bannerTitle * 0.5
+// f50
+.f-heroTitle-xs
+    font-size: $f-heroTitle-xs
+    font-weight: $f-heavy
+    +max-notebook
+        font-size: $f-heroTitle-xs * 0.8
+    +max-notebook-mini
+        font-size: $f-heroTitle-xs * 0.7
+    +max-padpro
+        font-size: $f-heroTitle-xs
+    +max-pad
+        font-size: $f-heroTitle-xs * 0.6
+    +max-phonemini
+        font-size: $f-heroTitle-xs * 0.5
+// f62
+.f-heroTitle
+    font-size: $f-heroTitle
+    font-weight: $f-heavy
+    +max-notebook
+        font-size: $f-heroTitle * 0.8
+    +max-notebook-mini
+        font-size: $f-heroTitle * 0.65
+    +max-padpro
+        font-size: $f-heroTitle
+    +max-pad
+        font-size: $f-heroTitle * 0.5
+    +max-phonemini
+        font-size: $f-heroTitle * 0.4
+// f76
+.f-heroTitle-big
+    font-size: $f-heroTitle-big
+    font-weight: $f-heavy
+    +max-notebook
+        font-size: $f-heroTitle-big * 0.8
+    +max-notebook-mini
+        font-size: $f-heroTitle-big * 0.65
+    +max-padpro
+        font-size: $f-heroTitle-big
+    +max-pad
+        font-size: $f-heroTitle-big * 0.5
+    +max-phonemini
+        font-size: $f-heroTitle-big * 0.4
+.fw-500
+    font-weight: $f-medium
+.fw-600
+    font-weight: $f-bold
+
+.tag
+    background-color: transparent
+
+.search-input,.select-box
+    height: 42px
+    border-radius: 42px !important
+    border: 1px solid $line-color
+    padding:  0 10px
+    .form-control,button
+        border: none
+        background-color: transparent
+    .form-group
+        margin: 0 !important
+    button
+        color: $primary-color
+.select-box
+    padding: 0
+    position: relative
+    select
+        padding-left: 20px
+        padding-right: 40px
+        appearance: none
+        -moz-appearance: none
+        -webkit-appearance: none
+    &::after
+        content: '\e800'
+        display: inline-block
+        font-family: $font-icon
+        font-size: 10px
+        position: absolute
+        top: 54%
+        transform: translateY(-50%)
+        right: 20px
+        color: $primary-color
+        pointer-events: none
+
+.highlight-bg
+    position: relative
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        width: 100%
+        height:  93%
+        border-radius: 10px
+        left: 0
+        top: 4%
+        background-color: $light-gary
+        z-index: -1
+
+
+.main-btn
+    height: 45px
+    line-height: 45px
+    border-radius: 45px!important
+    border: 1px solid transparent
+    text-align: center
+    display: table
+    margin: 0 auto
+    transition: .25s all
+    overflow: hidden
+    +min-padpro
+        min-width: 200px
+    +max-pad
+        display: block
+        min-width: 18vw
+    +max-phone
+        min-width: auto
+        width: 100%
+    +max-phonemini
+        height: 40px
+        line-height: 40px
+        border-radius: 40px!important
+
+// 按鈕
+.icon-btn-primary
+    background-color: transparent
+    border: none
+    color: $primary-color
+    font-size: 24px
+    transition: color .25s
+    cursor: pointer
+    &:hover
+        color: $text
+.btn-primary
+    background-color: $primary-color
+    border-color: $primary-color
+    color: $white !important
+    &:hover
+        background-color: transparent
+        color: $primary-color !important
+        
+.btn-border-primary
+    border-color: $primary-color
+    color: $primary-color !important
+    &:hover
+        background-color: $primary-color
+        border-color: $primary-color
+        color: $white !important
+
+.btn-white
+    color: $primary-color !important
+    background-color: $white
+    &:hover
+        background-color: $primary-color
+        border-color: $primary-color
+        color: $white !important
+
+.return-btn
+    cursor: pointer
+    text-align: center
+    background-color: transparent
+    border: 1px solid transparent
+    border-radius: 10px
+    background-color: rgba($second-color,.3)
+    transition: border .25s
+    i
+        font-size: 120px
+        line-height: 1
+        color: $primary-color
+    .f-textTitle
+        color: $dark
+    +min-notebook
+        padding: 20px 30px
+        margin: 0 20px
+    +min-padpro
+        padding: 10px
+        &:hover
+            border-color: $primary-color
+            .f-textTitle
+                color: $primary-color
+    +pad
+        padding: 20px
+        i
+            font-size: 80px
+    +max-phone
+        padding: 20px 30px
+
+// slick
+.slick-dots
+    li
+        button
+            width: 14px
+            height: 14px
+            background-color: #DDDDDD
+            border-radius: 50%
+        &.slick-active
+            button
+                background-color: $primary-color
+    +max-phone
+        bottom: -10px
+        li
+            button
+                width: 10px
+                height: 10px
+.dots-inner
+    .slick-dots
+        bottom: 20px
+
+.slick-arrow
+    z-index: 30
+    &::before
+        font-family: $font-icon
+        transition: color .25s
+    &.slick-next
+        &::before
+            content: '\e803'
+    &.slick-prev
+        &::before
+            content: '\e802'
+    +min-padpro
+        &.slick-next
+            right: -50px
+        &.slick-prev
+            left: -50px
+
+// arrows
+.greenBorder-arrows
+    .slick-arrow
+        border-radius: 50%
+        background-color: $white
+        border: 1px solid $primary-color
+        transition: background .25s
+        &::before
+            color: $primary-color
+    +min-notebook
+        .slick-arrow
+            &:hover
+                background-color: $primary-color
+                &::before
+                    color: $white
+    +min-padpro
+        .slick-arrow
+            width: 50px
+            height: 50px
+            &.slick-next
+                right: -40px
+            &.slick-prev
+                left: -40px
+    +max-pad
+        .slick-arrow
+            width: 36px
+            height: 36px
+            &.slick-next
+                right: -24px
+            &.slick-prev
+                left: -24px
+
+.gray-arrows
+    .slick-arrow
+        width: auto
+        height: auto
+        &::before
+            font-size: 30px
+            color: #909090
+    +min-padpro
+        .slick-arrow
+            &::before
+                font-size: 40px
+            &.slick-next
+                right: -54px
+            &.slick-prev
+                left: -54px
+            &:hover
+                &::before
+                    color: $primary-color
+                
+
+// 頁碼
+.pagination
+    font-family: 'Roboto', sans-serif
+    .disabled
+        opacity: .2
+    .page-item,.page-link
+        min-width: 36px
+        width: 36px
+        background-color: transparent!important
+        color: #808080
+        margin: 5px
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        +trans(color)
+    .page-link
+        border-radius: 50%
+        border: none
+    .page-item.active
+        .page-link
+            cursor: initial
+            color: $white !important
+            background-color: $primary-color !important
+    +min-notebook
+        .page-item:not(.disabled),.page-link
+            &:hover
+                color: $primary-color
+
+// 導覽
+#page-nav
+    background-color: #F2F2F2
+    .nav-item
+        position: relative
+        &::after
+            content: ''
+            display: inline-block
+            width: 2px
+            height: 20px
+            background-color: $line-color
+            position: absolute
+            right: 0
+            top: 22px
+        &:last-child
+            &::after
+                display: none
+    .nav-link
+        padding: 20px
+        font-weight: $f-medium
+        font-size: $font-text-big
+        color: $dark
+        position: relative
+        white-space: nowrap
+        &::before
+            content: ''
+            display: none
+            width: calc(100% - 40px)
+            height: 6px
+            background-color: $primary-color
+            position: absolute
+            left: 20px
+            bottom: 0
+        &.active
+            color: $primary-color
+            &::before
+                display: block
+    +max-phone-mid
+        overflow-x: auto
+        .nav
+            flex-wrap: nowrap
+        .nav-item
+            &::after
+                top: 20px
+                height: 16px
+        .nav-link
+            padding: 15px
+            font-size: $font-text
+            &::before
+                width: calc(100% - 30px)
+                left: 15px
+
+// 內頁
+.page-inner
+    padding: 8vh 0
+    +min-notebook
+        min-height: 50vh
+    +padpro
+        padding: 3vh 0 6vh
+    +max-pad
+        padding: 6vh 0
+
+
+// 折疊
+.collapse-item
+    cursor: pointer
+    border-radius: 10px
+    background-color: #F4F4F4
+    padding: 16px 20px
+    margin: 14px 0
+    transition: background .25s
+
+.collapse-item-title
+    h5,i
+        transition: color .25s
+    h5
+        font-size: 18px
+        font-weight: 500
+        color: #3E505F
+        margin-bottom: 0
+    i
+        font-size: 24px
+        color: $primary-color
+        opacity: 1
+
+.collapse-item
+    .close
+        display: none
+    .collapse-item-inner
+        height: 0
+        border-radius: 10px
+        background-color: #fff
+        font-size: 16px
+        color: #3E505F
+        padding: 0
+        margin: 0
+        overflow: hidden
+        transition: height .25s
+        overflow-x: auto
+    &.active
+        .close
+            display: inline-block
+        .open
+            display: none
+        .collapse-item-inner
+            height: auto
+            padding: 20px
+            margin-top: 20px
+    +min-notebook
+        &:hover
+            background-color: $primary-color
+            .collapse-item-title
+                h5,i
+                    color: $white
+    +max-phone
+        .warranty-inner
+            padding: 0 !important
+// 表格
+.main-table
+    width: 100%
+
+.store-img
+    height: 38vh
+    overflow: hidden
+    +max-phone
+        height: 26vh
+
+// card
+.main-card
+    border-radius: 10px
+    background-color: $light
+    border: none
+    overflow: hidden
+    transition: box-shadow .25s
+    .card-title
+        font-size: 24px
+        font-weight: 600
+        line-height: 1.4
+        +elipsis-multi(2)
+    .card-img-top
+        height: 200px
+        overflow: hidden
+        img
+            transform-origin: center
+            transition: transform .25s
+    .card-body
+        height: 224px
+        position: relative
+        .more
+            position: absolute
+            bottom: 1.25rem
+    .card-text
+        color: $text
+        +elipsis-multi(2)
+    +min-notebook
+        &:hover
+            box-shadow: 0 0 20px rgba($dark,.2)
+            .card-img-top
+                img
+                    transform: scale(1.06)
+    +max-padpro
+        .card-body
+            height: auto
+            min-height: 164px
+    +max-phone
+        .card-body
+            height: 240px
+.activity-card
+    position: relative
+    height: 460px
+    border-radius: 0 0 0 0
+    border: 4px solid $white
+    overflow: hidden
+    .card-img-top
+        width: 100%
+        height: 100%
+        border-radius: 0 0 0 0
+    .card-body
+        width: 100%
+        height: 120px
+        overflow: hidden
+        color: $white
+        position: absolute
+        bottom: 0
+        left: 0
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            width: calc(100% + 10px)
+            height: calc(100% + 10px)
+            background-color: $primary-color
+            -webkit-filter: blur(10px) brightness(.85)
+            filter: blur(10px) brightness(.85)
+            opacity: .7
+            bottom: -5px
+            left: -5px
+        .card-title
+            font-size: 24px
+            +elipsis-single
+            margin-bottom: .5rem
+        .card-text
+            font-weight: 400
+            color: $white
+            position: relative
+            +elipsis-multi(2)
+    +max-pad
+        .card-body
+            min-height: 120px
+            height: 150px
+    +pad
+        height: 35vh
+    +max-phone
+        height: auto
+        .card-img-top
+            height: 24vh
+        .card-body
+            position: relative
+            height: auto
+
+.about-pic
+    height: 45vh
+    overflow: hidden
+    +padpro
+        height: 21vh
+    +max-pad
+        height: 40vh
+    +max-phone
+        height: 30vh
+.about-text
+    +min-padpro
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 100%
+    +min-pc
+        padding: 0 20%
+    +padpro
+        padding: 0
+        .f-sc-title
+            font-size: 1.8rem
+            margin-bottom: 4px !important
+    +max-pad
+        padding: 0 0 10%
+
+.products-item
+    position: relative
+    height: 46vh
+    margin: 14px 7px
+    .products-item_bg
+        width: 100%
+        height: 100%
+        background-color: $light
+        position: absolute
+        top: 0
+        left: 0
+    .products-item_text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+        height: 100%
+        width: 100%
+        padding: 5%
+        h4
+            +elipsis-single
+    .products-item_product
+        height: 280px
+        img
+            width: auto
+            height: 100%
+    +max-pad
+        min-height: 38vh
+        height: auto
+        margin: 3.5px 7px
+        .products-item_text
+            padding-top: 10%
+        .products-item_product
+            height: 250px
+            max-height: 250px
+            img
+                width: 90%
+                height: 90%
+                object-fit: contain
+
+.store-list
+    .label
+        margin-right: 10px
+        font-weight: 500
+    span
+        color: #3E505F
+    +min-pad
+        li
+            &:first-child,&:nth-child(2)
+                float: left
+            &:first-child
+                width: 42%
+            &:nth-child(2)
+                width: 58%
+
+.store-products
+    padding: 10px
+    border-radius: 5px
+    background-color: $light-gary
+    display: flex
+    align-items: center
+    ul
+        margin-bottom: 0
+    li
+        &::after
+            content: '・'
+        &:last-child
+            &::after
+                display: none
+
+.process-list
+    position: relative
+    .main-btn
+        width: 80%
+        margin: 0 auto
+    i
+        font-size: 60px
+        color: $primary-color
+    .num
+        display: inline-flex
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        align-items: center
+        justify-content: center
+        font-family: $font-en
+        font-size: $f-textSubTitle
+        font-weight: 500
+        background-color: $light-gary
+        margin: 20px auto
+        &::after
+            content: ''
+            position: absolute
+            width: calc(105% - 30px)
+            height: 5px
+            left: 54%
+            background-color: $light-gary
+        &.no-afterLine
+            &::after
+                display: none
+    +min-padpro
+        p
+            width: 66%
+            margin: 0 auto
+    +max-pad
+        .f-textTitle
+            font-size: 18px
+        .slick-slide
+            padding: 0 6px
+    +min-pad
+        &.process-list-slider-3
+            .num
+                &::after
+                    width: calc(155% - 30px)
+    +max-phone
+        .main-btn
+            width: 60%
+
+.qa-card
+    background-color: $white
+    border-radius: 10px
+    i
+        opacity: .2
+        font-size: 110px
+        line-height: 0
+        margin-top: 10px
+        display: inline-block
+        &::before
+            margin: 0
+    +max-phone
+        margin: 20px
+        i
+            margin: 0 0 10px
+
+.new-page
+    padding-top: 90px
+    color: $dark
+    p, ul li
+        color: $dark
+    li
+        font-weight: 300
+    +max-notebook
+        padding-top: 90px
+    +max-phone
+        padding: 0;
+
+.main-table
+    border-radius: 10px 10px
+    overflow: hidden
+    th,td
+        text-align: center
+        vertical-align: middle
+        padding: 8px 10px
+    thead
+        tr
+            background-color: $primary-color   
+        th
+            color: $white
+    tbody
+        tr
+            background-color: $white
+            border-bottom: 1px solid $line-color
+    img
+        object-fit: contain !important
+
+.warranty-pic
+    width: 160px
+    height: 98px
+    margin: 0 auto
+    img
+        object-fit: contain
+
+// rwd table
+.rwd-table
+    +max-phone
+        width: 100%
+        margin: auto
+        min-width: 300px
+        max-width: 100%
+        border-collapse: collapse
+        th
+            display: none
+        td
+            display: block
+            &:before
+                content: attr(data-th) ""
+                font-weight: bold
+                width: 120px
+                display: inline-block
+                color: #404040
+        th, td
+            text-align: left
+            color: #333
+            overflow: hidden
+            tr
+                border-color: #bfbfbf
+        img
+            margin: 0 auto
+
+.cutover
+    margin: 0
+    li.active
+        a
+            color: $primary-color
+
+.cutover-in
+    height: 0
+    opacity: 0
+    visibility: hidden
+    overflow: hidden
+    -webkit-transition: all 0.5s
+    transition: all 0.5s
+    &.show
+        height: auto
+        opacity: 1
+        visibility: visible
+        -webkit-transition: opacity 0.5s 0.1s, visibility 0.5s 0.1s
+        transition: opacity 0.5s 0.1s, visibility 0.5s 0.1s
+
+@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none)
+    img:not(.img-no-full),img:not(.img-h100)
+        width: 100% !important
+        height: auto !important
+    img.img-h100
+        height: 100% !important
+        width: auto !important
+    .process-list .num::after
+        margin-top: 14px
+    +min-padpro
+        .features_img,.features_text
+            height: 52.8vh!important
+            overflow: hidden!important
+        .features_img
+            width: 50vw!important
+            min-width: 50vw!important
+        .features_text
+            width: calc(100% - 50vw)!important
+        .features_img img
+            width: 50vw !important
+            height: auto !important
+.return-page
+    +max-phone
+        padding: 0 0 20px!important
+        .f-textTitle-big
+            background-color: #E4E4EB
+            margin-bottom: 20px
+        .container
+            padding: 0 !important
+        .return-btn
+            margin: 20px 0
+.return-modal
+    padding-right: 0 !important
+    +min-phone
+        .modal-dialog
+            max-width: 85vw
+    +max-phone
+        .process-list .num
+            margin: 10px 0 !important
+            &::after
+                display: none
+.modal-open
+    padding-right: 0 !important
+
+.error
+    color: $danger
+    font-size: 14px
+    margin-top: 4px
+
+.share-row
+    button
+        cursor: pointer
+        background-color: transparent
+        border: none
+        color: $dark
+        &:hover
+            color: $primary-color
+    +max-phone
+        text-align: center
+        flex: 0 0 100%
+        margin-bottom: 20px

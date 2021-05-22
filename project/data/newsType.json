@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "type": "品牌消息",
+        "href": "news.html"
+    },
+    {
+        "id": 2,
+        "type": "媒體報導",
+        "href": "medias.html"
+    },
+    {
+        "id": 3,
+        "type": "開箱介紹",
+        "href": "unboxes.html"
+    },
+    {
+        "id": 4,
+        "type": "活動特區",
+        "href": "activities.html"
+    }
+]

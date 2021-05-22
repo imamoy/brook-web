@@ -1,0 +1,39 @@
+//- index.pug
+extends ./include/layout.pug
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center 打造安心的科技生活#[br]成為您生活上的小幸福
+                .page-hero_img
+                    img(src='styles/images/about-banner.jpg', alt='情境圖')
+
+        article.page-inner.pt-5.pb-0
+            section.text-center
+                .container
+                    .d-flex.flex-column.flex-md-row.justify-content-center.align-items-center.mb-4
+                        span.mx-3.d-inline-block
+                            img.img-no-full(src='styles/images/brook-g.png', alt='' style='width:100%;max-width:200px;')
+                    p.px-4.px-md-0 Brook Livin為孕龍科技打造的生活風格品牌，源自#[a.mx-1.t-primary(href='http://www.zeroplus.com.tw/zp/intro/tw_about.html' target='_blank') 孕龍科技]二十多年的研發創意與熱情，#[br]我們關注生活中的小細節，改善生活上的不便利性，為您打造安心自在的科技生活，與您分享驚豔無比的使用體驗。
+                    .after-h-line.mx-auto.mt-3.mt-md-4
+            section
+                .row.no-gutters
+                    .col-12.col-lg-6.order-lg-1
+                        .about-pic
+                            img.img-fluid(src='styles/images/about-1.jpg', alt='')
+                    .col-12.col-lg-6.p-4.px-lg-5.py-lg-0.p-xl-5.order-lg-2
+                        .about-text
+                            //- .t-primary 2017年
+                            h4.f-sc-title.mb-3 專注於您的需求
+                            p 每一位使用者在Brook Livin心中都是特別的，需求我們用心傾聽，難處我們用心理解，解決生活中的小問題，讓您有美好愉悅的感受，是我們的榮幸。
+                .row.no-gutters
+                    .col-12.col-lg-6.order-lg-2
+                        .about-pic
+                            img.img-fluid(src='styles/images/about-2.jpg', alt='')
+                    .col-12.col-lg-6.p-4.px-lg-5.py-lg-0.p-xl-5.order-lg-1
+                        .about-text
+                            //- .t-primary 2020年 旗下品牌
+                            h4.f-sc-title.mb-3 成為您生活上的小幸福
+                            p Brook Livin深信無論是提升居家安全，還是到達美好生活，透過「源源創意 時時創造」，生活就能處處充滿小確幸，讓幸福點綴您的生活。

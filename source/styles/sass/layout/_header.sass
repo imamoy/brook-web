@@ -1,0 +1,288 @@
+/* ==========================================================================
+		header
+ ==========================================================================*/
+header#header
+	width: 100%
+	height: 80px
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 999
+	+trans(background)
+	&.active
+		background-color: $primary-color
+	.product-menu-pic
+		display: none
+	+min-padpro
+		&:hover
+			background-color: $primary-color
+		.product-sub-menu
+			.container
+				max-width: 860px
+				margin: 0 auto
+				position: relative
+			ul
+				min-height: 20vh
+				height: 100%
+			.product-menu-pic
+				width: 40%
+				position: absolute
+				top: 0
+				right: 0
+				padding: 10px
+				height: 100%
+				object-fit: contain !important
+			.nav-item
+				&.active
+					.product-menu-pic
+						display: block
+	+max-notebook-mini
+		height: 80px
+	+max-padpro
+		height: 60px
+		background-color: $primary-color
+		.row
+			display: flex
+			align-items: center
+		.logo,.logo-pic
+			float: left
+			height: 40px
+			font-size: 0
+			color: transparent
+		.menu
+			display: none
+			background-color: $white
+			position: fixed
+			top: 60px
+			left: 0
+			width: 100%
+			height: calc(100% - 60px)
+			overflow-y: auto
+			padding-bottom: 80px;
+			> .list-inline
+				display: flex
+				flex-direction: column
+				li
+					margin-right: 0
+					text-align: left
+					padding: 0 20px
+			a,.product-toggle,.menu-toggle
+				color: $text
+			.list-inline-item > a
+				display: block
+			.list-inline-item > a,.product-toggle,.menu-toggle
+				padding: 20px 0
+			.product-toggle,.menu-toggle
+				display: flex
+				align-items: center
+				justify-content: space-between
+				position: relative
+				&::after
+					content: '\e800'
+					display: inline-block
+					font-family: $font-icon
+					font-size: 8px
+					margin-right: 8px
+					width: 12px
+		.menu-sub-menu,.product-sub-menu
+			display: none
+			width: calc(100% + 40px)
+			margin: 0 -20px
+			padding: 20px
+			background-color: rgba($light-gary,.5)
+		.menu-sub-menu
+			padding: 10px 20px
+			a
+				display: block
+				padding: 10px 0
+		.product-sub-menu
+			.container,.col-12,li.nav-item,.nav-link
+				padding: 0
+			.row
+				margin: 0
+			.nav-link
+				margin-bottom: 10px
+	+padpro
+		.menu-sub-menu,.product-sub-menu
+			width: calc(100% + 14vw)
+			margin: 0 -7vw
+			padding: 0 7vw
+header#header + .wrapper
+	+max-padpro
+		margin-top: 60px
+		
+#header
+	display: flex
+	align-items: center
+	h1
+		margin-bottom: 0
+	.logo,.logo-pic
+		height: 50px
+		font-size: 0
+		img
+			width: auto
+			height: 100%
+			object-fit: contain
+	.menu-toggle,a,.product-toggle
+		color: $white
+		cursor: pointer
+	.menu-sub-menu
+		a
+			display: block
+	+min-notebook
+		height: 100px
+		.menu
+			display: flex
+			align-items: center
+			margin-right: 20px
+			ul
+				display: flex
+				align-items: center
+		.menu-toggle,a,.product-toggle
+			&:hover
+				color: $three-color
+		.menu-hover,.product-hover, .list-inline-item > a
+			display: flex
+			align-items: center
+			position: relative
+			height: 90px
+			// &:hover
+			// 	.menu-sub-menu,.product-sub-menu
+			// 		display: block
+		.menu-sub-menu
+			display: none
+			min-width: 100px
+			background-color: $white
+			position: absolute
+			text-align: center
+			top: 85px
+			left: 50%
+			transform: translateX(-50%)
+			padding: 10px 20px
+			box-shadow: 0 3px 6px rgba($black,.16)
+			a
+				white-space: nowrap
+				color: $text
+				padding: 5px 0
+				&:hover
+					color: $primary-color
+		.product-hover
+			display: flex
+			align-items: center
+			height: 90px
+			padding: 0
+		.product-sub-menu
+			display: none
+			padding: 20px 0
+			position: fixed
+			left: 0
+			top: 80px
+			width: 100vw
+			background-color: $white
+			box-shadow: 0 3px 6px rgba($black,.16)
+			ul
+				align-items: flex-start
+			a
+				text-align: left
+				font-weight: 500
+				color: $text
+				&:hover
+					color: $primary-color
+		.list-inline-item:not(:last-child)
+			margin-right: 20px !important
+	+max-notebook-mini
+		height: 80px
+		.logo,.logo-pic
+			height: 50px
+		.menu-hover,.product-hover
+			height: 80px
+		.menu-sub-menu,.product-sub-menu,.lang-menu
+			top: 80px
+		.product-sub-menu
+			.container
+				max-width: 960px
+	+max-padpro
+		.menu-hover,.product-hover
+			height: auto
+	+padpro
+		.logo,.logo-pic
+			height: 40px
+		.menu
+			padding: 0 5vw
+	
+
+.lang-btn
+	background-color: transparent
+	border: none
+	color: $white
+	cursor: pointer
+	&:focus
+		outline: 0
+	.icon-earth
+		font-size: 16px
+	span
+		font-size: 16px
+		margin: 0 6px
+	.icon-arrow-b
+		font-size: 8px
+	+max-padpro
+		padding: 10px 0
+		margin-top: 4px
+		.icon-earth
+			font-size: 25px
+			line-height: 0
+		span
+			display: none
+		.icon-arrow-b
+			display: none
+			line-height: 0
+			margin-top: -5px
+
+.lang-menu
+	padding: 5px
+	background-color: $white
+	display: none
+	box-shadow: 0 3px 6px rgba($black,.16)
+	position: absolute
+	top: 85px
+	width: 145px
+	right: 0
+	padding: 15px 30px
+	text-align: center
+	a
+		color: $text !important
+		padding: 5px 0
+		display: block
+		&:hover
+			color: $primary-color
+	+max-pad
+		top: 58px !important
+.hamburger
+	margin-left: 20px
+	.line
+		width: 30px
+		height: 3px
+		background-color: #ecf0f1
+		display: block
+		margin: 6px auto
+		-webkit-transition: all 0.3s ease-in-out
+		-o-transition: all 0.3s ease-in-out
+		transition: all 0.3s ease-in-out
+	&:hover
+		cursor: pointer
+
+	&.is-active .line
+		&:nth-child(2)
+			opacity: 0
+		&:nth-child(1)
+			-webkit-transform: translateY(10px) rotate(45deg)
+			-ms-transform: translateY(10px) rotate(45deg)
+			-o-transform: translateY(10px) rotate(45deg)
+			transform: translateY(10px) rotate(45deg)
+		&:nth-child(3)
+			-webkit-transform: translateY(-8px) rotate(-45deg)
+			-ms-transform: translateY(-8px) rotate(-45deg)
+			-o-transform: translateY(-8px) rotate(-45deg)
+			transform: translateY(-8px) rotate(-45deg)
+	+min-notebook
+		display: none

@@ -1,0 +1,335 @@
+.full-hero
+	+min-notebook
+		height: 100vh !important
+	+max-padpro
+		height: calc(100vh - 65px);
+		.slick-list,.slick-track
+			height: auto;
+	+max-phone
+		&.dots-inner .slick-dots
+			bottom: 0
+.full-hero_item
+	height: 100vh
+	position: relative
+	overflow: hidden
+	&::before
+		content: ''
+		width: 100%
+		height: 100%
+		object-fit: cover
+		background-image: url('images/over.png')
+		background-size: cover
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 50
+	.full-hero_bg
+		width: 100%
+		position: absolute
+		top: 0
+		left: 0
+	.full-hero_inner
+		display: flex
+		height: 100%
+		align-items: center
+		position: relative
+		z-index: 55
+		color: $white
+		.main-btn
+			margin: -22px 40px 0 auto
+	.f-heroTitle-big
+		position: relative
+		padding: 0 30px 10px
+		margin-bottom: 0
+		&::before
+			content: ''
+			display: block
+			background-color: $primary-color
+			position: absolute
+			height: 80%
+			width: 100%
+			bottom: 0
+			left: 0
+			z-index: -1
+	.full-hero_text-text
+		background-color: rgba($black,.2)
+		padding: 30px 30px 80px
+		line-height: 1.8
+		font-weight: 400
+		font-size: $f-textSubTitle
+	.hight-light
+		font-weight: 500
+		padding: 0 30px
+		color: #FAF10E
+		margin-bottom: -10px
+	.full-hero_text,.full-hero_product
+		padding: 0 30px
+		margin: 0 auto
+	+max-notebook
+		.full-hero_text
+			padding: 0
+		.full-hero_text-title
+			margin-top: 10px
+		.full-hero_text-text
+			padding: 15px 15px 40px
+			font-size: 18px
+	+min-padpro
+		.full-hero_bg,&::before
+			height: 102%
+	+max-padpro
+		.main-btn
+			width: 120px
+			margin-right: 20px !important
+	+padpro
+		.full-hero_text-text
+			font-size: $f-textSubTitle
+	+pad
+		.full-hero_bg,&::before
+			height: 100%
+		.full-hero_inner
+			height: 90%
+		.full-hero_product
+			width: 85%
+			margin: 0 auto 10px
+	+max-phone
+		height: calc(100vh - 65px)
+		min-height: auto
+		padding-top: 0
+		.full-hero_bg
+			height: 100%
+		.full-hero_inner
+			padding: 0 0 10%
+		.f-textTitle-big
+			margin-bottom: 2px
+		.full-hero_text
+			padding: 0
+		.full-hero_text-title
+			font-size: 1.8rem
+			padding: 0 10px 10px
+			margin-top: 0
+			&::before
+				height: 65%
+		.full-hero_text-text
+			font-size: 16px
+			padding: 10px
+			padding-bottom: 34px
+		.full-hero_product
+			width: 75%
+			height: 200px
+			margin: 0 auto
+			img
+				object-fit: contain
+		.hight-light
+			padding: 5px 10px
+		.main-btn
+			width: 120px
+			margin-right: 20px !important
+	+max-phone-mid
+		.full-hero_text-title
+			br
+				display: none
+	+max-phonemini
+		.full-hero_product
+			height: 25vh
+			margin: 0 auto
+		.full-hero_text-title
+			margin-top: 0
+.full-hero
+	height: calc(100vh - 60px)
+	overflow: hidden
+	&.slick-dotted.slick-slider
+		margin-bottom: 0 !important
+
+.slick-active
+	&.full-hero_item
+		.full-hero_product,.main-btn
+			animation: fadeInDown 1s both
+		.full-hero_text-title
+			animation: fadeInRight 1s both
+			animation-delay: .5s
+		.hight-light,.full-hero_text-text
+			animation: fadeIn 1s both
+			animation-delay: .8s
+		.main-btn
+			animation-delay: 1s
+
+.page-hero
+	display: flex
+	align-items: center
+	height: 460px
+	color: $white
+	position: relative
+	overflow: hidden
+	&.mini
+		height: 35vh
+	p
+		text-align: center
+		color: $white
+	&::after
+		content: ''
+		background-color: rgba($black,.2)
+		z-index: 1
+	.page-hero_img,&::after
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+	.page-hero_img
+		z-index: -1
+	.page-hero_text
+		position: relative
+		z-index: 10
+	+max-notebook
+		height: 400px
+	+max-padpro
+		&.mini
+			height: 240px
+	+max-pad
+		height: 30vh
+
+.project-hero
+	display: flex
+	align-items: center
+	height: 100vh
+	position: relative
+	&::before
+		content: ''
+		width: 100%
+		height: 100%
+		background-image: url('images/over.png')
+		overflow: hidden
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 50
+	.project-hero_bg
+		width: 100%
+		overflow: hidden
+		position: absolute
+		top: 0
+		left: 0
+	.project-hero_text
+		padding-top: 10vh
+		color: $white
+		position: relative
+		z-index: 50
+		.f-heroTitle
+			letter-spacing: 10px
+			margin: 20px 0
+		.project-hero_project
+			max-width: 23vw
+			margin: 50px auto
+	+min-padpro
+		&::before,
+		.project-hero_bg
+			height: 70vh
+	+max-notebook
+		height: auto
+		.project-hero_text
+			padding-top: 12vh
+			margin-bottom: 5vh
+			.project-hero_project
+				max-width: 30vw
+				margin: 40px auto 50px
+		&::before,.project-hero_bg
+			height: 68%
+	+max-notebook-mini
+		.project-hero_text
+			padding-top: 14vh
+	+max-padpro
+		.f-heroTitle
+			letter-spacing: 5px !important
+		.project-hero_text
+			padding-top: 5vh !important
+		> .d-md-flex
+			transform: scale(1.5)
+	+padpro
+		.f-heroTitle
+			font-size: 4.2rem
+		.project-hero_project
+			max-width: 80%
+			margin: 10% auto
+	+max-pad
+		.f-heroTitle
+			font-size: 2.4rem
+	+min-phone
+		.main-btn
+			max-width: 240px
+	+max-phone
+		.project-hero_text
+			padding-top: 5vh
+		&::before,.project-hero_bg
+			height: 68%
+		.main-btn
+			width: 80%
+		.f-heroTitle
+			font-size: 1.9rem
+			letter-spacing: 2px !important
+			margin-bottom: 20px !important
+		.project-hero_text
+			img
+				width: 80%
+				margin: 0 auto
+			.project-hero_project
+				max-width: 100%
+				margin-top: 20px
+				margin: 40px auto 0px
+		&::before,.project-hero_bg
+			height: 75%
+	+max-phonemini
+		.project-hero_text 
+			margin-bottom: 40px
+			img
+				width: 70%
+			.project-hero_project
+				margin-top: 30px
+		.f-heroTitle
+			font-size: 1.6rem
+		
+.banner-slider
+	margin-bottom: 0 !important
+	&.greenBorder-arrows
+		.slick-arrow
+			&.slick-next
+				right: -20px
+			&.slick-prev
+				left: -20px
+
+.banner-ad
+	background-color: $light-yellow
+	border: 4px solid $white
+	.banner-ad_text
+		display: flex
+		flex-direction: column
+		width: 80%
+		height: 96%
+		justify-content: center
+		margin: 0 auto
+		h5
+			+elipsis-multi(2)
+		p
+			text-align: justify
+			width: 90%
+			margin: .4rem 0 1.6rem
+	+min-notebook
+		.banner-ad_text
+			margin: 0 auto 0 14%
+			p
+				+elipsis-multi(4)
+		.banner-ad_text,.banner-ad_pic
+			height: 480px
+	+max-padpro
+		.banner-ad_text
+			height: auto
+			min-height: 30vh
+			p
+				width: 100%
+		.banner-ad_pic
+			height: 36vh
+			padding: 5% 0 8%
+	+max-phone
+		.banner-ad_text
+			width: 100%
+			padding: 20px 20px 0

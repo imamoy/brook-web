@@ -1,0 +1,42 @@
+//- index.pug
+extends ./include/layout.pug
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center 產品介紹
+                    p Brook Livin Enjoy the Tech 致力在生活周邊用品的開發與應用
+                .page-hero_img
+                    img(src='styles/images/products-banner.jpg', alt='情境圖')
+
+        article
+            .row.no-gutters
+                .col-12.col-md-6
+                    .products-item
+                        .products-item_bg
+                            //- img(src="#", alt="")
+                        .products-item_text.text-center
+                            h4.f-sc-title.mb-2 WIRECARE 宅電防護員
+                            div
+                                a.t-primary.mx-3.mx-md-2(href="product/wirecare" target="_blank") 進一步了解 >
+                                a.t-primary.mx-3.mx-md-2(href="" target="_blank") 購買 >
+                            .products-item_product.mt-3
+                                img.img-no-full(src="styles/images/wirecare-product-2.png", alt="")
+                .col-12.col-md-6
+                    .products-item
+                        .products-item_bg
+                            img(src="styles/images/product-1bg.jpg", alt="")
+                        .products-item_text.text-center
+                            h4.f-sc-title.mb-2 BROOK 紫外線消毒盒
+                            div
+                                a.t-primary.mx-3.mx-md-2(href="https://www.brookaccessory.com/Brook_Livin/Products/UV_SHELL_Box/" target="_blank") 進一步了解 >
+                                a.t-primary.mx-3.mx-md-2(href="" target="_blank") 購買 >
+                            .products-item_product.mt-3
+                                img.img-no-full(src="styles/images/product-1.png", alt="")
+                .col-12.py-5
+                    .text-center.my-5
+                        .logo-img.mb-4
+                            img(src="styles/images/brook-g.png", alt="" style='width: 240px;')
+                        .f-sc-title 讓科技更貼近你的生活圈！

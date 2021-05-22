@@ -1,0 +1,161 @@
+//- index.pug
+extends ./include/layout.pug
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center 客戶服務
+                .page-hero_img
+                    img(src='styles/images/store.jpg', alt='情境圖')
+        #page-nav
+            ul.nav.justify-content-center
+                //- li.nav-item
+                //-     a.nav-link(href='store') 經銷商據點
+                li.nav-item
+                    a.nav-link(href='warranty' rel='nofollow') 保固資訊
+                li.nav-item
+                    a.nav-link.active(href='return' rel='nofollow') 退換貨流程
+                li.nav-item
+                    a.nav-link(href='qa' rel='nofollow') 常見Q&A
+        article.py-2.py-md-5.mb-md-5.return-page
+            .container
+                .row.return-row
+                    .col-12.col-md-6.pb-4.pb-md-0
+                        h3.f-textTitle-big.text-center.py-4.py-md-5 保固內退換貨流程
+                        .row.justify-content-center
+                            //- .col-12.col-md-6.text-center.text-md-right
+                            //-     button.return-btn(type="button" data-toggle="modal" data-target="#in-store" data-tooltip="tooltip" data-placement="bottom" title="透過經銷商退換貨")
+                            //-         i.icon-store-search
+                            //-         h5.f-textTitle.text-center.pt-3 透過經銷商退換貨
+                            .col-12.col-md-6.text-center
+                                button.return-btn(type="button" data-toggle="modal" data-target="#in-brook" data-tooltip="tooltip" data-placement="bottom" title="透過Brook退換貨")
+                                    i.icon-brook
+                                    h5.f-textTitle.text-center.pt-3 透過Brook退換貨
+                    .col-12.col-md-6.pb-4.pb-md-0
+                        h3.f-textTitle-big.text-center.py-4.py-md-5 保固外退換貨流程
+                        .row.justify-content-center
+                            //- .col-12.col-md-6.text-center.text-md-right
+                            //-     button.return-btn(type="button" data-toggle="modal" data-target="#out-store" data-tooltip="tooltip" data-placement="bottom" title="透過經銷商退換貨")
+                            //-         i.icon-store-search
+                            //-         h5.f-textTitle.text-center.pt-3 透過經銷商退換貨
+                            .col-12.col-md-6.text-center
+                                button.return-btn(type="button" data-toggle="modal" data-target="#out-brook" data-tooltip="tooltip" data-placement="bottom" title="透過Brook退換貨")
+                                    i.icon-brook
+                                    h5.f-textTitle.text-center.pt-3 透過Brook退換貨
+
+        #in-store.modal.return-modal.fade(tabindex="-1" role="dialog" aria-labelledby="peopleModalCenterTitle" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered(role="document")
+                .modal-content
+                    .modal-header
+                        div.f-textTitle 透過經銷商退換貨
+                        button.close(type="button" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") ×
+                    .modal-body.py-2.py-md-5
+                        .container
+                            .process-list.text-center.row.process-list-slider-3.d-lg-flex.justify-content-between.pb-5.pb-md-0
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-store-search
+                                    h6.f-textTitle 查詢經銷商
+                                    .num 1
+                                    p.mb-4 查詢您當地經銷商據點，讓經銷商為您障礙排除。
+                                    a.main-btn.btn-primary(href='store' title='經銷商據點' rel='nofollow') 經銷商據點
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-store-check
+                                    h6.f-textTitle 經銷商確認需求
+                                    .num 2
+                                    p 經銷商確認保固需求後， 通知Brook客服。
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-return
+                                    h6.f-textTitle 退換貨成功
+                                    .num.no-afterLine 3
+                                    p 返還故障品給經銷商，並由經銷商提供#[b 全新商品]。
+        #in-brook.modal.return-modal.fade(tabindex="-1" role="dialog" aria-labelledby="peopleModalCenterTitle" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered(role="document")
+                .modal-content
+                    .modal-header
+                        div.f-textTitle 透過Brook退換貨
+                        button.close(type="button" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") ×
+                    .modal-body.py-2.py-md-5
+                        .container
+                            .process-list.text-center.row.process-list-slider-4.pb-5.pb-md-0
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-qa
+                                    h6.f-textTitle 常見問題
+                                    .num 1
+                                    p.mb-4 請先到常見問題頁面，幫助排除產品常見狀況。
+                                    a.main-btn.btn-primary(href='qa' title='常見問題' rel='nofollow') 常見問題
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-edit-paper
+                                    h6.f-textTitle 填寫技術支援表單
+                                    .num 2
+                                    p 若狀況無法排除，請填寫常見問題頁面下方的技術支援表單。
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-brook
+                                    h6.f-textTitle Brook確認需求
+                                    .num 3
+                                    p Brook客服確認保固需求後，通知當地經銷商與您聯繫。
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-return
+                                    h6.f-textTitle 退換貨成功
+                                    .num.no-afterLine 4
+                                    p 返還故障品給經銷商，並由經銷商提供#[b 全新商品]。
+        #out-store.modal.return-modal.fade(tabindex="-1" role="dialog" aria-labelledby="peopleModalCenterTitle" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered(role="document")
+                .modal-content
+                    .modal-header
+                        div.f-textTitle 透過經銷商退換貨
+                        button.close(type="button" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") ×
+                    .modal-body.py-2.py-md-5
+                        .container
+                            .process-list.text-center.row.process-list-slider-3.d-lg-flex.justify-content-between.pb-5.pb-md-0
+                                .col-12.col-md-3.my-5.my-md-0
+                                    i.icon-store-search
+                                    h6.f-textTitle 查詢經銷商
+                                    .num 1
+                                    p.mb-4 查詢您當地經銷商據點，讓經銷商為您障礙排除。
+                                    a.main-btn.btn-primary(href='store' title='經銷商據點' rel='nofollow') 經銷商據點
+                                .col-12.col-md-3.my-5.my-md-0
+                                    i.icon-store-check
+                                    h6.f-textTitle 經銷商確認需求
+                                    .num 2
+                                    p 經銷商確認保固需求後， 通知Brook客服。
+                                .col-12.col-md-3.my-5.my-md-0
+                                    i.icon-return
+                                    h6.f-textTitle 退換貨成功
+                                    .num.no-afterLine 3
+                                    p 返還故障品給經銷商，並由經銷商提供#[b 整新品]與#[b 收取費用]。
+        #out-brook.modal.return-modal.fade(tabindex="-1" role="dialog" aria-labelledby="peopleModalCenterTitle" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered(role="document")
+                .modal-content
+                    .modal-header
+                        div.f-textTitle 透過Brook退換貨
+                        button.close(type="button" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") ×
+                    .modal-body.py-2.py-md-5
+                        .container
+                            .process-list.text-center.row.process-list-slider-4.pb-5.pb-md-0
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-qa
+                                    h6.f-textTitle 常見問題
+                                    .num 1
+                                    p.mb-4 請先到常見問題頁面，幫助排除產品常見狀況。
+                                    a.main-btn.btn-primary(href='qa' title='常見問題' rel='nofollow') 常見問題
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-edit-paper
+                                    h6.f-textTitle 填寫技術支援表單
+                                    .num 2
+                                    p 若狀況無法排除，請填寫常見問題頁面下方的技術支援表單。
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-brook
+                                    h6.f-textTitle Brook確認需求
+                                    .num 3
+                                    p Brook客服確認保固需求後，通知當地經銷商與您聯繫。
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-return
+                                    h6.f-textTitle 退換貨成功
+                                    .num.no-afterLine 4
+                                    p 返還故障品給經銷商，並由經銷商提供#[b 整新品]與#[b 收取費用]。

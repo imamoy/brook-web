@@ -1,0 +1,26 @@
+//- head.pug
+meta(charset="utf-8")
+title Brook Livin
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+meta(name="google-site-verification" content="iU-RJ72y4OL581ccJw7ku4ObSyCF-UvEXtQmoKyibUE")
+block meta
+link(rel="icon" type="image/x-icon" href="styles/images/web.ico")
+//- font & icon
+link(rel="stylesheet" type="text/css" href="styles/fonts/css/fontello.css")
+//- plugins
+link(rel="stylesheet" type="text/css" href="styles/plugins/bootstrap-reboot.min.css")
+link(rel="stylesheet" type="text/css" href="styles/plugins/bootstrap.min.css")
+link(rel="stylesheet" type="text/css" href="styles/plugins/slick.css")
+link(rel="stylesheet" type="text/css" href="styles/plugins/slick-theme.css")
+block plugins-css
+link(rel="stylesheet" type="text/css" href="styles/plugins/animate.css")
+
+link(rel="stylesheet" type="text/css" href="styles/common.css")
+block page-css
+// Global site tag (gtag.js) - Google Analytics
+script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-142695956-17')
+script.
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-142695956-17');

@@ -1,0 +1,70 @@
+//- index.pug
+extends ./include/new-layout.pug
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 觸電/淹水/高壓電擊/靜電: 如何發生與預防?
+                        .row
+                            .col-6.text-left
+                                a.tag.t-primary.mr-2(href='#' title='實作派電子實驗室') #實作派電子實驗室
+                                a.tag.t-primary.mr-2(href='#' title='StrongPiLab') #StrongPiLab
+                                a.tag.t-primary.mr-2(href='#' title='用電安全') #用電安全
+                                a.tag.t-primary.mr-2(href='#' title='觸電') #觸電
+                                a.tag.t-primary.mr-2(href='#' title='高壓電擊') #高壓電擊
+                                a.tag.t-primary.mr-2(href='#' title='靜電') #靜電
+                            .col-6.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2021/5/10
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            p 火線的面積很小，大地的面積很大，所以電流會以放射狀的方式散開流入大地。所以人站得越遠，所得到的電流密度就越低。
+                            p 遠處的人不會觸電的另外一個原因，則是水並非良導體，它無法像電線一樣擁有幾乎為零的電阻；如果是工業用的純水，它可能還是個絕緣體。
+                            p 一般的水內都溶有離子，離子會導電，離子濃度越低導電率越差，電阻R越高，一般自來水的離子濃度並不高，因此電阻比電線高很多。
+                            p 所以在淹水的環境中，要遠離電源；只要距離一拉開，電流密度就會降低。
+                            p 當然有部份原因，是因為水畢竟還是有電阻存在，降低了電流。但如果是泥水，離子濃度高，安全距離則會變長。
+                            br
+                            img.img-fluid(src='styles/images/act-2-content.jpg', alt='圖片')
+                            br
+                            br
+                            b 「高壓電能隔空打牛」
+                            br
+                            p 新聞有時會出現，維修人員被高壓電電到的消息；這些高壓電都在高空或地底，為何仍會有人被高壓電電到呢?
+                            p 為何仍會有人被高壓電電到呢?
+                            p 要先理解高壓電有個很奇妙的特性，就是它可以隔空打牛。
+                            p 人在地上是0V，高壓電可能上萬伏特，只要與高壓電線距離夠近，就會被隔空電擊。
+                            br
+                            p 一般的空氣是屬於絕緣狀態，一但有高低壓落差很大的電位差出現在空氣當中，當電壓高過空氣可承受的臨界點，空氣就會像玻璃一樣裂開，我們稱為崩潰(Breakdown)。
+                            p 空氣裂縫裡面的空氣被高壓硬生生地扯開，稱為離子化 (Ionization)，水是靠離子導電的，現在空氣的裂縫中也有離子了，因此這條裂縫就成為導電路徑了。
+                            p 由於空氣裂縫中瞬間通過大量電流會產生大量熱能與光能，因此你會看到閃光與爆裂聲，閃電就是這種現象的大規模表現。
+                            p 最常見的觸電情況，就是拿釣魚竿跨過平交道，只要釣竿一靠近電線就電到了；若釣竿是碳纖維材料製成，那受傷更嚴重，因為碳纖維會導電。
+                            p 另外有一種情況，是為了拿卡在高壓電線上的物品，例如衣服、風箏之類，用竹竿去挑結果被電擊。
+                            p 大家以為竹竿是絕緣體，但要告訴各位，一般在住家內是這樣沒錯；但在高壓電環境下，一般大家熟悉的絕緣體可能都會變成導體，只有某些特殊材料，才能應用在高壓絕緣上。
+                            br
+                            p 面對高壓電產生的問題，需要專業人員處理；你唯一能做的，就是離它遠一點。
+
+                            br
+                            p ※ 資料與圖片授權來源: 實作派電子實驗室
+                            a(href='https://www.strongpilab.com/electric-shock-water-static-electricity-high-voltage-how/ ' target="_blank")   觸電-淹水-高壓電擊-靜電-如何發生與預防
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="觸電/淹水/高壓電擊/靜電: 如何發生與預防? - Brook Livin" data-description="淹水時若水淹過插座，人在插座附近觸電機會很高！如果人站遠一點則不會觸電。而水是導體，理論上應該再遠都會電到，那為何只有電源附近的人會電到?" data-image="styles/images/act-1-list.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="觸電/淹水/高壓電擊/靜電: 如何發生與預防? - Brook Livin" data-description="淹水時若水淹過插座，人在插座附近觸電機會很高！如果人站遠一點則不會觸電。而水是導體，理論上應該再遠都會電到，那為何只有電源附近的人會電到?" data-image="styles/images/act-1-list.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="觸電/淹水/高壓電擊/靜電: 如何發生與預防? - Brook Livin" data-description="淹水時若水淹過插座，人在插座附近觸電機會很高！如果人站遠一點則不會觸電。而水是導體，理論上應該再遠都會電到，那為何只有電源附近的人會電到?" data-image="styles/images/act-1-list.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="activities") 回到列表
+                        
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多活動消息
+                        +main-card('','styles/images/act-1-list.jpg','activity-1','2021/5/10','水電施工-溝通很重要-其實不用諜對諜','企業與家庭的電器施工，為何水電師傅沒有照要求執行?廠商報價這樣，會不會太貴?')

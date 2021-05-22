@@ -1,0 +1,499 @@
+.wirecare-about-video
+    width: 100%
+    height: 29vh
+    +max-notebook
+        height: 34vh
+        min-height: 294px
+    +pad
+        height: 19vh
+    +max-phone
+        height: 29vh
+        min-height: 210px
+    +max-phone-mid
+        min-height: 190px
+
+.wirecare-video
+    width: 100%
+    height: 50vh
+    max-width: 900px
+    max-height: 500px
+    margin: 0 auto
+    +max-notebook
+        height: 60vh
+    +notebook
+        min-height: 500px
+    +pad
+        height: 37vh
+    +max-phone
+        height: 29vh
+        min-height: 210px
+    +max-phone-mid
+        min-height: 190px
+
+.wirecare-video,.wirecare-about-video
+    iframe
+        width: 100%
+        height: 100%
+
+.features-block
+    .features_text-item
+        display: flex
+        align-items: center
+        height: calc(100% / 3)
+        padding: 5%
+        background-color: $light-gary
+        border-top: 3px solid $white
+        border-bottom: 3px solid $white
+        font-size: 1.6rem
+        font-weight: 500
+        cursor: pointer
+        +transBgCr
+        &:first-child
+            border-top: none
+        &:last-child
+            border-bottom: none
+        &:hover
+            color: $primary-color
+        &.slick-current
+            background-color: $primary-color
+            color: $white
+    +min-padpro
+        display: flex
+        align-items: center
+        .features_img
+            width: 62%
+            min-width: 62%
+        .features_img img, .features_text
+            height: 56vh
+            overflow: hidden
+        .features_text .slick-track,
+        .features_text .slick-list
+            height: 100% !important
+    +max-notebook-mini
+        .features_img img, .features_text
+            height: 70vh
+        .features_text-item
+            font-size: 1.4rem
+    +padpro
+        .features_img img, .features_text
+            height: 30vh
+    +max-pad
+        .features_img img
+            height: 35vh
+        .features_text
+            height: auto
+    +max-phone-mid
+        .features_text-item
+            border-width: 1px
+            font-size: 18px
+             height: auto
+
+.change
+    cursor: pointer
+    &.used
+        .use
+            display: block
+        .not-use
+            display: none
+    +min-padpro
+        .use-changed-item.pic
+            order: 4
+    +max-pad
+        &.used
+            .use-changed-item.pic
+                order: 4
+
+.change-inner
+    width: 1236px
+    transition: transform 5s
+    transition-delay: .5s
+    +padpro
+        width: 850px
+    +max-pad
+        &.active
+            transform: translateX(-20%)
+    +max-phone
+        &.active
+            transform: translateX(-69.2%)
+.use-changed
+    .sub-title
+        text-align: center
+        font-size: $font-text-big
+        font-weight: 500
+    .use
+        display: none
+    +max-phone
+        i
+            font-size: 40px !important;
+
+
+.flip-container, .front, .back
+	width: 240px
+	height: 220px
+.flip-container, .front, .back
+    &.pic
+        width: 300px
+        height: 250px
+    +max-notebook
+        width: 220px
+    +padpro
+        width: 200px
+        &.pic
+            width: 200px
+            height: 180px
+    +pad
+        width: 200px
+        &.pic
+            width: 200px
+            height: 180px
+    +max-phone
+        width: 240px
+    
+.back
+    &.pic
+        width: 270px
+    +padpro
+        &.pic
+            width: 170px
+    +pad
+        &.pic
+            width: 170px
+
+/* flip speed goes here */
+.flipper
+	transition: 1s ease
+	transform-style: preserve-3d
+	position: relative
+
+/* hide back of pane during swap */
+.front, .back
+	border-radius: 10px
+	backface-visibility: hidden
+    transform-origin: center
+	position: absolute !important
+	top: 0
+	left: 0
+
+/* front pane, placed above back */
+.front
+	z-index: 2
+	/* for firefox 31 */
+	transform: rotateY(0deg)
+	background-color: transparent
+
+/* back, initially hidden pane */
+.back
+	transform: rotateY(-180deg)
+	background-color: transparent
+
+.flip-container
+    &.flipped
+        .flipper
+            transform: rotateY(-180deg)
+
+@keyframes move
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(10px)
+    100%
+        transform: translateY(0)
+
+.use-changed
+    position: relative
+    .use-change-progress
+        width: 82%
+        position: absolute
+        border-radius: 0
+        bottom: 190px
+        &::after
+            content: '\e80b'
+            font-size: 70px
+            font-family: $font-icon
+            color: $line-color
+            position: absolute
+            right: -68px
+            top: 50%
+            transform: translateY(-50%)
+            transition: color .5s
+            transition-delay: 2s
+        .progress
+            background-color: $line-color
+            height: 5px
+            .progress-bar
+                width: 0
+                background-color: $primary-color
+                transition: width 2s
+        &.active
+            .progress-bar
+                width: 100%
+            &::after
+                color: $primary-color
+                transition-delay: 0 !important;
+    .pic
+        margin-bottom: -10px
+        position: relative;
+        .note
+            position: absolute;
+            animation: move 2s infinite 
+            .t-dark
+                color: $black !important
+    i.protect,i.danger
+        background-color: #fff;
+    .protect
+        color: $primary-color
+    .protect-text
+        opacity: .1;
+    +min-notebook
+        .pic
+            .note
+                position: absolute
+                bottom: -10%
+                right: -15%
+            &.back
+                .note
+                    bottom: -20%
+                    right: -5%
+    +max-notebook
+        .use-change-progress
+            width: 93%
+    +max-pad
+        i
+            margin: 0
+        .use-change-progress
+            width: 100%
+            &::after
+                display: none
+    +max-phone
+        .pic
+            .note
+                width: 100%;
+                text-align: center;
+                margin: -20px auto 0;
+            &.back
+                .note
+                    margin: -30px auto 0
+.use-changed
+    text-align: center
+    .pic
+        img
+            object-fit: contain
+    i
+        font-size: 34px
+        margin: 20px 0
+        display: inline-block
+
+
+.use-changed-item
+    margin: 0 20px
+    .top
+        font-size: $f-textSubTitle
+        color: $text
+    .big
+        font-size: $f-textTitle-big
+    .danger
+        color: $danger
+    &:nth-child(2)
+        .flipper
+            transition-delay: .9s
+    &:nth-child(3)
+        .flipper
+            transition-delay: .6s
+    &:nth-child(4)
+        .flipper
+            transition-delay: .3s
+    &.flipped
+        &:nth-child(2)
+            .flipper
+                transition-delay: .3s
+        &:nth-child(3)
+            .flipper
+                transition-delay: .6s
+        &:nth-child(4)
+            .flipper
+                transition-delay: .9s
+
+    +max-notebook
+        .big
+            font-size: $f-textTitle-big * 0.9
+    +padpro
+        margin: 0 10px
+        .big
+            font-size: $f-textTitle-big * 0.8
+    +pad
+        margin: 0 10px
+        .big
+            font-size: $f-textTitle-big * 0.8
+    +max-phone
+        .big
+            font-size: $f-textTitle-big
+
+.user-method
+    position: relative
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        top: 344px
+        left: 0
+        width: 100%
+        height: 5px
+        background-color: $light-gary
+    +max-phone
+        &::before
+            top: 310px
+
+.user-method-item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 0 20px
+    .pic
+        width: 100%
+        height: 160px
+        img
+            object-fit: contain
+    .red
+        color: #B80009
+    .orange
+        color: #FA9B0E
+    .green
+        color: #A7BD27
+    .num
+        display: inline-flex
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        align-items: center
+        justify-content: center
+        font-family: $font-en
+        font-size: $f-textSubTitle
+        font-weight: 500
+        background-color: $light-gary
+        margin: 20px auto
+
+.format-block_left-title
+    h2
+        text-align: right
+        line-height: 0.6
+        letter-spacing: 2px
+        font-size: 100px
+        font-family: 'Roboto Condensed', sans-serif
+        font-weight: 700
+        font-style: italic
+        color: $primary-color
+        text-shadow: -10px 10px 0 #F4EDDF
+    +max-pad
+        h2
+            font-size: 76px
+            margin-left: 3px
+.format-block_left
+    position: relative
+    background-color: #F4EDDF
+    padding: 5%
+    +min-notebook
+        display: flex
+        justify-content: flex-end
+        border-radius: 40px 0 0 40px
+        padding-left: 20%
+    +max-notebook
+        padding: 5% 3% !important
+.format-block_pic
+    width: 400px
+    height: 400px
+    margin-left: -62%
+    img
+        object-fit: contain !important
+    +max-notebook
+        width: 40vh
+        height: 45vh
+        margin-left: -65%
+    +max-padpro
+        display: none
+.format-block_feature
+    +max-padpro
+        li
+            width: 49% !important
+            margin: 0 !important
+            padding: 15px 30px
+        .f-textSubTitle
+            font-size: 18px
+    +padpro
+        img
+            height: 160px
+            object-fit: contain
+    +max-phone
+        li
+            padding: 15px 10px
+.format-block_list
+    height: 100%
+    background-color: $light-gary
+    ul
+        padding: 20px
+        li
+            border-bottom: 2px solid $white
+            padding: 10px 0
+    b
+        display: inline-block
+        min-width: 64px
+        margin-right: 8px
+    +min-padpro
+        border-radius: 40px 40px 40px 0
+    +max-notebook
+        ul
+            li
+                padding: 8px 0
+
+#buy-now
+    .pic
+        max-width: 440px
+        margin: 0 auto
+
+.feedback-item
+    border-radius: 10px
+    overflow: hidden
+    background-color: $light-yellow
+    margin: 20px 0
+.feedback-item_name
+    background-color: $primary-color
+    color: $white
+    font-weight: 500
+    font-size: 20px
+    padding: 5px 5%
+    +min-padpro
+        clip-path: polygon(0 100%, 100% 100%, 90% 0, 0 0)
+.feedback-item_text
+    padding: 10% 5%
+    line-height: 1.8
+    +elipsis-multi(4)
+    +max-phone
+        padding: 4% 5%
+.feedback-item_pic
+    height: 160px
+    overflow: hidden
+    +min-padpro
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%)
+
+
+@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none)
+    .front
+        z-index: 2
+        /* for firefox 31 */
+        transform: rotateY(0deg) !important
+        background-color: transparent
+
+    /* back, initially hidden pane */
+    .back
+        display: none
+        transform: rotateY(0) !important
+        background-color: transparent
+
+    .flip-container
+        &.flipped
+            .flipper
+                transform: rotateY(0) !important
+            .front
+                display: none
+            .back
+                display: block

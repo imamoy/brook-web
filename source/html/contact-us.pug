@@ -1,0 +1,87 @@
+//- index.pug
+extends ./include/layout.pug
+block plugins-js
+    script(src="scripts/plugins/smtp.js") 
+    script(src="scripts/default/contact.js")
+        
+
+block content
+    main#page.wrapper
+        .page-hero.mini
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center 聯絡我們
+                .page-hero_img
+                    img(src='styles/images/contact-banner.jpg', alt='情境圖')
+        article.page-inner.mx-auto(style='max-width: 960px;')
+            .container
+                p.text-center 如果您對我們的產品有任何疑問或想購買一台，請不要猶豫與我們聯繫。#[br]我們期待著幫助你，並會以最快的速度，我們可以為您服務！
+                .t-red.text-right * 號為必填項目
+                hr.my-3.my-md-4
+                form#contact-form.needs-validation(novalidate)
+                    .row
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='megType') #[span.t-red *] 訊息種類
+                                select#megType.form-control(name='megType' required)
+                                    option(value='') 請選擇
+                                    option(value='1') 經銷需求
+                                    option(value='2') 行銷需求
+                                    option(value='3') 其他
+                                .invalid-feedback 請選擇項目
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='name') #[span.t-red *] 聯絡人
+                                input#name.form-control(name='name' type='text' required)
+                                .invalid-feedback 請填寫內容
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='country') #[span.t-red *] 國家
+                                select#country.form-control(name='country' required)
+                                    option(value='') 請選擇
+                                    +country
+                                .invalid-feedback 請選擇項目
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='address') 聯絡地址
+                                input#address.form-control(name='address' type='text')
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='tel') #[span.t-red *] 聯絡電話
+                                input#tel.form-control(name='tel' type='text' required)
+                                .invalid-feedback 請填寫內容
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='mail') #[span.t-red *] E-mail
+                                input#mail.form-control(name='email' type='mail' required)
+                                .invalid-feedback 請填寫內容
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='typeNumber') #[span.t-red *] 產品型號
+                                input#typeNumber.form-control(name='typeNumber' type='text' required)
+                                .invalid-feedback 請填寫內容
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='main') #[span.t-red *] 主旨
+                                input#main.form-control(name='main' type='text' required)
+                                .invalid-feedback 請填寫內容
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='content') #[span.t-red *] 內容
+                                textarea#content.form-control(name="content", cols="30", rows="10" required)
+                                .invalid-feedback 請填寫內容
+                        //- .col-12
+                        //-     .row.no-gutters
+                        //-         .col-8.col-md-4.mb-2.p-0
+                        //-             .form-group
+                        //-                 label.fw-500.mb-0(for='code') #[span.t-red *] 驗證碼
+                        //-                 input#code.form-control(name='code' type='text' required)
+                        //-                 .invalid-feedback 請輸入驗證碼
+                        //-         .col-4.p-0
+                        //-             .d-flex.align-items-center.pt-3
+                        //-                 img.img-no-full.ml-2(src="styles/images/code.png", alt="" width='100px' onclick='refresh()')
+                        //-                 button.icon-btn-primary
+                        //-                     i.icon-return-1
+                    .d-flex.justify-content-center.mt-3.mt-lg-5
+                        #clear-btn.main-btn.btn-border-primary.mr-2.ml-0 清除
+                        button.main-btn.btn-primary.mr-0.ml-2(type="submit") 送出

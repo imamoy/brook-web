@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+ RewriteBase /
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteRule ^index$ index.html [QSA,PT,L]
+ RewriteRule ^about$ about.html [QSA,PT,L]
+ RewriteRule ^medias$ medias.html [QSA,PT,L]
+ RewriteRule ^media$ media.html [QSA,PT,L]
+ RewriteRule ^activities$ activities.html [QSA,PT,L]
+ RewriteRule ^activity$ activity.html [QSA,PT,L]
+ RewriteRule ^news$ news.html [QSA,PT,L]
+ RewriteRule ^new$ new.html [QSA,PT,L]
+ RewriteRule ^unboxes$ unboxes.html [QSA,PT,L]
+ RewriteRule ^unboxing$ unboxing.html [QSA,PT,L]
+ RewriteRule ^warranty$ warranty.html [QSA,PT,L]
+ RewriteRule ^return$ return.html [QSA,PT,L]
+ RewriteRule ^qa$ qa.html [QSA,PT,L]
+ RewriteRule ^qa-wirecare$ qa-wirecare.html [QSA,PT,L]
+ RewriteRule ^contact-us$ contact-us.html [QSA,PT,L]
+ RewriteRule ^rma$ rma.html [QSA,PT,L]
+ RewriteRule ^privacy$ privacy.html [QSA,PT,L]
+ RewriteRule ^product/wirecare$ product/wirecare.html [QSA,PT,L]
+</IfModule>

@@ -1,0 +1,90 @@
+//- index.pug
+extends ./include/layout.pug
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center 客戶服務
+                .page-hero_img
+                    img(src='styles/images/store.jpg', alt='情境圖')
+        #page-nav
+            ul.nav.justify-content-center
+                //- li.nav-item
+                //-     a.nav-link(href='store') 經銷商據點
+                li.nav-item
+                    a.nav-link.active(href='warranty' rel='nofollow') 保固資訊
+                li.nav-item
+                    a.nav-link(href='return' rel='nofollow') 退換貨流程
+                li.nav-item
+                    a.nav-link(href='qa' rel='nofollow') 常見Q&A
+
+        article.page-inner
+            section
+                .container
+                    h3.f-sc-title.text-center 保固內條款
+                    .editor
+                        h5.f-textTitle.mb-3 適用對象
+                        p Brook品牌下所銷售之產品。
+                        br
+                        h5.f-textTitle.mb-3 保固服務
+                        ol
+                            li 本公司提供服務保證之商品，自購買日期開始提供二年保固期限，並附有保證書或保固貼紙。若因故無法證明購買日期時，依照產品出廠日期計算。
+                            li 經 Brook 授權之經銷商檢驗後，確認因製造上的原因而發生故障，自購買日期起提供免費維修，如無法以零件修復，則以相同 (或相近規格) 型號之產品更換。
+                            li 基於液晶面板製程尚無法確保 100% 無亮點或暗點之特性，含液晶面板之產品恕不提供液晶面板無亮暗點保證。液晶面板的背光模組會隨著使用時間而產生耗損 (包括亮度減損)，其耗損亦不在服務保證範圍內。
+                            li 如超過保固期限，則消費者必須承擔更換整新品之服務費，Brook 視運送需求可能酌收運輸費用。無法接受更換整新品者，Brook 得不受理維修。詳情請參考「延伸保固期」。
+                            li 如有維修狀況，送修產品所取下之零件其所有權歸屬於 Brook；Brook 可使用不同廠商製造之全新或處理過之零件對送修產品進行維修。
+                            li 服務保證僅適用產品所含的硬體零件。任何儲存在產品的資料均不在保固範圍內。在 Brook 提供服務前，您有責任先將產品內置或隨產品交付檢測之儲存媒體 (如硬碟、快閃記憶體等) 的資料製作備份。 Brook 不提供備份服務。
+                            li 保固服務僅限產品本身瑕疵所造成之故障，其他意外或人為因素造成之損壞，Brook 得比照超過保固期限之方式處理。包括但不限於以下狀況：
+                                ul.list-unstyled.ml-4
+                                    li A. 天災、地變、雷擊等意外事故。 
+                                    li B. 錯誤使用、濫用、使用過失 (如液晶破裂、液體滲入、受潮等)、外觀損傷。 
+                                    li C. 未經 Brook 授權之人員所進行之維修、修改、拆裝。
+                            li 本服務保證之範圍不包括任何連同產品提供之消耗性物品及配件產品 (如包裝材、線材、遙控器、說明書等) 之損壞或遺失。
+                            li Brook 否認所有其它未載明於此之服務保證，不論明定或隱含，除了現行法律限制之範圍外，任何商務上或符合特定目的之暗示性保證等，皆不在產品之服務保證內。
+                    hr.my-3.my-md-5
+            section
+                .container
+                    h3.f-sc-title.text-center 延伸保固期
+                    .editor
+                        h5.f-textTitle.mb-3 適用對象
+                        p Brook品牌下所銷售之產品。
+                        br
+                        h5.f-textTitle.mb-3 保固服務
+                        ol
+                            li 「延伸保固期」意指產品已經超過了保固期限之後，Brook 仍可為特定產品提供維修更換服務之期限。
+                            li 對於適用「延伸保固期」的產品，Brook的使用者可將故障品或維修品交給Brook代理商或零售批發商，並以優惠價換購到整新品。整個換購過程中，視運送需求可能酌收運輸費用。
+                            li 換購價格以當地代理商或零售批發商所示為準。
+                            li 販售給使用者的Brook整新品會使用特別的包裝以示與新品之間的區別。
+                            li Brook整新品均提供三個月保固期。
+                        br
+                        h5.f-textTitle.mb-3 延伸保固期清單
+                        p ※料號記載於包裝背面，維修退換運費另計。
+                    .collapse-box.mt-4
+                        .collapse-item
+                            .collapse-item-title.d-flex.align-items-center.justify-content-between
+                                h5 居家安全
+                                i.icon-add.open
+                                i.icon-less.close
+                            .collapse-item-inner.warranty-inner
+                                table.main-table.rwd-table
+                                    thead
+                                        tr
+                                            th(style='min-width: 140px;') 產品名稱
+                                            th(style='min-width: ;') 料號
+                                            th(style='min-width: 200px;') 產品圖樣
+                                            th(style='min-width: 120px;') 過保維修價
+                                    tbody.extend-inner
+                                        tr
+                                            td(data-th='產品名稱') WIRECARE
+                                            td(data-th='料號') EFM0009141
+                                            td(data-th='產品圖樣') 
+                                                .warranty-pic
+                                                    img.img-h100(src="styles/images/wirecare-product.png", alt="")
+                                            td(data-th='過保維修價')
+                    hr.my-3.my-md-5
+            section
+                .container
+                    h3.f-sc-title.text-center.mb-3.mb-md-4 如何取得延伸保固期
+                    p Brook用戶請參考#[a.t-primary(href='return' title='退換貨流程') 退換貨流程]後，依需求選擇經銷商退換貨或透過Brook退換貨，進一步取得關於整新品服務的資訊。

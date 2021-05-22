@@ -1,0 +1,69 @@
+//- index.pug
+extends ./include/layout.pug
+
+block plugins-js
+    //- script(src="scripts/plugins/slick.js")
+    script(src="scripts/data/qa.js") 
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center 客戶服務
+                .page-hero_img
+                    img(src='styles/images/store.jpg', alt='情境圖')
+        #page-nav
+            ul.nav.justify-content-center
+                //- li.nav-item
+                //-     a.nav-link(href='store') 經銷商據點
+                li.nav-item
+                    a.nav-link(href='warranty') 保固資訊
+                li.nav-item
+                    a.nav-link(href='return') 退換貨流程
+                li.nav-item
+                    a.nav-link.active(href='qa') 常見Q&A
+
+        article.page-inner.pb-0
+            section.mb-3.mb-md-5
+                .container
+                    .row
+                        .col-2.col-md-2.pr-0
+                            ul.list-unstyled.cutover.pt-3
+                                li.active.mb-3
+                                    a(href='#qa-Section1') 一般問題
+                                li.mb-3
+                                    a(href='#qa-Section2') 購買問題
+                                li.mb-3
+                                    a(href='#qa-Section3') 宅電守護
+                                li.mb-3
+                                    a(href='#qa-Section4') 其他服務
+
+                        .col-10.col-md-10
+                            #qa-Section1.cutover-in.show
+                                //- +collapse-item('Brook Livin 是做什麼的？','Brook Livin 挖掘人們在生活中潛在需求，打造生活的安全網。以20年的研發技術為後盾，致力開發生活科技產品，在這瞬息萬變的時代，如同變色龍般發揮創意，以滿足人們對於生活品質的追求。')
+                            #qa-Section2.cutover-in
+                            #qa-Section3.cutover-in
+                            #qa-Section4.cutover-in
+                                
+            section.bg-second.text-center.py-3.py-md-5
+                .container
+                    h5.f-sc-title.mb-3.mb-md-4 找不到您要尋找的內容？
+                    p 在上方各類問題都找不到您要的內容嗎，可聯繫當地經銷商，讓他們協助您任何疑問；或是填寫技術支援表單，讓我們為您尋找最佳解答。
+                    .row.justify-content-md-center.mt-3.mt-md-5
+                        //- .col-12.col-md-6.col-xl-4
+                        //-     .qa-card.p-4
+                        //-         .row
+                        //-             .col-12.col-lg-4
+                        //-                 i.icon-store
+                        //-             .col-12.col-lg-8
+                        //-                 p.mb-4 查詢您當地經銷商據點，讓經銷商為您障礙排除。
+                        //-                 a.main-btn.btn-primary(href='store' title='經銷商據點') 經銷商據點
+                        .col-12.col-md-6.col-xl-4
+                            .qa-card.p-4
+                                .row
+                                    .col-12.col-lg-4
+                                        i.icon-edit-paper
+                                    .col-12.col-lg-8
+                                        p.mb-4 請填寫下方的技術支援表單，讓Brook為您尋找最佳解答。
+                                        a.main-btn.btn-primary(href='rma' title='技術支援') 技術支援
