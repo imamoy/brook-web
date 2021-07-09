@@ -1,0 +1,116 @@
+//- index.pug
+extends include/layout.pug
+block plugins-js
+    script(src="../scripts/plugins/smtp.js") 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.js") 
+    script(src="../scripts/default/rma_en.js")
+
+block content
+    main#page.wrapper(aria-live='polite' aria-atomic='true' style='position: relative;')
+        .page-hero.mini
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center Contact RMA Support
+                .page-hero_img
+                    img(src='../styles/images/contact-banner.jpg', alt='情境圖')
+        article.page-inner.mx-auto(style='max-width: 960px;')
+            .container
+                p.text-center Please fill out the following form. Brook will look into your service request as soon as possible.
+                .t-red.text-right Columns marked with * cannot be empty
+                hr.my-3.my-md-4
+                form#rma-form.needs-validation(novalidate)
+                    .row
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='store') #[span.t-red *] Purchased From
+                                input#store.form-control(type='text' name='store' required)
+                                .invalid-feedback Please Enter Text
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='productType') #[span.t-red *] Product Series
+                                select#productType.form-control(name='productType' required)
+                                    option(value="") Select 
+                                    option(value='1') Home Safety
+                                .invalid-feedback Please Select Item
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='product') #[span.t-red *] Product
+                                select#product.form-control(name="product" required)
+                                    option(value="") Select
+                                    option(value='1') WIRECARE
+                                .invalid-feedback Please Select Item
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='question') #[span.t-red *] Request Category
+                                select#question.form-control(name='question' required)
+                                    option(value="") Select
+                                    option(value='1') Compatibility
+                                    option(value='2') Firmware Update Support
+                                    option(value='3') Damage
+                                .invalid-feedback Please Select Item
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='buyTime') #[span.t-red *] Purchase date?
+                                input#buyTime.form-control(type='text' name='buyTime' required)
+                                .invalid-feedback Please Enter Text
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='single') #[span.t-red *] Product brand and model?
+                                textarea#single.form-control(name="single", cols="30", rows="10" placeholder='(brand) + (model)' required)
+                                .invalid-feedback Please Enter Text
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='detail') #[span.t-red *] Description
+                                textarea#detail.form-control(name="detail", cols="30", rows="10" placeholder='You can post the product web page link here' required)
+                                .invalid-feedback Please Enter Text
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='main') #[span.t-red *] Subject
+                                input#main.form-control(type='text' name='main' required)
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='tel') Upload the Image of the #[span.t-red Information behind the Product] (JPG, PNG, BMP, 3 images Maximum within 15MB in total)
+                                .form-group.row
+                                    .col-12.col-md-6.mb-2
+                                        input#files.form-control-file.my-2(type='file' name='files' accept='image/png, image/jpeg, image/bmp' multiple required)
+                                        .invalid-feedback.file-feedback Please upload at least 1 file
+                                        
+                    hr.my-3.my-md-4.my-mt-0
+                    .f-textTitle.mb-3 Contact
+                    .row
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='name') #[span.t-red *] Name
+                                input#name.form-control(type='text' name='name' required)
+                                .invalid-feedback Please Enter Text
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='country') #[span.t-red *] Country
+                                select#country.form-control(name='country' required)
+                                    option(value='') Select
+                                    +country
+                                .invalid-feedback Please Select Item
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='address') Address
+                                input#address.form-control(type='text' name='address')
+                                .invalid-feedback Please Enter Text
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='tel') #[span.t-red *] Phone
+                                input#tel.form-control(type='text' name='tel' required)
+                                .invalid-feedback Please Enter Text
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='mail') #[span.t-red *] E-mail
+                                input#mail.form-control(type='mail' name='mail' required)
+                                .invalid-feedback Please Enter Text
+                        //- .col-12.col-md-6.mb-2
+                        //-     .form-group
+                        //-         label.fw-500.mb-0(for='tel') #[span.t-red *] 驗證碼
+                        //-         .d-flex.align-items-center
+                        //-             input#tel.form-control(type='text' required)
+                        //-             img.img-no-full.ml-2(src="styles/images/code.png", alt="" width='100px')
+                    .d-flex.justify-content-center.mt-3.mt-lg-5
+                        #clear-btn.main-btn.btn-border-primary.mr-2.ml-0 Reset
+                        button.main-btn.btn-primary.mr-0.ml-2(type="submit") Submit

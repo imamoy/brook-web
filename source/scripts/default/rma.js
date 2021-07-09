@@ -95,9 +95,9 @@ $('#files').change(function () {
                                     .then(function (content) {
                                         var dataUri = "data:application/x-zip-compressed;base64," + content;
                                         Email.send({
-                                            SecureToken : "b923fb17-1328-4b68-bdf6-2a4081bd94b1",
-                                            To : ['livin_rma@brookaccessory.com','brooklivin@gmail.com','brookbrook048@gmail.com'],
-                                            From : "Brook Livin<rd@xzfls.me>",
+                                            SecureToken : "b3015307-af62-4395-8019-796a773045ac",
+                                            To : ['livin@brookaccessory.com','brooklivin@gmail.com','brookbrook048@gmail.com'],
+                                            From : "Brook Livin<rd1@brookaccessory.com>",
                                             Subject : "RMA維修保固需求",
                                             Body: body,
                                             Attachments: [{

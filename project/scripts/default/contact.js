@@ -41,9 +41,9 @@
                         '<b>內容</b>  ' + content + '</html>';
                     
                     Email.send({
-                        SecureToken : "b923fb17-1328-4b68-bdf6-2a4081bd94b1",
+                        SecureToken : "b3015307-af62-4395-8019-796a773045ac",
                         To : ['livin@brookaccessory.com','brooklivin@gmail.com','brookbrook048@gmail.com'],
-                        From : "Brook Livin<rd@xzfls.me>",
+                        From : "Brook Livin<rd1@brookaccessory.com>",
                         Subject : "Contact Us",
                         Body : body
                     }).then(function (message) {

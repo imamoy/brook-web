@@ -1,0 +1,87 @@
+//- index.pug
+extends include/layout.pug
+block plugins-js
+    script(src="../scripts/plugins/smtp.js") 
+    script(src="../scripts/default/contact_en.js")
+        
+
+block content
+    main#page.wrapper
+        .page-hero.mini
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center Contact Us
+                .page-hero_img
+                    img(src='../styles/images/contact-banner.jpg', alt='情境圖')
+        article.page-inner.mx-auto(style='max-width: 960px;')
+            .container
+                p.text-center If you have any questions about our product or would like to purchase, please do not hesitate to contact us.#[br]We are looking forward to providing our service for you!
+                .t-red.text-right Columns marked with * cannot be empty
+                hr.my-3.my-md-4
+                form#contact-form.needs-validation(novalidate)
+                    .row
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='megType') #[span.t-red *] Message Type
+                                select#megType.form-control(name='megType' required)
+                                    option(value='') Select
+                                    option(value='1') Retail Needs
+                                    option(value='2') Marketing Needs
+                                    option(value='3') Other
+                                .invalid-feedback Please Select Item
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='name') #[span.t-red *] Contact
+                                input#name.form-control(name='name' type='text' required)
+                                .invalid-feedback Please Enter Text
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='country') #[span.t-red *] Country
+                                select#country.form-control(name='country' required)
+                                    option(value='') Select
+                                    +country
+                                .invalid-feedback Please Select Item
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='address') Address
+                                input#address.form-control(name='address' type='text')
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='tel') #[span.t-red *] Phone
+                                input#tel.form-control(name='tel' type='text' required)
+                                .invalid-feedback Please Enter Text
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='mail') #[span.t-red *] E-mail
+                                input#mail.form-control(name='email' type='mail' required)
+                                .invalid-feedback Please Enter Text
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='typeNumber') #[span.t-red *] Product Model Number
+                                input#typeNumber.form-control(name='typeNumber' type='text' required)
+                                .invalid-feedback Please Enter Text
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='main') #[span.t-red *] Subject
+                                input#main.form-control(name='main' type='text' required)
+                                .invalid-feedback Please Enter Text
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='content') #[span.t-red *] Message
+                                textarea#content.form-control(name="content", cols="30", rows="10" required)
+                                .invalid-feedback Please Enter Text
+                        //- .col-12
+                        //-     .row.no-gutters
+                        //-         .col-8.col-md-4.mb-2.p-0
+                        //-             .form-group
+                        //-                 label.fw-500.mb-0(for='code') #[span.t-red *] 驗證碼
+                        //-                 input#code.form-control(name='code' type='text' required)
+                        //-                 .invalid-feedback 請輸入驗證碼
+                        //-         .col-4.p-0
+                        //-             .d-flex.align-items-center.pt-3
+                        //-                 img.img-no-full.ml-2(src="../styles/images/code.png", alt="" width='100px' onclick='refresh()')
+                        //-                 button.icon-btn-primary
+                        //-                     i.icon-return-1
+                    .d-flex.justify-content-center.mt-3.mt-lg-5
+                        #clear-btn.main-btn.btn-border-primary.mr-2.ml-0 Reset
+                        button.main-btn.btn-primary.mr-0.ml-2(type="submit") Submit

@@ -1,0 +1,39 @@
+//- index.pug
+extends include/layout.pug
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center テクノロジーを通して安心を#[br]生活の小さな幸せをお届けします
+                .page-hero_img
+                    img(src='../styles/images/about-banner.jpg', alt='情境圖')
+
+        article.page-inner.pt-5.pb-0
+            section.text-center
+                .container
+                    .d-flex.flex-column.flex-md-row.justify-content-center.align-items-center.mb-4
+                        span.mx-3.d-inline-block
+                            img.img-no-full(src='../styles/images/brook-g.png', alt='' style='width:100%;max-width:200px;')
+                    p.px-4.px-md-0 Brook Livinはゼロプラステクノロジーから誕生したライフスタイルブランドです。ゼロプラステクノロジーの20年に渡る研究開発の創造性と情熱が込められています。#[br]私たちは生活の細部までこだわり、生活の不便さを改善し、テクノロジーを取り入れた快適な生活環境を作り、この素晴らしい経験を皆様にご提供します。
+                    .after-h-line.mx-auto.mt-3.mt-md-4
+            section
+                .row.no-gutters
+                    .col-12.col-lg-6.order-lg-1
+                        .about-pic
+                            img.img-fluid(src='../styles/images/about-1.jpg', alt='')
+                    .col-12.col-lg-6.p-4.px-lg-5.py-lg-0.p-xl-5.order-lg-2
+                        .about-text
+                            //- .t-primary 2017年
+                            h4.f-sc-title.mb-3 ニーズを把握する
+                            p Brook Livinにとって、ユーザーの一人一人が特別な存在です。それぞれのニーズに耳を傾け、悩みを理解し、生活の中の些細な問題も解決します。皆様のより良い生活のお手伝いができることを、私たちはとても光栄に思います。
+                .row.no-gutters
+                    .col-12.col-lg-6.order-lg-2
+                        .about-pic
+                            img.img-fluid(src='../styles/images/about-2.jpg', alt='')
+                    .col-12.col-lg-6.p-4.px-lg-5.py-lg-0.p-xl-5.order-lg-1
+                        .about-text
+                            //- .t-primary 2020年 旗下品牌
+                            h4.f-sc-title.mb-3 生活の小さな幸せをお届けします
+                            p Brook Livinは家庭内の安全性向上や、より良い生活の実現に向け、オリジナリティ溢れる製品づくりを通し貢献していきたいと考えています。生活の様々な場面が小さな幸せで満たされ、人生により多くの幸せを添えることができると信じています。

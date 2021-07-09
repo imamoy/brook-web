@@ -1,0 +1,350 @@
+//- index.pug
+extends ../include/product-layout.pug
+
+block page-css
+    link(rel='stylesheet' type='text/css' href='../../../styles/wirecare-info-en.css')
+
+block plugins-js
+    script(src="../../scripts/default/wirecare-info_world.js")
+
+block content
+    main#wirecare-info.wrapper
+        .block-main-banner
+            .content
+                img(src='../../styles/images/wirecare-info/reuseImages/wireCare3.png' alt='' srcset='')
+                p Check The Wire Status With Just One Press.
+                .click-button
+                    .slide
+                        .slide-dot
+                            .dot
+                    span Click for more
+            .block-demo-video2
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/UIcJ9TRAUEo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen')
+        .block-secret
+            .block-secret-warning
+                .container
+                    .subtitle Discover an amazing secret.
+                    .title
+                        span In the era of massive power consumption,
+                        br.d-none.d-sm-block
+                        span.ml-1 the secret within your daily usage of power is…
+                    .condition
+                        .examination
+                            .product
+                                .begin
+                                    img(src='../../styles/images/wirecare-info/reuseImages/redfinger.svg' alt='')
+                                    span Start testing
+                        .list.d-flex.w-100.justify-content-around
+                            .condition-item
+                                div
+                                    span Undetectable
+                                    br
+                                    span Socket Aging
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/exclamation.svg' alt='')
+                                span.warning High-temperature
+                            .condition-item
+                                div
+                                    span Dusty
+                                    br
+                                    span Slacking Socket
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/exclamation.svg' alt='')
+                                span.warning Electrical wire fire
+                            .condition-item
+                                div
+                                    span Common for Old Houses
+                                    br
+                                    span Complicated Structures
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/exclamation.svg' alt='')
+                                span.warning Overloading
+                        .wire-plug
+                            .wire
+                                .wire--brand
+                                .wire--gray
+                            .position-relative
+                                img.d-block(src='../../styles/images/wirecare-info/reuseImages/plug.svg' alt='')
+                                .wire-clickme.position-absolute.text-center.w-100
+                                    | Click Me
+            .block-secret-check
+                .container
+                    .subtitle Discover an amazing secret.
+                    .title
+                        span A big secret behind the sockets
+                        br
+                        span Risk factor of power usage
+                        .message
+                            img(src='../../styles/images/wirecare-info/reuseImages/message-circle-en.png' alt='')
+                    .condition
+                        .examination
+                            .product
+                                .finished
+                                    img(src='../../styles/images/wirecare-info/reuseImages/greenfinger.svg' alt='')
+                                    span Finish testing
+                        .list.d-flex.w-100.justify-content-around
+                            .condition-item
+                                div
+                                    span Undetectable
+                                    br
+                                    span Socket Aging
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/check.svg' alt='')
+                                span.check High-temperature
+                            .condition-item
+                                div
+                                    span Dusty
+                                    br
+                                    span Slacking Socket
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/check.svg' alt='')
+                                span.check Electrical wire fire
+                            .condition-item
+                                div
+                                    span Common for Old Houses
+                                    br
+                                    span Complicated Structures
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/check.svg' alt='')
+                                span.check Overloading
+                        .wire-plug
+                            .wire
+                            img(src='../../styles/images/wirecare-info/reuseImages/plug-check.svg' alt='')
+        .block-video
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/32TxQvF7Vsc' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen')
+        .block-newLiving
+            .content
+                p We offer
+                p A new life of safety
+        .block-warning
+            .container
+                .barChart
+                    .barChart-content
+                        .subtitle
+                            | Are you aware of the power usage safety in your house?
+                        .title
+                            span Electrical appliances is
+                            br
+                            span the Top 3 fire cause for years
+                        .content
+                            p
+                                b 1. Ignored fire source: 9,845 cases (31%)
+                            p
+                                b 2. Cooking: 3,591cases (14%)
+                            p
+                                b 3. Electrical appliances: 2,871cases (13%)
+                    .barChart-chart
+                        img.chart-mobile(src='../../styles/images/wirecare-info/mobile/barChart-en.png' alt='')
+                        img.chart-desktop(src='../../styles/images/wirecare-info/desktop/barChart-en.png' alt='')
+                .pieChart
+                    .pieChart-content
+                        .title
+                            span Old houses could be
+                            br
+                            span
+                            | a major cause of FIRE ACCIDENT
+                        .content
+                            //
+                                <p><b>Rate of houses over 30 years old in Taiwan</b></p>
+                                <p><b>206 thousand in 2009, about 26% of all</b></p>
+                                <p><b>423 thousand in 2009, about 48% of all</b></p>
+                            div(style='width:95%;max-width:589px')
+                                p
+                                    b For example, rate of houses over 30 years old in Taiwan on Year 2009 take
+                                p
+                                    b 206,000 units on Year 2009, about 26% of all
+                                p
+                                    b 423,000 units on Year 2019, about 48% of all
+                            .percentage
+                                | A rapid increase of 22% units of old houses in 10 years
+                            p
+                                b Data source: Ministry of Interior in 2019
+                    .pieChart-chart
+                        div
+                            .chart
+                                p 2009
+                                img(src='../../styles/images/wirecare-info/reuseImages/pieChart2009.svg' alt='' srcset='')
+                            .list
+                                .list--gray
+                                    .gray
+                                        .dot
+                                        span 74%
+                                    span Other
+                                .list--brand
+                                    .brand
+                                        .dot
+                                        span 26%
+                                    span.text-nowrap Old houses
+                        div
+                            .chart
+                                p 2019
+                                img(src='../../styles/images/wirecare-info/reuseImages/pieChart2019.svg' alt='' srcset='')
+                            .list
+                                .list--gray
+                                    .gray
+                                        .dot
+                                        span 52%
+                                    span Other
+                                .list--brand
+                                    .brand
+                                        .dot
+                                        span 48%
+                                    span.text-nowrap Old houses
+        .block-slick
+            .slick-item.slick-item1
+                .container
+                    .subtitle One press testing
+                    .title Crisis radar
+                    .content
+                        p Inspect all socket status independently
+                        p Not leaving out any spot!
+            .slick-item.slick-item2
+                .container
+                    .subtitle Rapid testing
+                    .title 10 seconds for 10 years of safety
+                    .content
+                        p Understand your power usage quality
+                        p Designed and manufactured in Taiwan!
+            .slick-item.slick-item3
+                .container
+                    .subtitle Small in size
+                    .title Safety helper
+                    .content
+                        p Easy to carry and storage
+                        br
+            .slick-item.slick-item4
+                .container
+                    .subtitle Easy indication through light
+                    .title Power traffic light
+                    .content
+                        p Data simplification
+                        p Get started easily!
+        .block-step
+            .step-item.step-item1
+                .container
+                    .subtitle Easy steps
+                    .step-item-title
+                        .title.text-nowrap 1: Plug in WIRECARE
+            .step-item.step-item2
+                .container
+                    .subtitle Easy steps
+                    .step-item-title
+                        .title.text-nowrap 2: Wait for 10 seconds
+            .step-item.step-item3
+                .container
+                    .subtitle Easy steps
+                    .step-item-title
+                        .title.text-nowrap 3: Results shown with the LED
+            .step-item.step-item4
+                .container
+                    .subtitle Easy steps
+                    .step-item-title
+                        .title.text-nowrap
+                            | 4: Press "Re-test" for re-testing
+        .block-light
+            .container
+                .subtitle Test at any time
+                .title Power safety warning light
+                .undertext Check power safety at any time
+                .light-box-desktop
+                    img.light-animate(src='../../styles/images/wirecare-info/desktop/light-en.gif' alt='')
+                .light-box-mobile
+                    img.light-animate(src='../../styles/images/wirecare-info/mobile/light-en.gif' alt='')
+        .block-certification
+            .container
+                .subtitle Verified by international certifications
+                .title Safety certification
+                .certification
+                    img(src='../../styles/images/003_CE-左-en.png' alt='')
+                    img(src='../../styles/images/002_FCC-中-en.png' alt='')
+                    img(src='../../styles/images/001_RoHS-右-en.png' alt='')
+        .block-recommendation
+            .container
+                .subtitle
+                    | Join our product review program and let us hear from you!
+                .title Recruit experiencers
+                .recommendation
+                    a(href='https://livin.brookaccessory.com/unboxing.html' target='blank')
+                        img(src='../../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+                        p 3C達人 廖阿輝
+                    a(href='https://livin.brookaccessory.com/unboxing.html' target='blank')
+                        img(src='../../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+                        p 3C達人 廖阿輝
+                    a(href='https://livin.brookaccessory.com/unboxing.html' target='blank')
+                        img(src='../../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+                        p 3C達人 廖阿輝
+                    a(href='https://livin.brookaccessory.com/unboxing.html' target='blank')
+                        img(src='../../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+                        p 就差你1人
+        .block-intelligence
+            .content
+                p Protecting your family
+                p through power usage safty
+        .block-spec
+            .container
+                img.product.order-2(src='../../styles/images/wirecare-info/reuseImages/product.png' alt='')
+                .spec-list.order-1
+                    .title Product Specification
+                    .spec
+                        p Color: White
+                        p Plug: US-type outlets, folding plug
+                        p Product Dimensions: 10cm x 10cm x 3.5cm
+                        p Voltage Detection Range: 100~240V
+                        p Frequency Detection Range: 50~60Hz
+                        p Material: PC
+                        p Weight: about 190 g
+                        p Country of Origin: Made In Taiwan
+                        p Product Price : 
+                            span.price NT$2,580
+                .ref.d-flex.justify-content-between.order-3
+                    .ref-item
+                        img(src='../../styles/images/wirecare-info/reuseImages/small1.svg' alt='')
+                        p Foldable
+                    .ref-item
+                        img(src='../../styles/images/wirecare-info/reuseImages/small2.svg' alt='')
+                        p Made in Taiwan
+                    .ref-item
+                        img(src='../../styles/images/wirecare-info/reuseImages/small3.svg' alt='')
+                        p Simplistic
+                    .ref-item
+                        img(src='../../styles/images/wirecare-info/reuseImages/small4.svg' alt='')
+                        p Easy to storage
+        .block-info
+            .container
+                .title News
+                .info-card
+                    .info-card-item
+                        a(href='https://www.zeczec.com/projects/wirecare?r=6a7b61f2d9' target='blank')
+                            img(src='../../styles/images/wirecare-info/reuseImages/info1-en.jpg' alt='')
+                            .card-title.faq
+                                | 2,166 Backer's Choice!
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/05/24
+                    .info-card-item
+                        a(href='../store.html' target='blank')
+                            img(src='../../styles/images/wirecare-info/reuseImages/info3.png' alt='')
+                            .card-title.faq Retail Location
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/04/07
+                    .info-card-item
+                        a(href='../qa-wirecare' target='blank')
+                            img(src='../../styles/images/wirecare-info/reuseImages/info4.png' alt='')
+                            .card-title.faq FAQ
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/05/10
+                    .info-card-item
+                        a(href='https://www.facebook.com/brooklivin' target='blank')
+                            img(src='../../styles/images/wirecare-info/reuseImages/info2.png' alt='')
+                            .card-title.safetyBrands
+                                | Support power safety brands!
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/05/10
+                .footer
+                    img(src='../../styles/images/wirecare-info/reuseImages/footer-logo.png' alt='')
+                    img(src='../../styles/images/wirecare-info/reuseImages/footer-wirecare.png' alt='')
+
+

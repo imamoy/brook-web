@@ -169,8 +169,10 @@ $(document).ready(function(){
         var scroll = $(window).scrollTop();
         if (scroll > 200) {
             $("#header").addClass('active');
+            $(".goTop").addClass('active');
         } else {
             $("#header").removeClass('active');
+            $(".goTop").removeClass('active');
         }
     });
     $('.lang-btn').click(function () {
@@ -234,7 +236,7 @@ $(document).ready(function(){
         });
     });
 
-    $(".jq-goTop").click(function (e) {
+    $(".goTop").click(function (e) {
         e.preventDefault();
         $("html,body").animate({
             scrollTop: 0,

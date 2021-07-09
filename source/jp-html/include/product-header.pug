@@ -1,0 +1,61 @@
+header#header
+    .container
+        .row
+            .col-6.col-lg-4.text-left.d-lg-flex.align-items-center
+                a.logo(href='../index')
+                    h1.logo-pic
+                        img(src="../../../styles/images/brook-logo.png", alt="")
+            .col-6.col-lg-8.text-right.d-flex.justify-content-end.align-items-center
+                .menu
+                    ui.list-inline
+                        li.list-inline-item
+                            a(href='../about' title='ブランド紹介' rel='nofollow') ブランド紹介
+                        li.list-inline-item
+                            .product-hover
+                                .product-toggle.inner-menu-toggle 製品紹介
+                                .product-sub-menu.text-left
+                                    .container
+                                        .col-12
+                                            .fw-600.t-primary.f-text-big.mb-2 家庭内の安全
+                                            ul#product-menu-nav.nav.flex-column
+                                                li.nav-item.active
+                                                    a.nav-link.f-text-big.pl-0(href="product/wirecare" title='WIRECARE住宅電気の守護者' rel='nofollow') WIRECARE住宅電気の守護者
+                                                    img.product-menu-pic.img-no-full.img-h100(src="../styles/images/wirecare-product-2.png", alt="")
+                                                li.nav-item
+                                                    a.nav-link.f-text-big.pl-0(href="https://www.brookaccessory.com/Brook_Livin/Products/UV_SHELL_Box/japan.html" target="_blank" title='BROOK UV除菌ケース' rel='nofollow') BROOK UV除菌ケース
+                                                    img.product-menu-pic.img-no-full.img-h100(src='../styles/images/product-1.png', alt="")
+                        li.list-inline-item
+                            .menu-hover
+                                .menu-toggle.inner-menu-toggle 最新ニュース
+                                .menu-sub-menu
+                                    a.news-link(href="news") 品牌消息
+                                    a.medias-link(href='../medias' title='メディア紹介' rel='nofollow') メディア紹介
+                                    a.activities-link(href='../activities' title='イベント' rel='nofollow') イベント
+                                    a.unboxes-link(href="unboxes") 開封の儀
+                        li.list-inline-item
+                            a(href='../' target="_blank") オンラインストア
+                        li.list-inline-item
+                            .menu-hover
+                                .menu-toggle.inner-menu-toggle お客様サポート
+                                .menu-sub-menu
+                                    a(href="store") 取扱店舗 
+                                    a(href='../warranty' title='保証について' rel='nofollow') 保証について
+                                    a(href='../return' title='返品・交換方法' rel='nofollow') 返品・交換方法
+                                    a(href='../qa' title='FAQ' rel='nofollow') FAQ
+                .lang-row
+                    button.lang-btn
+                        i.icon-earth
+                        span 日本語
+                        i.icon-arrow-b
+                    .lang-menu
+                        ui.list-unstyled
+                            li
+                                a(href='../index') 日本語
+                            li
+                                a(href='../../index') 繁體中文
+                            li
+                                a(href='../../en/index') English
+                .hamburger
+                    span.line
+                    span.line
+                    span.line

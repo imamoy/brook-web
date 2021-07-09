@@ -1,0 +1,69 @@
+//- index.pug
+extends include/layout.pug
+
+block plugins-js
+    //- script(src="scripts/plugins/slick.js")
+    script(src="../scripts/data/qa_en.js") 
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center Support
+                .page-hero_img
+                    img(src='../styles/images/store.jpg', alt='情境圖')
+        #page-nav
+            ul.nav.justify-content-center
+                li.nav-item
+                    a.nav-link(href='store' rel='nofollow') Retailers
+                li.nav-item
+                    a.nav-link(href='warranty' rel='nofollow') Warranty
+                li.nav-item
+                    a.nav-link(href='return' rel='nofollow') RMA
+                li.nav-item
+                    a.nav-link.active(href='qa' rel='nofollow') FAQ
+
+        article.page-inner.pb-0
+            section.mb-3.mb-md-5
+                .container
+                    .row
+                        .col-3.col-md-2.pr-0
+                            ul.qa-nav.list-unstyled.cutover.pt-3
+                                li.mb-3
+                                    a(href='#qa-Section1') GENERAL
+                                li.mb-3
+                                    a(href='#qa-Section2') PURCHASE
+                                li.active.mb-3
+                                    a(href='#qa-Section3') WIRECARE
+                                li.mb-3
+                                    a(href='#qa-Section4') SERVICE
+
+                        .col-9.col-md-10
+                            #qa-Section1.cutover-in
+                                //- +collapse-item('Brook Livin 是做什麼的？','Brook Livin 挖掘人們在生活中潛在需求，打造生活的安全網。以20年的研發技術為後盾，致力開發生活科技產品，在這瞬息萬變的時代，如同變色龍般發揮創意，以滿足人們對於生活品質的追求。')
+                            #qa-Section2.cutover-in
+                            #qa-Section3.show.cutover-in
+                            #qa-Section4.cutover-in
+                                
+            section.bg-second.text-center.py-3.py-md-5
+                .container
+                    h5.f-sc-title.mb-3.mb-md-4 Cannot find answers?
+                    p If you are not able to find the answers to your questions, you can contact your local retailer for assistance, or you can file a technical support request and let Brook answer your questions online.
+                    .row.justify-content-md-center.mt-3.mt-md-5
+                        //- .col-12.col-md-6.col-xl-4
+                        //-     .qa-card.p-4
+                        //-         .row
+                        //-             .col-12.col-lg-4
+                        //-                 i.icon-store
+                        //-             .col-12.col-lg-8
+                        //-                 p.mb-4 查詢您當地經銷商據點，讓經銷商為您障礙排除。
+                        //-                 a.main-btn.btn-primary(href='store' title='經銷商據點') 經銷商據點
+                        .col-12.col-md-6
+                            .qa-card.p-4
+                                .row
+                                    .col-12.col-lg-4
+                                        i.icon-edit-paper
+                                    .col-12.col-lg-8
+                                        p.mb-4 Please fill in the form below for a technical support request. Brook will help you find the best answer.
+                                        a.main-btn.btn-primary(href='rma' title='Technical Support') Technical Support

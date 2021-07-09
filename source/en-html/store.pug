@@ -1,0 +1,54 @@
+//- index.pug
+extends include/layout.pug
+block plugins-js
+    //- script(src="scripts/plugins/slick.js")
+    script(src="../scripts/data/stores_en.js") 
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center Support
+                .page-hero_img
+                    img(src='../styles/images/store.jpg', alt='情境圖')
+        #page-nav
+            ul.nav.justify-content-center
+                li.nav-item
+                    a.nav-link.active(href='store' rel='nofollow') Retailers
+                li.nav-item
+                    a.nav-link(href='warranty' rel='nofollow') Warranty
+                li.nav-item
+                    a.nav-link(href='return' rel='nofollow') RMA
+                li.nav-item
+                    a.nav-link(href='qa' rel='nofollow') FAQ
+
+        article.page-inner
+            .filter-row.mb-3.mb-lg-4
+                .container
+                    .row.justify-content-center
+                        .col-6.col-md-3.col-xl-2
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select
+                                        option Country
+                        .col-6.col-md-3.col-xl-2
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select
+                                        option Region
+                        .col-6.col-md-3.col-xl-2.mt-4.mt-md-0
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select
+                                        option Category
+                                        option Home Safety
+                        .col-6.col-md-3.col-xl-2.mt-4.mt-md-0
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select
+                                        option Products
+                                        option WIRECARE
+            section
+                .container#store-inner
+            //- +page-navigation

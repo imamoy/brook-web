@@ -1,0 +1,67 @@
+//- index.pug
+extends include/new-layout.pug
+block meta
+    title 水電施工-溝通很重要-其實不用諜對諜 - Brook Livin
+    meta(name='description' content='企業與家庭的電器施工，為何水電師傅沒有照要求執行? 廠商報價這樣，會不會太貴?')
+    meta(property='image' content='https://livin.brookaccessory.com/styles/images/act-1-list.jpg')
+    meta(property='og:title' content='水電施工-溝通很重要-其實不用諜對諜 - Brook Livin')
+    meta(property='og:url' content='https://livin.brookaccessory.com/activity-1')
+    meta(property='og:image' content='https://livin.brookaccessory.com/styles/images/act-1-list.jpg')
+    meta(property='og:description' content='企業與家庭的電器施工，為何水電師傅沒有照要求執行? 廠商報價這樣，會不會太貴?')
+    meta(property='og:site_name' content='水電施工-溝通很重要-其實不用諜對諜 - Brook Livin')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 水電施工-溝通很重要-其實不用諜對諜
+                        .row
+                            .col-6.text-left
+                                a.tag.t-primary.mr-2(href='#' title='實作派電子實驗室') #實作派電子實驗室
+                                a.tag.t-primary.mr-2(href='#' title='StrongPiLab') #StrongPiLab
+                                a.tag.t-primary.mr-2(href='#' title='用電安全') #用電安全
+                                a.tag.t-primary.mr-2(href='#' title='企業與家庭') #企業與家庭
+                                a.tag.t-primary.mr-2(href='#' title='水電施工') #水電施工
+                            .col-6.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2021/5/10
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            p 在企業與家庭的水電施工案例，光換電線，就有好多細節要注意，可不是單單只有換電線而已。
+                            br
+                            p 其實你換的，是系統。
+                            br
+                            p 至於要怎麼換，大家可真的要做點功課想清楚，將來在跟水電師傅討論的時候，才能邏輯清楚、目標明確，人家也才好配合。
+                            p 業主有要求，也要現場環境條件允許才辦得到；如果客觀條件無法做到，事前雙方又沒溝通好，就直接說廠商偷工減料，這樣就不好了。
+                            p 現在很多人喜歡網路比價，因為真是太方便了，有些網路工程行，超級便宜！真讓人心動！
+                            p 事實上很多悲劇就從這裡開始，俗話說免錢的最貴，超便宜報價也是一樣。
+                            p 既然大家的材料成本都大同小異，為何他會超便宜? 各位一定要有思辨的能力，廠商能報低價，一定是犧牲自己的利潤來搶生意。
+                            p 正因為利潤低，它很可能會在現場會找機會跟你多收錢，若是沒裝好還要再多跑一趟，來幫你做售後服務，一定就賠本了；所以廠商通常不會再過來，除非你願意再付費。
+                            br
+                            img.img-fluid(src='../styles/images/act-1-content.jpg', alt='圖片')
+                            br
+                            br
+                            p ※ 資料與圖片授權來源: 實作派電子實驗室 | 冠豐工程行
+                            a(href='http://www.strongpilab.com/comm-with-electrical-technician/' target="_blank") 水電施工-溝通很重要-其實不用諜對諜
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 Share
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="水電施工-溝通很重要-其實不用諜對諜 - Brook Livin" data-description="企業與家庭的電器施工，為何水電師傅沒有照要求執行? 廠商報價這樣，會不會太貴?" data-image="https://livin.brookaccessory.com/styles/images/act-1-list.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="水電施工-溝通很重要-其實不用諜對諜 - Brook Livin" data-description="企業與家庭的電器施工，為何水電師傅沒有照要求執行? 廠商報價這樣，會不會太貴?" data-image="https://livin.brookaccessory.com/styles/images/act-1-list.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="水電施工-溝通很重要-其實不用諜對諜 - Brook Livin" data-description="企業與家庭的電器施工，為何水電師傅沒有照要求執行? 廠商報價這樣，會不會太貴?" data-image="https://livin.brookaccessory.com/styles/images/act-1-list.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="activities") Back to Menu
+                        
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 More News
+                        +main-card('','../styles/images/act-2-list.jpg','activity-2','2021/5/10','觸電/淹水/高壓電擊/靜電: 如何發生與預防?','淹水時若水淹過插座，人在插座附近觸電機會很高！如果人站遠一點則不會觸電。而水是導體，理論上應該再遠都會電到，那為何只有電源附近的人會電到?')

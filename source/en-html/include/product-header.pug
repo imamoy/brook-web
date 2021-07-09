@@ -1,0 +1,58 @@
+header#header
+    .container
+        .row
+            .col-6.col-lg-4.text-left.d-lg-flex.align-items-center
+                a.logo(href='../index' title='Wirecard' rel='nofollow')
+                    h1.logo-pic
+                        img(src="../../../styles/images/brook-logo.png", alt="")
+            .col-6.col-lg-8.text-right.d-flex.justify-content-end.align-items-center
+                .menu
+                    ui.list-inline
+                        li.list-inline-item
+                            a(href='../about' title='About us' rel='nofollow') About us
+                        li.list-inline-item
+                            .product-hover
+                                .product-toggle.inner-menu-toggle Products
+                                .product-sub-menu.text-left
+                                    .container
+                                        .col-12
+                                            .fw-600.t-primary.f-text-big.mb-2 Home Safety
+                                            ul#product-menu-nav.nav.flex-column
+                                                li.nav-item.active
+                                                    a.nav-link.f-text-big.pl-0(href='../product/wirecare' title='WIRECARE' rel='nofollow') WIRECARE
+                                                    img.product-menu-pic.img-no-full.img-h100(src='../../styles/images/wirecare-product-2.png', alt='WIRECARE')
+                                                li.nav-item
+                                                    a.nav-link.f-text-big.pl-0(href='https://www.brookaccessory.com/Brook_Livin/Products/UV_SHELL_Box/english.html' target='_blank' title='BROOK UV SHELL BOX' rel='nofollow') BROOK UV SHELL BOX
+                                                    img.product-menu-pic.img-no-full.img-h100(src='../../styles/images/product-1.png', alt="")
+                        li.list-inline-item
+                            .menu-hover
+                                .menu-toggle.inner-menu-toggle What’s New
+                                .menu-sub-menu
+                                    a.medias-link(href="../news" title='News' rel='nofollow') News
+                                    a.activities-link(href="../activities" title='Events' rel='nofollow') Events
+                                    a.unboxes-link(href="./unboxes") Unboxing
+                        li.list-inline-item
+                            a(href='' target="_blank") Shop
+                        li.list-inline-item
+                            .menu-hover
+                                .menu-toggle.inner-menu-toggle Support
+                                .menu-sub-menu
+                                    a(href="./store") Retailers
+                                    a(href="../warranty" title='Warranty' rel='nofollow') Warranty
+                                    a(href="../return" title='Return and Exchange Process' rel='nofollow') Return and Exchange Process
+                                    a(href="../qa" title='FAQ' rel='nofollow') FAQ
+                .lang-row
+                    button.lang-btn
+                        i.icon-earth
+                        span English
+                        i.icon-arrow-b
+                    .lang-menu
+                        ui.list-unstyled
+                            li
+                                a(href='../index') English
+                            li
+                                a(href='../../index') 繁體中文
+                .hamburger
+                    span.line
+                    span.line
+                    span.line

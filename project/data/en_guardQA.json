@@ -1,0 +1,78 @@
+[
+    {
+        "q": "Does WIRECARE function as a voltage tester?",
+        "a": "No, WIRECARE determines the degree of wear for sockets or circuits by measuring load impedance, whereas a voltage tester checks the location of live wires and detects electrical leakages."
+    },
+    {
+        "q": "Should all sockets be tested by WIRECARE? Or testing one is sufficient?",
+        "a": "Please test all sockets. Since each socket has a different usage, the condition of wearing will also vary. Testing only one socket will not detect the status of all other sockets."
+    },
+    {
+        "q": "Can WIRECARE be used with an extension cord?",
+        "a": "Yes. You can first test the socket to be used by the extension cord, then test the sockets on the extension cord. Please note that the extension cord itself is also a load. If you connect multiple extension cords, you may observe higher load impedance than usual."
+    },
+    {
+        "q": "Can WIRECARE be used with a travel adaptor to inspect sockets and wires in different countries?",
+        "a": "YES, WIRECARE can be used in countries using 100-240V/50-60Hz. However, a travel adaptor itself is a load impedance. Therefore, the quality and status of the travel adaptor can also affect the testing result."
+    },
+    {
+        "q": "Can WIRECARE stay on the socket?",
+        "a": "Yes, although we recommend storing your WIRECARE in a dry environment after each use, to free up more sockets. To retest the socket, simply press the test button on WIRECARE again."
+    },
+    {
+        "q": "How Many Light Colors are used by WIRECARE?",
+        "a": "There are 3 light colors: green for excellent, orange for warning, and red for dangerous."
+    },
+    {
+        "q": "Why are light colors shown in segments?",
+        "a": "This allows WIRECARE to accurately present the wear level of outlets or circuits. For example, 8 green lights indicate a condition better than 7 green lights."
+    },
+    {
+        "q": "What does it mean when all lights are in red and flash 3 times?",
+        "a": "It is the overheating warning. When the system detects an environment temperature higher than 60°C, all 8 lights will flash 3 times and then stay red, and the usual testing process will be canceled. It will automatically reactivate the test once the temperature drops below the overheating threshold."
+    },
+    {
+        "q": "What does it mean when all lights are in orange?",
+        "a": "It is the warning for abnormal conditions of sockets or power. Power companies usually wouldn’t steadily supply power fluctuating between 100~240V/50~60Hz. Therefore, when the “voltage is lower than 90V or higher than 250V” or the “frequency is lower than 40Hz or higher than 70Hz,” all 8 LED lights are shown in orange and WIRECARE stops the usual testing process."
+    },
+    {
+        "q": "What does it mean when all lights are flashing in green and red?",
+        "a": "It is the device malfunction alert. If the system detects any anomaly in the internal loading resistors or the MOS switch is malfunctioning, all 8 LED lights will flash in green and red, and the usual testing process will be canceled."
+    },
+    {
+        "q": "When the light is orange/red after testing an extension cord, should I change the socket or the extension cord?",
+        "a": "Before testing an extension cord, please test the socket used by the extension cord first. If the light is green for the socket test, but is still orange/red for the extension cord test, it means that the load and impedance on the extension cord are becoming higher. High-power products are not recommended to be used with this extension cord."
+    },
+    {
+        "q": "When the light is orange/red after a socket test how can we determine whether the impedance is too high because of the socket reed or the rear circuit?",
+        "a": "When the orange/red light is on, it means possible aging of the socket or the circuit, or the impedance is too high. Use the following two steps to verify : <br>Change the socket first (based on our testing experiences, 90% of the aging problems come from the sockets).<br>If the testing light is still red/orange after having the socket changed, it indicates aging of the rear loop. You will need to schedule a rewiring."
+    },
+    {
+        "q": "IS WIRECARE waterproof?",
+        "a": "No, WIRECARE is NOT waterproof. Please avoid leaving WIRECARE near water, fire, or direct sunlight, and keep it in a cool and dry place."
+    },
+    {
+        "q": "Does WIRECARE get overheat?",
+        "a": "WIRECARE is equipped with a thermal sensor and has a mechanism to avoid overheating. Therefore, when used repeatedly in a short period, WIRECARE might be temporarily disabled to prevent overheating. Please wait a while for WIRECARE to cool down before the next test."
+    },
+    {
+        "q": "How often should I use WIRECARE?",
+        "a": "We recommend testing your sockets and circuits at least once a month, especially in times with high power usage(e.g. summer, winter)."
+    },
+    {
+        "q": "Does WIRECARE have product safety certifications?",
+        "a": "Yes. WIRECARE currently has CE FCC and RoHS safety certifications."
+    },
+    {
+        "q": "Does WIRECARE require recalibration every year?",
+        "a": "No, WIRECARE tests the wear of sockets and circuits by measuring the current load impedance. WIRECARE can measure the electrical resistance and conductance of all wires. This method does not require calibration for different wires."
+    },
+    {
+        "q": "Can WIRECARE be disassembled and fixed by myself if it is out of order?",
+        "a": "No. Disassembling WIRECARE will void the warranty. If the product is still under the 2-year warranty, please contact retailers for maintenance service."
+    },
+    {
+        "q": "What does the warranty cover?",
+        "a": "Every WIRECARE is under a 2-year warranty since the purchase date (refer to the instruction manual for details), and covered by an NTD 10,000,000 product liability insurance internationally."
+    },
+]

@@ -1,0 +1,161 @@
+//- index.pug
+extends include/layout.pug
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center Support
+                .page-hero_img
+                    img(src='../styles/images/store.jpg', alt='情境圖')
+        #page-nav
+            ul.nav.justify-content-center
+                li.nav-item
+                    a.nav-link(href='store' rel='nofollow') Retailers
+                li.nav-item
+                    a.nav-link(href='warranty' rel='nofollow') Warranty
+                li.nav-item
+                    a.nav-link.active(href='return' rel='nofollow') RMA
+                li.nav-item
+                    a.nav-link(href='qa' rel='nofollow') FAQ
+        article.py-2.py-md-5.mb-md-5.return-page
+            .container
+                .row.return-row
+                    .col-12.col-md-6.pb-4.pb-md-0
+                        h3.f-textTitle-big.text-center.py-4.py-md-5 Under Warranty
+                        .row.justify-content-center
+                            .col-12.col-md-6.text-center.text-md-right.px-5.px-md-3
+                                button.return-btn(type="button" data-toggle="modal" data-target="#in-store" data-tooltip="tooltip" data-placement="bottom" title="Returning and Exchanging Products through Distributors")
+                                    i.icon-store-search.d-block.mt-3
+                                    h5.f-textTitle.text-center.pt-1.mb-2 Returning and Exchanging Products through Distributors
+                            .col-12.col-md-6.text-center.px-5.px-md-3
+                                button.return-btn(type="button" data-toggle="modal" data-target="#in-brook" data-tooltip="tooltip" data-placement="bottom" title="Returning and Exchanging Product through Brook")
+                                    i.icon-brook
+                                    h5.f-textTitle.text-center.pt-3 Returning and Exchanging Product through Brook
+                    .col-12.col-md-6.pb-4.pb-md-0
+                        h3.f-textTitle-big.text-center.py-4.py-md-5 Warranty Expired
+                        .row.justify-content-center
+                            .col-12.col-md-6.text-center.text-md-right.px-5.px-md-3
+                                button.return-btn(type="button" data-toggle="modal" data-target="#out-store" data-tooltip="tooltip" data-placement="bottom" title="Returning and Exchanging Products through Distributors")
+                                    i.icon-store-search.d-block.mt-3
+                                    h5.f-textTitle.text-center.pt-1.mb-2 Returning and Exchanging Products through Distributors
+                            .col-12.col-md-6.text-center.px-5.px-md-3
+                                button.return-btn(type="button" data-toggle="modal" data-target="#out-brook" data-tooltip="tooltip" data-placement="bottom" title="Returning and Exchanging Product through Brook")
+                                    i.icon-brook
+                                    h5.f-textTitle.text-center.pt-3 Returning and Exchanging Product through Brook
+
+        #in-store.modal.return-modal.fade(tabindex="-1" role="dialog" aria-labelledby="peopleModalCenterTitle" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered(role="document")
+                .modal-content
+                    .modal-header
+                        div.f-textTitle Returning and Exchanging Products through Distributors
+                        button.close(type="button" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") ×
+                    .modal-body.py-2.py-md-5
+                        .container
+                            .process-list.text-center.row.process-list-slider-3.d-lg-flex.justify-content-between.pb-5.pb-md-0
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-store-search
+                                    h6.f-textTitle Searching for Distributors
+                                    .num 1
+                                    p.mb-4 Look for your local distributor who can help you with troubleshooting.
+                                    a.main-btn.btn-primary(href='store' title='Retailers' rel='nofollow') Retailers
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-store-check
+                                    h6.f-textTitle Need Assessment
+                                    .num 2
+                                    p Distributors will notify Brook Customer Service after assessing your warranty needs.
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-return
+                                    h6.f-textTitle Returning or Exchanging Products
+                                    .num.no-afterLine 3
+                                    p Return your defective product to the distributor and receive a brand-new product after relevant fees have been given to the distributor.
+        #in-brook.modal.return-modal.fade(tabindex="-1" role="dialog" aria-labelledby="peopleModalCenterTitle" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered(role="document")
+                .modal-content
+                    .modal-header
+                        div.f-textTitle Returning and Exchanging Product through Brook
+                        button.close(type="button" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") ×
+                    .modal-body.py-2.py-md-5
+                        .container
+                            .process-list.text-center.row.process-list-slider-4.pb-5.pb-md-0
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-qa
+                                    h6.f-textTitle FAQ
+                                    .num 1
+                                    p.mb-4 Please go to our FAQ page for troubleshooting.
+                                    a.main-btn.btn-primary(href='qa' title='FAQ' rel='nofollow') FAQ
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-edit-paper
+                                    h6.f-textTitle Fill Out Technical Support Forms
+                                    .num 2
+                                    p If troubleshooting is unsuccessful, please fill out a technical support form on the bottom of the FAQ page.
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-brook
+                                    h6.f-textTitle Brook Need Assessment
+                                    .num 3
+                                    p Brook Customer Service will, after assessing your warranty needs, notify local distributors to contact you.
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-return
+                                    h6.f-textTitle Returning or Exchanging Products
+                                    .num.no-afterLine 4
+                                    p Return your defective product to the distributor and receive a brand-new product after relevant fees have been given to the distributor.
+        #out-store.modal.return-modal.fade(tabindex="-1" role="dialog" aria-labelledby="peopleModalCenterTitle" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered(role="document")
+                .modal-content
+                    .modal-header
+                        div.f-textTitle Returning and Exchanging Products through Distributors
+                        button.close(type="button" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") ×
+                    .modal-body.py-2.py-md-5
+                        .container
+                            .process-list.text-center.row.process-list-slider-3.d-lg-flex.justify-content-between.pb-5.pb-md-0
+                                .col-12.col-md-3.my-5.my-md-0
+                                    i.icon-store-search
+                                    h6.f-textTitle Searching for Distributors
+                                    .num 1
+                                    p.mb-4 Look for your local distributor who can help you with troubleshooting.
+                                    a.main-btn.btn-primary(href='store' title='Retailers' rel='nofollow') Retailers
+                                .col-12.col-md-3.my-5.my-md-0
+                                    i.icon-store-check
+                                    h6.f-textTitle Need Assessment
+                                    .num 2
+                                    p Distributors will notify Brook Customer Service after assessing your warranty needs.
+                                .col-12.col-md-3.my-5.my-md-0
+                                    i.icon-return
+                                    h6.f-textTitle Returning or Exchanging Products
+                                    .num.no-afterLine 3
+                                    p Return your defective product to the distributor and receive a brand-new product after relevant fees have been given to the distributor.
+        #out-brook.modal.return-modal.fade(tabindex="-1" role="dialog" aria-labelledby="peopleModalCenterTitle" aria-hidden="true")
+            .modal-dialog.modal-dialog-centered(role="document")
+                .modal-content
+                    .modal-header
+                        div.f-textTitle Returning and Exchanging Product through Brook
+                        button.close(type="button" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true") ×
+                    .modal-body.py-2.py-md-5
+                        .container
+                            .process-list.text-center.row.process-list-slider-4.pb-5.pb-md-0
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-qa
+                                    h6.f-textTitle FAQ
+                                    .num 1
+                                    p.mb-4 Please go to our FAQ page for troubleshooting.
+                                    a.main-btn.btn-primary(href='qa' title='FAQ' rel='nofollow') FAQ
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-edit-paper
+                                    h6.f-textTitle Fill Out Technical Support Forms
+                                    .num 2
+                                    p If troubleshooting is unsuccessful, please fill out a technical support form on the bottom of the FAQ page.
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-brook
+                                    h6.f-textTitle Brook Need Assessment
+                                    .num 3
+                                    p Brook Customer Service will, after assessing your warranty needs, notify local distributors to contact you.
+                                .col-12.col-md-3.my-3.my-md-0
+                                    i.icon-return
+                                    h6.f-textTitle Returning or Exchanging Products
+                                    .num.no-afterLine 4
+                                    p Return your defective product to the distributor and receive a brand-new product after relevant fees have been given to the distributor.

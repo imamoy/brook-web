@@ -1,0 +1,87 @@
+//- index.pug
+extends include/layout.pug
+block plugins-js
+    script(src="../scripts/plugins/smtp.js") 
+    script(src="../scripts/default/contact_jp.js")
+        
+
+block content
+    main#page.wrapper
+        .page-hero.mini
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center お問い合わせ
+                .page-hero_img
+                    img(src='../styles/images/contact-banner.jpg', alt='情境圖')
+        article.page-inner.mx-auto(style='max-width: 960px;')
+            .container
+                p.text-center 弊社製品についてご不明な点やご購入をご希望の場合は、お気軽にお問い合わせください。#[br]お客様のお力になれるよう、迅速に対応いたします。
+                .t-red.text-right * 必ずご記入ください
+                hr.my-3.my-md-4
+                form#contact-form.needs-validation(novalidate)
+                    .row
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='megType') #[span.t-red *] お客様属性
+                                select#megType.form-control(name='megType' required)
+                                    option(value='') お選びください
+                                    option(value='1') 販売店
+                                    option(value='2') マーケティング
+                                    option(value='3') その他
+                                .invalid-feedback 項目をお選びください
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='name') #[span.t-red *] ご連絡先
+                                input#name.form-control(name='name' type='text' required)
+                                .invalid-feedback 内容をご記入ください
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='country') #[span.t-red *] 国
+                                select#country.form-control(name='country' required)
+                                    option(value='') お選びください
+                                    +country
+                                .invalid-feedback 項目をお選びください
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='address') 連絡先住所
+                                input#address.form-control(name='address' type='text')
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='tel') #[span.t-red *] 連絡先番号
+                                input#tel.form-control(name='tel' type='text' required)
+                                .invalid-feedback 内容をご記入ください
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='mail') #[span.t-red *] メールアドレス
+                                input#mail.form-control(name='email' type='mail' required)
+                                .invalid-feedback 内容をご記入ください
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='typeNumber') #[span.t-red *] 製品型番
+                                input#typeNumber.form-control(name='typeNumber' type='text' required)
+                                .invalid-feedback 内容をご記入ください
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='main') #[span.t-red *] 件名
+                                input#main.form-control(name='main' type='text' required)
+                                .invalid-feedback 内容をご記入ください
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='content') #[span.t-red *] 内容
+                                textarea#content.form-control(name="content", cols="30", rows="10" required)
+                                .invalid-feedback 内容をご記入ください
+                        //- .col-12
+                        //-     .row.no-gutters
+                        //-         .col-8.col-md-4.mb-2.p-0
+                        //-             .form-group
+                        //-                 label.fw-500.mb-0(for='code') #[span.t-red *] 驗證碼
+                        //-                 input#code.form-control(name='code' type='text' required)
+                        //-                 .invalid-feedback 請輸入驗證碼
+                        //-         .col-4.p-0
+                        //-             .d-flex.align-items-center.pt-3
+                        //-                 img.img-no-full.ml-2(src="../styles/images/code.png", alt="" width='100px' onclick='refresh()')
+                        //-                 button.icon-btn-primary
+                        //-                     i.icon-return-1
+                    .d-flex.justify-content-center.mt-3.mt-lg-5
+                        #clear-btn.main-btn.btn-border-primary.mr-2.ml-0 リセット
+                        button.main-btn.btn-primary.mr-0.ml-2(type="submit") 送信

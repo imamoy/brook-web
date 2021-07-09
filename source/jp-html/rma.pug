@@ -1,0 +1,116 @@
+//- index.pug
+extends include/layout.pug
+block plugins-js
+    script(src="../scripts/plugins/smtp.js") 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.js") 
+    script(src="../scripts/default/rma_jp.js")
+
+block content
+    main#page.wrapper(aria-live='polite' aria-atomic='true' style='position: relative;')
+        .page-hero.mini
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center RMA修理保証サービス申請
+                .page-hero_img
+                    img(src='../styles/images/contact-banner.jpg', alt='情境圖')
+        article.page-inner.mx-auto(style='max-width: 960px;')
+            .container
+                p.text-center 下記のフォームにご記入ください。Brookの担当者が迅速に対応いたします。
+                .t-red.text-right * 必ずご記入ください
+                hr.my-3.my-md-4
+                form#rma-form.needs-validation(novalidate)
+                    .row
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='store') #[span.t-red *] ご購入店舗
+                                input#store.form-control(type='text' name='store' required)
+                                .invalid-feedback 内容をご記入ください
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='productType') #[span.t-red *] 製品シリーズ
+                                select#productType.form-control(name='productType' required)
+                                    option(value="") お選びください
+                                    option(value='1') 家庭内の安全
+                                .invalid-feedback 項目をお選びください
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='product') #[span.t-red *] 製品
+                                select#product.form-control(name="product" required)
+                                    option(value="") お選びください
+                                    option(value='1') WIRECARE住宅電気の守護者
+                                .invalid-feedback 項目をお選びください
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='question') #[span.t-red *] 質問カテゴリー
+                                select#question.form-control(name='question' required)
+                                    option(value="") お選びください
+                                    option(value='1') サポート
+                                    option(value='2') ファームウェアアップデートのサポート
+                                    option(value='3') 損壊
+                                .invalid-feedback 項目をお選びください
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='buyTime') #[span.t-red *] いつご購入されましたか？
+                                input#buyTime.form-control(type='text' name='buyTime' required)
+                                .invalid-feedback 内容をご記入ください
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='single') #[span.t-red *] 製品のブランドと型番
+                                textarea#single.form-control(name="single", cols="30", rows="10" placeholder='(ブランド)+(型番)' required)
+                                .invalid-feedback 内容をご記入ください
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='detail') #[span.t-red *] 詳細
+                                textarea#detail.form-control(name="detail", cols="30", rows="10" placeholder='製品に関する詳細説明をこちらにご記入いただけます' required)
+                                .invalid-feedback 内容をご記入ください
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='main') #[span.t-red *] 件名
+                                input#main.form-control(type='text' name='main' required)
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='tel') #[span.t-red 製品背面の情報を写真で転送します]（JPG、PNG、BMP、同時に最大3枚の写真を転送できます。ファイルの合計は15MB未満です。）
+                                .form-group.row
+                                    .col-12.col-md-6.mb-2
+                                        input#files.form-control-file.my-2(type='file' name='files' accept='image/png, image/jpeg, image/bmp' multiple required)
+                                        .invalid-feedback.file-feedback 少なくとも1つのファイルを転送してください
+                                        
+                    hr.my-3.my-md-4.my-mt-0
+                    .f-textTitle.mb-3 ご連絡先
+                    .row
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='name') #[span.t-red *] お名前
+                                input#name.form-control(type='text' name='name' required)
+                                .invalid-feedback 内容をご記入ください
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='country') #[span.t-red *] 国
+                                select#country.form-control(name='country' required)
+                                    option(value='') お選びください
+                                    +country
+                                .invalid-feedback 項目をお選びください項目
+                        .col-12.mb-2
+                            .form-group
+                                label.fw-500(for='address') 連絡先住所
+                                input#address.form-control(type='text' name='address')
+                                .invalid-feedback 内容をご記入ください
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='tel') #[span.t-red *] 連絡先電話番号
+                                input#tel.form-control(type='text' name='tel' required)
+                                .invalid-feedback 内容をご記入ください
+                        .col.col-md-6.mb-2
+                            .form-group
+                                label.fw-500(for='mail') #[span.t-red *] メールアドレス
+                                input#mail.form-control(type='mail' name='mail' required)
+                                .invalid-feedback 内容をご記入ください
+                        //- .col-12.col-md-6.mb-2
+                        //-     .form-group
+                        //-         label.fw-500.mb-0(for='tel') #[span.t-red *] 驗證碼
+                        //-         .d-flex.align-items-center
+                        //-             input#tel.form-control(type='text' required)
+                        //-             img.img-no-full.ml-2(src="styles/images/code.png", alt="" width='100px')
+                    .d-flex.justify-content-center.mt-3.mt-lg-5
+                        #clear-btn.main-btn.btn-border-primary.mr-2.ml-0 リセット
+                        button.main-btn.btn-primary.mr-0.ml-2(type="submit") 送信

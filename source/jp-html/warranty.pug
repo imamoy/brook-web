@@ -1,0 +1,90 @@
+//- index.pug
+extends include/layout.pug
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center お客様サポート
+                .page-hero_img
+                    img(src='../styles/images/store.jpg', alt='情境圖')
+        #page-nav
+            ul.nav.justify-content-center
+                li.nav-item
+                    a.nav-link(href='store') 取扱店舗
+                li.nav-item
+                    a.nav-link.active(href='warranty' rel='nofollow') 保証について
+                li.nav-item
+                    a.nav-link(href='return' rel='nofollow') 返品・交換方法
+                li.nav-item
+                    a.nav-link(href='qa' rel='nofollow') FAQ
+
+        article.page-inner
+            section
+                .container
+                    h3.f-sc-title.text-center 保証規定
+                    .editor
+                        h5.f-textTitle.mb-3 適用対象
+                        p Brookブランドから販売されている製品。
+                        br
+                        h5.f-textTitle.mb-3 保証サービス
+                        ol
+                            li 弊社が提供する保証サービス付きの製品には、購入日から二年間の保証期間が設けられており、保証書または保証シールが同包されています。何らかの理由で購入日がわからない場合は、製品の製造日に基づいて計算します。
+                            li Brook正規取扱店の調査の結果、製造上の理由により故障が発生していることが確認された場合、購入日より無償で修理いたします。また修理や補用部品の供給が困難な場合は、代替品(または同額の製品)と交換させていただきます。
+                            li 液晶パネルの製造工程において、輝点（点灯したままの点）と黒点（点灯しない点）が発生することがあります｡この現象は液晶特有のものであり､故障ではありません｡現在の製造技術ではこの輝点･黒点を皆無にすることができません。また液晶パネルの経年劣化（輝度変化を含む）が生じた場合、期間内でも保証サービスの対象外となります。
+                            li 保証期間終了後に修理を依頼される場合のBrookへの依頼品の送料は、お客様にご負担をお願いいたします。メーカー再生品をご希望されない場合、Brookでは修理をお受けすることができません。詳しくは「保証期間延長」をお読みください。
+                            li 修理の際に取り外された部品の所有権はBrookに帰属します。Brookは依頼品を修理するために、他社メーカーによって製造された部品を使用することがあります。
+                            li 保証サービスは、製品に含まれるハードウェア部品にのみ適用されます。製品に保存されている情報は、保証の対象外です。Brookがサービスの提供を開始する前に、製品に組み込まれている、またはテスト用に製品に付属している記録メディア（ハードドライブやフラッシュメモリーなど）のデータのバックアップをする必要があります。Brookではバックアップサービスを提供しておりませんので、お客様ご自身でバックアップをお取りください。
+                            li 保証サービスは、製品自体の欠陥による故障のみ対象となります。その他の事故や人的要因による損傷は対象外ですが、保証期間終了後と同じ方法でBrookが対応いたします。また保証期間中でも以下の場合は有償修理となります。
+                                ul.list-unstyled.ml-4
+                                    li A. 火災、地震、落雷などにより故障および損傷が生じた場合。
+                                    li B. 誤用、乱用、過失（液晶の破損、液体の浸透、湿気など）による外観の損傷。
+                                    li C. Brookにライセンスを許可されていない第三者による修理、改造、分解および組み立て。
+                            li 本保証サービス対象範囲には、製品の消耗品および付属品（梱包材、ワイヤー、リモコン、マニュアルなど）の損傷または紛失は含まれておりません。
+                            li ここに記載されていないサービスに関しては、Brookでは保証いたしかねます。明確か不明確かにかかわらず、現在の法的制限の範囲外を除き、商業的または特定の目的のための黙示的な保証など、製品の保証サービス対象にはなりません。
+                    hr.my-3.my-md-5
+            section
+                .container
+                    h3.f-sc-title.text-center 保証期間延長
+                    .editor
+                        h5.f-textTitle.mb-3 適用對象
+                        p Brookブランドから販売されている製品。
+                        br
+                        h5.f-textTitle.mb-3 保固服務
+                        ol
+                            li 「保証期間延長」とは、製品の保証期間終了後も、Brookが特定の製品に対して修理および交換サービスを提供する期間を指します。
+                            li 「保証期間延長」の対象となる製品について、お客様は欠陥のある製品または修理された製品をBrook製品取扱店または小売業者に配送し、割引価格でメーカー再生品と交換することができます。製品の交換過程で発生する送料に関しましては、お客様ご負担となる場合があります。
+                            li 下取り価格は、最寄りの取扱店および小売業者によって提示されているとおりです。
+                            li メーカー再生品として販売されているBrook製品は、新品と区別するため特別パッケージを使用しています。
+                            li Brookのメーカー再生品には三か月の保証サービスがついています。
+                        br
+                        h5.f-textTitle.mb-3 保証期間延長リスト
+                        p ※パッケージの裏面に製品番号が記載されており、修理・交換の送料は別途かかります。
+                    .collapse-box.mt-4
+                        .collapse-item
+                            .collapse-item-title.d-flex.align-items-center.justify-content-between
+                                h5 家庭内の安全
+                                i.icon-add.open
+                                i.icon-less.close
+                            .collapse-item-inner.warranty-inner
+                                table.main-table.rwd-table
+                                    thead
+                                        tr
+                                            th(style='min-width: 140px;') 製品名
+                                            th(style='min-width: ;') 製品番号
+                                            th(style='min-width: 200px;') 製品図
+                                            th(style='min-width: 120px;') 保証対象外の修理費
+                                    tbody.extend-inner
+                                        tr
+                                            td(data-th='製品名') WIRECARE
+                                            td(data-th='製品番号') EFM0009141
+                                            td(data-th='製品図') 
+                                                .warranty-pic
+                                                    img.img-h100(src="../styles/images/wirecare-product.png", alt="")
+                                            td(data-th='保証対象外の修理費')
+                    hr.my-3.my-md-5
+            section
+                .container
+                    h3.f-sc-title.text-center.mb-3.mb-md-4 保証期間延長の取得方法
+                    p お客様は#[a.t-primary(href='return' title='退換貨流程') 返品・交換方法]をご参照ください。必要に応じ、取扱店またはBrookへ製品の返品・交換をお選びいただき、メーカー再生品に関するサービスの詳細をご確認ください。

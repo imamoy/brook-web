@@ -1,0 +1,90 @@
+//- index.pug
+extends include/layout.pug
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center Support
+                .page-hero_img
+                    img(src='../styles/images/store.jpg', alt='情境圖')
+        #page-nav
+            ul.nav.justify-content-center
+                li.nav-item
+                    a.nav-link(href='store' rel='nofollow') Retailers
+                li.nav-item
+                    a.nav-link.active(href='warranty' rel='nofollow') Warranty
+                li.nav-item
+                    a.nav-link(href='return' rel='nofollow') RMA
+                li.nav-item
+                    a.nav-link(href='qa' rel='nofollow') FAQ
+
+        article.page-inner
+            section
+                .container
+                    h3.f-sc-title.text-center Warranty Conditions
+                    .editor
+                        h5.f-textTitle.mb-3 Applicability
+                        p Products sold under the Brook brand.
+                        br
+                        h5.f-textTitle.mb-3 Warranty Services
+                        ol
+                            li The Company’s products which offer service warranty, come with a one-year warranty period (starting from the date of purchase) and have a warranty booklet or sticker attached. If for some reason the date of purchase cannot be proven, the date of manufacture shall be used.
+                            li After inspection by an authorized Brook distributor has confirmed that the cause of failure is attributable to manufacturing reasons, free repair will be provided starting from the date of purchase. If repair is not possible, the product will be replaced with the same model or one with similar specifications.
+                            li Since the manufacturing process of LCD panels cannot 100% guarantee no bright or dark spots, products with LCD panels will come with guarantees (bright or dark spots) for its LCD panels. The backlight module of the LCD panel will suffer loss over time (including brightness reduction), and its loss is also not covered by the service warranty.
+                            li If the warranty period has expired, then the consumer must bear the service fee for the replacement with refurbished products. Brook may charge a shipping fee depending on relevant shipping requirements. If the consumer cannot accept replacement with refurbished products, Brook will not accept your repair request. For more details, please refer to the "Extended Warranty " section.
+                            li In the event of repairs, the ownership of the parts removed from the repaired product belongs to Brook. Brook can use new or processed parts made by different manufacturers to conduct repair.
+                            li The service warranty applies only to the hardware within the product. Any information stored in the product is not covered by the warranty. Prior to providing services, the consumer is responsible for making a backup of the data in either built-in or provided storage (such as a hard disk, flash memory, etc.). Brook does not provide or offer backup services.
+                            li The warranty service is limited to failures caused by the defects of the product itself. For damages caused by other accidental or human factors, Brook may deal with such cases as if the warranty period has expired. Such conditions include but are not limited to the following:
+                                ul.list-unstyled.ml-4
+                                    li A. Natural disasters, earthquakes or lightning strikes.
+                                    li B. Misuse, abuse, negligence during use (such as liquid crystal rupture, liquid permeation, moisture damage, etc.), and damages to appearance.
+                                    li C. As well as repairs, modifications, and disassembly by individuals unauthorized by Brook.
+                            li The scope of this service warranty does not include the damage or loss of any consumable items or accessories (e.g. Packaging materials, cables, remote controls, manuals, etc.) provided along with the product.
+                            li Brook denies any and all other service warranties not stated here, whether explicit or implied. Aside from requirements of current laws and regulations, any implied guarantees for commercial use or specific purposes are not covered by the product's service warranty.
+                    hr.my-3.my-md-5
+            section
+                .container
+                    h3.f-sc-title.text-center Extended Warranty
+                    .editor
+                        h5.f-textTitle.mb-3 Applicability
+                        p Any user who purchased official Brook products from channels such as Brook’s business partners or authorized retailers, is applicable for this service.
+                        br
+                        h5.f-textTitle.mb-3 Warranty Services
+                        ol
+                            li "Extended Warranty" means that Brook may still provide repair and replacement services for specific products after the product’s warranty period has expired.
+                            li For products applicable for “Extended Warranty”, Brook users may return defective products or products for repair to Brook agents or retail wholesalers and exchange them for refurbished products at a discount price. Shipping fees may be charged depending on relevant shipping requirements.
+                            li The price of exchange shall be set at the discretion of local agents or retailers.
+                            li Brook refurbished products sold to users will use special packaging to differentiate them from new products.
+                            li Brook refurbished products offer a three-month warranty.
+                        br
+                        h5.f-textTitle.mb-3 Extended Warranty List
+                        p ※The part number is recorded on the back of the package, and the shipping fee for repairs and exchanges is extra.
+                    .collapse-box.mt-4
+                        .collapse-item
+                            .collapse-item-title.d-flex.align-items-center.justify-content-between
+                                h5 Home Safety
+                                i.icon-add.open
+                                i.icon-less.close
+                            .collapse-item-inner.warranty-inner
+                                table.main-table.rwd-table
+                                    thead
+                                        tr
+                                            th(style='min-width: 140px;') Product
+                                            th(style='min-width: ;') Number
+                                            th(style='min-width: 200px;') Photo
+                                            th(style='min-width: 120px;') Cost
+                                    tbody.extend-inner
+                                        tr
+                                            td(data-th='Product') WIRECARE
+                                            td(data-th='Number') EFM0009141
+                                            td(data-th='Photo') 
+                                                .warranty-pic
+                                                    img.img-h100(src="../styles/images/wirecare-product.png", alt="")
+                                            td(data-th='Cost')
+                    hr.my-3.my-md-5
+            section
+                .container
+                    h3.f-sc-title.text-center.mb-3.mb-md-4 How to Acquire Extended Warranty
+                    p Brook users should, after referring to the #[a.t-primary(href='return' title='Return and Exchange Process page') Return and Exchange Process page], obtain further information about refurbished product services by choosing a distributor for the returning of product or returning the product through Brook.

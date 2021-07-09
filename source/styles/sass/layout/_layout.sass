@@ -3,10 +3,21 @@ html,body
     margin: 0
     padding: 0
     font-size: 16px
-    font-family: 'Noto Sans TC','Roboto', sans-serif
     color: $text
     line-height: 1.6
     overflow-x: hidden
+
+html:lang(zh-TW),
+html:lang(zh-TW) body
+    font-family: 'Noto Sans TC','Roboto', sans-serif
+
+html:lang(ja),
+html:lang(ja) body
+    font-family: 'Noto Sans JP','Roboto', sans-serif
+
+html:lang(en),
+html:lang(en) body
+    font-family: 'Roboto', sans-serif
 
 p
     font-weight: 300
@@ -317,6 +328,8 @@ html>/**/body
             border-color: $primary-color
             .f-textTitle
                 color: $primary-color
+    +min-pad
+        height: 100%
     +pad
         padding: 20px
         i
@@ -481,8 +494,11 @@ html>/**/body
                 display: block
     +max-phone-mid
         overflow-x: auto
+        width: 100%
         .nav
             flex-wrap: nowrap
+            &.nav-scroll
+                justify-content: flex-start !important
         .nav-item
             &::after
                 top: 20px
@@ -974,3 +990,115 @@ html>/**/body
             line-height: 45px
         button
             max-width: 54px
+
+html:lang(ja)
+    .f-textTitle
+        font-size: 1.3rem
+
+html:lang(en)
+    .store-list
+        +min-pad
+            li
+                width: 100% !important
+    // f22
+    .f-textTitle
+        font-size: $f-textTitle * 0.9
+    // f30
+    .f-textTitle-big
+        font-size: $f-textTitle-big_en
+        +max-notebook
+            font-size: $f-textTitle-big_en * 0.9
+        +max-notebook-mini
+            font-size: $f-textTitle-big_en * 0.8
+        +max-padpro
+            font-size: $f-textTitle-big_en
+        +max-pad
+            font-size: $f-textTitle-big_en * 0.7
+        +max-phonemini
+            font-size: $f-textTitle-big_en * 0.6
+    // f36
+    .f-sc-title
+        font-size: $f-sc-title_en
+        font-weight: $f-bold
+        color: $dark
+        +max-notebook
+            font-size: $f-sc-title_en * 0.9
+        +max-notebook-mini 
+            font-size: $f-sc-title_en * 0.85
+        +max-padpro
+            font-size: $f-sc-title_en
+        +max-pad
+            font-size: $f-sc-title_en * 0.8
+        +max-phonemini
+            font-size: $f-sc-title_en * 0.6
+    // f46
+    .f-bannerTitle
+        font-size: $f-bannerTitle_en
+        font-weight: $f-heavy
+        +max-notebook
+            font-size: $f-bannerTitle_en * 0.8
+        +max-notebook-mini
+            font-size: $f-bannerTitle_en * 0.7
+        +max-padpro
+            font-size: $f-bannerTitle_en
+        +max-pad
+            font-size: $f-bannerTitle_en * 0.6
+        +max-phonemini
+            font-size: $f-bannerTitle_en * 0.5
+    // f50
+    .f-heroTitle-xs
+        font-size: $f-heroTitle-xs_en
+        font-weight: $f-heavy
+        +max-notebook
+            font-size: $f-heroTitle-xs_en * 0.8
+        +max-notebook-mini
+            font-size: $f-heroTitle-xs_en * 0.7
+        +max-padpro
+            font-size: $f-heroTitle-xs_en
+        +max-pad
+            font-size: $f-heroTitle-xs_en * 0.6
+        +max-phonemini
+            font-size: $f-heroTitle-xs_en * 0.5
+    // f62
+    .f-heroTitle
+        font-size: $f-heroTitle_en
+        font-weight: $f-heavy
+        +max-notebook
+            font-size: $f-heroTitle_en * 0.8
+        +max-notebook-mini
+            font-size: $f-heroTitle_en * 0.65
+        +max-padpro
+            font-size: $f-heroTitle_en
+        +max-pad
+            font-size: $f-heroTitle_en * 0.5
+        +max-phonemini
+            font-size: $f-heroTitle_en * 0.4
+    // f76
+    .f-heroTitle-big
+        font-size: $f-heroTitle-big_en
+        font-weight: $f-heavy
+        +max-notebook
+            font-size: $f-heroTitle-big_en * 0.8
+        +max-notebook-mini
+            font-size: $f-heroTitle-big_en * 0.65
+        +max-padpro
+            font-size: $f-heroTitle-big_en
+        +max-pad
+            font-size: $f-heroTitle-big_en * 0.466
+        +max-phone
+            font-size: $f-heroTitle-big_en * 0.41
+        +max-phonemini
+            font-size: $f-heroTitle-big_en * 0.3
+    .process-list
+        +min-padpro
+            .f-textTitle
+                min-height: 48px
+    .return-btn
+        .f-textTitle
+            font-size: 1.2rem
+        +max-padpro
+            .f-textTitle
+                font-size: 1.1rem
+    .qa-nav
+        +max-phone
+            font-size: 15px

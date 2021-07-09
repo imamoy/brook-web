@@ -1,0 +1,351 @@
+//- index.pug
+extends ../include/product-layout.pug
+
+block page-css
+    link(rel='stylesheet' type='text/css' href='../../../styles/wirecare-info-jp.css')
+
+block plugins-js
+    script(src="../../scripts/default/wirecare-info_world.js")
+
+block content
+    main#wirecare-info.wrapper
+        .block-main-banner
+            .content
+                img(src='../../styles/images/wirecare-info/reuseImages/wireCare3.png' alt='' srcset='')
+                p ワンクリックでご家庭の電線測定
+                .click-button
+                    .slide
+                        .slide-dot
+                            .dot
+                    span 使い方はコチラ
+            .block-demo-video2
+                iframe(width='560' height='315' src='https://www.youtube.com/embed/UIcJ9TRAUEo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen')
+        .block-secret
+            .block-secret-warning
+                .container
+                    .subtitle 驚きの秘密を発見
+                    .title
+                        span 電気の使用量が多い現代
+                        br
+                        span 毎日一挿しの秘密とは
+                    .condition
+                        .examination
+                            .product
+                                .begin
+                                    img(src='../../styles/images/wirecare-info/reuseImages/redfinger.svg' alt='')
+                                    span 測定開始
+                        .list.d-flex.w-100.justify-content-around
+                            .condition-item
+                                div
+                                    span 発見しづらい
+                                    br
+                                    span コンセントの老朽化
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/exclamation.svg' alt='')
+                                span.warning 高温発生
+                            .condition-item
+                                div
+                                    span ほこりが溜まった
+                                    br
+                                    span 抜けかかったプラグ
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/exclamation.svg' alt='')
+                                span.warning 電気火災
+                            .condition-item
+                                div
+                                    span 古い住宅によくある
+                                    br
+                                    span 複雑な間取り
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/exclamation.svg' alt='')
+                                span.warning 配電の過負荷
+                        .wire-plug
+                            .wire
+                                .wire--brand
+                                .wire--gray
+                            .position-relative
+                                img.d-block(src='../../styles/images/wirecare-info/reuseImages/plug.svg' alt='')
+                                .wire-clickme.position-absolute.text-center.w-100
+                                    | こちらをクリック
+            .block-secret-check
+                .container
+                    .subtitle 驚きの秘密を発見
+                    .title
+                        span 隱藏在插座後的
+                        br
+                        span 用電危險因素
+                        .message
+                            img(src='../../styles/images/wirecare-info/reuseImages/message-circle-jp.png' alt='')
+                    .condition
+                        .examination
+                            .product
+                                .finished
+                                    img(src='../../styles/images/wirecare-info/reuseImages/greenfinger.svg' alt='')
+                                    span 測定終了
+                        .list.d-flex.w-100.justify-content-around
+                            .condition-item
+                                div
+                                    span 発見しにくい
+                                    br
+                                    span コンセントの老朽化
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/check.svg' alt='')
+                                span.check 高温発生
+                            .condition-item
+                                div
+                                    span ほこりが溜まった
+                                    br
+                                    span 抜けかかったプラグ
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/check.svg' alt='')
+                                span.check 電気火災
+                            .condition-item
+                                div
+                                    span 古い住宅によくある
+                                    br
+                                    span 複雑な間取り
+                                .exclamation-check
+                                    img(src='../../styles/images/wirecare-info/reuseImages/check.svg' alt='')
+                                span.check 配線の過負荷
+                        .wire-plug
+                            .wire
+                            img(src='../../styles/images/wirecare-info/reuseImages/plug-check.svg' alt='')
+        .block-video
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/32TxQvF7Vsc' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen')
+        .block-newLiving
+            .content
+                p 私たちが提供するのは
+                p 安全で安心できる生活
+        .block-warning
+            .container
+                .barChart
+                    .barChart-content
+                        .subtitle
+                            | ご家庭の電気使用安全に気を付けていますか？
+                        .title
+                            span 電気要因による火災が
+                            br
+                            span 年間の火災要因の三位
+                        .content
+                            p
+                                b 残り火、火種：9,845 件(31%)
+                            p
+                                b クッキング:3,591件(14%)
+                            p
+                                b 電気要因:2,871件(13%)
+                    .barChart-chart
+                        img.chart-mobile(src='../../styles/images/wirecare-info/mobile/barChart-jp.png' alt='')
+                        img.chart-desktop(src='../../styles/images/wirecare-info/desktop/barChart-jp.png' alt='')
+                .pieChart
+                    .pieChart-content
+                        .title
+                            span 古い住宅の電気要因が
+                            br
+                            span 火災の主因の一つ
+                        .content
+                            p
+                                b 台湾の築30年以上の古い住宅の割合
+                            p
+                                b 2009年で約206万宅、全体の約26%を占めている
+                            p
+                                b 2019年で約423万宅、全体の約48%を占めている
+                            .percentage 10年間で22％も成長
+                            p
+                                b データ元：2019年内政部
+                    .pieChart-chart
+                        div
+                            .chart
+                                p 2009
+                                img(src='../../styles/images/wirecare-info/reuseImages/pieChart2009.svg' alt='' srcset='')
+                            .list
+                                .list--gray
+                                    .gray
+                                        .dot
+                                        span 74%
+                                    span.text-nowrap その他総合
+                                .list--brand
+                                    .brand
+                                        .dot
+                                        span 26%
+                                    span 古い住宅
+                        div
+                            .chart
+                                p 2019
+                                img(src='../../styles/images/wirecare-info/reuseImages/pieChart2019.svg' alt='' srcset='')
+                            .list
+                                .list--gray
+                                    .gray
+                                        .dot
+                                        span 52%
+                                    span.text-nowrap その他総合
+                                .list--brand
+                                    .brand
+                                        .dot
+                                        span 48%
+                                    span 古い住宅
+        .block-slick
+            .slick-item.slick-item1
+                .container
+                    .subtitle ワンクリック測定
+                    .title 危機レーダー
+                    .content
+                        p ワンクリックで即測定開始、
+                        p 各コンセントの状態を個別に判断
+                        p 電気の使用安全に抜かりなし!
+            .slick-item.slick-item2
+                .container
+                    .subtitle 超迅速な測定
+                    .title 10秒で10年先を守れる
+                    .content
+                        p 電気の使用安全を即時に把握、生活の質を保障
+                        p MITの研究開発と製造で、より安心!
+                        br
+            .slick-item.slick-item3
+                .container
+                    .subtitle コンパクトでスペースを取らない
+                    .title 安全サポーター
+                    .content
+                        p 掌サイズと折り畳み式プラグで収納しやすい
+                        br
+                        br
+            .slick-item.slick-item4
+                .container
+                    .subtitle 簡易ランプで判別が簡単
+                    .title 電気の使用安全信号機
+                    .content
+                        p 判定が簡単で、難しいデータを簡易化!
+                        p ハイテク機器が苦手な人でも使える
+                        br
+        .block-step
+            .step-item.step-item1
+                .container
+                    .subtitle 簡単な操作手順
+                    .step-item-title
+                        .title.text-nowrap 手順一：
+                        .title WIRECAREを測定したいコンセントに挿込む
+            .step-item.step-item2
+                .container
+                    .subtitle 簡単な操作手順
+                    .step-item-title
+                        .title.text-nowrap 手順二：
+                        .title 検出時間、10秒間待つ
+            .step-item.step-item3
+                .container
+                    .subtitle 簡単な操作手順
+                    .step-item-title
+                        .title.text-nowrap 手順三：
+                        .title LEDランプで結果が測定結果が表示される
+            .step-item.step-item4
+                .container
+                    .subtitle 簡単な操作手順
+                    .step-item-title
+                        .title.text-nowrap 手順四：
+                        .title
+                            | 再測定をする場合、上方のリセットボタンを押す
+        .block-light
+            .container
+                .subtitle いつでも測定できる
+                .title 電気の使用安全信号機
+                .undertext
+                    | 測定したいときに測定、いつでも電気の使用安全を把握!
+                .light-box-desktop
+                    img.light-animate(src='../../styles/images/wirecare-info/desktop/light-jp.gif' alt='')
+                .light-box-mobile
+                    img.light-animate(src='../../styles/images/wirecare-info/mobile/light-jp.gif' alt='')
+        .block-certification
+            .container
+                .subtitle 本製品は専門の国際認証の認可を得ています
+                .title 安全規格認証
+                .certification
+                    img(src='../../styles/images/003_CE-左-jp.png' alt='')
+                    img(src='../../styles/images/002_FCC-中-jp.png' alt='')
+                    img(src='../../styles/images/001_RoHS-右-jp.png' alt='')
+        .block-recommendation
+            .container
+                .subtitle 電気安全保護者募集!
+                .title 評判が良いおすすめ
+                .recommendation
+                    a(href='https://livin.brookaccessory.com/unboxing.html' target='blank')
+                        img(src='../../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+                        p 3C達人 廖阿輝
+                    a(href='https://livin.brookaccessory.com/unboxing.html' target='blank')
+                        img(src='../../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+                        p 3C達人 廖阿輝
+                    a(href='https://livin.brookaccessory.com/unboxing.html' target='blank')
+                        img(src='../../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+                        p 3C達人 廖阿輝
+                    a(href='https://livin.brookaccessory.com/unboxing.html' target='blank')
+                        img(src='../../styles/images/wirecare-info/reuseImages/ppl.png' alt='' srcset='')
+                        p 就差你1人
+        .block-intelligence
+            .content
+                p ご家庭の電気
+                p 使用安全を守る
+        .block-spec
+            .container
+                img.product.order-2(src='../../styles/images/wirecare-info/reuseImages/product.png' alt='')
+                .spec-list.order-1
+                    .title 製品仕様
+                    .spec
+                        p カラー：白
+                        p プラグ：日本スペックのコンセント、折り畳み収納可能
+                        p 製品寸法：縦10cm x 横10cm x 高さ3.5cm
+                        p 電圧検出範囲：100～240V
+                        p 周波数検出範囲：50～60Hz
+                        p 材質：PC
+                        p 重量：約190 g
+                        p 産地：Made In Taiwan
+                        p 製品価格：
+                            span.price NT$2,580
+                .ref.d-flex.justify-content-between.order-3
+                    .ref-item
+                        img(src='../../styles/images/wirecare-info/reuseImages/small1.svg' alt='')
+                        p 折り畳み式プラグ
+                    .ref-item
+                        img(src='../../styles/images/wirecare-info/reuseImages/small2.svg' alt='')
+                        p 台湾製造
+                    .ref-item
+                        img(src='../../styles/images/wirecare-info/reuseImages/small3.svg' alt='')
+                        p コンパクト
+                    .ref-item
+                        img(src='../../styles/images/wirecare-info/reuseImages/small4.svg' alt='')
+                        p 収納便利
+        .block-info
+            .container
+                .title ニュース
+                .info-card
+                    .info-card-item
+                        a(href='https://www.zeczec.com/projects/wirecare?r=6a7b61f2d9' target='blank')
+                            img(src='../../styles/images/wirecare-info/reuseImages/info1-jp.jpg' alt='')
+                            .card-title.faq
+                                | 支援者数2166人!
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/05/24
+                    .info-card-item
+                        a(href='../store' target='blank')
+                            img(src='../../styles/images/wirecare-info/reuseImages/info3.png' alt='')
+                            .card-title.faq 販売店
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/04/07
+                    .info-card-item
+                        a(href='../qa-wirecare' target='blank')
+                            img(src='../../styles/images/wirecare-info/reuseImages/info4.png' alt='')
+                            .card-title.faq よくあるご質問
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/05/10
+                    .info-card-item
+                        a(href='https://www.facebook.com/brooklivin' target='blank')
+                            img(src='../../styles/images/wirecare-info/reuseImages/info2.png' alt='')
+                            .card-title.support
+                                | 電気使用安全をサポートするブランド!
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/05/10
+                .footer
+                    img(src='../../styles/images/wirecare-info/reuseImages/footer-logo.png' alt='')
+                    img(src='../../styles/images/wirecare-info/reuseImages/footer-wirecare.png' alt='')
+
+
