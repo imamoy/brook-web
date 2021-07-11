@@ -1,8 +1,8 @@
 $('#files').change(function () {
     var files = $(this)[0].files;
     var files_len = $(this)[0].files.length;
-    //alert(files.length);
     var size = 0;
+    var file_name = $(this)[0].files[0].name;
     for (var i = 0; i < files.length; i++) {
         size = size + this.files[i].size;
     }
@@ -17,6 +17,11 @@ $('#files').change(function () {
         $('#files').val('');
     } else {
         $('.file-feedback').hide();
+    };
+    if (files_len == 1) {
+        $('.upload-name').text(file_name);
+    } else if (files_len > 1) {
+        $('.upload-name').text(files_len + ' 個檔案');
     };
 });
 
@@ -96,7 +101,7 @@ $('#files').change(function () {
                                         var dataUri = "data:application/x-zip-compressed;base64," + content;
                                         Email.send({
                                             SecureToken : "b3015307-af62-4395-8019-796a773045ac",
-                                            To : ['livin@brookaccessory.com','brooklivin@gmail.com','brookbrook048@gmail.com'],
+                                            To : ['livin_rma@brookaccessory.com','brooklivin@gmail.com','brookbrook048@gmail.com'],
                                             From : "Brook Livin<rd1@brookaccessory.com>",
                                             Subject : "RMA維修保固需求",
                                             Body: body,

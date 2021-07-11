@@ -1,8 +1,8 @@
 $('#files').change(function () {
     var files = $(this)[0].files;
     var files_len = $(this)[0].files.length;
-    //alert(files.length);
     var size = 0;
+    var file_name = $(this)[0].files[0].name;
     for (var i = 0; i < files.length; i++) {
         size = size + this.files[i].size;
     }
@@ -17,6 +17,11 @@ $('#files').change(function () {
         $('#files').val('');
     } else {
         $('.file-feedback').hide();
+    };
+    if (files_len == 1) {
+        $('.upload-name').text(file_name);
+    } else if (files_len > 1) {
+        $('.upload-name').text(files_len + ' ファイル');
     };
 });
 

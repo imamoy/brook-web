@@ -72,8 +72,10 @@ block content
                             .form-group
                                 label.fw-500(for='tel') 照片上傳 #[span.t-red 產品後方資訊] (JPG, PNG, BMP, 可同時選擇最多上傳3張，總檔案15MB以內)
                                 .form-group.row
-                                    .col-12.col-md-6.mb-2
+                                    .col-12.col-md-6.mb-2.fileBox
+                                        label(for='files') 選擇檔案
                                         input#files.form-control-file.my-2(type='file' name='files' accept='image/png, image/jpeg, image/bmp' multiple required)
+                                        .upload-name 未選擇任何檔案
                                         .invalid-feedback.file-feedback 請至少上傳1個檔案
                                         
                     hr.my-3.my-md-4.my-mt-0

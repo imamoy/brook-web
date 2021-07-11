@@ -175,8 +175,10 @@
                 <div class="form-group">
                   <label class="fw-500" for="tel">照片上傳 <span class="t-red">產品後方資訊</span> (JPG, PNG, BMP, 可同時選擇最多上傳3張，總檔案15MB以內)</label>
                   <div class="form-group row">
-                    <div class="col-12 col-md-6 mb-2">
+                    <div class="col-12 col-md-6 mb-2 fileBox">
+                      <label for="files">選擇檔案</label>
                       <input class="form-control-file my-2" id="files" type="file" name="files" accept="image/png, image/jpeg, image/bmp" multiple required>
+                      <div class="upload-name">未選擇任何檔案</div>
                       <div class="invalid-feedback file-feedback">請至少上傳1個檔案</div>
                     </div>
                   </div>

@@ -71,10 +71,11 @@ block content
                             .form-group
                                 label.fw-500(for='tel') #[span.t-red 製品背面の情報を写真で転送します]（JPG、PNG、BMP、同時に最大3枚の写真を転送できます。ファイルの合計は15MB未満です。）
                                 .form-group.row
-                                    .col-12.col-md-6.mb-2
+                                    .col-12.col-md-6.mb-2.fileBox
+                                        label(for='files') ファイル選択
                                         input#files.form-control-file.my-2(type='file' name='files' accept='image/png, image/jpeg, image/bmp' multiple required)
+                                        .upload-name ファイルが選択されていません
                                         .invalid-feedback.file-feedback 少なくとも1つのファイルを転送してください
-                                        
                     hr.my-3.my-md-4.my-mt-0
                     .f-textTitle.mb-3 ご連絡先
                     .row

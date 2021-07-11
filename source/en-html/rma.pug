@@ -71,10 +71,12 @@ block content
                             .form-group
                                 label.fw-500(for='tel') Upload the Image of the #[span.t-red Information behind the Product] (JPG, PNG, BMP, 3 images Maximum within 15MB in total)
                                 .form-group.row
-                                    .col-12.col-md-6.mb-2
+                                    .col-12.col-md-6.mb-2.fileBox
+                                        label(for='files') Select Files
                                         input#files.form-control-file.my-2(type='file' name='files' accept='image/png, image/jpeg, image/bmp' multiple required)
+                                        .upload-name No Files Selected
                                         .invalid-feedback.file-feedback Please upload at least 1 file
-                                        
+
                     hr.my-3.my-md-4.my-mt-0
                     .f-textTitle.mb-3 Contact
                     .row

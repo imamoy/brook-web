@@ -1292,8 +1292,9 @@ html > body img:not(.img-no-full) {
 .process-list {
   position: relative; }
   .process-list .main-btn {
-    width: 80%;
-    margin: 0 auto; }
+    width: 90%;
+    margin: 0 auto;
+    min-width: auto !important; }
   .process-list i {
     font-size: 60px;
     color: #00AFAA; }
@@ -1324,9 +1325,13 @@ html > body img:not(.img-no-full) {
       background-color: #EBEBE8; }
     .process-list .num.no-afterLine::after {
       display: none; }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 1200px) {
     .process-list p {
       width: 66%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .process-list p {
+      width: 80%;
       margin: 0 auto; } }
   @media screen and (max-width: 991px) {
     .process-list .f-textTitle {
@@ -1521,6 +1526,31 @@ html > body img:not(.img-no-full) {
     .share-row button {
       max-width: 54px; } }
 
+.fileBox input[type="file"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0; }
+
+.fileBox label {
+  display: inline-block;
+  padding: 6px 14px;
+  color: #00AFAA;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #00AFAA;
+  border-radius: 5px;
+  margin-bottom: 2px; }
+
+.fileBox .upload-name {
+  display: inline-block;
+  height: 35px;
+  padding: 4px 10px 0;
+  vertical-align: middle;
+  border-radius: 5px; }
+
 html:lang(ja) .f-textTitle {
   font-size: 1.3rem; }
 
@@ -1652,6 +1682,18 @@ html:lang(en) .f-heroTitle-big {
   html:lang(en) .process-list .f-textTitle {
     min-height: 48px; } }
 
+@media screen and (max-width: 1199px) {
+  html:lang(en) .process-list .f-textTitle {
+    font-size: 1.1rem; }
+  html:lang(en) .process-list p {
+    width: 100%; } }
+
+@media screen and (max-width: 991px) {
+  html:lang(en) .process-list .f-textTitle {
+    font-size: 16px; }
+  html:lang(en) .process-list p {
+    font-size: 15px; } }
+
 html:lang(en) .return-btn .f-textTitle {
   font-size: 1.2rem; }
 
@@ -1659,9 +1701,19 @@ html:lang(en) .return-btn .f-textTitle {
   html:lang(en) .return-btn .f-textTitle {
     font-size: 1.1rem; } }
 
+@media screen and (max-width: 991px) {
+  html:lang(en) .return-btn {
+    padding: 10px 5px; }
+    html:lang(en) .return-btn .f-textTitle {
+      font-size: .95rem; } }
+
 @media screen and (max-width: 767px) {
   html:lang(en) .qa-nav {
     font-size: 15px; } }
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  html:lang(en) #in-store .process-list .f-textTitle, html:lang(en) #in-brook .process-list .f-textTitle, html:lang(en) #out-store .process-list .f-textTitle, html:lang(en) #out-brook .process-list .f-textTitle {
+    min-height: 66px; } }
 
 @media screen and (min-width: 1200px) {
   .full-hero {
@@ -2046,6 +2098,18 @@ html:lang(en) .full-hero_item .full-hero_text-title {
 
 html:lang(en) .full-hero_item .full-hero_text-text {
   line-height: 1.6; }
+
+@media screen and (width: 1366px) and (height: 1024px) {
+  html:lang(en) .full-hero_item {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    padding-right: 8%; } }
+
+@media screen and (min-width: 1023px) and (max-width: 1024px) {
+  html:lang(en) .full-hero_item {
+    padding-bottom: 5%; }
+    html:lang(en) .full-hero_item .full-hero_product {
+      width: 46%; } }
 
 @media screen and (max-width: 600px) {
   html:lang(en) .full-hero_item .full-hero_text-title br {

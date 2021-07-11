@@ -777,8 +777,9 @@ html>/**/body
 .process-list
     position: relative
     .main-btn
-        width: 80%
+        width: 90%
         margin: 0 auto
+        min-width: auto !important
     i
         font-size: 60px
         color: $primary-color
@@ -804,9 +805,13 @@ html>/**/body
         &.no-afterLine
             &::after
                 display: none
-    +min-padpro
+    +min-notebook
         p
             width: 66%
+            margin: 0 auto
+    +padpro
+        p
+            width: 80%
             margin: 0 auto
     +max-pad
         .f-textTitle
@@ -991,6 +996,31 @@ html>/**/body
         button
             max-width: 54px
 
+.fileBox
+    input[type="file"]
+        position: absolute
+        width: 0
+        height: 0
+        padding: 0
+        overflow: hidden
+        border: 0
+    label
+        display: inline-block
+        padding: 6px 14px
+        color: $primary-color
+        vertical-align: middle
+        cursor: pointer
+        border: 1px solid $primary-color
+        border-radius: 5px
+        margin-bottom: 2px
+    .upload-name
+        display: inline-block
+        height: 35px
+        padding: 4px 10px 0
+        vertical-align: middle
+        border-radius: 5px
+
+
 html:lang(ja)
     .f-textTitle
         font-size: 1.3rem
@@ -1093,12 +1123,31 @@ html:lang(en)
         +min-padpro
             .f-textTitle
                 min-height: 48px
+        +max-padpro
+            .f-textTitle
+                font-size: 1.1rem
+            p
+                width: 100%
+        +max-pad
+            .f-textTitle
+                font-size: 16px
+            p
+                font-size: 15px
     .return-btn
         .f-textTitle
             font-size: 1.2rem
         +max-padpro
             .f-textTitle
                 font-size: 1.1rem
+        +max-pad
+            padding: 10px 5px
+            .f-textTitle
+                font-size: .95rem
     .qa-nav
         +max-phone
             font-size: 15px
+    #in-store, #in-brook, #out-store, #out-brook
+        +pad
+            .process-list
+                .f-textTitle
+                    min-height: 66px
