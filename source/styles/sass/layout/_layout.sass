@@ -13,6 +13,7 @@ html:lang(zh-TW) body
 
 html:lang(ja),
 html:lang(ja) body
+    line-height: 1.4
     font-family: 'Noto Sans JP','Roboto', sans-serif
 
 html:lang(en),
@@ -683,6 +684,7 @@ html>/**/body
     overflow: hidden
     +padpro
         height: 21vh
+        min-height: 300px
     +max-pad
         height: 40vh
     +max-phone
@@ -1022,8 +1024,114 @@ html>/**/body
 
 
 html:lang(ja)
+    // f22
     .f-textTitle
-        font-size: 1.3rem
+        font-size: $f-textTitle * 0.9
+    // f30
+    .f-textTitle-big
+        font-size: $f-textTitle-big_jp
+        +max-notebook
+            font-size: $f-textTitle-big_jp * 0.9
+        +max-notebook-mini
+            font-size: $f-textTitle-big_jp * 0.8
+        +max-padpro
+            font-size: $f-textTitle-big_jp
+        +max-pad
+            font-size: $f-textTitle-big_jp * 0.7
+        +max-phonemini
+            font-size: $f-textTitle-big_jp * 0.6
+    // f36
+    .f-sc-title
+        font-size: $f-sc-title_jp
+        font-weight: $f-bold
+        color: $dark
+        +max-notebook
+            font-size: $f-sc-title_jp * 0.9
+        +max-notebook-mini 
+            font-size: $f-sc-title_jp * 0.85
+        +max-padpro
+            font-size: $f-sc-title_jp
+        +max-pad
+            font-size: $f-sc-title_jp * 0.8
+        +max-phonemini
+            font-size: $f-sc-title_jp * 0.6
+    // f46
+    .f-bannerTitle
+        font-size: $f-bannerTitle_jp
+        font-weight: $f-heavy
+        +max-notebook
+            font-size: $f-bannerTitle_jp * 0.8
+        +max-notebook-mini
+            font-size: $f-bannerTitle_jp * 0.7
+        +max-padpro
+            font-size: $f-bannerTitle_jp
+        +max-pad
+            font-size: $f-bannerTitle_jp * 0.6
+        +max-phonemini
+            font-size: $f-bannerTitle_jp * 0.5
+    // f50
+    .f-heroTitle-xs
+        font-size: $f-heroTitle-xs_jp
+        font-weight: $f-heavy
+        +max-notebook
+            font-size: $f-heroTitle-xs_jp * 0.8
+        +max-notebook-mini
+            font-size: $f-heroTitle-xs_jp * 0.7
+        +max-padpro
+            font-size: $f-heroTitle-xs_jp
+        +max-pad
+            font-size: $f-heroTitle-xs_jp * 0.6
+        +max-phonemini
+            font-size: $f-heroTitle-xs_jp * 0.5
+    // f62
+    .f-heroTitle
+        font-size: $f-heroTitle_jp
+        font-weight: $f-heavy
+        +max-notebook
+            font-size: $f-heroTitle_jp * 0.8
+        +max-notebook-mini
+            font-size: $f-heroTitle_jp * 0.65
+        +max-padpro
+            font-size: $f-heroTitle_jp
+        +max-pad
+            font-size: $f-heroTitle_jp * 0.5
+        +max-phonemini
+            font-size: $f-heroTitle_jp * 0.4
+    // f76
+    .f-heroTitle-big
+        font-size: $f-heroTitle-big_jp
+        font-weight: $f-heavy
+        +max-notebook
+            font-size: $f-heroTitle-big_jp * 0.8
+        +max-notebook-mini
+            font-size: $f-heroTitle-big_jp * 0.7
+        +max-padpro
+            font-size: $f-heroTitle-big_jp
+        +max-pad
+            font-size: $f-heroTitle-big_jp * 0.72
+        +max-phone-mid
+            font-size: $f-heroTitle-big_jp * 0.7
+        +max-phone
+            font-size: $f-heroTitle-big_jp * 0.56
+        +max-phonemini
+            font-size: $f-heroTitle-big_jp * 0.45
+    #in-brook, #out-brook
+        +max-notebook
+            .process-list
+                .f-textTitle
+                    min-height: 52px
+    #in-store, #in-brook, #out-store, #out-brook
+        +max-padpro
+            .process-list
+                .f-textTitle
+                    min-height: 54px
+    #in-store, #in-brook, #out-store, #out-brook
+        +max-padpro
+            .process-list
+                .f-textTitle
+                    min-height: 82px
+                .main-btn
+                    width: 100%
 
 html:lang(en)
     .store-list
@@ -1043,7 +1151,7 @@ html:lang(en)
         +max-padpro
             font-size: $f-textTitle-big_en
         +max-pad
-            font-size: $f-textTitle-big_en * 0.7
+            font-size: $f-textTitle-big_en * 0.8
         +max-phonemini
             font-size: $f-textTitle-big_en * 0.6
     // f36
@@ -1114,11 +1222,13 @@ html:lang(en)
         +max-padpro
             font-size: $f-heroTitle-big_en
         +max-pad
-            font-size: $f-heroTitle-big_en * 0.466
+            font-size: $f-heroTitle-big_en * 0.8
+        +max-phone-mid
+            font-size: $f-heroTitle-big_en * 0.65
         +max-phone
-            font-size: $f-heroTitle-big_en * 0.41
+            font-size: $f-heroTitle-big_en * 0.58
         +max-phonemini
-            font-size: $f-heroTitle-big_en * 0.3
+            font-size: $f-heroTitle-big_en * 0.5
     .process-list
         +min-padpro
             .f-textTitle

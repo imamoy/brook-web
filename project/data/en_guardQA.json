@@ -45,7 +45,7 @@
     },
     {
         "q": "When the light is orange/red after a socket test how can we determine whether the impedance is too high because of the socket reed or the rear circuit?",
-        "a": "When the orange/red light is on, it means possible aging of the socket or the circuit, or the impedance is too high. Use the following two steps to verify : <br>Change the socket first (based on our testing experiences, 90% of the aging problems come from the sockets).<br>If the testing light is still red/orange after having the socket changed, it indicates aging of the rear loop. You will need to schedule a rewiring."
+        "a": "When the orange/red light is on, it means possible aging of the socket or the circuit, or the impedance is too high. Use the following two steps to verify : <br>1. Change the socket first (based on our testing experiences, 90% of the aging problems come from the sockets).<br>2. If the testing light is still red/orange after having the socket changed, it indicates aging of the rear loop. You will need to schedule a rewiring."
     },
     {
         "q": "IS WIRECARE waterproof?",

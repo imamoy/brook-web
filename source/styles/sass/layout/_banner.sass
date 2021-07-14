@@ -71,7 +71,7 @@
 		.full-hero_text-title
 			margin-top: 10px
 		.full-hero_text-text
-			padding: 15px 15px 40px
+			padding: 15px 34px 40px
 			font-size: 18px
 	+min-padpro
 		.full-hero_bg,&::before
@@ -91,8 +91,14 @@
 		.full-hero_product
 			width: 85%
 			margin: 0 auto 10px
+		.full-hero_text-title
+			br
+				display: none
+	+max-pad
+		.full-hero_text-title
+			font-size: 3rem
 	+max-phone
-		height: calc(100vh - 65px)
+		height: calc(100vh - 60px)
 		min-height: auto
 		padding-top: 0
 		.full-hero_bg
@@ -104,7 +110,7 @@
 		.full-hero_text
 			padding: 0
 		.full-hero_text-title
-			font-size: 1.8rem
+			font-size: 2.1rem
 			padding: 0 10px 10px
 			margin-top: 0
 			&::before
@@ -126,6 +132,7 @@
 			margin-right: 20px !important
 	+max-phone-mid
 		.full-hero_text-title
+			font-size: 1.9rem
 			br
 				display: none
 	+max-phonemini
@@ -133,6 +140,7 @@
 			height: 25vh
 			margin: 0 auto
 		.full-hero_text-title
+			font-size: 1.6rem
 			margin-top: 0
 .full-hero
 	height: calc(100vh - 60px)
@@ -334,14 +342,22 @@
 			width: 100%
 			padding: 20px 20px 0
 
-html:lang(en)
+html:lang(en), html:lang(ja)
 	.full-hero_item
 		.full-hero_text-title
 			line-height: 1.4
 			&::before
-				height: 84%
+				height: 74%
 		.full-hero_text-text
 			line-height: 1.6
+		.main-btn
+			margin-top: -30px
+		+min-pc
+			.full-hero_text-text
+				padding: 30px 30px 65px
+		+notebook
+			.full-hero_text-text
+				padding: 15px 33px 40px
 		@media screen and (width: 1366px) and (height: 1024px)
 			transform: scale(1.2)
 			padding-right: 8%
@@ -358,11 +374,19 @@ html:lang(en)
 		+max-phone
 			.full-hero_text-title
 				&::before
-					height: 80%
+					height: 70%
 		+max-phonemini
+			.main-btn
+				margin-top: -20px
 			.full-hero_text-text
 				line-height: 1.4
 				font-size: 16px
-				padding-bottom: 10px
+				padding-bottom: 20px
 			.full-hero_product
 				padding-top: 30px
+	
+html:lang(en)
+	.full-hero_item
+		+max-phonemini
+			.main-btn
+				margin-top: -30px

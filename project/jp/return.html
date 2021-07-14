@@ -37,9 +37,9 @@
     <header id="header">
       <div class="container">
         <nav class="row">
-          <div class="col-6 col-lg-4 text-left d-lg-flex align-items-center"><a class="logo" href="index">
+          <div class="col-6 col-lg-3 text-left d-lg-flex align-items-center"><a class="logo" href="index">
               <h1 class="logo-pic">Brook Livin<img src="../styles/images/brook-logo.png" alt=""></h1></a></div>
-          <div class="col-6 col-lg-8 text-right d-flex justify-content-end align-items-center">
+          <div class="col-6 col-lg-9 text-right d-flex justify-content-end align-items-center">
             <div class="menu">
               <ui class="list-inline">
                 <li class="list-inline-item"><a href="about" title="ブランド紹介" rel="nofollow">ブランド紹介</a></li>
@@ -99,7 +99,7 @@
         </div>
       </div>
       <div id="page-nav">
-        <ul class="nav justify-content-center">
+        <ul class="nav nav-scroll justify-content-center">
           <li class="nav-item"><a class="nav-link" href="store">取扱店舗</a></li>
           <li class="nav-item"><a class="nav-link" href="warranty" rel="nofollow">保証について</a></li>
           <li class="nav-item"><a class="nav-link active" href="return" rel="nofollow">返品・交換方法</a></li>
@@ -112,6 +112,11 @@
             <div class="col-12 col-md-6 pb-4 pb-md-0">
               <h3 class="f-textTitle-big text-center py-4 py-md-5">保証対象内の返品・交換方法</h3>
               <div class="row justify-content-center">
+                <div class="col-12 col-md-6 text-center text-md-right">
+                  <button class="return-btn" type="button" data-toggle="modal" data-target="#in-store" data-tooltip="tooltip" data-placement="bottom" title="取扱店への返品・交換方法"><i class="icon-store-search"></i>
+                    <h5 class="f-textTitle text-center pt-3">取扱店への返品・交換方法</h5>
+                  </button>
+                </div>
                 <div class="col-12 col-md-6 text-center">
                   <button class="return-btn" type="button" data-toggle="modal" data-target="#in-brook" data-tooltip="tooltip" data-placement="bottom" title="Brookへの返品・交換方法"><i class="icon-brook"></i>
                     <h5 class="f-textTitle text-center pt-3">Brookへの返品・交換方法</h5>
@@ -122,6 +127,11 @@
             <div class="col-12 col-md-6 pb-4 pb-md-0">
               <h3 class="f-textTitle-big text-center py-4 py-md-5">保証対象外の返品・交換方法</h3>
               <div class="row justify-content-center">
+                <div class="col-12 col-md-6 text-center text-md-right">
+                  <button class="return-btn" type="button" data-toggle="modal" data-target="#out-store" data-tooltip="tooltip" data-placement="bottom" title="取扱店への返品・交換方法"><i class="icon-store-search"></i>
+                    <h5 class="f-textTitle text-center pt-3">取扱店への返品・交換方法</h5>
+                  </button>
+                </div>
                 <div class="col-12 col-md-6 text-center">
                   <button class="return-btn" type="button" data-toggle="modal" data-target="#out-brook" data-tooltip="tooltip" data-placement="bottom" title="Brookへの返品・交換方法"><i class="icon-brook"></i>
                     <h5 class="f-textTitle text-center pt-3">Brookへの返品・交換方法</h5>
@@ -139,7 +149,7 @@
               <div class="f-textTitle">取扱店への返品・交換方法</div>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             </div>
-            <div class="modal-body py-2 py-md-5">
+            <div class="modal-body px-0 py-2 py-md-5">
               <div class="container">
                 <div class="process-list text-center row process-list-slider-3 d-lg-flex justify-content-between pb-5 pb-md-0">
                   <div class="col-12 col-md-3 my-3 my-md-0"><i class="icon-store-search"></i>
@@ -170,7 +180,7 @@
               <div class="f-textTitle">Brookへの返品・交換方法</div>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             </div>
-            <div class="modal-body py-2 py-md-5">
+            <div class="modal-body px-0 py-2 py-md-5">
               <div class="container">
                 <div class="process-list text-center row process-list-slider-4 pb-5 pb-md-0">
                   <div class="col-12 col-md-3 my-3 my-md-0"><i class="icon-qa"></i>
@@ -206,7 +216,7 @@
               <div class="f-textTitle">取扱店への返品・交換方法</div>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             </div>
-            <div class="modal-body py-2 py-md-5">
+            <div class="modal-body px-0 py-2 py-md-5">
               <div class="container">
                 <div class="process-list text-center row process-list-slider-3 d-lg-flex justify-content-between pb-5 pb-md-0">
                   <div class="col-12 col-md-3 my-5 my-md-0"><i class="icon-store-search"></i>
@@ -237,7 +247,7 @@
               <div class="f-textTitle">Brookへの返品・交換方法</div>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
             </div>
-            <div class="modal-body py-2 py-md-5">
+            <div class="modal-body px-0 py-2 py-md-5">
               <div class="container">
                 <div class="process-list text-center row process-list-slider-4 pb-5 pb-md-0">
                   <div class="col-12 col-md-3 my-3 my-md-0"><i class="icon-qa"></i>
@@ -321,8 +331,6 @@
                   <li class="nav-item"><a class="nav-link pl-0" href="https://www.facebook.com/brooklivin" target="_blank"> <i class="icon-facebook"></i></a></li>
                   <li class="nav-item"><a class="nav-link pl-0" href="https://www.youtube.com/channel/UCExk26fvJiQtVVl_zwIZC0A" target="_blank"> <i class="icon-youtube"></i></a></li>
                   <li class="nav-item"><a class="nav-link pl-0" href="https://lin.ee/peukhM7" target="_blank"> <i class="icon-line-1"></i></a></li>
-                  <li class="nav-item"><a class="nav-link pl-0" href="#" target="_blank"> <i class="icon-twittwr"></i></a></li>
-                  <li class="nav-item"><a class="nav-link pl-0" href="#" target="_blank"> <i class="icon-zeczec"></i></a></li>
                 </ul>
               </div>
               <div class="col-12 col-md-4 col-lg-12">
