@@ -1706,6 +1706,14 @@ html:lang(ja) .f-heroTitle-big {
   html:lang(ja) #in-store .process-list .main-btn, html:lang(ja) #in-brook .process-list .main-btn, html:lang(ja) #out-store .process-list .main-btn, html:lang(ja) #out-brook .process-list .main-btn {
     width: 100%; } }
 
+@media screen and (max-width: 767px) {
+  html:lang(ja) .collapse-item-title h5 {
+    font-size: 17px; } }
+
+@media screen and (max-width: 767px) {
+  html:lang(ja) .qa-nav {
+    font-size: 15.6px; } }
+
 @media screen and (min-width: 767px) {
   html:lang(en) .store-list li {
     width: 100% !important; } }
