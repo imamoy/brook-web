@@ -973,11 +973,15 @@ html > body img:not(.img-no-full) {
         top: 20px;
         height: 16px; }
       #page-nav .nav-link {
-        padding: 15px;
-        font-size: 1rem; }
+        padding: 15px 12px;
+        font-size: 15px; }
         #page-nav .nav-link::before {
-          width: calc(100% - 30px);
-          left: 15px; } }
+          width: calc(100% - 24px);
+          left: 12px; } }
+  @media screen and (max-width: 320px) {
+    #page-nav .nav-link {
+      padding: 15px 8px;
+      font-size: 14px; } }
 
 .page-inner {
   padding: 8vh 0; }
@@ -1568,6 +1572,10 @@ html > body img:not(.img-no-full) {
   padding: 4px 10px 0;
   vertical-align: middle;
   border-radius: 5px; }
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  html:lang(zh-TW) #in-brook .process-list .f-textTitle, html:lang(zh-TW) #out-brook .process-list .f-textTitle {
+    min-height: 50px; } }
 
 html:lang(ja) .f-textTitle {
   font-size: 1.2375rem; }

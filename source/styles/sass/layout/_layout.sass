@@ -505,11 +505,15 @@ html>/**/body
                 top: 20px
                 height: 16px
         .nav-link
-            padding: 15px
-            font-size: $font-text
+            padding: 15px 12px
+            font-size: 15px
             &::before
-                width: calc(100% - 30px)
-                left: 15px
+                width: calc(100% - 24px)
+                left: 12px
+    +max-phonemini
+        .nav-link
+            padding: 15px 8px
+            font-size: 14px
 
 // 內頁
 .page-inner
@@ -1021,6 +1025,13 @@ html>/**/body
         padding: 4px 10px 0
         vertical-align: middle
         border-radius: 5px
+
+html:lang(zh-TW)
+    #in-brook, #out-brook
+        +pad
+            .process-list
+                .f-textTitle
+                    min-height: 50px
 
 
 html:lang(ja)
