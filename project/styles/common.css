@@ -515,6 +515,15 @@ html > body img:not(.img-no-full) {
 .t-red {
   color: red; }
 
+.t-dark {
+  color: #202020; }
+
+a .t-dark {
+  color: #202020; }
+
+a:hover .t-dark {
+  color: #00AFAA; }
+
 .f-en {
   font-family: 'Roboto', sans-serif; }
 
