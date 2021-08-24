@@ -40,6 +40,10 @@
         "a": "It is the device malfunction alert. If the system detects any anomaly in the internal loading resistors or the MOS switch is malfunctioning, all 8 LED lights will flash in green and red, and the usual testing process will be canceled."
     },
     {
+        "q": "What does it mean when WIRECARE lights up all green lights without flashing?",
+        "a": "It indicates the following special situations:<br><ol><li>The power supply of the socket is too weak for the program to detect the frequency of the AC sinusoidal during the test.</li><li>The old wires in the wall have deteriorated too much, causing an unstable power supply, thus the test procedures couldn’t be completed.</li><li>On the same power supply circuit, electronic appliances of high power usage may be disturbing the test. We recommend removing or shutting down such appliances nearby before restarting another test.</li></ol>"
+    },
+    {
         "q": "When the light is orange/red after testing an extension cord, should I change the socket or the extension cord?",
         "a": "Before testing an extension cord, please test the socket used by the extension cord first. If the light is green for the socket test, but is still orange/red for the extension cord test, it means that the load and impedance on the extension cord are becoming higher. High-power products are not recommended to be used with this extension cord."
     },
@@ -74,5 +78,13 @@
     {
         "q": "What does the warranty cover?",
         "a": "Every WIRECARE is under a 2-year warranty since the purchase date (refer to the instruction manual for details), and covered by an NTD 10,000,000 product liability insurance internationally."
+    },
+    {
+        "q": "Can it be used to test all AC power sources?",
+        "a": "This product is designed and tested for sine wave AC power provided by power companies. It is not applicable for non-sine wave AC circuits, such as the non-sine wave AC power output from a frequency converter or UPS."
+    },
+    {
+        "q": "Can it be used to test PDU? ",
+        "a": "The PDU (Power Distribution Unit) is equipped with the circuit protection function against lighting and surge, or current limiting, such as common-mode or differential mode filter circuits. It has electrical impedance, which leads to high electrical impedance in the test result of such circuit, showing one red light. Thus, this product is not applicable to circuits with a filter circuit at the front."
     }
 ]
