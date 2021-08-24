@@ -390,3 +390,33 @@ html:lang(en)
 		+max-phonemini
 			.main-btn
 				margin-top: -30px
+
+
+.full-hero
+	.full-hero_item.RWD_Banner
+		&::before
+			background: rgb(0,0,0)
+			background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%)
+			height: 80px
+			top: 0
+		.full-hero_bg
+			height: 100%
+			transition: 0.25s
+			img
+				object-position: center
+		+min-notebook
+			.pad, .mobile
+				display: none
+			&:hover
+				.full-hero_bg
+					transform-origin: center
+					transform: scale(1.02)
+		+max-padpro
+			height: calc(100vh - 60px)
+			.pc, .mobile
+				display: none
+		+max-phone
+			.pc, .pad
+				display: none
+			.mobile
+				display: block

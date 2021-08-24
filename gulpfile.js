@@ -100,6 +100,14 @@ gulp.task('images', function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task('json', function () {
+    return gulp
+    .src("./source/data/**/*")
+    .pipe($.plumber())
+    .pipe(gulp.dest("./project/data/"))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('sass', function () {
     var plugins = [                         
         autoprefixer({ browsers: ['last 2 version'] }) //postcss 使用的套件
@@ -143,8 +151,9 @@ gulp.task('watch', function () {
     gulp.watch('./source/styles/*.css', ['css-product']);
     gulp.watch('./source/styles/font/**/*', ['icon']);
     gulp.watch('./source/styles/images/**/*', ['images']);
+    gulp.watch('./source/data/**/*', ['json']);
     gulp.watch('./source/styles/**/*.sass', ['sass']);
     gulp.watch('./source/scripts/**/*.js', ['js']);
 });
 
-gulp.task('default', ['pug', 'jp-pug', 'en-pug' , 'inner-pug', 'jp-inner-pug', 'en-inner-pug', 'images', 'icon', 'css-plugins','css-product', 'sass', 'js', 'browser-sync', 'watch']);
+gulp.task('default', ['pug', 'jp-pug', 'en-pug' , 'inner-pug', 'jp-inner-pug', 'en-inner-pug', 'images', 'json', 'icon', 'css-plugins','css-product', 'sass', 'js', 'browser-sync', 'watch']);

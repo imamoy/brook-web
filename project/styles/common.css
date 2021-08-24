@@ -1288,20 +1288,16 @@ a:hover .t-dark {
           -o-object-fit: contain;
              object-fit: contain; } }
 
+#store-inner .main-btn {
+  min-width: 120px;
+  width: 100%; }
+
 .store-list .label {
   margin-right: 10px;
   font-weight: 500; }
 
 .store-list span {
   color: #3E505F; }
-
-@media screen and (min-width: 767px) {
-  .store-list li:first-child, .store-list li:nth-child(2) {
-    float: left; }
-  .store-list li:first-child {
-    width: 42%; }
-  .store-list li:nth-child(2) {
-    width: 58%; } }
 
 .store-products {
   padding: 10px;
@@ -2333,3 +2329,39 @@ html:lang(en) .full-hero_item .main-btn, html:lang(ja) .full-hero_item .main-btn
 @media screen and (max-width: 320px) {
   html:lang(en) .full-hero_item .main-btn {
     margin-top: -30px; } }
+
+.full-hero .full-hero_item.RWD_Banner::before {
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  height: 80px;
+  top: 0; }
+
+.full-hero .full-hero_item.RWD_Banner .full-hero_bg {
+  height: 100%;
+  -webkit-transition: 0.25s;
+  transition: 0.25s; }
+  .full-hero .full-hero_item.RWD_Banner .full-hero_bg img {
+    -o-object-position: center;
+       object-position: center; }
+
+@media screen and (min-width: 1200px) {
+  .full-hero .full-hero_item.RWD_Banner .pad, .full-hero .full-hero_item.RWD_Banner .mobile {
+    display: none; }
+  .full-hero .full-hero_item.RWD_Banner:hover .full-hero_bg {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02); } }
+
+@media screen and (max-width: 1199px) {
+  .full-hero .full-hero_item.RWD_Banner {
+    height: calc(100vh - 60px); }
+    .full-hero .full-hero_item.RWD_Banner .pc, .full-hero .full-hero_item.RWD_Banner .mobile {
+      display: none; } }
+
+@media screen and (max-width: 767px) {
+  .full-hero .full-hero_item.RWD_Banner .pc, .full-hero .full-hero_item.RWD_Banner .pad {
+    display: none; }
+  .full-hero .full-hero_item.RWD_Banner .mobile {
+    display: block; } }

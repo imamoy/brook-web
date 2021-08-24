@@ -759,20 +759,25 @@ a
                 height: 90%
                 object-fit: contain
 
+#store-inner
+    .main-btn
+        min-width: 120px
+        width: 100%
+
 .store-list
     .label
         margin-right: 10px
         font-weight: 500
     span
         color: #3E505F
-    +min-pad
-        li
-            &:first-child,&:nth-child(2)
-                float: left
-            &:first-child
-                width: 42%
-            &:nth-child(2)
-                width: 58%
+    // +min-pad
+    //     li
+    //         &:first-child,&:nth-child(2)
+    //             float: left
+    //         &:first-child
+    //             width: 42%
+    //         &:nth-child(2)
+    //             width: 58%
 
 .store-products
     padding: 10px

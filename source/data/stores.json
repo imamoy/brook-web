@@ -1,0 +1,25 @@
+[{
+        "id": 1,
+        "Name": "Brook Livin台北店",
+        "tel": "02-00000000",
+        "time": "上午 10:00 至 晚上 22:00",
+        "address": "台北市中正區中華路一段1號",
+        "mapLink": "",
+        "pic": "styles/images/store-p1.jpg",
+        "hasOnlineStore": true,
+        "onlineStoreLink": "",
+        "products": "BROOK 紫外線消毒盒・WIRECARE 宅電防護員"
+    },
+    {
+        "id": 2,
+        "Name": "Brook Livin台中店",
+        "tel": "02-00000000",
+        "time": "上午 10:00 至 晚上 22:00",
+        "address": "台北市中正區中華路一段1號",
+        "mapLink": "",
+        "pic": "styles/images/store-p2.jpg",
+        "hasOnlineStore": false,
+        "onlineStoreLink": "",
+        "products": "BROOK 紫外線消毒盒・WIRECARE 宅電防護員"
+    }
+]
