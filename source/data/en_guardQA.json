@@ -41,7 +41,7 @@
     },
     {
         "q": "What does it mean when WIRECARE lights up all green lights without flashing?",
-        "a": "It indicates the following special situations:<br><ol><li>The power supply of the socket is too weak for the program to detect the frequency of the AC sinusoidal during the test.</li><li>The old wires in the wall have deteriorated too much, causing an unstable power supply, thus the test procedures couldn’t be completed.</li><li>On the same power supply circuit, electronic appliances of high power usage may be disturbing the test. We recommend removing or shutting down such appliances nearby before restarting another test.</li></ol>"
+        "a": "It indicates the following special situations:<br>1.he power supply of the socket is too weak for the program to detect the frequency of the AC sinusoidal during the test.<br>2.The old wires in the wall have deteriorated too much, causing an unstable power supply, thus the test procedures couldn’t be completed.<br>3.On the same power supply circuit, electronic appliances of high power usage may be disturbing the test. We recommend removing or shutting down such appliances nearby before restarting another test."
     },
     {
         "q": "When the light is orange/red after testing an extension cord, should I change the socket or the extension cord?",
