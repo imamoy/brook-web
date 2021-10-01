@@ -12755,3 +12755,13 @@ img {
 	font-size: 24px;
 	color: #faf10e;
 }
+a.click-button {
+	color: #FFF;
+}
+a.click-button i{
+	font-size: 20px;
+	line-height: 0;
+}
+a.click-button i::before {
+	margin-right: 0;
+}

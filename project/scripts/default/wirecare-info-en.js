@@ -57,7 +57,7 @@ $(document).ready(function () {
 })
 
 $(document).ready(function () {
-	$('.click-button').on('click', function () {
+	$('#view-video').on('click', function () {
 		if (window.innerWidth < 100) {
 			$('.slide-dot').css('width', '115px')
 		} else {
@@ -66,8 +66,8 @@ $(document).ready(function () {
 			let offsetTop = $('.block-demo-video2').offset().top
 
 			setTimeout(function () {
-				$('.click-button').css('opacity', '0')
-				$('.click-button').css('cursor', 'auto')
+				$('#view-video').css('opacity', '0')
+				$('#view-video').css('cursor', 'auto')
 
 				$('.block-demo-video2').css('height', '54%')
 

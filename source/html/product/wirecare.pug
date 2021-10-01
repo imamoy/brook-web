@@ -13,11 +13,14 @@ block content
             .content
                 img(src='../styles/images/wirecare-info/reuseImages/wireCare3.png' alt='' srcset='')
                 p 一鍵解開居家電線檢測
-                .click-button
+                .click-button.m-2#view-video
                     .slide
                         .slide-dot
                             .dot
                     span 點擊看更多
+                a.click-button.text-center.px-2.m-2(href='../store' target='_blank')
+                    i.icon-buy
+                    span 前往購買
             .block-demo-video2
                 iframe(width='560' height='315' src='https://www.youtube.com/embed/UIcJ9TRAUEo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen')
         .block-secret
@@ -319,13 +322,13 @@ block content
                             .footer.d-flex.justify-content-between
                                 .new NEW
                                 .date 2021/05/10
-                    //- .info-card-item
-                    //-     a(href='https://livin.brookaccessory.com/store.html' target='blank')
-                    //-         img(src='../styles/images/wirecare-info/reuseImages/info3.png' alt='')
-                    //-         .card-title 購買據點
-                    //-         .footer.d-flex.justify-content-between
-                    //-             .new NEW
-                    //-             .date 2021/04/07
+                    .info-card-item
+                        a(href='../store' target='blank')
+                            img(src='../styles/images/wirecare-info/reuseImages/info3.png' alt='')
+                            .card-title 購買據點
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/08/12
                     .info-card-item
                         a(href='https://livin.brookaccessory.com/qa-wirecare' target='blank')
                             img(src='../styles/images/wirecare-info/reuseImages/info4.png' alt='')
