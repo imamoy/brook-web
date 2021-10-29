@@ -2,7 +2,7 @@
 extends ./include/layout.pug
 block page-css
     link(rel="stylesheet" type="text/css" href="styles/index.css")
-    
+
 block content
     main#index.wrapper
         section.full-hero.dots-inner
@@ -44,6 +44,7 @@ block content
             .container
                 h2.f-sc-title.text-center 活動特區
                 .activity-slider.slider-2.my-lg-4.gray-arrows.pb-4.pb-lg-0
+                    +activity-card('styles/images/news/tw/activity-5/index_677x452.png','activity-5','2021/10/29','WIRECARE 嘖嘖贊助粉絲感謝祭開跑！','歡慶 「WIRECARE 宅電防護員」，全球銷售突破5千台！限定回饋 Brook Livin「嘖嘖ZecZec」贊助者！好康再加碼！Brook Livin 讓水電師傅，到府插座免費換！')
                     +activity-card('styles/images/news/中秋幸福慶佳節-首頁677X452.png','activity-4','2021/9/6','2021年 Brook Livin中秋幸福慶佳節','每逢佳節倍思親，今年就讓宅電防護員WIRECARE守護您的家人吧！只要在活動期間內前往 FB 粉絲團按讚，對指定貼文按讚留言分享，就有機會免費獲得<WIRECARE>…！')
                     +activity-card('styles/images/act-3-index.jpg','activity-3','2021/6/29','2021年Brook Livin品牌大使徵選開跑！ ','品牌大使徵選活動開跑囉！您是否喜歡思考，創意滿點，同時又樂於分享呢？7月1日開始，只要參予徵選活動，就有機會成為成為Brook Livin 品牌大使！')
                     +activity-card('styles/images/act-1-list-index.jpg','activity-1','2021/5/10','水電施工-溝通很重要-其實不用諜對諜','企業與家庭的電器施工，為何水電師傅沒有照要求執行?廠商報價這樣，會不會太貴?')
