@@ -1,7 +1,7 @@
 .full-hero
-	+min-notebook
+	+min-padpro
 		height: 100vh !important
-	+max-padpro
+	+max-pad
 		height: calc(100vh - 65px);
 		.slick-list,.slick-track
 			height: auto;
@@ -76,7 +76,7 @@
 	+min-padpro
 		.full-hero_bg,&::before
 			height: 102%
-	+max-padpro
+	+max-pad
 		.main-btn
 			width: 120px
 			margin-right: 20px !important
@@ -191,7 +191,7 @@
 		z-index: 10
 	+max-notebook
 		height: 400px
-	+max-padpro
+	+max-pad
 		&.mini
 			height: 240px
 	+max-pad
@@ -246,7 +246,7 @@
 	+max-notebook-mini
 		.project-hero_text
 			padding-top: 14vh
-	+max-padpro
+	+max-pad
 		.f-heroTitle
 			letter-spacing: 5px !important
 		.project-hero_text
@@ -287,7 +287,7 @@
 		&::before,.project-hero_bg
 			height: 75%
 	+max-phonemini
-		.project-hero_text 
+		.project-hero_text
 			margin-bottom: 40px
 			img
 				width: 70%
@@ -295,7 +295,7 @@
 				margin-top: 30px
 		.f-heroTitle
 			font-size: 1.6rem
-		
+
 .banner-slider
 	margin-bottom: 0 !important
 	&.greenBorder-arrows
@@ -321,14 +321,14 @@
 			text-align: justify
 			width: 90%
 			margin: .4rem 0 1.6rem
-	+min-notebook
+	+min-padpro
 		.banner-ad_text
 			margin: 0 auto 0 14%
 			p
 				+elipsis-multi(4)
 		.banner-ad_text,.banner-ad_pic
 			height: 480px
-	+max-padpro
+	+max-pad
 		.banner-ad_text
 			height: auto
 			min-height: 30vh
@@ -384,7 +384,7 @@ html:lang(en), html:lang(ja)
 				padding-bottom: 20px
 			.full-hero_product
 				padding-top: 30px
-	
+
 html:lang(en)
 	.full-hero_item
 		+max-phonemini
@@ -404,14 +404,14 @@ html:lang(en)
 			transition: 0.25s
 			img
 				object-position: center
-		+min-notebook
+		+min-padpro
 			.pad, .mobile
 				display: none
 			&:hover
 				.full-hero_bg
 					transform-origin: center
 					transform: scale(1.02)
-		+max-padpro
+		+max-pad
 			height: calc(100vh - 60px)
 			.pc, .mobile
 				display: none

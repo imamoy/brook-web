@@ -40,7 +40,7 @@ header#header {
   @media screen and (max-width: 1360px) {
     header#header {
       height: 80px; } }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 991px) {
     header#header {
       height: 60px;
       background-color: #00AFAA; }
@@ -127,7 +127,7 @@ header#header {
       margin: 0 -7vw;
       padding: 0 7vw; } }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   header#header + .wrapper {
     margin-top: 60px; } }
 
@@ -153,7 +153,7 @@ header#header {
     cursor: pointer; }
   #header .menu-sub-menu a {
     display: block; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     #header {
       height: 100px; }
       #header .menu {
@@ -243,7 +243,7 @@ header#header {
         top: 80px; }
       #header .product-sub-menu .container {
         max-width: 960px; } }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 991px) {
     #header .menu-hover, #header .product-hover {
       height: auto; } }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -266,7 +266,7 @@ header#header {
     margin: 0 6px; }
   .lang-btn .icon-arrow-b {
     font-size: 8px; }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 991px) {
     .lang-btn {
       padding: 10px 0;
       margin-top: 4px; }
@@ -325,7 +325,7 @@ header#header {
   .hamburger.is-active .line:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg); }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     .hamburger {
       display: none; } }
 
@@ -1891,11 +1891,11 @@ html:lang(en) .return-btn .f-textTitle {
   html:lang(en) #in-store .process-list .f-textTitle, html:lang(en) #in-brook .process-list .f-textTitle, html:lang(en) #out-store .process-list .f-textTitle, html:lang(en) #out-brook .process-list .f-textTitle {
     min-height: 66px; } }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .full-hero {
     height: 100vh !important; } }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .full-hero {
     height: calc(100vh - 65px); }
     .full-hero .slick-list, .full-hero .slick-track {
@@ -1978,7 +1978,7 @@ html:lang(en) .return-btn .f-textTitle {
   @media screen and (min-width: 992px) {
     .full-hero_item .full-hero_bg, .full-hero_item::before {
       height: 102%; } }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 991px) {
     .full-hero_item .main-btn {
       width: 120px;
       margin-right: 20px !important; } }
@@ -2107,7 +2107,7 @@ html:lang(en) .return-btn .f-textTitle {
   @media screen and (max-width: 1440px) {
     .page-hero {
       height: 400px; } }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 991px) {
     .page-hero.mini {
       height: 240px; } }
   @media screen and (max-width: 991px) {
@@ -2168,7 +2168,7 @@ html:lang(en) .return-btn .f-textTitle {
   @media screen and (max-width: 1360px) {
     .project-hero .project-hero_text {
       padding-top: 14vh; } }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 991px) {
     .project-hero .f-heroTitle {
       letter-spacing: 5px !important; }
     .project-hero .project-hero_text {
@@ -2251,7 +2251,7 @@ html:lang(en) .return-btn .f-textTitle {
       text-align: justify;
       width: 90%;
       margin: .4rem 0 1.6rem; }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     .banner-ad .banner-ad_text {
       margin: 0 auto 0 14%; }
       .banner-ad .banner-ad_text p {
@@ -2261,7 +2261,7 @@ html:lang(en) .return-btn .f-textTitle {
         overflow: hidden; }
     .banner-ad .banner-ad_text, .banner-ad .banner-ad_pic {
       height: 480px; } }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 991px) {
     .banner-ad .banner-ad_text {
       height: auto;
       min-height: 30vh; }
@@ -2345,7 +2345,7 @@ html:lang(en) .full-hero_item .main-btn, html:lang(ja) .full-hero_item .main-btn
     -o-object-position: center;
        object-position: center; }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .full-hero .full-hero_item.RWD_Banner .pad, .full-hero .full-hero_item.RWD_Banner .mobile {
     display: none; }
   .full-hero .full-hero_item.RWD_Banner:hover .full-hero_bg {
@@ -2354,7 +2354,7 @@ html:lang(en) .full-hero_item .main-btn, html:lang(ja) .full-hero_item .main-btn
     -webkit-transform: scale(1.02);
             transform: scale(1.02); } }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
   .full-hero .full-hero_item.RWD_Banner {
     height: calc(100vh - 60px); }
     .full-hero .full-hero_item.RWD_Banner .pc, .full-hero .full-hero_item.RWD_Banner .mobile {
