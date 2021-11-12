@@ -841,9 +841,9 @@ a:hover .t-dark {
     -webkit-transition: color .25s;
     transition: color .25s; }
   .slick-arrow.slick-next::before {
-    content: '\e803'; }
+    content: '\e804'; }
   .slick-arrow.slick-prev::before {
-    content: '\e802'; }
+    content: '\e803'; }
   @media screen and (min-width: 992px) {
     .slick-arrow.slick-next {
       right: -50px; }
