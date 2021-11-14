@@ -1110,6 +1110,7 @@ a:hover .t-dark {
       bottom: 1.25rem; }
   .main-card .card-text {
     color: #808080;
+    height: 50px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
