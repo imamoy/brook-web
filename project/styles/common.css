@@ -1089,6 +1089,10 @@ a:hover .t-dark {
     font-weight: 600;
     line-height: 1.4;
     height: 66px;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+    text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -1112,6 +1116,10 @@ a:hover .t-dark {
   .main-card .card-text {
     color: #808080;
     height: 50px;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+    text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
