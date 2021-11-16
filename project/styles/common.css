@@ -1088,6 +1088,7 @@ a:hover .t-dark {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.4;
+    height: 66px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
