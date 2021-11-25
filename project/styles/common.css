@@ -33,10 +33,12 @@ header#header {
       right: 0;
       padding: 10px;
       height: 100%;
+      opacity: 0;
       -o-object-fit: contain !important;
          object-fit: contain !important; }
     header#header .product-sub-menu .nav-item.active .product-menu-pic {
-      display: block; } }
+      display: block;
+      opacity: 1; } }
   @media screen and (max-width: 1360px) {
     header#header {
       height: 80px; } }
@@ -328,6 +330,36 @@ header#header {
   @media screen and (min-width: 992px) {
     .hamburger {
       display: none; } }
+
+.block-demo-video2 {
+  position: relative; }
+  .block-demo-video2 #view-close-btn {
+    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    right: -20px;
+    top: -20px;
+    cursor: pointer; }
+    .block-demo-video2 #view-close-btn i {
+      display: inline-block;
+      font-size: 42px;
+      -webkit-transform: rotate(45deg) translate(1px, -17px);
+              transform: rotate(45deg) translate(1px, -17px);
+      color: #00AFAA; }
+    .block-demo-video2 #view-close-btn:hover i {
+      color: gray; }
 
 /* ==========================================================================
 		footer

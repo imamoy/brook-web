@@ -114,142 +114,162 @@ $(document).ready(function(){
     });
 
     if (jQuery(window).width() < 991) {
-        // $('.process-list-slider-3').slick({
-        //     arrows: false,
-        //     dots: false,
-        //     slidesToShow: 3,
-        //     slidesToScroll: 1,
-        //     responsive: [{
-        //         breakpoint: 600,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1,
-        //             arrows: false,
-        //             dots: true
-        //         }
-        //     }]
-        // });
-    
-        // $('.process-list-slider-4').slick({
-        //     arrows: false,
-        //     dots: false,
-        //     slidesToShow: 4,
-        //     slidesToScroll: 1,
-        //     responsive: [{
-        //         breakpoint: 600,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1,
-        //             arrows: false,
-        //             dots: true
-        //         }
-        //     }]
-        // });
-     }
+      // $('.process-list-slider-3').slick({
+      //     arrows: false,
+      //     dots: false,
+      //     slidesToShow: 3,
+      //     slidesToScroll: 1,
+      //     responsive: [{
+      //         breakpoint: 600,
+      //         settings: {
+      //             slidesToShow: 1,
+      //             slidesToScroll: 1,
+      //             arrows: false,
+      //             dots: true
+      //         }
+      //     }]
+      // });
+      // $('.process-list-slider-4').slick({
+      //     arrows: false,
+      //     dots: false,
+      //     slidesToShow: 4,
+      //     slidesToScroll: 1,
+      //     responsive: [{
+      //         breakpoint: 600,
+      //         settings: {
+      //             slidesToShow: 1,
+      //             slidesToScroll: 1,
+      //             arrows: false,
+      //             dots: true
+      //         }
+      //     }]
+      // });
+    }
 
     $(".hamburger").click(function () {
-        $(this).toggleClass("is-active");
-        $('.menu').slideToggle();
+      $(this).toggleClass("is-active");
+      $(".menu").slideToggle();
     });
 
-    $('#product-menu-nav .nav-item').hover(function(){
-        $(this).addClass('active').siblings().removeClass('active');
-    },function(){
+    $("#product-menu-nav .nav-item").hover(
+      function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      },
+      function () {}
+    );
+
+    $(".inner-menu-toggle").click(function () {
+      $(this)
+        .next()
+        .slideToggle()
+        .parents(".list-inline-item")
+        .siblings()
+        .find(".inner-menu-toggle")
+        .next()
+        .slideUp();
+      $("#header").addClass("active");
+    });
+    $(".wrapper").click(function () {
+      $(".inner-menu-toggle").next().slideUp();
     });
 
-    $('.inner-menu-toggle').click(function () {
-        $(this).next().slideToggle().parents('.list-inline-item').siblings().find('.inner-menu-toggle').next().slideUp();
-        $('#header').addClass('active');
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+      if (scroll > 100) {
+        $("#header").addClass("active");
+        $(".goTop").addClass("active");
+      } else {
+        $("#header").removeClass("active");
+        $(".goTop").removeClass("active");
+      }
     });
-    $('.wrapper').click(function(){
-        $('.inner-menu-toggle').next().slideUp();
+    $(".lang-btn").click(function () {
+      $(".lang-menu").slideToggle();
     });
 
-    $(window).on('scroll', function () {
+    $(".change").click(function () {
+      if ($(this).hasClass("used")) {
+        $(this).removeClass("used");
+        $(".flip-container").removeClass("flipped");
+        $(".use-change-progress").removeClass("active");
+        $(".change-inner").removeClass("active");
+      } else {
+        $(this).addClass("used");
+        $(".flip-container").addClass("flipped");
+        $(".use-change-progress").addClass("active");
+        $(".change-inner").addClass("active");
+      }
+    });
+
+    $(".new-page").each(function () {
+      $(this).prev("#header").addClass("active");
+
+      $(window).on("scroll", function () {
         var scroll = $(window).scrollTop();
         if (scroll > 200) {
-            $("#header").addClass('active');
-            $(".goTop").addClass('active');
+          $("#header").addClass("active");
         } else {
-            $("#header").removeClass('active');
-            $(".goTop").removeClass('active');
+          $("#header").addClass("active");
         }
-    });
-    $('.lang-btn').click(function () {
-        $('.lang-menu').slideToggle();
+      });
     });
 
-    $('.change').click(function () {
-        if ($(this).hasClass('used')) {
-            $(this).removeClass('used');
-            $('.flip-container').removeClass('flipped');
-            $('.use-change-progress').removeClass('active');
-            $('.change-inner').removeClass('active');
-        } else {
-            $(this).addClass('used');
-            $('.flip-container').addClass('flipped');
-            $('.use-change-progress').addClass('active');
-            $('.change-inner').addClass('active');
-        }
+    $("a.anchor").on("click", function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top - 90,
+          },
+          800,
+          function () {
+            window.location.hash = hash;
+          }
+        );
+      } // End if
     });
-
-    $('.new-page').each(function () {
-        $(this).prev('#header').addClass('active');
-
-        $(window).on('scroll', function () {
-            var scroll = $(window).scrollTop();
-            if (scroll > 200) {
-                $("#header").addClass('active');
-            } else {
-                $("#header").addClass('active');
-            }
-        });
-    });
-
-    $("a.anchor").on('click', function (event) {
-
-		if (this.hash !== "") {
-			event.preventDefault();
-
-			// Store hash
-			var hash = this.hash;
-
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top - 90
-			}, 800, function () {
-
-				window.location.hash = hash;
-			});
-		} // End if
-	});
 
     $(function () {
-        $('ul.cutover li').click(function () {
-            var $this = $(this),
-                _clickTab = $this.find('a').attr('href');
-            $this.addClass('active').siblings('.active').removeClass('active');
-            $(_clickTab).stop(false, true).addClass('show').siblings().removeClass('show');
+      $("ul.cutover li")
+        .click(function () {
+          var $this = $(this),
+            _clickTab = $this.find("a").attr("href");
+          $this.addClass("active").siblings(".active").removeClass("active");
+          $(_clickTab)
+            .stop(false, true)
+            .addClass("show")
+            .siblings()
+            .removeClass("show");
 
-            return false;
-        }).find('a').focus(function () {
-            this.blur();
+          return false;
+        })
+        .find("a")
+        .focus(function () {
+          this.blur();
         });
     });
 
     $(".goTop").click(function (e) {
-        e.preventDefault();
-        $("html,body").animate({
-            scrollTop: 0,
-        },600);
+      e.preventDefault();
+      $("html,body").animate(
+        {
+          scrollTop: 0,
+        },
+        600
+      );
     });
 
-    $('#copy-btn').on('click', function(e) {
-        var temp = $('<input>');
-        $('body').append(temp);
-        var url = window.location.href
-        temp.val(url).select(); 
-        document.execCommand('copy');
-        temp.remove();
+    $("#copy-btn").on("click", function (e) {
+      var temp = $("<input>");
+      $("body").append(temp);
+      var url = window.location.href;
+      temp.val(url).select();
+      document.execCommand("copy");
+      temp.remove();
     });
 
     $('#clear-btn').on('click',function(){

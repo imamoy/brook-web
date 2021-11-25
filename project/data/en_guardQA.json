@@ -86,5 +86,9 @@
     {
         "q": "Can it be used to test PDU? ",
         "a": "The PDU (Power Distribution Unit) is equipped with the circuit protection function against lighting and surge, or current limiting, such as common-mode or differential mode filter circuits. It has electrical impedance, which leads to high electrical impedance in the test result of such circuit, showing one red light. Thus, this product is not applicable to circuits with a filter circuit at the front."
+    },
+    {
+        "q": "Will WIRECARE's measurement accuracy be influenced if GFCI Ground Fault Circuit Interrupter) is installed in circuit?",
+        "a": "GFCI detects the difference between input and output currents. Input current is nearly the same as output when there is no electric leakage. Once the current difference becomes larger, it means that electricity is leaking and triggers GFCI to shut off the switch. Both currents are measured by a current loop which does not affect WIRECARE's resistance measurement."
     }
 ]

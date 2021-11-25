@@ -9,13 +9,13 @@ $(document).ready(function () {
 		customPaging: function (slick, index) {
 			switch (index) {
 				case 0:
-					return '<div><img src="../../styles/images/wirecare-info/reuseImages/err.png"><div class="content"><div>危機レーダー</div></div></div>'
+					return '<div><img src="../../styles/images/wirecare-info/reuseImages/err.png"><div class="content"><div>Crisis radar</div></div></div>'
 				case 1:
-					return '<div><img src="../../styles/images/wirecare-info/reuseImages/10SEC.png"><div class="content"><div>10秒で10年先を守れる</div></div></div>'
+					return '<div><img src="../../styles/images/wirecare-info/reuseImages/10SEC.png"><div class="content"><div>10 seconds for 10 years of safety</div></div></div>'
 				case 2:
-					return '<div><img src="../../styles/images/wirecare-info/reuseImages/SMALL.png"><div class="content"><div>安全サポーター					</div></div></div>'
+					return '<div><img src="../../styles/images/wirecare-info/reuseImages/SMALL.png"><div class="content"><div>Safety helper</div></div></div>'
 				case 3:
-					return '<div><img src="../../styles/images/wirecare-info/reuseImages/RADER.png"><div class="content"><div>電気の使用安全信号機</div></div></div>'
+					return '<div><img src="../../styles/images/wirecare-info/reuseImages/RADER.png"><div class="content"><div>Power traffic light</div></div></div>'
 			}
 		},
 	})
@@ -57,28 +57,35 @@ $(document).ready(function () {
 })
 
 $(document).ready(function () {
-	$('#view-video').on('click', function () {
-		if (window.innerWidth < 100) {
-			$('.slide-dot').css('width', '115px')
-		} else {
-			$('.slide').css('width', '90%')
+  $("#view-video").on("click", function () {
+    if (window.innerWidth < 100) {
+      $(".slide-dot").css("width", "115px");
+    } else {
+      $(".slide").css("width", "90%");
 
-			let offsetTop = $('.block-demo-video2').offset().top
+      let offsetTop = $(".block-demo-video2").offset().top;
 
-			setTimeout(function () {
-				$('#view-video').css('opacity', '0')
-				$('#view-video').css('cursor', 'auto')
+      setTimeout(function () {
+        $("#view-video").css("opacity", "0");
+        $("#view-video").css("cursor", "auto");
 
-				$('.block-demo-video2').css('height', '54%')
+        $(".block-demo-video2").css("height", "54%");
+        $(".block-demo-video2").css("overflow", "visible");
 
-				window.scrollTo({
-					top: offsetTop / 3,
-					behavior: 'smooth',
-				})
-			}, 700)
-		}
-	})
-})
+        window.scrollTo({
+          top: offsetTop / 3,
+          behavior: "smooth",
+        });
+      }, 700);
+    }
+  });
+});
+$("#view-close-btn").on("click", function () {
+  $("#view-video").css("opacity", "0");
+  $("#view-video").css("cursor", "auto");
+  $(".block-demo-video2").css("overflow", "hidden");
+  $(".block-demo-video2").css("height", "0");
+});
 
 $(document).ready(function () {
 	window.innerWidth >= 1024
