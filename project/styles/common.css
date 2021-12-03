@@ -1769,6 +1769,10 @@ html:lang(ja) .f-heroTitle-big {
   html:lang(ja) .qa-nav {
     font-size: 15.6px; } }
 
+html:lang(ja) .block-demo-video2 #view-close-btn i {
+  -webkit-transform: rotate(45deg) translate(1px, -13px);
+          transform: rotate(45deg) translate(1px, -13px); }
+
 @media screen and (min-width: 767px) {
   html:lang(en) .store-list li {
     width: 100% !important; } }
@@ -1932,6 +1936,10 @@ html:lang(en) .return-btn .f-textTitle {
 @media screen and (min-width: 767px) and (max-width: 991px) {
   html:lang(en) #in-store .process-list .f-textTitle, html:lang(en) #in-brook .process-list .f-textTitle, html:lang(en) #out-store .process-list .f-textTitle, html:lang(en) #out-brook .process-list .f-textTitle {
     min-height: 66px; } }
+
+html:lang(en) .block-demo-video2 #view-close-btn i {
+  -webkit-transform: rotate(45deg) translate(1px, -13px);
+          transform: rotate(45deg) translate(1px, -13px); }
 
 @media screen and (min-width: 992px) {
   .full-hero {

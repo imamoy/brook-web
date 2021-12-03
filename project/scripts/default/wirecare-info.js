@@ -81,8 +81,9 @@ $(document).ready(function () {
   });
 });
 $("#view-close-btn").on("click", function () {
-  $("#view-video").css("opacity", "0");
-  $("#view-video").css("cursor", "auto");
+  $(".slide").css("width", "30px");
+  $("#view-video").css("opacity", "100");
+  $("#view-video").css("cursor", "pointer");
   $(".block-demo-video2").css("overflow", "hidden");
   $(".block-demo-video2").css("height", "0");
 });
