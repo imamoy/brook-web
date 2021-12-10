@@ -1,0 +1,70 @@
+//- index.pug
+extends include/new-layout.pug
+block meta
+    title Are your old house receptacle outlets safe?
+    meta(name='description' content="Without checking, people won't be able to find out whether the receptacle outlets and its wire behind the walls are safe or not.  Usually, it will cost you a lot of money and time to ask an electrician to check all the receptacle outlets of your house. With wirecare, you may save a few, and more importantly, you can do it yourself!")
+    meta(property='image' content='https://livin.brookaccessory.com/styles/images/news/en/new-06/meta.png')
+    meta(property='og:title' content='Are your old house receptacle outlets safe?')
+    meta(property='og:url' content='https://livin.brookaccessory.com/en/new-6')
+    meta(property='og:image' content='https://livin.brookaccessory.com/styles/images/news/en/new-06/meta.png')
+    meta(property='og:description' content="Without checking, people won't be able to find out whether the receptacle outlets and its wire behind the walls are safe or not.  Usually, it will cost you a lot of money and time to ask an electrician to check all the receptacle outlets of your house. With wirecare, you may save a few, and more importantly, you can do it yourself!")
+    meta(property='og:site_name' content='Are your old house receptacle outlets safe?')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 Are your old house receptacle outlets safe?
+                        .row
+                            .col-8.text-left
+                                a.tag.t-primary.mr-2(href='#') #wire safety
+                                a.tag.t-primary.mr-2(href='#') #money save
+                                a.tag.t-primary.mr-2(href='#') #outlet checking
+                                a.tag.t-primary.mr-2(href='#') #lighting system
+                                a.tag.t-primary.mr-2(href='#') #old house wire
+                            .col-4.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2021/12/03
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            img.mx-auto.img-fluid(src='../styles/images/news/en/new-06/content.png', alt='圖片' style='max-width: 800px;')
+                            br
+                            br
+                            p The answer is yes and no.  Without checking, people won't be able to find out whether the receptacle outlets and its wire behind the walls are safe or not.  Usually, it will cost you a lot of money and time to ask an electrician to check all the receptacle outlets of your house. With wirecare, you may save a few, and more importantly, you can do it yourself!
+                            br
+                            p The wirecare is a small device that evaluates the Wiring in Houses. It's a pretty simple unit: you plug in wirecare directly into an outlet and a series of LEDs flash for 10 seconds before stabilizing on a color. Red means call an Electrician, now; Orange indicates Sub-Par Wiring and Green indicates everything is Copacetic.
+                            br
+                            p How easy would that be? Let wirecare help you to protect your life and your old house for years to come.
+                            br
+                            a.t-primary(href="https://www.amazon.com/dp/B09BQT7SF4" target='_blank')
+                                h6 《 Find us at Amazon 》
+                            br
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 Share
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="Are your old house receptacle outlets safe?" data-description="Without checking, people won't be able to find out whether the receptacle outlets and its wire behind the walls are safe or not.  Usually, it will cost you a lot of money and time to ask an electrician to check all the receptacle outlets of your house. With wirecare, you may save a few, and more importantly, you can do it yourself!" data-image="https://livin.brookaccessory.com/styles/images/news/en/new-06/meta.png")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="Are your old house receptacle outlets safe?" data-description="Without checking, people won't be able to find out whether the receptacle outlets and its wire behind the walls are safe or not.  Usually, it will cost you a lot of money and time to ask an electrician to check all the receptacle outlets of your house. With wirecare, you may save a few, and more importantly, you can do it yourself!" data-image="https://livin.brookaccessory.com/styles/images/news/en/new-06/meta.png")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="Are your old house receptacle outlets safe?" data-description="Without checking, people won't be able to find out whether the receptacle outlets and its wire behind the walls are safe or not.  Usually, it will cost you a lot of money and time to ask an electrician to check all the receptacle outlets of your house. With wirecare, you may save a few, and more importantly, you can do it yourself!" data-image="https://livin.brookaccessory.com/styles/images/news/en/new-06/meta.png")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="news") Back to Menu
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 More News
+                        +main-card('','../styles/images/news/en/new-03/list.png','new-3','2021/12/03','WIRECARE brings a safer and smarter lifestyle for your family',"Do you know the electrical fire is one of the reasons causing the house on fire? Ignoring the dust on the outlets...")
+                        +main-card('','../styles/images/news/en/new-04/list.png','new-4','2021/12/03','An easy and efficient way to protect your love ones and properties',"When accident happened, people's regrets won't bring back your love ones and properties. Hence, checking…")
+                        +main-card('','../styles/images/news/en/new-05/list.png','new-5','2021/12/03','10 seconds of checking for 10 years of safety','What can you do within 10 seconds? With wirecare, you can give your family a safer life for 10 years to go in...')
+                        +main-card('','../styles/images/news/en/new-01/00_list.png','new-1','2021/10/19','ZEROPLUS steps into household appliance with its expertise in embedded systems products','Starting from 2020, COVID-19 widespread hits the world, and it also grows the demand of work-from-…')
+                        +main-card("","../styles/images/news/en/WIRECARE AC Circuit Tester_列表_425x200.png","unboxing","2021/9/16","Brook Livin WIRECARE AC Circuit Tester by The Ganssle Group","The WIRECARE is a small device that evaluates the Wiring in Houses and Buildings. It's a pretty simple... ")
+                        //- +main-card('','../styles/images/pic-1.jpg','new')
+                        //- +main-card('','../styles/images/pic-2.jpg','new')
+                        //- +main-card('','../styles/images/pic-3.jpg','new')

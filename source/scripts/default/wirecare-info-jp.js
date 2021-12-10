@@ -9,13 +9,13 @@ $(document).ready(function () {
 		customPaging: function (slick, index) {
 			switch (index) {
 				case 0:
-					return '<div><img src="../../styles/images/wirecare-info/reuseImages/err.png"><div class="content"><div>Crisis radar</div></div></div>'
+					return '<div><img src="../../styles/images/wirecare-info/reuseImages/err.png"><div class="content"><div>危機レーダー</div></div></div>'
 				case 1:
-					return '<div><img src="../../styles/images/wirecare-info/reuseImages/10SEC.png"><div class="content"><div>10 seconds for 10 years of safety</div></div></div>'
+					return '<div><img src="../../styles/images/wirecare-info/reuseImages/10SEC.png"><div class="content"><div>10秒で10年先を守れる</div></div></div>'
 				case 2:
-					return '<div><img src="../../styles/images/wirecare-info/reuseImages/SMALL.png"><div class="content"><div>Safety helper</div></div></div>'
+					return '<div><img src="../../styles/images/wirecare-info/reuseImages/SMALL.png"><div class="content"><div>安全サポーター</div></div></div>'
 				case 3:
-					return '<div><img src="../../styles/images/wirecare-info/reuseImages/RADER.png"><div class="content"><div>Power traffic light</div></div></div>'
+					return '<div><img src="../../styles/images/wirecare-info/reuseImages/RADER.png"><div class="content"><div>電気の使用安全信号機</div></div></div>'
 			}
 		},
 	})
