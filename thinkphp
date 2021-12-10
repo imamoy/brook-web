@@ -67,6 +67,7 @@
  RewriteRule ^jp/medias$ jp/medias.html [QSA,PT,L]
  RewriteRule ^jp/media$ jp/media.html [QSA,PT,L]
  RewriteRule ^jp/media-1$ jp/media-1.html [QSA,PT,L]
+ RewriteRule ^jp/media-2$ jp/media-2.html [QSA,PT,L]
  RewriteRule ^jp/activities$ jp/activities.html [QSA,PT,L]
  RewriteRule ^jp/activity$ jp/activity.html [QSA,PT,L]
  RewriteRule ^jp/activity-1$ jp/activity-1.html [QSA,PT,L]
