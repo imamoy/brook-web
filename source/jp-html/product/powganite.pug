@@ -1,0 +1,1198 @@
+//- index.pug
+extends ../include/product-layout.pug
+block meta
+    title POWGANITE リチウムイオン充電池 - Brook Livin
+    meta(name='description' content='次世代の「リチウムイオン充電池」は従来の充電池に比べ充電時間が短く、時間の節約になります。また、長寿命で安定した出力電圧によって、充電池を安心して長く使用することができます。')
+    meta(name='robots' content='次世代の「リチウムイオン充電池」は従来の充電池に比べ充電時間が短く、時間の節約になります。また、長寿命で安定した出力電圧によって、充電池を安心して長く使用することができます。')
+    meta(property='og:title' content='POWGANITE リチウムイオン充電池 - Brook Livin')
+    meta(property='og:url' content='https://livin.brookaccessory.com/en/product/powganite')
+    meta(property='og:image' content='https://livin.brookaccessory.com/styles/images/product/pdw/meta.png')
+    meta(property='og:description' content='次世代の「リチウムイオン充電池」は従来の充電池に比べ充電時間が短く、時間の節約になります。また、長寿命で安定した出力電圧によって、充電池を安心して長く使用することができます。')
+    meta(property='og:site_name' content='POWGANITE リチウムイオン充電池 - Brook Livin')
+
+block page-css
+    link(rel='stylesheet' type='text/css' href='../../styles/wirecare-info.css')
+    link(rel='stylesheet' type='text/css' href='../../styles/powganite.css')
+    style.
+        body, html {
+            margin: 0;
+            font-family: 'Noto Sans JP', sans-serif !important;
+            font-weight: 400;
+        }
+
+        .block-second-card-container .content .title_container {
+            width: 400px;
+        }
+
+        .block-second-card-container .content .title_container ._subtitle {
+            font-size: 18px;
+        }
+
+        .block-second-card-container .content .feasure_list_container .feasure_list li .btn_activity {
+            margin-top: 48px;
+            font-size: 18px;
+        }
+
+        .block-third-card-container .content ._subscription {
+            font-size: 22px;
+        }
+
+        .block-fourth-card-container .step-item .right_container .feature_info .title_container {
+            font-size: 27px;
+            text-align: left;
+            letter-spacing: 2px;
+        }
+
+        .block-fourth-card-container .step-item .right_container .feature_title .left_container {
+            width: 230px;
+        }
+
+        .block-fourth-card-container .step-item .right_container .feature_title .right_container {
+            width: calc(100% - 230px);
+        }
+
+        .block-fourth-card-container ._step-item1 .left_container .graph_img_container {
+            background-image: url(../../../styles/images/product/pdw/desktop/fourth_card1_left_icon_jp.png);
+        }
+
+        .block-fourth-card-container ._step-item1 .left_container .graph_img_container .float_icon_3 {
+            background-image: url(../../styles/images/product/pdw/desktop/step-item1_btm_1_jp.png);
+        }
+
+        .block-fourth-card-container ._step-item1 .left_container .graph_img_container .float_icon_4 {
+            background-image: url(../../styles/images/product/pdw/desktop/step-item1_btm_2_jp.png);
+        }
+
+        .block-fourth-card-container ._step-item3 .left_container .graph_img_container_2 .graph_img {
+            background-image: url(../../../styles/images/product/pdw/desktop/other_battery_jp.png);
+        }
+
+        .block-fifth-card-container .content .title_container {
+            width: 330px;
+        }
+
+        .block-fifth-card-container .content .title_container ._subtitle {
+            font-size: 26px;
+        }
+
+        .block-fifth-card-container .content .feasure_list_container .feasure_list li .btn_activity {
+            font-size: 23px;
+            padding-top: 35px;
+        }
+
+        .block-sixth-card-container .slick-item1 .container .title_container {
+            width: 630px;
+        }
+
+        .block-sixth-card-container .slick-item2 .container .title_container {
+            width: 550px;
+        }
+
+        .block-sixth-card-container .slick-item3 .container .title_container {
+            width: 510px;
+            right: 50px;
+        }
+
+        .block-sixth-card-container .slick-item4 .container .title_container {
+            width: 760px;
+        }
+
+        .block-sixth-card-container .slick-item4 .container .title_container .big_text {
+            letter-spacing: 0px;
+        }
+
+        .block-sixth-card-container .slick-item5 .container .title_container {
+            width: 380px;
+        }
+
+        .block-sixth-card-container ul.block-tips li>div {
+            width: 130px;
+        }
+
+        .block-sixth-card-container ul.block-tips li .content>div {
+            white-space: normal;
+            font-size: 13px;
+        }
+
+        .block-seventh-card-container .content .features_list_container ul.features_list {
+            max-width: 230px;
+        }
+
+        .block-seventh-card-container .content .left_container {
+            margin-top: 440px;
+            margin-left: -80px;
+            margin-right: 80px;
+        }
+
+        .block-seventh-card-container .content .left_container ._title>span.small_text {
+            font-size: 33px;
+        }
+
+        .block-eighth-card-container .content .title_container {
+            width: 695px;
+        }
+
+        .block-eighth-card-container .content .title_container ._subtitle {
+            padding-left: 5px;
+            padding-right: 8px;
+        }
+
+        .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(6)>div div._justify_text {
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        .block-nineth-card-container .content .left_container .title_container {
+            width: 360px;
+        }
+
+        .block-nineth-card-container .content .left_container .title_container ._title {
+            font-size: 40px;
+            letter-spacing: 0px;
+        }
+
+        .block-nineth-card-container .content .left_container .charge_status_container {
+            width: 360px;
+        }
+
+        .block-tenth-card-container .content .feasure_list_container .feasure_list li {
+            width: 490px;
+        }
+
+        .block-tenth-card-container .content {
+            max-width: 550px;
+            width: 50%;
+        }
+
+        .block-eleventh-card-container .content .title_container {
+            width: 550px;
+        }
+
+        .block-fourteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li:nth-child(2) .description {
+            height: 75px;
+        }
+
+        .block-fourteen-card-container .content .product_info_container .prodict_info .product_feature_container .cart_container .cart_btn {
+            width: 150px;
+        }
+
+        .block-fifteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li .title {
+            width: 44%;
+        }
+
+        .block-fifteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li .description {
+            width: 56%;
+        }
+    link(rel='stylesheet' type='text/css' href='../../styles/powganite-pad.css')
+    style.
+        @media only screen and (min-width: 768px) and (max-width: 1200px) {
+            .block-second-card-container .content .feasure_list_container .feasure_list li .btn_activity {
+                font-size: 15px;
+                letter-spacing: 0px;
+            }
+
+            .block-fourth-card-container .step-item .right_container .feature_info .title_container {
+                font-size: 23px;
+                padding-left: 5px;
+                letter-spacing: 0px;
+            }
+
+            .block-fifth-card-container .content .feasure_list_container .feasure_list li .btn_activity {
+                font-size: 23px;
+            }
+
+            .block-fifth-card-container .content .feasure_list_container .feasure_list li .feasure_mask {
+                margin-bottom: -10px;
+            }
+
+
+            .block-sixth-card-container .slick-item1 .container .title_container {
+                width: 436px;
+                left: -240px;
+            }
+
+            .block-sixth-card-container .slick-item1 .container .title_container .big_text {
+                font-size: 29px;
+            }
+
+            .block-sixth-card-container .slick-item1 .container .title_container ._justify_text {
+                font-size: 19px;
+            }
+
+            .block-sixth-card-container .slick-item2 .container .title_container {
+                width: 450px;
+                left: 0px;
+            }
+
+            .block-sixth-card-container .slick-item .container .title_container .big_text {
+                letter-spacing: 0px;
+            }
+
+            .block-sixth-card-container .slick-item3 .container .title_container {
+                width: 360px;
+                right: 0px;
+            }
+
+            .block-sixth-card-container .slick-item3 .container .title_container .big_text {
+                font-size: 30px;
+            }
+
+            .block-sixth-card-container .slick-item4 .container .title_container {
+                width: 650px;
+            }
+
+            .block-sixth-card-container .slick-item5 .container .title_container {
+                width: 310px;
+            }
+
+            .block-seventh-card-container .content .left_container {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .block-seventh-card-container .content .left_container ._title > span.small_text {
+                font-size: 26px;
+                letter-spacing: 0px;
+            }
+
+            .block-eighth-card-container .content .feasure_list_container .feasure_list li .feasure_mask {
+                font-size: 15px;
+            }
+
+            .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(6) > div div._justify_text {
+                font-size: 15px;
+            }
+
+            .block-nineth-card-container .content .left_container .title_container {
+                width: 310px;
+            }
+
+            .block-nineth-card-container .content .left_container .title_container ._title {
+                font-size: 34px;
+            }
+
+            .block-tenth-card-container .content .feasure_list_container .feasure_list li .step_content {
+                font-size: 12px;
+                width: calc( 100% - 46px );
+                letter-spacing: 0px;
+            }
+
+            .block-fourteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li:nth-child(2) .description {
+                height: 100px;
+            }
+
+            .block-fifteen-card-container .content .product_info_container .prodict_info .title_container {
+                max-width: 250px;
+                float: initial;
+                margin: 0 auto;
+            }
+        }
+    link(rel='stylesheet' type='text/css' href='../../styles/powganite-mobile.css')
+    style.
+        @media only screen and (max-width: 767px) {
+            .block-main-banner-container .content h2 {
+                font-size: 25px;
+            }
+            .block-second-card-container .content .title_container h2._title {
+                font-size: 22px;
+            }
+
+            .block-main-banner-container .content .buy_btn_container {
+                width: 155px;
+            }
+            .block-second-card-container .content .title_container {
+                width: 100%;
+            }
+
+            .block-second-card-container .content .title_container ._subtitle {
+                font-size: 12px;
+            }
+
+            .block-second-card-container .content .feasure_list_container .feasure_list li .icon_img {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            .block-second-card-container .content .feasure_list_container .feasure_list li .btn_activity {
+                font-size: 12px;
+                width: calc( 100% - 50px );
+                margin-top: 5px;
+            }
+
+            .block-third-card-container .content ._title_container ._title {
+                font-size: 16px;
+            }
+
+            .block-third-card-container .content ._tilte2 {
+                font-size: 26px;
+            }
+
+            .block-third-card-container .content ._subscription {
+                font-size: 15px;
+            }
+
+            .block-fourth-card-container {
+                height: 700px;
+            }
+
+            .block-fourth-card-container .step-item .right_container .feature_info .title_container {
+                padding-left: 4px;
+                font-size: 19px;
+            }
+
+            .block-fourth-card-container .step-item .right_container .feature_title .left_container {
+                width: 200px;
+                font-size: 28px;
+                padding-top: 7px;
+            }
+
+            .block-fourth-card-container .step-item .right_container .feature_title .right_container {
+                width: calc( 100% - 200px );
+            }
+
+            .block-fourth-card-container .step-item .right_container .feature_info .title_container {
+                font-size: 20px;
+            }
+
+            .block-fifth-card-container .content .title_container {
+                width: 240px;
+            }
+
+            .block-fifth-card-container .content .title_container ._subtitle {
+                font-size: 19px;
+            }
+
+            .block-fifth-card-container .content .feasure_list_container .feasure_list li .btn_activity {
+                line-height: 1.2em;
+                font-size: 15px !important;
+            }
+
+            .block-fifth-card-container .content .feasure_list_container .feasure_list {
+                padding-bottom: 30px;
+            }
+
+            .block-fifth-card-container .content .feasure_list_container .left_battery_contain {
+                width: 35%;
+            }
+
+            .block-fifth-card-container .content .feasure_list_container .feasure_list {
+                width: 65%;
+            }
+
+            .block-fifth-card-container .content .feasure_list_container .feasure_list li .btn_activity span {
+                font-size: 12px;
+                letter-spacing: -1px;
+            }
+
+            .block-sixth-card-container .slick-item .container .title_container ._justify_text {
+                padding-left: 7px;
+                padding-right: 3px;
+            }
+
+            .block-sixth-card-container .slick-item1 .container .title_container {
+                width: 280px;
+                text-align: center;
+            }
+
+            .block-sixth-card-container .slick-item1 .container .title_container .big_text {
+                font-size: 16px;
+                letter-spacing: 0px;
+                padding-left: 0;
+            }
+
+            .block-sixth-card-container .slick-item1 .container .title_container ._justify_text {
+                font-size: 12px;
+            }
+
+            .block-sixth-card-container .slick-item1 .container .title_container .border_bottom {
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                width: 250px;
+            }
+
+            .block-sixth-card-container .slick-item2 .container .title_container {
+                width: 280px;
+            }
+
+            .block-sixth-card-container .slick-item2 .container .title_container .big_text {
+                font-size: 20px;
+            }
+
+            .block-sixth-card-container .slick-item3 .container .title_container {
+                width: 174px;
+                text-align: center;
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+
+            .block-sixth-card-container .slick-item3 .container .title_container .big_text {
+                font-size: 14px;
+                letter-spacing: 0px;
+            }
+
+            .block-sixth-card-container .slick-item3 .container .title_container ._justify_text {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            .block-sixth-card-container .slick-item4 .container .title_container {
+                right: 10px;
+                width: 285px;
+            }
+
+            .block-sixth-card-container .slick-item4 .container .title_container .big_text {
+                font-size: 14px;
+                padding: 0;
+            }
+
+            .block-sixth-card-container .slick-item4 .container .title_container ._justify_text {
+                font-size: 13px;
+                padding: 0;
+            }
+
+            .block-sixth-card-container .slick-item5 .container .title_container {
+                width: 195px;
+                text-align: center;
+            }
+
+            .block-sixth-card-container .slick-item5 .container .title_container .big_text {
+                font-size: 20px;
+                padding-left: 0;
+            }
+
+            .block-sixth-card-container .slick-item5 .container .title_container ._justify_text {
+                padding-left: 3px;
+            }
+
+            .block-sixth-card-container .slick-item5 .container .title_container .border_bottom {
+                width: 190px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+            }
+
+            .block-sixth-card-container ul.block-tips li {
+                height: 110px;
+            }
+
+            .block-seventh-card-container .content .left_container ._title:last-child {
+                width: 168px;
+            }
+
+            .block-seventh-card-container .content .left_container ._title > span.small_text {
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+
+            .block-seventh-card-container {
+                margin-top: 40px;
+            }
+
+            .block-seventh-card-container .content .left_container {
+                margin-left: -20px;
+                margin-right: 0;
+            }
+
+            .block-seventh-card-container .content .features_list_container {
+                max-width: 100px;
+                padding-left: 0px;
+                margin-right: -20px;
+            }
+
+            .block-seventh-card-container .content .features_list_container ul.features_list li {
+                max-width: 100px;
+            }
+
+            .block-eighth-card-container .content .feasure_list_container .feasure_list li .feasure_mask {
+
+            }
+
+            .block-eighth-card-container .content .title_container h2._title {
+                font-size: 20px;
+            }
+
+            .block-eighth-card-container .content .title_container ._subtitle {
+                text-align: center;
+                line-height: 1em;
+                font-size: 14px;
+                padding-top: 0;
+            }
+
+            .block-eighth-card-container .content .feasure_list_container {
+                height: auto;
+            }
+
+            .block-eighth-card-container .content .feasure_list_container .feasure_list {
+                height: auto;
+            }
+
+            .block-eighth-card-container .content .feasure_list_container .feasure_list li .feasure_mask {
+                line-height: 1.2em;
+                font-size: 12px;
+                letter-spacing: 0;
+            }
+
+            .block-eighth-card-container .content .feasure_list_container .feasure_list li .bold_font._justify_text:after {
+                display: none;
+            }
+
+            .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(6) > div div._justify_text {
+                letter-spacing: 0px;
+            }
+
+            .block-eighth-card-container .content .comment_info_container {
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+
+            .block-nineth-card-container .content .left_container .title_container {
+                width: 260px;
+            }
+
+
+            .block-nineth-card-container .content .left_container .charge_status_container {
+                width: 100%;
+            }
+
+            .block-eleventh-card-container {
+                height: 1180px;
+            }
+
+            .block-eleventh-card-container .content .title_container {
+                width: 95%;
+            }
+
+            .block-fourteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li .title {
+                font-size: 18px;
+            }
+
+            .block-fifteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li .title {
+                width: 47%;
+            }
+
+            .block-fifteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li .description {
+                width: 53%;
+                font-size: 14px;
+                line-height: 1.9em;
+            }
+
+        }
+
+block plugins-js
+    script.
+        var btnArr = ['電力不足', '電圧不足', '充電が遅い', '寿命が短い'];
+        var btnActivityArr = ['１回の使用でもう残容量不足？', '電圧が低すぎて製品が使えない？', '充電時間が長すぎる？', '短期間ですぐ故障？'];
+        var sixCardIconNameArr = ['ゲームコントローラー', '血圧計', 'カメラのフラッシュ', 'スマートロック', 'おもちゃ'];
+        var stepContentHtml = ['充電する電池を充電器に装填し、<br>プラスとマイナスの位置を確認する','Micro USB充電ケーブルを、<br>充電器上部の穴に差し込む','ケーブルのもう一方の端をUSBアダプターの穴に差し込み、充電を開始する','充電中は、<br>充電インジケーターが赤色に点灯','充電完了後は、<br>充電インジケーターが緑色に点灯'];
+        var pathBeforeStr = '../../';
+    script(src="../../scripts/default/powganite.js")
+
+block content
+    main#wirecare-info.wrapper
+        .block-main-banner-container
+            .content
+                .logo_img
+                h2._justify_text リチウムイオン充電池
+                ._statement._justify_text ずっとパワフル、寿命長持ち
+                .buy_btn_container
+                    //- .buy_btn(onclick="window.open('https://livin.brookaccessory.com/jp/store');")
+                    //-     i.icon-buy.buy_icon
+                    //-     | 購入へ進む
+                    .buy_btn
+                        i.icon-buy.buy_icon
+                        |  Coming soon
+        .block-second-card-container
+            .content
+                .title_container
+                    h2._title 一般の充電池を使って
+                    span._subtitle._justify_text
+                        | このような問題が起きたことはありませんか？
+                .feasure_list_container
+                    ul.feasure_list
+                        li
+                            .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/sec_icon_1.png);')
+                            .btn_activity 電力不足
+                        li
+                            .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/sec_icon_2.png);')
+                            .btn_activity 電圧不足
+                        li
+                            .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/sec_icon_3.png);')
+                            .btn_activity 充電が遅い
+                        li
+                            .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/sec_icon_4.png);')
+                            .btn_activity 寿命が短い
+        .block-third-card-container
+            .content
+                ._title_container
+                    h2._title 知らなきゃもったいない
+                    i.battery_icon
+                h2._tilte2 リチウムイオン充電池
+                ._subscription
+                    | 次世代の「リチウムイオン充電池」は
+                    .break_line_mobile
+                    | 従来の充電池に比べ充電時間が短く、
+                    br
+                    | 						時間の節約になります。
+                    br
+                    | 						また、長寿命で安定した出力電圧によって、
+                    .break_line_mobile
+                    | 充電池を安心して長く
+                    br
+                    | 						使用することができます。
+        .block-fourth-card-container._block-step
+            .step-item._step-item1
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text 5
+                            | 大ポイント
+                        .right_container 特色1
+                    .feature_info
+                        .title_container._justify_text 安定した電圧 長寿命
+                        ._subscription._justify_text
+                            | POWGANITEリチウムイオン充電池は、常に
+                            span._red 1.5Vの安定した電圧を維持
+                            | 、最後までパワフルな状態が持続し、高電圧・大電流を必要とする製品に安定した出力を提供します。
+                .left_container
+                    .graph_img_container
+                        .float_icon_1
+                        .float_icon_2
+                        .float_icon_3
+                        .float_icon_4
+                .float_title_container
+            .step-item._step-item2
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text 5
+                            | 大ポイント
+                        .right_container 特色2
+                    .feature_info
+                        .title_container._justify_text スマート急速充電 効率アップ
+                        ._subscription
+                            | POWGANITEリチウムイオン充電池は、フル充電に
+                            span._red 6〜8時間
+                            | しかかかりません。待ち時間の短縮と効率の向上を同時に実現します！
+                .left_container
+                    .graph_img_container_2
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .reflection
+                        .battery_title 一般充電池
+                    .graph_img_container_1
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                        .battery_title
+                            | POWGANITE
+                            br
+                            | リチウムイオン充電池
+                .float_title_container
+            .step-item._step-item3
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text 5
+                            | 大ポイント
+                        .right_container 特色3
+                    .feature_info
+                        .title_container._justify_text パワフル 長持ち
+                        ._subscription._justify_text
+                            | POWGANITEリチウムイオン充電池のエネルギーは
+                            span._red 3000mWh
+                            | と高く、一般的な充電池と比べて0.6倍以上のエネルギー容量を持っています。
+                .left_container
+                    .graph_img_container_2
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                    .graph_img_container_1
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                .float_title_container
+            .step-item._step-item4
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text 5
+                            | 大ポイント
+                        .right_container 特色4
+                    .feature_info
+                        .title_container._justify_text 安全な成分　環境に配慮
+                        ._subscription._justify_text
+                            | POWGANITEリチウムイオン充電池は、鉛や水銀を含まず、10年の保存期間と
+                            span._red 最大1000回の充電が可能
+                            | 、SDGsを重視した環境に優しい電池です。
+                .left_container
+                    .graph_img_container
+                        .graph_img
+                        .graph_img
+                        .graph_text
+                            | 最大可能充電数
+                            br
+                            sapn.big_text 0
+                            span.small_text 回
+                .float_title_container
+            .step-item._step-item5
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text 5
+                            | 大ポイント
+                        .right_container 特色5
+                    .feature_info
+                        .title_container._justify_text 低自己放電 メモリー効果なし
+                        ._subscription
+                            | POWGANITEリチウムイオン充電池は、１年間使用しなかった場合でも
+                            span._red 90％のパワー
+                            | を維持、３年後も通常通り使用できます。
+                .left_container
+                    .graph_img_container
+                .float_title_container
+        .block-fifth-card-container
+            .content
+                .title_container
+                    h2._title
+                        span.other_color 芯
+                        | のある電池
+                    span._subtitle._justify_text 安全マルチプロテクション
+                .feasure_list_container
+                    .left_battery_contain
+                    ul.feasure_list
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon01.png);')
+                                .btn_activity
+                                    | 温度保護
+                                    br
+                                    span 電池高温時の自動保護機能
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon02.png);')
+                                .btn_activity
+                                    | 過充電保護
+                                    br
+                                    span 電池の過充電を防ぐ
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon03.png);')
+                                .btn_activity
+                                    | 短絡保護
+                                    br
+                                    span 短絡防止用スマートチップ内蔵
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon04.png);')
+                                .btn_activity
+                                    | オーバーロード保護
+                                    br
+                                    span 電池のオーバーロードを防ぐ
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon05.png);')
+                                .btn_activity
+                                    | 過電圧保護
+                                    br
+                                    span 電池充電時の過電圧を防ぐ
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon06.png);')
+                                .btn_activity
+                                    | 過電流保護
+                                    br
+                                    span 電池充電時の過電流を防ぐ
+                            .bottom_border_container
+        .block-sixth-card-container
+            .slick-item.slick-item1
+                .container
+                    .title_container
+                        span.big_text 安定の電池寿命　意のままに遊ぶ
+                        br
+                        span._justify_text パワフルなエネルギーが、バトルで力を発揮する
+                        .border_bottom
+            .slick-item.slick-item2
+                .container
+                    .title_container
+                        span.big_text 健康のために　全力を尽くす
+                        br
+                        span._justify_text 急速充電で、瞬時に健康を後押し
+            .slick-item.slick-item3
+                .container
+                    .title_container
+                        span.big_text 撮影の強力なアシスタント
+                        br
+                        span._justify_text パワー長持ち、薄暗い撮影も怖くない
+            .slick-item.slick-item4
+                .container
+                    .title_container
+                        span.big_text スマートライフ　もっとスタイリッシュに
+                        br
+                        span._justify_text パワーずっと長持ち、ドアを開けるのも安心
+                        .border_bottom
+            .slick-item.slick-item5
+                .container
+                    .title_container
+                        span.big_text 強力電圧　全力投球
+                        br
+                        span._justify_text 瞬間爆発　思う存分に楽しむ
+                        .border_bottom
+        .block-seventh-card-container
+            .content
+                .left_container
+                    ._title
+                        span １本
+                        .border_bottom
+                    br
+                    ._title
+                        span.small_text あなたを理解するスマート電池
+                        .border_bottom
+                .features_list_container
+                    ul.features_list
+                        li 安定した電池寿命いつでも1.5V
+                        li
+                            | 少ない交換
+                            br
+                            | 電池回数
+                        li
+                            | 多くに適応
+                            br
+                            | 電子製品
+                        li グリーンエネルギー最良の選択
+        .block-eighth-card-container
+            .content
+                .title_container
+                    h2._title リチウムイオン充電池   専用充電器
+                    span._subtitle._justify_text 各充電器は厳しいテストに合格し、安全管理が行われています
+                .feasure_list_container
+                    ul.feasure_list
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text 簡単な識別
+                                br
+                                ._justify_text 容量インジケーター
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text １本の電池
+                                br
+                                ._justify_text 急速充電が可能
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text 環境に優しい素材ABS
+                                br
+                                ._justify_text 高い強度　優れた靭性
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text Micro USB充電ケーブル
+                                br
+                                ._justify_text 簡単で便利な充電
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text スマート分路
+                                br
+                                span._justify_text 安定した充電
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text 数々の国際認証をクリア
+                                br
+                                ._justify_text CE/FCC/PSE/ROHS/UL
+                    .battery_img_container
+                .comment_info_container
+                    | 充電器で充電する際には、他の種類の電池を使用しないでください。 (例：ニッケル水素、ニッケルカドミウム、アルカリ性、乾電池等)
+        .block-nineth-card-container
+            .content
+                .left_container
+                    .title_container
+                        h2._title 充電インジケーター
+                        span._subtitle._justify_text 容量が一目瞭然
+                    .charge_status_container
+                        .charge_status.active
+                            | 充電中：
+                            span 赤色点灯
+                        .charge_status
+                            | 充電完了：
+                            span 緑色点灯
+                .charger_img_container
+                    .charger_img
+                        .charger_light_img.red_light
+        .block-tenth-card-container
+            .bg_container.bg_step1.active
+            .bg_container.bg_step2
+            .bg_container.bg_step3
+            .bg_container.bg_step4
+            .bg_container.bg_step5
+            .title_container_mobile
+                h2._title シンプルな充電工程
+            .content
+                .title_container
+                    h2._title シンプルな充電工程
+                .feasure_list_container
+                    ul.feasure_list
+                        li.active
+                            .step_title
+                                | 1
+                            .step_content
+                                | 充電する電池を充電器に装填し、
+                                br
+                                | 									プラスとマイナスの位置を確認する
+                        li
+                            .step_title
+                                | 2
+                            .step_content
+                                | Micro USB充電ケーブルを、
+                                br
+                                | 									充電器上部の穴に差し込む
+                        li
+                            .step_title
+                                | 3
+                            .step_content
+                                | ケーブルのもう一方の端をUSBアダプターの穴に差し込み、
+                                br
+                                | 									充電を開始する
+                        li
+                            .step_title
+                                | 4
+                            .step_content
+                                | 充電中は、
+                                br
+                                | 									充電インジケーターが赤色に点灯
+                        li
+                            .step_title
+                                | 5
+                            .step_content
+                                | 充電完了後は、
+                                br
+                                | 									充電インジケーターが緑色に点灯
+                    .step_content_mobile_container
+                        | 充電する電池を充電器に装填し、
+                        br
+                        | 							プラスとマイナスの位置を確認する
+                    .battery_img_container
+        .block-eleventh-card-container
+            .content
+                .title_container
+                    h2._title 安全認証
+                    span._subtitle 製品は国際認証を取得し、専門家の承認を受けています
+                .certification_container
+                    .certification.battery_certification
+                        .title_container 電池安全認証
+                        .certification_items_container_slick
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi_2/PSE.jpg);')
+                                .certification_items(style='')
+                                    .certi_name PSE認証を取得
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi_2/UL.jpg);')
+                                .certification_items(style='')
+                                    .certi_name UL認証を取得
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi_2/UN38.3chip.jpg);')
+                                .certification_items(style='')
+                                    .certi_name UN38.3 電池用芯体認証を取得
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi_2/UN38.3.jpg);')
+                                .certification_items(style='')
+                                    .certi_name UN38.3 組電池認証を取得
+                    .certification.charger_certification
+                        .title_container 充電器安全認証
+                        .certification_items_container_slick
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/CE_Taiwan.jpg);')
+                                .certification_items(style='')
+                                    .certi_name 中国のCE EMC認証を取得
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/FCC.jpg);')
+                                .certification_items(style='')
+                                    .certi_name FCC認証を取得
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/PSE.jpg);')
+                                .certification_items(style='')
+                                    .certi_name PSE認証を取得
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/ROHS.jpg);')
+                                .certification_items(style='')
+                                    .certi_name ROHS認証を取得
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/UL.jpg);')
+                                .certification_items(style='')
+                                    .certi_name UL認証を取得
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/CE.jpg);')
+                                .certification_items(style='')
+                                    .certi_name 台湾のCE Safety認証を取得
+        //- .block-twelve-card-container.block-video
+        //-     iframe(width='560' height='315' src='https://www.youtube.com/embed/32TxQvF7Vsc' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen')
+        //- .block-thirteen-card-container
+        //-     .content
+        //-         .title 推奨
+        //-         ul.recommendation
+        //-             li(onclick="window.open('https://livin.brookaccessory.com/qa');" target='blank')
+        //-                 .img_
+        //-                 p 文字文字文字
+        //-             li(onclick="window.open('https://livin.brookaccessory.com/qa');" target='blank')
+        //-                 .img_
+        //-                 p 文字文字文字
+        //-             li(onclick="window.open('https://livin.brookaccessory.com/qa');" target='blank')
+        //-                 .img_
+        //-                 p 文字文字文字
+        .block-fourteen-card-container
+            .content
+                .title 販売情報
+                .product_info_container
+                    .prodict_info
+                        .title_container
+                            img(src='./../../styles/images/product/pdw/desktop/powganite_logo.png')
+                            br
+                            | 								リチウムイオン充電池
+                        .product_img(style='background-image: url(../../../styles/images/product/pdw/desktop/8O1A9940.psd.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text カラー
+                                    .description
+                                        .circle_
+                                li
+                                    .title._justify_text 内容物
+                                    .description 電池４本
+                            .cart_container
+                                //- .cart_btn(onclick="window.open('https://livin.brookaccessory.com/jp/store');")
+                                //-     i.icon-buy.buy_icon
+                                //-     | 購入へ進む
+                                .cart_btn
+                                    i.icon-buy.buy_icon
+                                    | Coming soon
+                    .prodict_info
+                        .title_container
+                            img(src='./../../styles/images/product/pdw/desktop/powganite_logo.png')
+                            br
+                            | 								リチウムイオン充電池セット
+                        .product_img(style='background-image: url(../../../styles/images/product/pdw/desktop/charger_product.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text カラー
+                                    .description
+                                        .circle_(style='background-color: #000;' data-val='balck')
+                                        // <div class="circle_" style="background-color: #fff;" data-val="balck"></div>
+                                li
+                                    .title._justify_text 内容物
+                                    .description
+                                        | 専用充電器、電池４本、
+                                        .break_line_desktop
+                                        | Micro USB充電ケーブル、電池収納ケース
+                            .cart_container
+                                .cart_btn
+                                    i.icon-buy.buy_icon
+                                    | Coming soon
+        .block-fifteen-card-container
+            .content
+                .title 製品仕様
+                .product_info_container
+                    .prodict_info
+                        .title_container
+                            | 1.5V/AA  リチウムイオン充電池
+                        .product_img(style='background-image: url(../../../styles/images/product/pdw/desktop/battery-group.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text 型番
+                                    .description
+                                        | ZBL-LBAA-001
+                                li
+                                    .title
+                                        ._justify_text セルの定格
+                                        ._justify_text 電圧/容量
+                                    .description
+                                        | 3.8V/900mAH
+                                li
+                                    .title
+                                        ._justify_text 電池の定格
+                                        ._justify_text エネルギー
+                                    .description
+                                        | 3000 mWh
+                                li
+                                    .title._justify_text 定格容量
+                                    .description
+                                        | 2000 mAh
+                                li
+                                    .title._justify_text 出力電圧
+                                    .description
+                                        | 1.5V
+                                li
+                                    .title._justify_text サイズ
+                                    .description
+                                        | 14X50±0.5mm
+                                li
+                                    .title._justify_text 重量
+                                    .description
+                                        | 20±0.5g
+                                li
+                                    .title._justify_text 充電回数
+                                    .description
+                                        | 1000回
+                    .prodict_info
+                        .title_container
+                            | 1.5V / AA リチウムイオン充電池 専用充電器
+                        .product_img(style='background-image: url(../../../styles/images/product/pdw/desktop/eighth_card_battery.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text 型番
+                                    .description
+                                        | ZBL-BCAA-001
+                                li
+                                    .title._justify_text 充電スロット数
+                                    .description
+                                        | 4槽
+                                li
+                                    .title._justify_text 入力電圧
+                                    .description
+                                        | 5V/1A
+                                li
+                                    .title._justify_text 出力電圧
+                                    .description
+                                        | 4.2V/1A
+                                li
+                                    .title._justify_text サイズ
+                                    .description
+                                        | 67x75x25±0.5mm
+                                li
+                                    .title._justify_text 重量
+                                    .description
+                                        | 48±0.3g
+        .block-sixteen-card-container.block-info
+            .container
+                .title 最新ニュース
+                .info-card
+                    .info-card-item
+                        a(href='https://livin.brookaccessory.com/jp/store' target='blank')
+                            img(src='../../styles/images/product/pdw/desktop/news_01.png' alt='')
+                            .card-title 販売拠点
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date Coming soon
+                    .info-card-item
+                        a(href='https://www.facebook.com/brooklivin' target='blank')
+                            img(src='../../styles/images/product/pdw/desktop/news_03.png' alt='')
+                            .card-title FACEBOOK
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/04/07
+                    .info-card-item
+                        a(href='../qa-powganite' target='blank')
+                            img(src='../../styles/images/product/pdw/desktop/news_02.png' alt='')
+                            .card-title よくある質問Q&A
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/05/10
+                .footer
+                    img(src='../../styles/images/wirecare-info/reuseImages/footer-logo.png' alt='')
+                    img(src='../../styles/images/product/pdw/desktop/powganite_logo.png' alt='')

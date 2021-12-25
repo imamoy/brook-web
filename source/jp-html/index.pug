@@ -6,7 +6,7 @@ block page-css
 block content
     main#index.wrapper
         section.full-hero.dots-inner
-            mixin full-hero-item
+            mixin full-hero-item(img)
                 .full-hero_item
                     .full-hero_bg
                         img(src="../../styles/images/index-banner.jpg", alt="")
@@ -23,6 +23,21 @@ block content
                                         h5.full-hero_text-text 台湾消防局の発表によると、火災原因上位3位はすべて誤った電気使用によって引き起こされたものでした。簡単な手順で家庭内のコンセントや延長コードの経年劣化を測定し、安全な技術を利用して、より確かな生活を実現します！
                                         a.main-btn.btn-white.ml-auto.mr-5(href="product/wirecare") さらに詳しく
             +full-hero-item
+            .full-hero_item
+                .full-hero_bg
+                    img(src="../../styles/images/index-banner.jpg", alt="")
+                .full-hero_inner
+                    .container
+                        .row
+                            .col-12.col-xl-5.offset-xl-1.d-flex.align-items-center
+                                .full-hero_product
+                                    img(src="../../styles/images/product/pdw/index-product.png", alt="")
+                            .col-12.col-xl-6
+                                .full-hero_text
+                                    .f-textTitle-big.hight-light 新発売
+                                    h1.f-heroTitle-big.full-hero_text-title ずっとパワフル#[br]寿命長持ち
+                                    h5.full-hero_text-text 次世代の「リチウムイオン充電池」は従来の充電池に比べ充電時間が短く、時間の節約になります。また、長寿命で安定した出力電圧によって、充電池を安心して長く使用することができます。
+                                    a.main-btn.btn-white.ml-auto.mr-5(href="product/powganite") さらに詳しく
         //- section#news-section.py-4.py-lg-5.mt-3.mt-lg-5
         //-     .container.highlight-bg
         //-         h2.f-sc-title.text-center.mb-0 最新ニュース

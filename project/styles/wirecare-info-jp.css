@@ -12217,7 +12217,7 @@ img {
 	display: none;
 }
 
-/* 
+/*
 .block-light .light {
 	display: flex;
 	justify-content: center;
@@ -12948,4 +12948,23 @@ a.click-button i{
 }
 a.click-button i::before {
 	margin-right: 0;
+}
+@media screen and (max-width: 767px) {
+	.block-tips {
+		flex-wrap: wrap;
+	}
+
+	.block-tips li {
+		width: 43%;
+		min-height: 100px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.block-tips li:first-child,
+	.block-tips li:nth-child(2) {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 }

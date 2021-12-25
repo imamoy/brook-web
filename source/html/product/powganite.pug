@@ -1,0 +1,601 @@
+//- index.pug
+extends ../include/product-layout.pug
+block meta
+    title POWGANITE 鋰離子充電電池 - Brook Livin
+    meta(name='description' content='新一代「鋰離子充電電池」與一般充電電池相比，充電時間更短能節省更多等待時間，同時也具備長效續航，且穩定的電壓輸出，讓充電電池使用安心又長久。')
+    meta(name='robots' content='新一代「鋰離子充電電池」與一般充電電池相比，充電時間更短能節省更多等待時間，同時也具備長效續航，且穩定的電壓輸出，讓充電電池使用安心又長久。')
+    meta(property='og:title' content='POWGANITE 鋰離子充電電池 - Brook Livin')
+    meta(property='og:url' content='https://livin.brookaccessory.com/product/powganite')
+    meta(property='og:image' content='https://livin.brookaccessory.com/styles/images/product/pdw/meta.png')
+    meta(property='og:description' content='新一代「鋰離子充電電池」與一般充電電池相比，充電時間更短能節省更多等待時間，同時也具備長效續航，且穩定的電壓輸出，讓充電電池使用安心又長久。')
+    meta(property='og:site_name' content='POWGANITE 鋰離子充電電池 - Brook Livin')
+
+block page-css
+    link(rel='stylesheet' type='text/css' href='../styles/wirecare-info.css')
+    link(rel='stylesheet' type='text/css' href='../styles/powganite.css')
+    link(rel='stylesheet' type='text/css' href='../styles/powganite-pad.css')
+    link(rel='stylesheet' type='text/css' href='../styles/powganite-mobile.css')
+
+block plugins-js
+    script.
+        var btnArr = ['電力匱乏', '電壓不足', '充電緩慢', '壽命短暫'];
+        var btnActivityArr = ['使用一下就沒電了嗎?', '電壓不足而推不動產品?', '充電時間太久了嗎?', '用沒多久就故障了嗎?'];
+        var sixCardIconNameArr = ['遊戲手把', '血壓計', '相機閃光燈', '智能鎖', '兒童玩具'];
+        var stepContentHtml = ['將需要充電的電池放入充電槽內，<br>並確認正負極位置。','將Micro USB線的頭<br>插入充電器上方的洞孔','另一頭線插入USB插座的洞孔<br>開始充電','充電時<br>充電器指示燈亮紅燈','充滿電後<br>充電指示燈亮綠燈'];
+        var pathBeforeStr = '../';
+    script(src="../scripts/default/powganite.js")
+
+block content
+    main#wirecare-info.wrapper
+        .block-main-banner-container
+            .content
+                .logo_img
+                h2._justify_text 鋰離子充電電池
+                ._statement._justify_text 電力強勁到底 高效循環壽命
+                .buy_btn_container
+                    //- .buy_btn(onclick="window.open('');")
+                    .buy_btn
+                        i.icon-buy.buy_icon
+                        |  Coming soon
+        .block-second-card-container
+            .content
+                .title_container
+                    h2._title 使用一般充電電池
+                    span._subtitle._justify_text 您也有遇到這樣的困擾嗎?
+                .feasure_list_container
+                    ul.feasure_list
+                        li
+                            .icon_img(style='background-image: url(./../styles/images/product/pdw/desktop/sec_icon_1.png);')
+                            .btn_activity 電力匱乏
+                        li
+                            .icon_img(style='background-image: url(./../styles/images/product/pdw/desktop/sec_icon_2.png);')
+                            .btn_activity 電壓不足
+                        li
+                            .icon_img(style='background-image: url(./../styles/images/product/pdw/desktop/sec_icon_3.png);')
+                            .btn_activity 充電緩慢
+                        li
+                            .icon_img(style='background-image: url(./../styles/images/product/pdw/desktop/sec_icon_4.png);')
+                            .btn_activity 壽命短暫
+        .block-third-card-container
+            .content
+                ._title_container
+                    h2._title 你不可不知的新一代
+                    i.battery_icon
+                h2._tilte2 鋰離子充電電池
+                ._subscription
+                    | 新一代「鋰離子充電電池」
+                    .break_line_mobile
+                    | 與一般充電電池相比，
+                    br
+                    |  充電時間更短能節省更多等待時間，
+                    br
+                    |  同時也具備長效續航，
+                    .break_line_mobile
+                    | 且穩定的電壓輸出，
+                    br
+                    |  讓充電電池使用安心又長久。
+        .block-fourth-card-container._block-step
+            .step-item._step-item1
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text 5
+                            | 大核心
+                        .right_container 特色一
+                    .feature_info
+                        .title_container._justify_text 電壓穩定 長效續航
+                        ._subscription._justify_text
+                            | POWGANITE鋰離子充電電池全程持續維持
+                            span._red 1.5V的穩定電壓
+                            | ，電力強勁持續到底，為需要高電壓、大電流的產品提供穩定輸出。
+                .left_container
+                    .graph_img_container
+                        .float_icon_1
+                        .float_icon_2
+                        .float_icon_3
+                        .float_icon_4
+                .float_title_container
+            .step-item._step-item2
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text 5
+                            | 大核心
+                        .right_container 特色二
+                    .feature_info
+                        .title_container._justify_text 智能快充 提升效率
+                        ._subscription
+                            | POWGANITE鋰離子充電電池充滿電只需
+                            span._red 6-8小時
+                            | 。減少等待時間，同時也能提升使用效率！
+                .left_container
+                    .graph_img_container_2
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .reflection
+                        .battery_title 一般充電電池
+                    .graph_img_container_1
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                        .battery_title
+                            | POWGANITE
+                            br
+                            | 鋰離子充電電池
+                .float_title_container
+            .step-item._step-item3
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text 5
+                            | 大核心
+                        .right_container 特色三
+                    .feature_info
+                        .title_container._justify_text 宏大能量 強勁持久
+                        ._subscription._justify_text
+                            | POWGANITE鋰離子充電電池的能量高達
+                            span._red 3000mWh
+                            | 的能量，比一般充電電池高出0.6倍以上的能量。
+                .left_container
+                    .graph_img_container_2
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                    .graph_img_container_1
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                .float_title_container
+            .step-item._step-item4
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text 5
+                            | 大核心
+                        .right_container 特色四
+                    .feature_info
+                        .title_container._justify_text 成分安全 兼顧環保
+                        ._subscription._justify_text
+                            | POWGANITE鋰離子充電電池成分不含鉛汞，擁有10年儲存壽命，並可
+                            span._red 循環充電高達1,000次
+                            | ，注重永續發展，同時兼顧環保。
+                .left_container
+                    .graph_img_container
+                        .graph_img
+                        .graph_img
+                        .graph_text
+                            | 可循環充電高達
+                            br
+                            sapn.big_text 0
+                            span.small_text 次
+                .float_title_container
+            .step-item._step-item5
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text 5
+                            | 大核心
+                        .right_container 特色五
+                    .feature_info
+                        .title_container._justify_text 低自放電 無記憶效應
+                        ._subscription
+                            | POWGANITE鋰離子充電電池長時間放置不使用，一年後仍可保持
+                            span._red 90%電量
+                            | ，同時3年後還可以正常使用。
+                .left_container
+                    .graph_img_container
+                .float_title_container
+        .block-fifth-card-container
+            .content
+                .title_container
+                    h2._title
+                        | 帶
+                        span.other_color 芯
+                        | 的電池
+                    span._subtitle._justify_text 多重保護更安全
+                .feasure_list_container
+                    .left_battery_contain
+                    ul.feasure_list
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(./../styles/images/product/pdw/desktop/feature-icon01.png);')
+                                .btn_activity
+                                    | 溫度保護
+                                    br
+                                    span 電池高溫時自動保護
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(./../styles/images/product/pdw/desktop/feature-icon02.png);')
+                                .btn_activity
+                                    | 充電過度保護
+                                    br
+                                    span 防止電池過度充電
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(./../styles/images/product/pdw/desktop/feature-icon03.png);')
+                                .btn_activity
+                                    | 短路保護
+                                    br
+                                    span 內建智能芯片，防止短路
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(./../styles/images/product/pdw/desktop/feature-icon04.png);')
+                                .btn_activity
+                                    | 功率過度保護
+                                    br
+                                    span 防止電池功率過高
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(./../styles/images/product/pdw/desktop/feature-icon05.png);')
+                                .btn_activity
+                                    | 電壓過度保護
+                                    br
+                                    span 防止電池充電時，電壓過高
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(./../styles/images/product/pdw/desktop/feature-icon06.png);')
+                                .btn_activity
+                                    | 電流過度保護
+                                    br
+                                    span 防止電池充電時，電流過高
+                            .bottom_border_container
+        .block-sixth-card-container
+            .slick-item.slick-item1
+                .container
+                    .title_container
+                        span.big_text 穩定續航 肆意玩樂
+                        br
+                        span._justify_text 強勁能量，戰鬥更有力
+                        .border_bottom
+            .slick-item.slick-item2
+                .container
+                    .title_container
+                        span.big_text 為您健康 全力以赴
+                        br
+                        span._justify_text 充電快速，即時為您健康助力
+            .slick-item.slick-item3
+                .container
+                    .title_container
+                        span.big_text 拍照錄影 得力助手
+                        br
+                        span._justify_text 電力持久，攝影不怕黯淡無光
+            .slick-item.slick-item4
+                .container
+                    .title_container
+                        span.big_text 智能生活 更有態度
+                        br
+                        span._justify_text 電力持久續航，開門無憂
+                        .border_bottom
+            .slick-item.slick-item5
+                .container
+                    .title_container
+                        span.big_text 電壓強勁 不遺餘力
+                        br
+                        span._justify_text 瞬間爆發，玩樂更加盡興
+                        .border_bottom
+        .block-seventh-card-container
+            .content
+                .left_container
+                    ._title
+                        span 一顆
+                        .border_bottom
+                    br
+                    ._title
+                        span.small_text 懂你的智慧電池
+                        .border_bottom
+                .features_list_container
+                    ul.features_list
+                        li 全程1.5V穩定續航
+                        li 減少替換電池次數
+                        li 適用多數電子產品
+                        li 綠色能源最佳選擇
+        .block-eighth-card-container
+            .content
+                .title_container
+                    h2._title 鋰離子充電電池 專用充電器
+                    span._subtitle._justify_text 每台充電器均通過嚴格測試、安全通關
+                .feasure_list_container
+                    ul.feasure_list
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text 簡易辨別
+                                br
+                                ._justify_text 電量燈號
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text 一顆電池
+                                br
+                                ._justify_text 也能快充
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text 環保材質ABS
+                                br
+                                ._justify_text 強度高 韌性好
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text Micro USB充電線
+                                br
+                                ._justify_text 充電簡單又方便
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text 智能分流
+                                br
+                                span._justify_text 穩定充電
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text 通過多項國際認證
+                                br
+                                ._justify_text CE/FCC/PSE/ROHS/UL
+                    .battery_img_container
+                .comment_info_container 貼心提醒：用充電器充電時，請勿使用其它類電池（例如鎳氫、鎳鎘、鹼性、乾電池等）進行充電。
+        .block-nineth-card-container
+            .content
+                .left_container
+                    .title_container
+                        h2._title 充電指示燈
+                        span._subtitle._justify_text 電量一目瞭然
+                    .charge_status_container
+                        .charge_status.active
+                            | 充電中：
+                            span 亮紅燈
+                        .charge_status
+                            | 充滿電：
+                            span 亮綠燈
+                .charger_img_container
+                    .charger_img
+                        .charger_light_img.red_light
+        .block-tenth-card-container
+            .bg_container.bg_step1.active
+            .bg_container.bg_step2
+            .bg_container.bg_step3
+            .bg_container.bg_step4
+            .bg_container.bg_step5
+            .title_container_mobile
+                h2._title 簡易充電步驟
+            .content
+                .title_container
+                    h2._title 簡易充電步驟
+                .feasure_list_container
+                    ul.feasure_list
+                        li.active
+                            .step_title 1
+                            .step_content
+                                | 將需要充電的電池放入充電槽內，
+                                br
+                                |  並確認正負極位置。
+                        li
+                            .step_title 2
+                            .step_content
+                                | 將Micro USB線的頭
+                                br
+                                |  插入充電器上方的洞孔
+                        li
+                            .step_title 3
+                            .step_content
+                                | 另一頭線插入USB插座的洞孔
+                                br
+                                |  開始充電
+                        li
+                            .step_title 4
+                            .step_content
+                                | 充電時
+                                br
+                                |  充電器指示燈亮紅燈
+                        li
+                            .step_title 5
+                            .step_content
+                                | 充滿電後
+                                br
+                                |  充電指示燈亮綠燈
+                    .step_content_mobile_container
+                        | 將需要充電的電池放入充電槽內，
+                        br
+                        |  並確認正負極位置。
+                    .battery_img_container
+        .block-eleventh-card-container
+            .content
+                .title_container
+                    h2._title 安規認證
+                    span._subtitle 產品經國際認證 專業認可
+                .certification_container
+                    .certification.battery_certification
+                        .title_container 電池安規認證
+                        .certification_items_container_slick
+                            .certification_items_container(style='background-image: url(./../styles/images/product/pdw/desktop/certi_2/PSE.jpg);')
+                                .certification_items
+                                    .certi_name 通過PSE認證
+                            .certification_items_container(style='background-image: url(./../styles/images/product/pdw/desktop/certi_2/UL.jpg);')
+                                .certification_items
+                                    .certi_name 通過UL認證
+                            .certification_items_container(style='background-image: url(./../styles/images/product/pdw/desktop/certi_2/UN38.3chip.jpg);')
+                                .certification_items
+                                    .certi_name 通過UN38.3電芯認證
+                            .certification_items_container(style='background-image: url(./../styles/images/product/pdw/desktop/certi_2/UN38.3.jpg);')
+                                .certification_items
+                                    .certi_name 通過UN38.3認證
+                    .certification.charger_certification
+                        .title_container 充電器安規認證
+                        .certification_items_container_slick
+                            .certification_items_container(style='background-image: url(./../styles/images/product/pdw/desktop/certi/CE.jpg);')
+                                .certification_items
+                                    .certi_name 通過大陸CE EMC認證
+                            .certification_items_container(style='background-image: url(./../styles/images/product/pdw/desktop/certi/FCC.jpg);')
+                                .certification_items
+                                    .certi_name 通過FCC認證
+                            .certification_items_container(style='background-image: url(./../styles/images/product/pdw/desktop/certi/PSE.jpg);')
+                                .certification_items
+                                    .certi_name 通過PSE認證
+                            .certification_items_container(style='background-image: url(./../styles/images/product/pdw/desktop/certi/ROHS.jpg);')
+                                .certification_items
+                                    .certi_name 通過ROHS認證
+                            .certification_items_container(style='background-image: url(./../styles/images/product/pdw/desktop/certi/UL.jpg);')
+                                .certification_items
+                                    .certi_name 通過UL認證
+                            .certification_items_container(style='background-image: url(./../styles/images/product/pdw/desktop/certi/CE_Taiwan.jpg);')
+                                .certification_items
+                                    .certi_name 通過台灣CE Safety認證
+        //- .block-twelve-card-container.block-video
+        //-     iframe(width='560' height='315' src='https://www.youtube.com/embed/32TxQvF7Vsc' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen')
+        //- .block-thirteen-card-container
+        //-     .content
+        //-         .title 好評推薦
+        //-         ul.recommendation
+        //-             li(onclick="window.open('https://livin.brookaccessory.com/qa');" target='blank')
+        //-                 .img_
+        //-                 p 文字文字文字
+        //-             li(onclick="window.open('https://livin.brookaccessory.com/qa');" target='blank')
+        //-                 .img_
+        //-                 p 文字文字文字
+        //-             li(onclick="window.open('https://livin.brookaccessory.com/qa');" target='blank')
+        //-                 .img_
+        //-                 p 文字文字文字
+        .block-fourteen-card-container
+            .content
+                .title 販售資訊
+                .product_info_container
+                    .prodict_info
+                        .title_container
+                            img(src='./../styles/images/product/pdw/desktop/powganite_logo.png')
+                            br
+                            |  鋰離子充電電池
+                        .product_img(style='background-image: url(./../styles/images/product/pdw/desktop/8O1A9940.psd.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text 顏色
+                                    .description
+                                        .circle_
+                                li
+                                    .title._justify_text 包裝
+                                    .description 電池4入
+                            .cart_container
+                                //- .cart_btn(onclick="window.open('https://livin.brookaccessory.com/store');")
+                                .cart_btn
+                                    i.icon-buy.buy_icon
+                                    |  Coming soon
+                    .prodict_info
+                        .title_container
+                            img(src='./../styles/images/product/pdw/desktop/powganite_logo.png')
+                            br
+                            |  鋰離子充電電池組
+                        .product_img(style='background-image: url(./../styles/images/product/pdw/desktop/charger_product.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text 顏色
+                                    .description
+                                        .circle_(style='background-color: #000;' data-val='balck')
+                                        // <div class="circle_" style="background-color: #fff;" data-val="balck"></div>
+                                li
+                                    .title._justify_text 包裝
+                                    .description
+                                        | 專用充電器、電池4入、
+                                        .break_line_desktop
+                                        | Micro USB充電線、電池收納殼
+                            .cart_container
+                                //- .cart_btn(onclick="window.open('https://livin.brookaccessory.com/store');")
+                                .cart_btn
+                                    i.icon-buy.buy_icon
+                                    |  Coming soon
+        .block-fifteen-card-container
+            .content
+                .title 產品規格
+                .product_info_container
+                    .prodict_info
+                        .title_container 鋰離子充電電池
+                        .product_img(style='background-image: url(./../styles/images/product/pdw/desktop/battery-group.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text 型號
+                                    .description ZBL-LBAA-001
+                                li
+                                    .title
+                                        ._justify_text 電池芯額定
+                                        ._justify_text 電壓/容量
+                                    .description 3.8V/900mAH
+                                li
+                                    .title
+                                        ._justify_text 電池額定
+                                        ._justify_text 能量
+                                    .description 3000 mWh
+                                li
+                                    .title._justify_text 額定容量
+                                    .description 2000 mAh
+                                li
+                                    .title._justify_text 輸出電壓
+                                    .description 1.5V
+                                li
+                                    .title._justify_text 尺寸
+                                    .description 14X50±0.5mm
+                                li
+                                    .title._justify_text 重量
+                                    .description 20±0.5g
+                                li
+                                    .title._justify_text 充電次數
+                                    .description 1000次
+                    .prodict_info
+                        .title_container 鋰離子充電電池 專用充電器
+                        .product_img(style='background-image: url(./../styles/images/product/pdw/desktop/eighth_card_battery.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text 型號
+                                    .description ZBL-BCAA-001
+                                li
+                                    .title._justify_text 充電槽數
+                                    .description 4槽
+                                li
+                                    .title._justify_text 輸入電壓
+                                    .description 5V/1A
+                                li
+                                    .title._justify_text 輸出電壓
+                                    .description 4.2V/1A
+                                li
+                                    .title._justify_text 尺寸
+                                    .description 67x75x25±0.5mm
+                                li
+                                    .title._justify_text 重量
+                                    .description 48±0.3g
+        .block-sixteen-card-container.block-info
+            .container
+                .title 最新消息
+                .info-card
+                    .info-card-item
+                        a(href='https://livin.brookaccessory.com/store.html' target='blank')
+                            img(src='../styles/images/product/pdw/desktop/news_01.png' alt='')
+                            .card-title 購買據點
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date Coming soon
+                    .info-card-item
+                        a(href='https://www.facebook.com/brooklivin' target='blank')
+                            img(src='../styles/images/product/pdw/desktop/news_03.png' alt='')
+                            .card-title FACEBOOK
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/04/07
+                    .info-card-item
+                        a(href='../qa-powganite' target='blank')
+                            img(src='../styles/images/product/pdw/desktop/news_02.png' alt='')
+                            .card-title 常見問題Q&A
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/05/10
+                .footer
+                    img(src='../styles/images/wirecare-info/reuseImages/footer-logo.png' alt='')
+                    img(src='../styles/images/product/pdw/desktop/powganite_logo.png' alt='')

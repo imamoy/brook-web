@@ -32,6 +32,21 @@
       gtag('js', new Date());
       gtag('config', 'UA-142695956-17');
     </script>
+    <!-- Facebook Pixel Code-->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '3159935904333330');
+      fbq('track', 'PageView');
+    </script>
+    <noscript></noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3159935904333330&amp;ev=PageView&amp;noscript=1">
+    <!-- End Facebook Pixel Code-->
   </head>
   <body id="app">
     <header id="header">
@@ -53,6 +68,7 @@
                           <ul class="nav flex-column" id="product-menu-nav">
                             <li class="nav-item"><a class="nav-link f-text-big pl-0" href="product/wirecare" title="WIRECARE" rel="nofollow">WIRECARE</a><img class="product-menu-pic img-no-full img-h100" src="../styles/images/wirecare-product-2.png" alt="WIRECARE"></li>
                             <li class="nav-item"><a class="nav-link f-text-big pl-0" href="https://www.brookaccessory.com/Brook_Livin/Products/UV_SHELL_Box/english.html" target="_blank" title="BROOK UV SHELL BOX" rel="nofollow">BROOK UV SHELL BOX</a><img class="product-menu-pic img-no-full img-h100" src="../styles/images/product-1.png" alt=""></li>
+                            <li class="nav-item"><a class="nav-link f-text-big pl-0" href="product/powganite" target="_blank" title="POWGANITE Lithium-ion Rechargeable Battery" rel="nofollow">POWGANITE Lithium-ion Rechargeable Battery</a><img class="product-menu-pic img-no-full img-h100" src="../styles/images/product/pdw/img.png" alt=""></li>
                           </ul>
                         </div>
                       </div>
@@ -114,6 +130,7 @@
                   <li class="mb-3"><a href="#qa-Section1">GENERAL</a></li>
                   <li class="mb-3"><a href="#qa-Section2">PURCHASE</a></li>
                   <li class="active mb-3"><a href="#qa-Section3">WIRECARE</a></li>
+                  <li class="mb-3"><a href="#qa-Section-pdw">POWGANITE</a></li>
                   <li class="mb-3"><a href="#qa-Section4">SERVICE</a></li>
                 </ul>
               </div>
@@ -121,6 +138,7 @@
                 <div class="cutover-in" id="qa-Section1"></div>
                 <div class="cutover-in" id="qa-Section2"></div>
                 <div class="show cutover-in" id="qa-Section3"></div>
+                <div class="cutover-in" id="qa-Section-pdw"></div>
                 <div class="cutover-in" id="qa-Section4"></div>
               </div>
             </div>
@@ -232,7 +250,7 @@
     <script src="../scripts/default/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script src="../scripts/plugins/slick.js"></script>
-    <script src="../scripts/data/qa_en.js"> </script>
+    <script src="../scripts/data/qa_en.js"></script>
     <script src="../scripts/default/ui.js"></script>
   </body>
   <div id="fb-root"></div>

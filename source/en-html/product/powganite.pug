@@ -1,0 +1,1139 @@
+//- index.pug
+extends ../include/product-layout.pug
+block meta
+    title POWGANITE Lithium-ion Rechargeable Battery - Brook Livin
+    meta(name='description' content='New generation of Lithium-ion Rechargeable Battery saves more time in charging, compared to regular ones.It runs longer, outputs steady voltage, and is more reliable.')
+    meta(name='robots' content='New generation of Lithium-ion Rechargeable Battery saves more time in charging, compared to regular ones.It runs longer, outputs steady voltage, and is more reliable.')
+    meta(property='og:title' content='POWGANITE Lithium-ion Rechargeable Battery - Brook Livin')
+    meta(property='og:url' content='https://livin.brookaccessory.com/en/product/powganite')
+    meta(property='og:image' content='https://livin.brookaccessory.com/styles/images/product/pdw/meta.png')
+    meta(property='og:description' content='New generation of Lithium-ion Rechargeable Battery saves more time in charging, compared to regular ones.It runs longer, outputs steady voltage, and is more reliable.')
+    meta(property='og:site_name' content='POWGANITE Lithium-ion Rechargeable Battery - Brook Livin')
+
+block page-css
+    link(rel='stylesheet' type='text/css' href='../../styles/wirecare-info.css')
+    link(rel='stylesheet' type='text/css' href='../../styles/powganite.css')
+    style.
+        .block-main-banner-container .content h2 {
+            font-size: 27px;
+        }
+        .block-main-banner-container .content ._statement {
+            font-size: 25px;
+            padding-top: 40px;
+        }
+        .block-second-card-container .content .title_container {
+            width: 610px;
+        }
+        .block-second-card-container .content .title_container h2._title {
+            letter-spacing: 0px;
+        }
+        .block-second-card-container .content .title_container ._subtitle {
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .block-second-card-container .content .feasure_list_container .feasure_list li .btn_activity {
+            font-size: 18px;
+            letter-spacing: 0px;
+        }
+        .block-third-card-container .content ._title_container ._title {
+            font-size: 30px;
+        }
+        .block-third-card-container .content ._title_container .battery_icon {
+            width: 120px;
+            height: 40px;
+        }
+        .block-third-card-container .content ._tilte2 {
+            font-size: 45px;
+            letter-spacing: 0px;
+        }
+        .block-fourth-card-container ._step-item2 .left_container .graph_img_container_2 .battery_title,
+        .block-fourth-card-container ._step-item2 .left_container .graph_img_container_1 .battery_title {
+            font-size: 14px;
+        }
+        .block-fourth-card-container .step-item .right_container .feature_title .left_container {
+            width: 350px;
+            font-size: 25px;
+            padding-top: 8px;
+        }
+        .block-fourth-card-container .step-item .right_container .feature_title .left_container .big_text {
+            font-size: 50px;
+        }
+        .block-fourth-card-container .step-item .right_container .feature_title .right_container {
+            width: calc( 100% - 350px );
+        }
+        .block-fourth-card-container .step-item .right_container .feature_info .title_container {
+            font-size: 26px;
+            letter-spacing: 0px;
+            line-height: 1.5em;
+            text-align: left;
+        }
+        .block-fourth-card-container ._step-item4 .left_container .graph_img_container .graph_text {
+            font-size: 17px;
+            letter-spacing: 0px;
+        }
+        .block-fourth-card-container ._step-item1 .left_container .graph_img_container {
+            background-image: url(../../../styles/images/product/pdw/desktop/fourth_card1_left_icon_en.png);
+        }
+        .block-fourth-card-container ._step-item1 .left_container .graph_img_container .float_icon_3 {
+            background-image: url(../../styles/images/product/pdw/desktop/step-item1_btm_1_en.png);
+            height: 60px;
+        }
+        .block-fourth-card-container ._step-item1 .left_container .graph_img_container .float_icon_4 {
+            background-image: url(../../styles/images/product/pdw/desktop/step-item1_btm_2_en.png);
+            height: 43px;
+            left: 220px;
+        }
+        .block-fourth-card-container ._step-item3 .left_container .graph_img_container_2 .graph_img {
+            background-image: url(../../../styles/images/product/pdw/desktop/other_battery_en.png);
+        }
+        .block-fifth-card-container .content .title_container h2._title {
+            letter-spacing: 0px;
+        }
+        .block-fifth-card-container .content .title_container {
+            width: 630px;
+        }
+        .block-fifth-card-container .content .title_container ._subtitle {
+            text-align: center;
+        }
+        .block-fifth-card-container .content .feasure_list_container .feasure_list li .btn_activity {
+            padding-top: 16px;
+            font-size: 20px;
+        }
+        .block-fifth-card-container .content .feasure_list_container .feasure_list li .feasure_mask {
+            margin-bottom: 0px;
+        }
+        .block-sixth-card-container ul.block-tips li > div {
+            width: 100%;
+            height: auto;
+        }
+        .block-sixth-card-container ul.block-tips li img {
+            display: block;
+            margin: 0 auto;
+        }
+        .block-sixth-card-container ul.block-tips li .content > div {
+            line-height: 1em;
+            white-space: initial;
+        }
+        .block-sixth-card-container .slick-item .container .title_container {
+            width: 500px !important;
+            text-align: center;
+        }
+        .block-sixth-card-container .slick-item .container .title_container ._justify_text {
+            padding: 0;
+            font-size: 18px;
+            text-align: center;
+        }
+        .block-sixth-card-container .slick-item .container .title_container .big_text {
+            letter-spacing: 0px;
+        }
+        .block-sixth-card-container .slick-item3 .container .title_container {
+            width: 640px !important;
+            right: 0px;
+        }
+        .block-sixth-card-container .slick-item3 .container .title_container .border_bottom {
+            display: none;
+        }
+        .block-sixth-card-container .slick-item4 .container .title_container {
+            width: 360px !important;
+        }
+        .block-seventh-card-container .content .left_container {
+            margin-top: 430px;
+        }
+        .block-seventh-card-container .content .left_container ._title {
+            letter-spacing: 0px;
+        }
+        .block-seventh-card-container .content .left_container ._title > span.small_text {
+            letter-spacing: 0px;
+        }
+        .block-seventh-card-container .content .features_list_container ul.features_list {
+            max-width: 240px;
+        }
+        .block-seventh-card-container .content .features_list_container ul.features_list li {
+            font-size: 22px;
+            letter-spacing: 0px;
+            height: auto;
+        }
+        .block-eighth-card-container .content .feasure_list_container .feasure_list li .bold_font._justify_text:after {
+            display: none;
+        }
+        .block-eighth-card-container .content .title_container {
+            width: 750px;
+        }
+        .block-eighth-card-container .content .title_container h2._title {
+            font-size: 28px;
+            letter-spacing: 0px;
+        }
+        .block-eighth-card-container .content .title_container ._subtitle {
+            text-align: center;
+            font-size: 20px;
+        }
+        .block-eighth-card-container .content .feasure_list_container .feasure_list li {
+            font-size: 18px;
+            letter-spacing: 0px;
+            height: auto;
+        }
+        .block-eighth-card-container .content .feasure_list_container .feasure_list li > div {
+            text-align: left;
+        }
+        .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(2) > div,
+        .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(4) > div,
+        .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(6) > div {
+            text-align: right;
+            max-width: 300px;
+        }
+        .block-eighth-card-container .content .feasure_list_container .feasure_list li .feasure_mask {
+            line-height: 1em;
+            padding-top: 0px;
+        }
+        .block-nineth-card-container .content .left_container .title_container ._title {
+            font-size: 27px;
+            letter-spacing: 0px;
+        }
+        .block-nineth-card-container .content .left_container .charge_status_container {
+            padding-top: 40px;
+        }
+        .block-nineth-card-container .content .left_container .title_container ._subtitle {
+            font-size: 20px;
+        }
+        .block-nineth-card-container .content .left_container .charge_status_container .charge_status {
+            font-size: 17px;
+        }
+        .block-tenth-card-container .content .title_container ._title {
+            font-size: 30px;
+            letter-spacing: 0px;
+        }
+        .block-eleventh-card-container .content .title_container {
+            width: 500px;
+        }
+        .block-eleventh-card-container .content .title_container ._subtitle {
+            font-size: 20px;
+            letter-spacing: 0px;
+        }
+        .block-eleventh-card-container .content .certification_container .certification .title_container {
+            letter-spacing: 0px;
+        }
+        .block-eleventh-card-container .content .certification_container .certification .certification_items_container .certification_items .certi_name {
+            letter-spacing: 0px;
+        }
+        .block-fourteen-card-container {
+            height: 770px;
+        }
+        .block-fourteen-card-container .content .title {
+            width: 400px;
+        }
+        .block-fourteen-card-container .content .product_info_container .prodict_info .title_container {
+            font-size: 18px;
+            height: 100px;
+            text-align: center;
+            width: 300px;
+            margin: 0 auto;
+            float: initial;
+        }
+        .block-fourteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li:nth-child(2) .description {
+            height: 80px;
+        }
+        .block-fifteen-card-container .content .title {
+            width: 450px;
+        }
+        .block-fifteen-card-container .content .product_info_container .prodict_info .title_container {
+            height: 55px;
+            font-size: 20px;
+            letter-spacing: 0px;
+            width: 350px;
+            float: initial;
+            margin: 0 auto;
+        }
+        .block-fifteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li .title {
+            width: 50%;
+            text-align: left;
+        }
+        .block-fifteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li .description {
+            width: 50%;
+        }
+        .block-sixteen-card-container .container .card-title {
+            font-size: 18px;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1200px) {
+            .block-main-banner-container .content h2 {
+                font-size: 16px;
+                text-align: center;
+                padding: 0;
+                padding-top: 10px;
+            }
+        }
+    link(rel='stylesheet' type='text/css' href='../../styles/powganite-pad.css')
+    style.
+        @media only screen and (min-width: 768px) and (max-width: 1200px) {
+            .block-main-banner-container .content h2 {
+                padding: 0;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+                text-align: center;
+            }
+            .block-main-banner-container .content ._statement {
+                font-size: 14px;
+            }
+            .block-fourth-card-container .step-item .right_container .feature_title .left_container {
+                width: 300px;
+                font-size: 20px;
+                padding-top: 12px;
+            }
+            .block-fourth-card-container .step-item .right_container .feature_title .right_container {
+                width: calc( 100% - 300px );
+            }
+            .block-fifth-card-container .content .feasure_list_container .feasure_list li .btn_activity {
+                font-size: 18px;
+                height: 75px;
+                padding-right: 10px;
+            }
+            .block-sixth-card-container .slick-item1 .container .title_container {
+                left: -200px;
+            }
+            .block-sixth-card-container .slick-item .container .title_container ._justify_text {
+                padding-right: 0px;
+            }
+            .block-sixth-card-container .slick-item3 .container .title_container {
+                right: -60px;
+            }
+            .block-sixth-card-container .slick-item4 .container .title_container {
+                width: 300px !important;
+            }
+            .block-sixth-card-container .slick-item5 .container .title_container {
+                width: 420px !important;
+            }
+            .block-seventh-card-container .content .left_container {
+                margin-top: 40px;
+                padding-left: 120px;
+            }
+            .block-seventh-card-container .content .left_container ._title > span.small_text {
+                font-size: 25px;
+            }
+            .block-seventh-card-container .content .features_list_container ul.features_list li {
+                font-size: 22px;
+                height: auto;
+            }
+            .block-fourteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li:nth-child(2) .description {
+                height: 120px;
+            }
+            .block-fifteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li .title {
+                font-size: 13px;
+            }
+            .block-fifteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li .description {
+                font-size: 13px;
+            }
+            .block-fifteen-card-container .content .product_info_container .prodict_info:nth-child(2) .product_feature_container .product_feature li {
+                padding-bottom: 10px;
+                padding-top: 5.8px;
+            }
+        }
+    link(rel='stylesheet' type='text/css' href='../../styles/powganite-mobile.css')
+    style.
+        @media only screen and (max-width: 767px) {
+            .block-main-banner-container .content h2 {
+                font-size: 15px;
+                text-align: center;
+            }
+            .block-main-banner-container .content ._statement {
+                font-size: 14px;
+            }
+            .block-second-card-container .content .title_container h2._title {
+                font-size: 26px;
+            }
+            .block-second-card-container .content .title_container ._subtitle {
+                font-size: 14px;
+            }
+            .block-second-card-container .content .feasure_list_container .feasure_list li .btn_activity {
+                font-size: 12px;
+            }
+            .block-third-card-container .content ._title_container ._title {
+                font-size: 13px;
+            }
+            .block-third-card-container .content ._title_container .battery_icon {
+                height: 17px;
+                width: 52px;
+            }
+            .block-fourth-card-container {
+                height: 800px;
+            }
+            .block-fourth-card-container .step-item .right_container .feature_title .left_container {
+                width: 220px;
+                font-size: 16px;
+                padding-top: 18px;
+            }
+            .block-fourth-card-container .step-item .right_container .feature_title .right_container {
+                width: calc( 100% - 220px );
+            }
+            .block-fourth-card-container .step-item .right_container .feature_title .left_container .big_text {
+                font-size: 28px;
+            }
+            .block-fourth-card-container .step-item .right_container .feature_info .title_container {
+                font-size: 22px;
+                height: auto;
+                padding: 0px 10px;
+            }
+            .block-fourth-card-container .step-item > .right_container  {
+                /* height: 354px; */
+            }
+            .block-fourth-card-container ._step-item1 .left_container .graph_img_container .float_icon_3 {
+                height: 50px;
+                left: 0px;
+                bottom: 0px;
+            }
+            .block-fourth-card-container ._step-item1 .left_container .graph_img_container .float_icon_4 {
+                bottom: 0px;
+                width: 155px;
+                height: 40px;
+                left: 140px;
+            }
+            .block-fifth-card-container .content .title_container {
+                width: 300px;
+            }
+            .block-fifth-card-container .content .title_container h2._title {
+                font-size: 24px;
+            }
+            .block-fifth-card-container .content .title_container ._subtitle {
+                font-size: 20px;
+            }
+            .block-fifth-card-container .content .feasure_list_container .feasure_list {
+                margin-bottom: 50px;
+            }
+            .block-fifth-card-container .content .feasure_list_container .feasure_list li .btn_activity {
+                font-size: 16px;
+            }
+            .block-fifth-card-container .content .feasure_list_container .left_battery_contain {
+                height: 600px;
+            }
+            .block-sixth-card-container .slick-item .container .title_container {
+                width: 225px !important;
+            }
+            .block-sixth-card-container .slick-item .container .title_container .big_text {
+                font-size: 19px;
+                letter-spacing: 0px;
+            }
+            .block-sixth-card-container .slick-item .container .title_container ._justify_text {
+                font-size: 15px;
+            }
+            .block-sixth-card-container .slick-item2 .container .title_container {
+                width: 230px !important;
+            }
+            .block-sixth-card-container .slick-item3 .container .title_container {
+                text-align: center;
+                width: 167px !important;
+                top: -15px;
+                line-height: 1em;
+            }
+            .block-sixth-card-container .slick-item3 .container .title_container .big_text {
+                font-size: 16px;
+                color: #00AFAA;
+                padding: 0;
+                float: left;
+                padding-bottom: 5px;
+            }
+            .block-sixth-card-container .slick-item3 .container .title_container ._justify_text {
+                font-size: 12px;
+                line-height: 1em;
+            }
+            .block-sixth-card-container .slick-item3 .container .title_container .border_bottom {
+                top: 0px;
+                margin-left: 1px;
+                border-bottom: 12px solid #00AFAA;
+                margin-top: -14px;
+                display: none;
+            }
+            .block-sixth-card-container .slick-item4 .container .title_container {
+                width: 170px !important;
+            }
+            .block-sixth-card-container .slick-item5 .container .title_container {
+                width: 240px !important;
+            }
+            .block-sixth-card-container ul.block-tips li {
+                height: 100px;
+            }
+            .block-sixth-card-container ul.block-tips li:nth-child(5) .content > div {
+                letter-spacing: -1px;
+            }
+            .block-seventh-card-container .content .left_container ._title:last-child {
+                width: 180px;
+            }
+            .block-seventh-card-container .content .left_container ._title > span.small_text {
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+            .block-seventh-card-container .content .left_container {
+                margin-left: -20px;
+            }
+            .block-seventh-card-container .content .left_container ._title:nth-child(1) {
+                font-size: 20px;
+            }
+            .block-seventh-card-container .content .features_list_container {
+                margin-right: -20px;
+            }
+            .block-seventh-card-container .content .features_list_container ul.features_list li {
+                font-size: 13px;
+                height: auto;
+            }
+            .block-eighth-card-container .content .title_container h2._title {
+                font-size: 23px;
+            }
+            .block-eighth-card-container .content .title_container ._subtitle {
+                font-size: 13px;
+            }
+            .block-eighth-card-container .content .feasure_list_container {
+                height: auto;
+            }
+            .block-eighth-card-container .content .feasure_list_container .feasure_list {
+                height: auto;
+            }
+            .block-eighth-card-container .content .feasure_list_container .feasure_list li {
+                font-size: 12px;
+                height: auto;
+            }
+            .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(2) .bold_font {
+                letter-spacing: 0px;
+            }
+            .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(2) > div, .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(4) > div, .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(6) > div {
+                text-align: left;
+            }
+            .block-nineth-card-container .content .left_container .title_container {
+                width: 300px;
+            }
+            .block-nineth-card-container .content .left_container .title_container ._subtitle {
+                text-align: center;
+            }
+            .block-eleventh-card-container {
+                height: 1200px;
+            }
+            .block-eleventh-card-container .content .title_container {
+                width: 300px;
+            }
+            .block-eleventh-card-container .content .title_container ._title {
+                font-size: 30px;
+            }
+            .block-fourteen-card-container .content .title {
+                width: 300px;
+            }
+            .block-fourteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li .title {
+                font-size: 15px;
+            }
+            .block-fourteen-card-container .content .product_info_container .prodict_info .title_container {
+                height: auto;
+                max-width: 300px;
+                width: 100%;
+                font-size: 16px;
+            }
+            .block-fourteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li:nth-child(2) .description {
+                margin-top: -4px;
+            }
+            .block-fifteen-card-container .content .title {
+                width: 300px;
+                line-height: 1em;
+            }
+            .block-fifteen-card-container .content .product_info_container .prodict_info .product_feature_container .product_feature li .title {
+                font-size: 13px;
+            }
+            .block-fifteen-card-container .content .product_info_container .prodict_info:nth-child(1) .product_feature_container .product_feature li .description {
+                font-size: 13px;
+            }
+            .block-fifteen-card-container .content .product_info_container .prodict_info .title_container {
+                height: auto;
+                width: 100%;
+                max-width: 350px;
+            }
+            .block-fifteen-card-container .content .product_info_container .prodict_info:nth-child(2) .product_feature_container .product_feature li .description {
+                font-size: 13px;
+            }
+        }
+
+block plugins-js
+    script.
+        var btnArr = ['Low capacity', 'Insufficient voltage', 'Slow charging', 'Short life'];
+        var btnActivityArr = ['Running out of power fast?', 'Voltage too low to power devices?', 'Takes too long to charge?', 'Out of order quickly?'];
+        var sixCardIconNameArr = ['Gamepad', 'Blood pressure meter', 'Camera flash lamp', 'Smart door lock', 'Toys'];
+        var stepContentHtml = ['Insert battery into charging slot<br>with correct polarity.','Plug Micro USB connector<br>into charger port.','Plug USB connector into slot<br>to start charging.','Charging:<br>indicator lights up red.','Fully charged:<br>indicator lights up green.'];
+        var pathBeforeStr = '../../';
+    script(src="../../scripts/default/powganite.js")
+
+
+block content
+    main#wirecare-info.wrapper
+        .block-main-banner-container
+            .content
+                .logo_img
+                h2._justify_text Lithium-ion Rechargeable Battery
+                ._statement._justify_text Fully powered, more recharging cycles
+                //- .buy_btn_container
+                //-     .buy_btn(onclick="window.open('https://livin.brookaccessory.com/en/store');")
+                //-         i.icon-buy.buy_icon
+                //-         |  Buy Now
+                .buy_btn_container
+                    .buy_btn
+                        i.icon-buy.buy_icon
+                        |  Coming soon
+        .block-second-card-container
+            .content
+                .title_container
+                    h2._title Do you also have the same problems
+                    span._subtitle._justify_text with a regular rechargeable battery?
+                .feasure_list_container
+                    ul.feasure_list
+                        li
+                            .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/sec_icon_1.png);')
+                            .btn_activity Low capacity
+                        li
+                            .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/sec_icon_2.png);')
+                            .btn_activity Insufficient voltage
+                        li
+                            .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/sec_icon_3.png);')
+                            .btn_activity Slow charging
+                        li
+                            .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/sec_icon_4.png);')
+                            .btn_activity Short life
+        .block-third-card-container
+            .content
+                ._title_container
+                    h2._title The new solution you must know
+                    i.battery_icon
+                h2._tilte2 Lithium-ion Rechargeable Battery
+                ._subscription
+                    | New generation of Lithium-ion Rechargeable Battery
+                    .break_line_desktop
+                    |  saves more time in charging,
+                    br
+                    |  compared to regular ones.
+                    br
+                    |  It runs longer,
+                    .break_line_mobile
+                    | outputs steady voltage,
+                    br
+                    |  and is more reliable.
+        .block-fourth-card-container._block-step
+            .step-item._step-item1
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text Five
+                            | major advantages
+                        .right_container No #1
+                    .feature_info
+                        .title_container._justify_text Constant voltage output and longer life
+                        ._subscription._justify_text
+                            | POWGANITE Lithium-ion Rechargeable Battery
+                            span._red outputs constant 1.5 volts
+                            | , delivers stable performance to devices that need high voltage and current.
+                .left_container
+                    .graph_img_container
+                        .float_icon_1
+                        .float_icon_2
+                        .float_icon_3
+                        .float_icon_4
+                .float_title_container
+            .step-item._step-item2
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text Five
+                            | major advantages
+                        .right_container No #2
+                    .feature_info
+                        .title_container._justify_text Smart fast charging, efficiency increased
+                        ._subscription
+                            | It takes
+                            span._red 6 to 8 hours
+                            | to fully charge POWGANITE Lithium-ion Rechargeable Battery. Less waiting, more efficiency.
+                .left_container
+                    .graph_img_container_2
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .reflection
+                        .battery_title Regular rechargeable battery
+                    .graph_img_container_1
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                            .power_icon
+                        .battery_title
+                            | POWGANITE
+                            br
+                            | Lithium-ion Rechargeable Battery
+                .float_title_container
+            .step-item._step-item3
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text Five
+                            | major advantages
+                        .right_container No #3
+                    .feature_info
+                        .title_container._justify_text Large capacity that runs stronger and longer
+                        ._subscription._justify_text
+                            | POWGANITE Lithium-ion Rechargeable Battery features
+                            span._red 3000mWh
+                            | of capacity, 0.6 times more than regular rechargeable battery.
+                .left_container
+                    .graph_img_container_2
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                    .graph_img_container_1
+                        .graph_img
+                            .power_icon
+                            .power_icon
+                .float_title_container
+            .step-item._step-item4
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text Five
+                            | major advantages
+                        .right_container No #4
+                    .feature_info
+                        .title_container._justify_text Safe and eco-friendly
+                        ._subscription._justify_text
+                            | POWGANITE Lithium-ion Rechargeable Battery contains no lead and mercury, features
+                            span._red 1000 charging cycles and 10 years of storage life
+                            | ; well achieving sustainability and environmental protection.
+                .left_container
+                    .graph_img_container
+                        .graph_img
+                        .graph_img
+                        .graph_text
+                            | Can be recharged up to
+                            br
+                            sapn.big_text 0
+                            span.small_text times.
+                .float_title_container
+            .step-item._step-item5
+                .right_container
+                    .feature_title
+                        .left_container
+                            span.big_text Five
+                            | major advantages
+                        .right_container No #5
+                    .feature_info
+                        .title_container._justify_text Low self-discharging, no memory effect
+                        ._subscription
+                            | POWGANITE Lithium-ion Rechargeable Battery still
+                            span._red holds 90% capacity
+                            | after no use for 1 year and still functions normally after 3 years.
+                .left_container
+                    .graph_img_container
+                .float_title_container
+        .block-fifth-card-container
+            .content
+                .title_container
+                    h2._title
+                        | A battery with
+                        span.other_color chip
+                        |  inside
+                    span._subtitle._justify_text Safer with multiple protections
+                .feasure_list_container
+                    .left_battery_contain
+                    ul.feasure_list
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon01.png);')
+                                .btn_activity
+                                    | Over-temperature protection
+                                    br
+                                    span Battery starts auto protection in high temperature.
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon02.png);')
+                                .btn_activity
+                                    | Over-charging protection
+                                    br
+                                    span Prevents over-charging to protect battery.
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon03.png);')
+                                .btn_activity
+                                    | Short circuit protection
+                                    br
+                                    span Built-in smart chip to prevent short circuit.
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon04.png);')
+                                .btn_activity
+                                    | Over-discharge protection
+                                    br
+                                    span Prevents over-discharge power
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon05.png);')
+                                .btn_activity
+                                    | Over-voltage protection
+                                    br
+                                    span Protects battery by limiting charging voltage
+                            .bottom_border_container
+                        li
+                            .feasure_mask
+                                .icon_img(style='background-image: url(../../../styles/images/product/pdw/desktop/feature-icon06.png);')
+                                .btn_activity
+                                    | Over current protection
+                                    br
+                                    span Protects battery by preventing excess charging current
+                            .bottom_border_container
+        .block-sixth-card-container
+            .slick-item.slick-item1
+                .container
+                    .title_container
+                        span.big_text Play harder and longer
+                        br
+                        span._justify_text Enjoy more in gaming with its steady and strong energy
+                        .border_bottom
+            .slick-item.slick-item2
+                .container
+                    .title_container
+                        span.big_text Do more for your health
+                        br
+                        span._justify_text Fast charging to care about your health instantly
+            .slick-item.slick-item3
+                .container
+                    .title_container
+                        span.big_text Best companion in photography
+                        br
+                        span._justify_text Peace in mind when taking photo or video in a long duration
+                        .border_bottom
+            .slick-item.slick-item4
+                .container
+                    .title_container
+                        span.big_text Smart life in style
+                        br
+                        span._justify_text Battery runs longer, worry-free in opening
+                        .border_bottom
+            .slick-item.slick-item5
+                .container
+                    .title_container
+                        span.big_text Strong power all the way
+                        br
+                        span._justify_text More joy with more energy
+                        .border_bottom
+        .block-seventh-card-container
+            .content
+                .left_container
+                    ._title
+                        span This is
+                        .border_bottom
+                    br
+                    ._title
+                        span.small_text the smart battery just for you
+                        .border_bottom
+                .features_list_container
+                    ul.features_list
+                        li Stable power output. Steady 1.5 volts output.
+                        li Reduces frequency of battery replacement
+                        li Suitable for most electronic devices.
+                        li Green energy. Your best choice.
+        .block-eighth-card-container
+            .content
+                .title_container
+                    h2._title Lithium-ion Rechargeable Battery Dedicated Charger
+                    span._subtitle._justify_text Every charger is strictly testing to ensure its safety.
+                .feasure_list_container
+                    ul.feasure_list
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text Easy-to-read
+                                br
+                                ._justify_text Capacity indicator
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text Single battery
+                                br
+                                ._justify_text can also be recharged fast.
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text Eco-friendly material
+                                br
+                                ._justify_text High strength and stiffness.
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text Micro USB charging cable
+                                br
+                                ._justify_text Makes charging easy and convenient.
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text Smart current distribution
+                                br
+                                span._justify_text Steady charging
+                        li
+                            .feasure_mask
+                                span.bold_font._justify_text Certified by multiple international institutes
+                                br
+                                ._justify_text CE/FCC/PSE/ROHS/UL
+                    .battery_img_container
+                .comment_info_container
+                    | Please do not charge other types of battery (e.g. NiMH, NiCad, Alkaline, and Zinc)
+        .block-nineth-card-container
+            .content
+                .left_container
+                    .title_container
+                        h2._title Charging indicator
+                        span._subtitle._justify_text Easy-to-read battery level.
+                    .charge_status_container
+                        .charge_status.active
+                            | Charging:
+                            span Red light
+                        .charge_status
+                            | Fully charged:
+                            span Green light
+                .charger_img_container
+                    .charger_img
+                        .charger_light_img.red_light
+        .block-tenth-card-container
+            .bg_container.bg_step1.active
+            .bg_container.bg_step2
+            .bg_container.bg_step3
+            .bg_container.bg_step4
+            .bg_container.bg_step5
+            .title_container_mobile
+                h2._title Simple charging procedure
+            .content
+                .title_container
+                    h2._title Simple charging procedure
+                .feasure_list_container
+                    ul.feasure_list
+                        li.active
+                            .step_title 1
+                            .step_content
+                                | Insert battery into charging slot
+                                br
+                                |  with correct polarity.
+                        li
+                            .step_title 2
+                            .step_content
+                                | Plug Micro USB connector
+                                br
+                                |  into charger port.
+                        li
+                            .step_title 3
+                            .step_content
+                                | Plug USB connector into
+                                br
+                                |  slot to start charging.
+                        li
+                            .step_title 4
+                            .step_content
+                                | Charging:
+                                br
+                                |  indicator lights up red.
+                        li
+                            .step_title 5
+                            .step_content
+                                | Fully charged:
+                                br
+                                |  indicator lights up green.
+                    .step_content_mobile_container
+                        | Insert battery into charging slot
+                        br
+                        |  with correct polarity.
+                    .battery_img_container
+        .block-eleventh-card-container
+            .content
+                .title_container
+                    h2._title Safety certifications
+                    span._subtitle This product is certified by international institutes.
+                .certification_container
+                    .certification.battery_certification
+                        .title_container Battery's safety certifications
+                        .certification_items_container_slick
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi_2/PSE.jpg);')
+                                .certification_items
+                                    .certi_name PSE certified
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi_2/UL.jpg);')
+                                .certification_items
+                                    .certi_name UL certified
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi_2/UN38.3chip.jpg);')
+                                .certification_items
+                                    .certi_name UN38.3 Chip certified
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi_2/UN38.3.jpg);')
+                                .certification_items
+                                    .certi_name UN38.3 certified
+                    .certification.charger_certification
+                        .title_container Charger's safety certifications
+                        .certification_items_container_slick
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/CE.jpg);')
+                                .certification_items
+                                    .certi_name Passed China CE EMC certification
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/FCC.jpg);')
+                                .certification_items
+                                    .certi_name FCC certified
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/PSE.jpg);')
+                                .certification_items
+                                    .certi_name PSE certified
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/ROHS.jpg);')
+                                .certification_items
+                                    .certi_name ROHS certified
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/UL.jpg);')
+                                .certification_items
+                                    .certi_name UL certified
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/CE_Taiwan.jpg);')
+                                .certification_items
+                                    .certi_name Passed Taiwan CE Safety certification
+        //- .block-twelve-card-container.block-video
+        //-     iframe(width='560' height='315' src='https://www.youtube.com/embed/32TxQvF7Vsc' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='allowfullscreen')
+        //- .block-thirteen-card-container
+        //-     .content
+        //-         .title Recommendations
+        //-         ul.recommendation
+        //-             li(onclick="window.open('https://livin.brookaccessory.com/qa');" target='blank')
+        //-                 .img_
+        //-                 p 文字文字文字
+        //-             li(onclick="window.open('https://livin.brookaccessory.com/qa');" target='blank')
+        //-                 .img_
+        //-                 p 文字文字文字
+        //-             li(onclick="window.open('https://livin.brookaccessory.com/qa');" target='blank')
+        //-                 .img_
+        //-                 p 文字文字文字
+        .block-fourteen-card-container
+            .content
+                .title Sales information
+                .product_info_container
+                    .prodict_info
+                        .title_container
+                            img(src='./../../styles/images/product/pdw/desktop/powganite_logo.png')
+                            br
+                            |  Lithium-ion Rechargeable Battery
+                        .product_img(style='background-image: url(../../../styles/images/product/pdw/desktop/8O1A9940.psd.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text Color:
+                                    .description
+                                        .circle_
+                                li
+                                    .title._justify_text Content:
+                                    .description battery x 4
+                            .cart_container
+                                //- .cart_btn(onclick="window.open('https://livin.brookaccessory.com/en/store');")
+                                //-     i.icon-buy.buy_icon
+                                //-     |  Buy Now
+                                .cart_btn
+                                    i.icon-buy.buy_icon
+                                    |  Coming soon
+                    .prodict_info
+                        .title_container
+                            img(src='./../../styles/images/product/pdw/desktop/powganite_logo.png')
+                            br
+                            |  Lithium-ion Rechargeable Battery
+                            br
+                            | & Dedicated Charger Set
+                        .product_img(style='background-image: url(../../../styles/images/product/pdw/desktop/charger_product.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text Color:
+                                    .description
+                                        .circle_(style='background-color: #000;' data-val='balck')
+                                        // <div class="circle_" style="background-color: #fff;" data-val="balck"></div>
+                                li
+                                    .title._justify_text Content:
+                                    .description
+                                        | Dedicated Charger, battery x 4,
+                                        br
+                                        | Micro USB charging cable, battery storage box
+                            .cart_container
+                                .cart_btn
+                                    i.icon-buy.buy_icon
+                                    |  Coming soon
+        .block-fifteen-card-container
+            .content
+                .title Product specification
+                .product_info_container
+                    .prodict_info
+                        .title_container 1.5V/AA Lithium-ion Rechargeable Battery
+                        .product_img(style='background-image: url(../../../styles/images/product/pdw/desktop/battery-group.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text Model:
+                                    .description ZBL-LBAA-001
+                                li
+                                    .title
+                                        ._justify_text Battery cell rated
+                                        ._justify_text voltage/Capacity:
+                                    .description 3.8V/900mAH
+                                li
+                                    .title
+                                        ._justify_text Battery rated
+                                        ._justify_text energy:
+                                    .description 3000 mWh
+                                li
+                                    .title._justify_text Rated capacity:
+                                    .description 2000 mAh
+                                li
+                                    .title._justify_text Output voltage:
+                                    .description 1.5V
+                                li
+                                    .title._justify_text Dimensions:
+                                    .description 14X50±0.5mm
+                                li
+                                    .title._justify_text Weight:
+                                    .description 20±0.5g
+                                li
+                                    .title._justify_text Charge cycles:
+                                    .description 1000 cycles
+                    .prodict_info
+                        .title_container 1.5V / AA Lithium-ion Rechargeable Battery Dedicated Charger
+                        .product_img(style='background-image: url(../../../styles/images/product/pdw/desktop/eighth_card_battery.png)')
+                        .product_feature_container
+                            ul.product_feature
+                                li
+                                    .title._justify_text Model:
+                                    .description ZBL-BCAA-001
+                                li
+                                    .title._justify_text Charging slot:
+                                    .description 4
+                                li
+                                    .title._justify_text Input voltage:
+                                    .description 5V/1A
+                                li
+                                    .title._justify_text Output voltage:
+                                    .description 4.2V/1A
+                                li
+                                    .title._justify_text Dimensions:
+                                    .description 67x75x25±0.5mm
+                                li
+                                    .title._justify_text Weight:
+                                    .description 48±0.3g
+        .block-sixteen-card-container.block-info
+            .container
+                .title Breaking News
+                .info-card
+                    .info-card-item
+                        a(href='https://livin.brookaccessory.com/en/store' target='blank')
+                            img(src='../../styles/images/product/pdw/desktop/news_01.png' alt='')
+                            .card-title Where to buy
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date Coming soon
+                    .info-card-item
+                        a(href='https://www.facebook.com/brooklivin' target='blank')
+                            img(src='../../styles/images/product/pdw/desktop/news_03.png' alt='')
+                            .card-title FACEBOOK
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/04/07
+                    .info-card-item
+                        a(href='../qa-powganite' target='blank')
+                            img(src='../../styles/images/product/pdw/desktop/news_02.png' alt='')
+                            .card-title Frequently asked questions
+                            .footer.d-flex.justify-content-between
+                                .new NEW
+                                .date 2021/05/10
+                .footer
+                    img(src='../../styles/images/wirecare-info/reuseImages/footer-logo.png' alt='')
+                    img(src='../../styles/images/product/pdw/desktop/powganite_logo.png' alt='')
