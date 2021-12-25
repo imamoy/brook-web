@@ -1,5 +1,5 @@
 //- index.pug
-extends ./include/new-layout.pug
+extends include/new-layout.pug
 block meta
     title WIRECARE於紐約時代廣場路透社大樓 重磅登場！
     meta(name='description' content='智慧家庭創新品牌【Brook Livin】，在Times Square 美國紐約時代廣場，正式宣佈於全美推出《WIRECARE宅電防護員》，守護全美消費者的居家與企業用電安全。')
@@ -12,7 +12,6 @@ block meta
 
 block plugins-js
     script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
-
 
 block content
     main#page.wrapper.new-page
@@ -59,7 +58,9 @@ block content
                                     i.icon-line-1
                                 button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
                                     i.icon-link
-                            a(href="unboxes") 回到列表
+                            a(href="activities") 回到列表
 
                     .col-12.col-md-4.mt-5.mt-md-0
-                        h5.f-textTitle.mb-3.mb-md-4 更多開箱消息
+                        h5.f-textTitle.mb-3.mb-md-4 更多活動消息
+                        +main-card('','styles/images/act-3-list.jpg','activity-3','2021/6/29','2021年Brook Livin品牌大使徵選開跑！ ','品牌大使徵選活動開跑囉！您是否喜歡思考，創意滿點，同時又樂於分享呢？7月1日開始，只要參予徵選活動，就有機會成為成為Brook Livin 品牌大使！')
+                        +main-card('','styles/images/act-2-list.jpg','activity-2','2021/5/10','觸電/淹水/高壓電擊/靜電: 如何發生與預防?','淹水時若水淹過插座，人在插座附近觸電機會很高！如果人站遠一點則不會觸電。而水是導體，理論上應該再遠都會電到，那為何只有電源附近的人會電到?')
