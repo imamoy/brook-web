@@ -98,7 +98,7 @@ header#header {
                   justify-content: space-between;
           position: relative; }
           header#header .menu .product-toggle::after, header#header .menu .menu-toggle::after {
-            content: '\e800';
+            content: '\e801';
             display: inline-block;
             font-family: "fontello";
             font-size: 8px;

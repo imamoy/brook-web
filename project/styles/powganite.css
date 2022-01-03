@@ -1985,7 +1985,7 @@
 }
 
 .block-fourteen-card-container .content .product_info_container .prodict_info .product_feature_container .cart_container .cart_btn {
-	width: 140px;
+	min-width: 140px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	/* width: 100px; */

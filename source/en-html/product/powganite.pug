@@ -16,10 +16,12 @@ block page-css
     style.
         .block-main-banner-container .content h2 {
             font-size: 27px;
+            text-align: center;
         }
         .block-main-banner-container .content ._statement {
             font-size: 25px;
             padding-top: 40px;
+            text-align: center;
         }
         .block-second-card-container .content .title_container {
             width: 610px;
@@ -90,6 +92,7 @@ block page-css
             letter-spacing: 0px;
         }
         .block-fifth-card-container .content .title_container {
+            text-align: center;
             width: 630px;
         }
         .block-fifth-card-container .content .title_container ._subtitle {
@@ -187,6 +190,7 @@ block page-css
         }
         .block-nineth-card-container .content .left_container .title_container ._title {
             font-size: 27px;
+            text-align: center;
             letter-spacing: 0px;
         }
         .block-nineth-card-container .content .left_container .charge_status_container {
@@ -194,6 +198,8 @@ block page-css
         }
         .block-nineth-card-container .content .left_container .title_container ._subtitle {
             font-size: 20px;
+            text-align: center;
+            padding: 0;
         }
         .block-nineth-card-container .content .left_container .charge_status_container .charge_status {
             font-size: 17px;
@@ -259,6 +265,14 @@ block page-css
                 text-align: center;
                 padding: 0;
                 padding-top: 10px;
+            }
+        }
+        @media only screen and (min-width:1400px) {
+            .block-eighth-card-container .content .feasure_list_container .battery_img_container {
+                right: 5%;
+            }
+            .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(2) > div, .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(4) > div, .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(6) > div {
+                max-width: 260px;
             }
         }
     link(rel='stylesheet' type='text/css' href='../../styles/powganite-pad.css')
@@ -449,6 +463,7 @@ block page-css
             }
             .block-sixth-card-container ul.block-tips li {
                 height: 100px;
+                padding-bottom: 30px;
             }
             .block-sixth-card-container ul.block-tips li:nth-child(5) .content > div {
                 letter-spacing: -1px;
@@ -475,9 +490,12 @@ block page-css
             }
             .block-eighth-card-container .content .title_container h2._title {
                 font-size: 23px;
+                text-align: center;
             }
             .block-eighth-card-container .content .title_container ._subtitle {
                 font-size: 13px;
+                text-align: center;
+                padding-right: 0
             }
             .block-eighth-card-container .content .feasure_list_container {
                 height: auto;
@@ -619,7 +637,7 @@ block content
                         .title_container._justify_text Constant voltage output and longer life
                         ._subscription._justify_text
                             | POWGANITE Lithium-ion Rechargeable Battery
-                            span._red outputs constant 1.5 volts
+                            span._red.ml-1 outputs constant 1.5 volts
                             | , delivers stable performance to devices that need high voltage and current.
                 .left_container
                     .graph_img_container
@@ -639,7 +657,7 @@ block content
                         .title_container._justify_text Smart fast charging, efficiency increased
                         ._subscription
                             | It takes
-                            span._red 6 to 8 hours
+                            span._red.mx-1 6 to 8 hours
                             | to fully charge POWGANITE Lithium-ion Rechargeable Battery. Less waiting, more efficiency.
                 .left_container
                     .graph_img_container_2
@@ -676,7 +694,7 @@ block content
                         .title_container._justify_text Large capacity that runs stronger and longer
                         ._subscription._justify_text
                             | POWGANITE Lithium-ion Rechargeable Battery features
-                            span._red 3000mWh
+                            span._red.mx-1 3000mWh
                             | of capacity, 0.6 times more than regular rechargeable battery.
                 .left_container
                     .graph_img_container_2
@@ -699,7 +717,7 @@ block content
                         .title_container._justify_text Safe and eco-friendly
                         ._subscription._justify_text
                             | POWGANITE Lithium-ion Rechargeable Battery contains no lead and mercury, features
-                            span._red 1000 charging cycles and 10 years of storage life
+                            span._red.mx-1 1000 charging cycles and 10 years of storage life
                             | ; well achieving sustainability and environmental protection.
                 .left_container
                     .graph_img_container
@@ -722,7 +740,7 @@ block content
                         .title_container._justify_text Low self-discharging, no memory effect
                         ._subscription
                             | POWGANITE Lithium-ion Rechargeable Battery still
-                            span._red holds 90% capacity
+                            span._red.mx-1 holds 90% capacity
                             | after no use for 1 year and still functions normally after 3 years.
                 .left_container
                     .graph_img_container
@@ -732,7 +750,7 @@ block content
                 .title_container
                     h2._title
                         | A battery with
-                        span.other_color chip
+                        span.other_color.ml-2 chip
                         |  inside
                     span._subtitle._justify_text Safer with multiple protections
                 .feasure_list_container
@@ -1114,12 +1132,12 @@ block content
                 .title Breaking News
                 .info-card
                     .info-card-item
-                        a(href='https://livin.brookaccessory.com/en/store' target='blank')
-                            img(src='../../styles/images/product/pdw/desktop/news_01.png' alt='')
-                            .card-title Where to buy
-                            .footer.d-flex.justify-content-between
-                                .new NEW
-                                .date Coming soon
+                        //- a(href='https://livin.brookaccessory.com/en/store' target='blank')
+                        img(src='../../styles/images/product/pdw/desktop/news_01.png' alt='')
+                        .card-title Where to buy
+                        .footer.d-flex.justify-content-between
+                            .new NEW
+                            .date Coming soon
                     .info-card-item
                         a(href='https://www.facebook.com/brooklivin' target='blank')
                             img(src='../../styles/images/product/pdw/desktop/news_03.png' alt='')
