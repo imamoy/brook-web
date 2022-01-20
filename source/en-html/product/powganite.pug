@@ -259,6 +259,9 @@ block page-css
         .block-sixteen-card-container .container .card-title {
             font-size: 18px;
         }
+        .block-eighth-card-container .content .feasure_list_container .feasure_list li:nth-child(2) .bold_font {
+            letter-spacing: 0 !important;
+        }
         @media only screen and (min-width: 768px) and (max-width: 1200px) {
             .block-main-banner-container .content h2 {
                 font-size: 16px;
@@ -968,6 +971,12 @@ block content
                     .certification.battery_certification
                         .title_container Battery's safety certifications
                         .certification_items_container_slick
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/BSMI.jpg);')
+                                .certification_items
+                                    .certi_name BSMI certified
+                            .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi/MSDS.jpg);')
+                                .certification_items
+                                    .certi_name MSDS certified
                             .certification_items_container(style='background-image: url(../../../styles/images/product/pdw/desktop/certi_2/PSE.jpg);')
                                 .certification_items
                                     .certi_name PSE certified

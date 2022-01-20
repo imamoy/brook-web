@@ -1,3 +1,4 @@
+<IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -14,6 +15,8 @@ RewriteRule ^media-4$ media-4.html [QSA,PT,L]
 RewriteRule ^media-5$ media-5.html [QSA,PT,L]
 RewriteRule ^media-6$ media-6.html [QSA,PT,L]
 RewriteRule ^media-7$ media-7.html [QSA,PT,L]
+RewriteRule ^media-8$ media-8.html [QSA,PT,L]
+RewriteRule ^media-9$ media-9.html [QSA,PT,L]
 RewriteRule ^activities$ activities.html [QSA,PT,L]
 RewriteRule ^activity$ activity.html [QSA,PT,L]
 RewriteRule ^activity-1$ activity-1.html [QSA,PT,L]
@@ -26,6 +29,7 @@ RewriteRule ^news$ news.html [QSA,PT,L]
 RewriteRule ^new$ new.html [QSA,PT,L]
 RewriteRule ^unboxes$ unboxes.html [QSA,PT,L]
 RewriteRule ^unboxing$ unboxing.html [QSA,PT,L]
+RewriteRule ^unboxing-1$ unboxing-1.html [QSA,PT,L]
 RewriteRule ^warranty$ warranty.html [QSA,PT,L]
 RewriteRule ^return$ return.html [QSA,PT,L]
 RewriteRule ^qa$ qa.html [QSA,PT,L]
@@ -90,3 +94,4 @@ RewriteRule ^jp/privacy$ jp/privacy.html [QSA,PT,L]
 RewriteRule ^jp/store$ jp/store.html [QSA,PT,L]
 RewriteRule ^jp/product/wirecare$ jp/product/wirecare.html [QSA,PT,L]
 RewriteRule ^jp/product/powganite$ jp/product/powganite.html [QSA,PT,L]
+</IfModule>
