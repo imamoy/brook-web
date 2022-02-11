@@ -1276,7 +1276,7 @@
 }
 
 .block-eighth-card-container .content .title_container {
-	width: 555px;
+	width: 645px;
 	margin: 0 auto;
 	margin-top: 50px;
 }
@@ -2616,7 +2616,10 @@
 		margin-top: 40px;
 		padding-top: 0px;
 		margin-top: 20px;
+	}
 
+	.block-main-banner-container .content h2 {
+		font-size: 22px;
 	}
 
 	.block-main-banner-container .content .logo_img {
@@ -3170,7 +3173,7 @@
 	}
 
 	.block-eighth-card-container .content .title_container {
-		width: 308px;
+		width: 356px;
 		margin-top: 50px;
 	}
 

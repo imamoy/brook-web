@@ -9,13 +9,13 @@ $(document).ready(function () {
     customPaging: function (slick, index) {
       switch (index) {
         case 0:
-          return '<div><img src="../../styles/images/wirecare-info/reuseImages/err.png"><div class="content"><div>危機雷達</div></div></div>';
+          return '<div><img src="../../styles/images/wirecare-info/reuseImages/err.png"><div class="content"><div>危機レーダー</div></div></div>';
         case 1:
-          return '<div><img src="../../styles/images/wirecare-info/reuseImages/10SEC.png"><div class="content"><div>10秒護10年</div></div></div>';
+          return '<div><img src="../../styles/images/wirecare-info/reuseImages/10SEC.png"><div class="content"><div>10秒で10年先を守れる</div></div></div>';
         case 2:
-          return '<div><img src="../../styles/images/wirecare-info/reuseImages/SMALL.png"><div class="content"><div>安全小幫手</div></div></div>';
+          return '<div><img src="../../styles/images/wirecare-info/reuseImages/SMALL.png"><div class="content"><div>安全サポーター</div></div></div>';
         case 3:
-          return '<div><img src="../../styles/images/wirecare-info/reuseImages/RADER.png"><div class="content"><div>用電安全紅綠燈</div></div></div>';
+          return '<div><img src="../../styles/images/wirecare-info/reuseImages/RADER.png"><div class="content"><div>電気の使用安全信号機</div></div></div>';
       }
     },
   });

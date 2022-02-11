@@ -478,7 +478,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   a.t-primary:hover {
-    color: #808080; } }
+    color: #808080 !important; } }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   line-height: 1.4; }
@@ -536,7 +536,7 @@ html > body img:not(.img-no-full) {
   background-color: #F9F9FF; }
 
 .t-primary {
-  color: #00AFAA; }
+  color: #00AFAA !important; }
 
 .t-primary-dk {
   color: #008884 !important; }

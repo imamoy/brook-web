@@ -11852,6 +11852,52 @@ img {
 	}
 }
 
+.fadeIn {
+	animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		top: 43%;
+		opacity: 0;
+	}
+
+	100% {
+		top: 50%;
+		opacity: 1;
+	}
+}
+
+.fadeIn2 {
+	animation: fadeIn2 1s ease forwards;
+}
+
+@keyframes fadeIn2 {
+	0% {
+		top: 0%;
+		opacity: 0;
+	}
+
+	100% {
+		top: 10%;
+		opacity: 1;
+	}
+}
+
+@media (min-width: 768px) {
+	@keyframes fadeIn2 {
+		0% {
+			top: 0%;
+			opacity: 0;
+		}
+
+		100% {
+			top: 50%;
+			opacity: 1;
+		}
+	}
+}
+
 .block-video {
 	position: relative;
 	padding-bottom: 56.25%;
