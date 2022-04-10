@@ -90,5 +90,13 @@
     {
         "q": "Will WIRECARE's measurement accuracy be influenced if GFCI Ground Fault Circuit Interrupter) is installed in circuit?",
         "a": "GFCI detects the difference between input and output currents. Input current is nearly the same as output when there is no electric leakage. Once the current difference becomes larger, it means that electricity is leaking and triggers GFCI to shut off the switch. Both currents are measured by a current loop which does not affect WIRECARE's resistance measurement."
+    },
+    {
+        "q": "Can WIRECARE check UPS? Is it normal to have orange/red signals in checking the UPS?",
+        "a": "It is not recommended to do so. WIRECARE is designed to check wires instead of an appliance or an equipment. The switches and relays insides the UPS generate resistance， so orange/red signals are displayed. "
+    },
+    {
+        "q": "Is it normal to have orange signal while testing a newly purchased extension cord?",
+        "a": "It may or may not be normal. Since extension cord has its own resistance; WIRECARE measures the overall resistance across extension cord， plug and the wiring that connects to it. <br>An orange signal indicates a higher resistance is measured. In addition， it is necessary to check whether a high-power appliance is plugged to the extension cord. It doesn’t mean that there are problems on the newly purchased cord<br<br>The measured result will be different if the extension cord is plugged into an outlet with a lower resistance. The influence to resistance is also different due to their design and materials<br<br>An extension cord is regulated to carry lower than 1650W of power; also， extension cord’s resistance is not a majorly regulated factor. Hence the WIRECARE’s measure result may differ on various outlets.<br<br>WIRECARE does not judge extension cord individually， it reminds users to pay more attention in using high-power appliances."
     }
 ]
