@@ -7,10 +7,15 @@ html(lang='zh-TW')
     body#app
         .tv
         include ../include/header.pug
-        block content           
+        block content
         include ../include/footer.pug
         .cursor
         include ../include/footer-js.pug
+         //- ga test
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-K3DD9KL", height="0", width="0", style="display:none;visibility:hidden")
+        // End Google Tag Manager (noscript)
     #fb-root
     script.
         window.fbAsyncInit = function() {

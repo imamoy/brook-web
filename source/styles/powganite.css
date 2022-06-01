@@ -3842,3 +3842,11 @@
 		width: auto !important;
 	}
 }
+
+a.buy_btn, a.cart_btn {
+	cursor: pointer !important;
+	transition: .25s background;
+}
+a.buy_btn:hover, a.cart_btn:hover {
+	background-color: #00afaa !important;
+}
