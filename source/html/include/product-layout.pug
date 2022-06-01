@@ -2,34 +2,31 @@ include ../include/mixin.pug
 
 doctype html
 html(lang='zh-TW')
-    head
-        include product-head.pug
-    body#app
-        .tv
-        include product-header.pug
-        block content
-        include product-footer.pug
-        .cursor
-        include product-footer-js.pug
-        //- ga test
-        // Google Tag Manager (noscript)
-        noscript
-            iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-K3DD9KL", height="0", width="0", style="display:none;visibility:hidden")
-        // End Google Tag Manager (noscript)
-    #fb-root
-    script.
-        window.fbAsyncInit = function() {
-            FB.init({
-                xfbml: true,
-                version: 'v10.0'
-            });
-        };
+	head
+		include product-head.pug
+	body#app
+		//- Google Tag Manager (noscript)
+		noscript
+			iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-K3DD9KL", height="0", width="0", style="display:none;visibility:hidden")
+		//- End Google Tag Manager (noscript)
+		include product-header.pug
+		block content
+		include product-footer.pug
+		include product-footer-js.pug
+	#fb-root
+	script.
+		window.fbAsyncInit = function() {
+			FB.init({
+				xfbml: true,
+				version: 'v10.0'
+			});
+		};
 
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    .fb-customerchat(attribution="biz_inbox" page_id="1890912854485626")
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	.fb-customerchat(attribution="biz_inbox" page_id="1890912854485626")

@@ -24,6 +24,25 @@ block plugins-js
         var stepContentHtml = ['將需要充電的電池放入充電槽內，<br>並確認正負極位置。','將Micro USB線的頭<br>插入充電器上方的洞孔','另一頭線插入USB插座的洞孔<br>開始充電','充電時<br>充電器指示燈亮紅燈','充滿電後<br>充電指示燈亮綠燈'];
         var pathBeforeStr = '../';
     script(src="../scripts/default/powganite.js")
+    script.
+        $('.power-banner-btn').click(function(){
+            gtag('event', 'Power立即預購按鈕', {
+                'event_category': '按鈕點擊',
+                'event_label': 'Power Banner'
+                });
+        });
+        $('.power-sale-left-click').click(function(){
+            gtag('event', 'Power立即預購按鈕', {
+                'event_category': '按鈕點擊',
+                'event_label': '販售資訊-耐能鋰離子充電電池'
+                });
+        });
+        $('.power-sale-right-click').click(function(){
+            gtag('event', 'Power立即預購按鈕', {
+                'event_category': '按鈕點擊',
+                'event_label': '販售資訊-耐能鋰離子充電電池組'
+                });
+        });
 
 block content
     main#wirecare-info.wrapper

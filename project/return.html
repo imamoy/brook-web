@@ -25,13 +25,21 @@
     <link rel="stylesheet" type="text/css" href="styles/plugins/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="styles/plugins/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/common.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-142695956-17"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2N23NLDYXB">
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-2N23NLDYXB');
+      </script>
+    </script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-142695956-17');
-      
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K3DD9KL');
     </script>
     <script>
       !function(f,b,e,v,n,t,s)
@@ -48,7 +56,9 @@
     <noscript></noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3159935904333330&amp;ev=PageView&amp;noscript=1">
   </head>
   <body id="app">
-    <div class="tv"></div>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3DD9KL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <header id="header">
       <div class="container">
         <nav class="row">
@@ -364,33 +374,27 @@
       </div>
     </footer>
     <div class="goTop"><a class="goTopBtn jq-goTop" href="#"><i class="icon-arrow-t"></i></a></div>
-    <div class="cursor"></div>
     <script src="scripts/default/jquery.min.js"></script>
     <script src="scripts/default/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <script src="scripts/plugins/slick.js"></script>
     <script src="scripts/default/ui.js"></script>
-    <!-- Google Tag Manager (noscript)-->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3DD9KL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript)-->
   </body>
   <div id="fb-root"></div>
   <script>
     window.fbAsyncInit = function() {
-        FB.init({
-            xfbml: true,
-            version: 'v10.0'
-        });
+    	FB.init({
+    		xfbml: true,
+    		version: 'v10.0'
+    	});
     };
     
     (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
+    	var js, fjs = d.getElementsByTagName(s)[0];
+    	if (d.getElementById(id)) return;
+    	js = d.createElement(s); js.id = id;
+    	js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+    	fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
   <div class="fb-customerchat" attribution="biz_inbox" page_id="1890912854485626"></div>
