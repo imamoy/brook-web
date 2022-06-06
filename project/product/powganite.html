@@ -7,7 +7,7 @@
     <meta property="og:image:width" content="680">
     <meta property="og:image:height" content="420">
     <meta property="og:type" content="website">
-    <meta name="facebook-domain-verification" content="mrsqta5eri8hlnymt8hy4b9224smfr">
+    <meta name="facebook-domain-verification" content="mrsqta5eri8hlnymt8hy4b9224smfr" />
     <title>POWGANITE 鋰離子充電電池 - Brook Livin</title>
     <meta name="description" content="新一代「鋰離子充電電池」與一般充電電池相比，充電時間更短能節省更多等待時間，同時也具備長效續航，且穩定的電壓輸出，讓充電電池使用安心又長久。">
     <meta name="robots" content="新一代「鋰離子充電電池」與一般充電電池相比，充電時間更短能節省更多等待時間，同時也具備長效續航，且穩定的電壓輸出，讓充電電池使用安心又長久。">
@@ -28,14 +28,21 @@
     <link rel="stylesheet" type="text/css" href="../styles/powganite.css">
     <link rel="stylesheet" type="text/css" href="../styles/powganite-pad.css">
     <link rel="stylesheet" type="text/css" href="../styles/powganite-mobile.css">
-    <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-142695956-17"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142695956-17"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-142695956-17');
-      
+
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2N23NLDYXB">
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2N23NLDYXB');
+      </script>
     </script>
     <script>
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -123,7 +130,7 @@
           <div class="logo_img"></div>
           <h2 class="_justify_text">耐能鋰離子充電電池</h2>
           <div class="_statement _justify_text">電力強勁到底 高效循環壽命</div>
-          <div class="buy_btn_container"><a class="buy_btn power-banner-btn" href="https://bit.ly/3x0Xv7f" target="_blank"><i class="icon-buy buy_icon"></i> 立即預購</a></div>
+          <div class="buy_btn_container"><a class="buy_btn power-banner-btn" href="https://bit.ly/3x0Xv7f" target="_blank" onClick="bannerClick"><i class="icon-buy buy_icon"></i> 立即購買</a></div>
         </div>
       </div>
       <div class="block-second-card-container">
@@ -571,6 +578,21 @@
           </div>
         </div>
       </div>
+      <div class="block-fourteen-card-container" style="height:auto;">
+        <div class="content">
+          <div class="title">好評推薦</div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/zyRyLurd1GE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-12 col-md-6">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/IkgJzQtO-v4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="block-fourteen-card-container">
         <div class="content">
           <div class="title">販售資訊</div>
@@ -595,7 +617,7 @@
                     <div class="description">NT$990</div>
                   </li>
                 </ul>
-                <div class="cart_container"><a class="cart_btn power-sale-left-click" href="https://bit.ly/3x0Xv7f" target="_blank"><i class="icon-buy buy_icon"></i> 立即預購</a></div>
+                <div class="cart_container"><a class="cart_btn power-sale-left-click" href="https://bit.ly/3x0Xv7f" target="_blank" onClick="bannerClick"><i class="icon-buy buy_icon"></i> 立即購買</a></div>
               </div>
             </div>
             <div class="prodict_info">
@@ -621,7 +643,7 @@
                     <div class="description">NT$1,490</div>
                   </li>
                 </ul>
-                <div class="cart_container"><a class="cart_btn power-sale-right-click" href="https://bit.ly/3x0Xv7f" target="_blank"><i class="icon-buy buy_icon"></i> 立即預購</a></div>
+                <div class="cart_container"><a class="cart_btn power-sale-right-click" href="https://bit.ly/3x0Xv7f" target="_blank" onClick="rightClick"><i class="icon-buy buy_icon"></i> 立即購買</a></div>
               </div>
             </div>
           </div>
@@ -825,25 +847,34 @@
     </script>
     <script src="../scripts/default/powganite.js"></script>
     <script>
-      $('.power-banner-btn').click(function(){
-          gtag('event', 'Power立即預購按鈕', {
-              'event_category': '按鈕點擊',
-              'event_label': 'Power Banner'
-              });
-      });
-      $('.power-sale-left-click').click(function(){
-          gtag('event', 'Power立即預購按鈕', {
-              'event_category': '按鈕點擊',
-              'event_label': '販售資訊-耐能鋰離子充電電池'
-              });
-      });
-      $('.power-sale-right-click').click(function(){
-          gtag('event', 'Power立即預購按鈕', {
-              'event_category': '按鈕點擊',
-              'event_label': '販售資訊-耐能鋰離子充電電池組'
-              });
-      });
-      
+      function bannerClick() {
+          gtag('send', {
+              'hitType': 'event',
+              'event_category': 'link'',
+              'eventAction': 'click'
+              'event_label': 'Power Banner Btn,
+              ''
+          });
+      }
+      function leftClick() {
+          gtag('send', {
+              'hitType': 'event',
+              'event_category': 'link'',
+              'eventAction': 'click'
+              'event_label': 'Power Sale Left Btn,
+              ''
+          });
+      }
+      function rightClick() {
+          gtag('send', {
+              'hitType': 'event',
+              'event_category': 'link'',
+              'eventAction': 'click'
+              'event_label': 'Power Sale Right Btn,
+              ''
+          });
+      }
+
     </script>
     <script src="../scripts/default/ui.js"></script>
   </body>
@@ -855,7 +886,7 @@
     		version: 'v10.0'
     	});
     };
-    
+
     (function(d, s, id) {
     	var js, fjs = d.getElementsByTagName(s)[0];
     	if (d.getElementById(id)) return;

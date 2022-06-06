@@ -25,24 +25,33 @@ block plugins-js
         var pathBeforeStr = '../';
     script(src="../scripts/default/powganite.js")
     script.
-        $('.power-banner-btn').click(function(){
-            gtag('event', 'Power立即預購按鈕', {
-                'event_category': '按鈕點擊',
-                'event_label': 'Power Banner'
-                });
-        });
-        $('.power-sale-left-click').click(function(){
-            gtag('event', 'Power立即預購按鈕', {
-                'event_category': '按鈕點擊',
-                'event_label': '販售資訊-耐能鋰離子充電電池'
-                });
-        });
-        $('.power-sale-right-click').click(function(){
-            gtag('event', 'Power立即預購按鈕', {
-                'event_category': '按鈕點擊',
-                'event_label': '販售資訊-耐能鋰離子充電電池組'
-                });
-        });
+        function bannerClick() {
+            gtag('send', {
+                'hitType': 'event',
+                'event_category': 'link'',
+                'eventAction': 'click'
+                'event_label': 'Power Banner Btn,
+                ''
+            });
+        }
+        function leftClick() {
+            gtag('send', {
+                'hitType': 'event',
+                'event_category': 'link'',
+                'eventAction': 'click'
+                'event_label': 'Power Sale Left Btn,
+                ''
+            });
+        }
+        function rightClick() {
+            gtag('send', {
+                'hitType': 'event',
+                'event_category': 'link'',
+                'eventAction': 'click'
+                'event_label': 'Power Sale Right Btn,
+                ''
+            });
+        }
 
 block content
     main#wirecare-info.wrapper
@@ -52,9 +61,9 @@ block content
                 h2._justify_text 耐能鋰離子充電電池
                 ._statement._justify_text 電力強勁到底 高效循環壽命
                 .buy_btn_container
-                    a.buy_btn.power-banner-btn(href="https://bit.ly/3x0Xv7f" target="_blank")
+                    a.buy_btn.power-banner-btn(href="https://bit.ly/3x0Xv7f" target="_blank" onClick='bannerClick')
                         i.icon-buy.buy_icon
-                        |  立即預購
+                        |  立即購買
                     //- .buy_btn
                     //-     i.icon-buy.buy_icon
                     //-     |  Coming soon
@@ -492,6 +501,17 @@ block content
         //-             li(onclick="window.open('https://livin.brookaccessory.com/qa');" target='blank')
         //-                 .img_
         //-                 p 文字文字文字
+        .block-fourteen-card-container(style='height:auto;')
+            .content
+                .title 好評推薦
+            .container
+                .row
+                    .col-12.col-md-6
+                        iframe(width="100%", height="400", src="https://www.youtube.com/embed/zyRyLurd1GE", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+                    .col-12.col-md-6
+                        iframe(width="100%", height="400", src="https://www.youtube.com/embed/IkgJzQtO-v4", title="YouTube video player", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+
+
         .block-fourteen-card-container
             .content
                 .title 販售資訊
@@ -516,9 +536,9 @@ block content
                                     .description NT$990
                             .cart_container
                                 //- .cart_btn(oncli ck="window.open('https://livin.brookaccessory.com/store');")
-                                a.cart_btn.power-sale-left-click(href="https://bit.ly/3x0Xv7f" target="_blank")
+                                a.cart_btn.power-sale-left-click(href="https://bit.ly/3x0Xv7f" target="_blank" onClick='bannerClick')
                                     i.icon-buy.buy_icon
-                                    |  立即預購
+                                    |  立即購買
                     .prodict_info
                         .title_container
                             img(src='./../styles/images/product/pdw/desktop/powganite_logo.png')
@@ -543,9 +563,9 @@ block content
                                     .description NT$1,490
                             .cart_container
                                 //- .cart_btn(onclick="window.open('https://livin.brookaccessory.com/store');")
-                                a.cart_btn.power-sale-right-click(href="https://bit.ly/3x0Xv7f" target="_blank")
+                                a.cart_btn.power-sale-right-click(href="https://bit.ly/3x0Xv7f" target="_blank" onClick='rightClick')
                                     i.icon-buy.buy_icon
-                                    |  立即預購
+                                    |  立即購買
         .block-fifteen-card-container
             .content
                 .title 產品規格

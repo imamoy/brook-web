@@ -20,8 +20,8 @@ link(rel="stylesheet" type="text/css" href="../styles/plugins/animate.css")
 
 link(rel="stylesheet" type="text/css" href="../styles/common.css")
 block page-css
-// Global site tag (gtag.js) - Google Analytics
-script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-142695956-17')
+//- Global site tag (gtag.js) - Google Analytics
+script(async, src='https://www.googletagmanager.com/gtag/js?id=UA-142695956-17')
 script.
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
@@ -29,13 +29,12 @@ script.
 	gtag('config', 'UA-142695956-17');
 
 //- Global site tag (gtag.js) - Google Analytics -- 測試
-//- script(async, src="https://www.googletagmanager.com/gtag/js?id=G-2N23NLDYXB")
-//- 	script.
-//- 		window.dataLayer = window.dataLayer || [];
-//- 		function gtag(){dataLayer.push(arguments);}
-//- 		gtag('js', new Date());
-
-//- 		gtag('config', 'G-2N23NLDYXB');
+script(async, src="https://www.googletagmanager.com/gtag/js?id=G-2N23NLDYXB")
+	script.
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-2N23NLDYXB');
 //- Google Tag Manager
 script.
 	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
