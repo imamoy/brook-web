@@ -61,9 +61,12 @@ block content
                 h2._justify_text 耐能鋰離子充電電池
                 ._statement._justify_text 電力強勁到底 高效循環壽命
                 .buy_btn_container
+                    a.buy_btn.power-banner-btn(href="https://bit.ly/3Oj4Sgd" target="_blank" onClick='bannerClick')
+                        i.icon-buy.buy_icon
+                        | 良興購物
                     a.buy_btn.power-banner-btn(href="https://bit.ly/3x0Xv7f" target="_blank" onClick='bannerClick')
                         i.icon-buy.buy_icon
-                        |  立即購買
+                        | 蝦皮購物
                     //- .buy_btn
                     //-     i.icon-buy.buy_icon
                     //-     |  Coming soon
@@ -535,10 +538,12 @@ block content
                                     .title._justify_text 定價
                                     .description NT$990
                             .cart_container
-                                //- .cart_btn(oncli ck="window.open('https://livin.brookaccessory.com/store');")
-                                a.cart_btn.power-sale-left-click(href="https://bit.ly/3x0Xv7f" target="_blank" onClick='bannerClick')
+                                a.cart_btn.power-sale-right-click.mx-2(href="https://bit.ly/3Oj4Sgd" target="_blank" onClick='rightClick')
                                     i.icon-buy.buy_icon
-                                    |  立即購買
+                                    | 良興購物
+                                a.cart_btn.power-sale-right-click.mx-2(href="https://bit.ly/3x0Xv7f" target="_blank" onClick='rightClick')
+                                    i.icon-buy.buy_icon
+                                    | 蝦皮購物
                     .prodict_info
                         .title_container
                             img(src='./../styles/images/product/pdw/desktop/powganite_logo.png')
@@ -563,9 +568,12 @@ block content
                                     .description NT$1,490
                             .cart_container
                                 //- .cart_btn(onclick="window.open('https://livin.brookaccessory.com/store');")
-                                a.cart_btn.power-sale-right-click(href="https://bit.ly/3x0Xv7f" target="_blank" onClick='rightClick')
+                                a.cart_btn.power-sale-right-click.mx-2(href="https://bit.ly/3Oj4Sgd" target="_blank" onClick='rightClick')
                                     i.icon-buy.buy_icon
-                                    |  立即購買
+                                    | 良興購物
+                                a.cart_btn.power-sale-right-click.mx-2(href="https://bit.ly/3x0Xv7f" target="_blank" onClick='rightClick')
+                                    i.icon-buy.buy_icon
+                                    | 蝦皮購物
         .block-fifteen-card-container
             .content
                 .title 產品規格
