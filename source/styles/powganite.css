@@ -67,16 +67,14 @@
 
 .block-main-banner-container .content .buy_btn_container {
 	width: 100%;
-	float: left;
 	padding-top: 30px;
 }
 
 .block-main-banner-container .content .buy_btn_container .buy_btn {
-	float: right;
 	padding: 5px 15px;
 	background: #333;
 	font-size: 18px;
-	margin-right: 20px;
+	margin: 0 10px;
 	border-radius: 20px;
 	color: #fff;
 	cursor: pointer;
@@ -2632,8 +2630,8 @@
 	}
 
 	.block-main-banner-container .content .buy_btn_container {
-		float: inherit;
-		width: 136px;
+		display: flex;
+		justify-content: center;
 		margin: 0;
 		padding: 0;
 		margin: 0 auto;
@@ -2641,7 +2639,7 @@
 	}
 
 	.block-main-banner-container .content .buy_btn_container .buy_btn {
-		margin-right: 0px;
+		max-width: 60%;
 	}
 
 	.block-second-card-container .content .title_container {

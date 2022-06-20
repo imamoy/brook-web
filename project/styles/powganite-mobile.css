@@ -30,8 +30,8 @@
 	}
 
 	.block-main-banner-container .content .buy_btn_container {
-		float: inherit;
-		width: 136px;
+		width: 100% !important;
+		text-align: center;
 		margin: 0;
 		padding: 0;
 		margin: 0 auto;
@@ -39,7 +39,7 @@
 	}
 
 	.block-main-banner-container .content .buy_btn_container .buy_btn {
-		margin-right: 0px;
+		/* margin-right: 0px; */
 	}
 
 	.block-second-card-container .content .title_container {
