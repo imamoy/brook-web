@@ -24,32 +24,31 @@ block content
                     a.nav-link(href='qa' rel='nofollow') 常見Q&A
 
         article.page-inner
-            //- .filter-row.mb-3.mb-lg-4
-            //-     .container
-            //-         .row.justify-content-center
-            //-             .col-6.col-md-3.col-xl-2
-            //-                 .select-box
-            //-                     .form-group
-            //-                         select.form-control.main-select
-            //-                             option 國家
-            //-             .col-6.col-md-3.col-xl-2
-            //-                 .select-box
-            //-                     .form-group
-            //-                         select.form-control.main-select
-            //-                             option 地區
-            //-             .col-6.col-md-3.col-xl-2.mt-4.mt-md-0
-            //-                 .select-box
-            //-                     .form-group
-            //-                         select.form-control.main-select
-            //-                             option 類別
-            //-                             option 居家安全
-            //-             .col-6.col-md-3.col-xl-2.mt-4.mt-md-0
-            //-                 .select-box
-            //-                     .form-group
-            //-                         select.form-control.main-select
-            //-                             option 產品
-            //-                             option WIRECARE 宅電防護員
-            //-                             option BROOK紫外線消毒盒
+            .filter-row.mb-3.mb-lg-4
+                .container
+                    .row.justify-content-center
+                        //- .col-6.col-md-3.col-xl-2
+                        //-     .select-box
+                        //-         .form-group
+                        //-             select.form-control.main-select
+                        //-                 option 國家
+                        .col-6.col-md-3
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select
+                                        option 地區
+                        .col-6.col-md-3.mt-4.mt-md-0
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select
+                                        option(value='store') 居家安全
+                                        option(value='store-powganite') 居家安全
+                        .col-6.col-md-3.mt-4.mt-md-0
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select(onchange='location = this.value;')
+                                        option(value='store') WIRECARE 宅電防護員
+                                        option(value='store-powganite') POWGANITE 耐能鋰離子充電電池
             section
                 .container#store-inner
                     .row.align-items-lg-center.py-3.py-md-5

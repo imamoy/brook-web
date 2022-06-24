@@ -1,0 +1,210 @@
+//- index.pug
+extends ./include/layout.pug
+block plugins-js
+    //- script(src="scripts/plugins/slick.js")
+    //- script(src="scripts/data/stores.js")
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center 客戶服務
+                .page-hero_img
+                    img(src='styles/images/store.jpg', alt='情境圖')
+        #page-nav
+            ul.nav.justify-content-center
+                li.nav-item
+                    a.nav-link.active(href='store' rel='nofollow') 經銷商據點
+                li.nav-item
+                    a.nav-link(href='warranty' rel='nofollow') 保固資訊
+                li.nav-item
+                    a.nav-link(href='return' rel='nofollow') 退換貨流程
+                li.nav-item
+                    a.nav-link(href='qa' rel='nofollow') 常見Q&A
+
+        article.page-inner
+            .filter-row.mb-3.mb-lg-4
+                .container
+                    .row.justify-content-center
+                        //- .col-6.col-md-3.col-xl-2
+                        //-     .select-box
+                        //-         .form-group
+                        //-             select.form-control.main-select
+                        //-                 option 國家
+                        .col-6.col-md-3
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select
+                                        option 地區
+                        .col-6.col-md-3.mt-4.mt-md-0
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select
+                                        option(value='store') 居家安全
+                                        option(value='store-powganite') 居家安全
+                        .col-6.col-md-3.mt-4.mt-md-0
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select(onchange='location = this.value;')
+                                        option(value='store') WIRECARE 宅電防護員
+                                        option(value='store-powganite') POWGANITE 耐能鋰離子充電電池
+            section
+                .container#store-inner
+                    .row.align-items-lg-center.py-3.py-md-5
+                        .col-12.col-lg-6
+                            .store-img
+                                img(src='styles/images/store/雲城娛樂_LOGO.png' alt='經銷據點圖片')
+                        .col-12.col-lg-5.py-3.py-lg-5.pl-lg-5.pr-lg-0
+                            h5.f-sc-title 雲城娛樂
+                            hr.my-lg-4
+                            address.store-list.mb-4
+                                ul.list-unstyled
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 電話
+                                        a.f-text-big(href='tel:02-2222-5548') 02-2222-5548
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 營業時間(不含例假日)
+                                        span.f-text-big 上午10:00 至 下午6:00
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 地址
+                                        a.f-text-big(href='https://goo.gl/maps/Ynh7Ab5Bzk7jpo87A' target='_blank') 新北市中和區建八路121號5樓
+                            .store-products
+                                ul.list-inline
+                                    li.list-inline-item POWGANITE 耐能鋰離子充電電池
+                            .row
+                                .col-6.col-lg-4
+                                    a.main-btn.btn-border-primary.ml-0.mt-4(href='https://shopee.tw/product/3053941/21607028776/' target='_blank')
+                                        //- i.icon-buy(style='font-size: 18px;')
+                                        span 蝦皮購物
+                                .col-6.col-lg-4
+                                    a.main-btn.btn-border-primary.ml-0.mt-4(href='https://www.ruten.com.tw/item/show?22222256476426' target='_blank')
+                                        //- i.icon-buy(style='font-size: 18px;')
+                                        span 露天拍賣
+                                .col-6.col-lg-4
+                                    a.main-btn.btn-border-primary.ml-0.mt-4(href='https://tw.bid.yahoo.com/item/101289457037' target='_blank')
+                                        //- i.icon-buy(style='font-size: 18px;')
+                                        span yahoo!拍賣
+                    .row.align-items-lg-center.py-3.py-md-5
+                        .col-12.col-lg-6
+                            .store-img
+                                img(src='styles/images/store/旺群儀器有限公司_LOGO.png' alt='經銷據點圖片')
+                        .col-12.col-lg-5.py-3.py-lg-5.pl-lg-5.pr-lg-0
+                            h5.f-sc-title 旺群儀器有限公司
+                            hr.my-lg-4
+                            address.store-list.mb-4
+                                ul.list-unstyled
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 電話
+                                        a.f-text-big(href='tel:02-2974-2228') 02-2974-2228
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 營業時間(不含例假日)
+                                        span.f-text-big 上午9:00 至 下午5:00
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 地址
+                                        a.f-text-big(href='https://goo.gl/maps/CQRyL3NEiyX1mZHB8' target='_blank') 新北市三重區重新路四段97號23樓之2
+                            .store-products
+                                ul.list-inline
+                                    li.list-inline-item POWGANITE 耐能鋰離子充電電池
+                            .row
+                                .col-6.col-lg-4
+                                    a.main-btn.btn-border-primary.ml-0.mt-4(href='https://www.eclife.com.tw/dc/moreinfo_187877.htm' target='_blank')
+                                        //- i.icon-buy(style='font-size: 18px;')
+                                        span 良興電子
+                    .row.align-items-lg-center.py-3.py-md-5
+                        .col-12.col-lg-6
+                            .store-img
+                                img(src='styles/images/store/杰鼎奧拉數位館LOGO.png' alt='經銷據點圖片')
+                        .col-12.col-lg-5.py-3.py-lg-5.pl-lg-5.pr-lg-0
+                            h5.f-sc-title 杰鼎奧拉數位館
+                            hr.my-lg-4
+                            address.store-list.mb-4
+                                ul.list-unstyled
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 電話
+                                        a.f-text-big(href='tel:07-226-8080') 07-226-8080
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 營業時間(不含例假日)
+                                        span.f-text-big 上午9:00 至 下午6:00
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 地址
+                                        a.f-text-big(href='https://goo.gl/maps/dQ6ha2QYxpWcZKd7A' target='_blank') 高雄市前鎮區中山二路91號7F-7
+                            .store-products
+                                ul.list-inline
+                                    li.list-inline-item POWGANITE 耐能鋰離子充電電池
+                            //- .row
+                            //-     .col-6.col-lg-4
+                            //-         a.main-btn.btn-border-primary.ml-0.mt-4(href='https://www.jdingaura.com.tw/products04-01-01.html' target='_blank')
+                            //-             //- i.icon-buy(style='font-size: 18px;')
+                            //-             span 奧拉數位館
+                            //-     .col-6.col-lg-4
+                            //-         a.main-btn.btn-border-primary.ml-0.mt-4(href='https://tinyurl.com/ymbayj4f' target='_blank')
+                            //-             //- i.icon-buy(style='font-size: 18px;')
+                            //-             span citiesocial
+                            //-     .col-6.col-lg-4
+                            //-         a.main-btn.btn-border-primary.ml-0.mt-4(href='https://24h.pchome.com.tw/prod/preview/DECE1P-A900BWEJL?q=/S/DECE1P' target='_blank')
+                            //-             //- i.icon-buy(style='font-size: 18px;')
+                            //-             span PChome 24h
+                            //-     .col-6.col-lg-4
+                            //-         a.main-btn.btn-border-primary.ml-0.mt-4(href='https://tinyurl.com/4s2j8npt' target='_blank')
+                            //-             //- i.icon-buy(style='font-size: 18px;')
+                            //-             span uDesign
+                            //-     .col-6.col-lg-4
+                            //-         a.main-btn.btn-border-primary.ml-0.mt-4(href='https://www.books.com.tw/products/N012598303?loc=P_0017_002' target='_blank')
+                            //-             //- i.icon-buy(style='font-size: 18px;')
+                            //-             span 博客來
+                            //-     .col-6.col-lg-4
+                            //-         a.main-btn.btn-border-primary.ml-0.mt-4(href='https://www.setddg.com/PV211018009112763' target='_blank')
+                            //-             //- i.icon-buy(style='font-size: 18px;')
+                            //-             span 電電購
+                            //-     .col-6.col-lg-4
+                            //-         a.main-btn.btn-border-primary.ml-0.mt-4(href='https://ecshop.payeasy.com.tw/ECShop/Product/ProductDetail/6340189?ut=0283f015446180fe4c0aa736d0c73bde' target='_blank')
+                            //-             //- i.icon-buy(style='font-size: 18px;')
+                            //-             span Payeasy
+                            //-     .col-6.col-lg-4
+                            //-         a.main-btn.btn-border-primary.ml-0.mt-4(href='https://www.eslite.com/product/1005352692682094925001' target='_blank')
+                            //-             //- i.icon-buy(style='font-size: 18px;')
+                            //-             span 誠品線上
+                            //-     .col-6.col-lg-4
+                            //-         a.main-btn.btn-border-primary.ml-0.mt-4(href='https://www.pinkoi.com/product/QDkxUsHd' target='_blank')
+                            //-             //- i.icon-buy(style='font-size: 18px;')
+                            //-             span Pinkoi
+                    .row.align-items-lg-center.py-3.py-md-5
+                        .col-12.col-lg-6
+                            .store-img
+                                img(src='styles/images/store/采風國際_LOGO.jpg' alt='經銷據點圖片')
+                        .col-12.col-lg-5.py-3.py-lg-5.pl-lg-5.pr-lg-0
+                            h5.f-sc-title 采風國際
+                            hr.my-lg-4
+                            address.store-list.mb-4
+                                ul.list-unstyled
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 電話
+                                        a.f-text-big(href='tel:02-6631-5022') 02-6631-5022
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 營業時間(不含例假日)
+                                        span.f-text-big 上午10:00 至 下午6:00
+                                    li.mb-3
+                                        .label.d-inline-block.f-500.f-text-big 地址
+                                        a.f-text-big(href='https://goo.gl/maps/qjDtiMz3CvzdjANYA' target='_blank') 台北市信義區忠孝東路五段5號 m層
+                            .store-products
+                                ul.list-inline
+                                    li.list-inline-item POWGANITE 耐能鋰離子充電電池
+                            .row
+                                .col-6.col-lg-4
+                                    a.main-btn.btn-border-primary.ml-0.mt-4(href='https://tw.buy.yahoo.com/gdsale/gdsale.asp?gdid=10075562' target='_blank')
+                                        //- i.icon-buy(style='font-size: 18px;')
+                                        span yahoo!購物
+                                .col-6.col-lg-4
+                                    a.main-btn.btn-border-primary.ml-0.mt-4(href='https://www.etmall.com.tw/i/3531319' target='_blank')
+                                        //- i.icon-buy(style='font-size: 18px;')
+                                        span 東森購物
+                                .col-6.col-lg-4
+                                    a.main-btn.btn-border-primary.ml-0.mt-4(href='https://www.books.com.tw/products/N012886332' target='_blank')
+                                        //- i.icon-buy(style='font-size: 18px;')
+                                        span 博客來
+                                .col-6.col-lg-4
+                                    a.main-btn.btn-border-primary.ml-0.mt-4(href='https://shopping.friday.tw/ec2/product?pid=7851793&cid=34553&sid=0' target='_blank')
+                                        //- i.icon-buy(style='font-size: 18px;')
+                                        span friDay購物
+            //- +page-navigation

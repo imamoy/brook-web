@@ -31,6 +31,7 @@
 
 	.block-main-banner-container .content .buy_btn_container {
 		width: 100% !important;
+		flex-wrap: wrap;
 		text-align: center;
 		margin: 0;
 		padding: 0;
@@ -40,6 +41,7 @@
 
 	.block-main-banner-container .content .buy_btn_container .buy_btn {
 		/* margin-right: 0px; */
+		margin: 5px !important;
 	}
 
 	.block-second-card-container .content .title_container {
