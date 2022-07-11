@@ -40,15 +40,15 @@ block content
                         .col-6.col-md-3.mt-4.mt-md-0
                             .select-box
                                 .form-group
-                                    select.form-control.main-select
+                                    select.form-control.main-select(onchange='location = this.value;')
+                                        option(value='store-powganite') 充電電池
                                         option(value='store') 居家安全
-                                        option(value='store-powganite') 居家安全
                         .col-6.col-md-3.mt-4.mt-md-0
                             .select-box
                                 .form-group
                                     select.form-control.main-select(onchange='location = this.value;')
-                                        option(value='store') WIRECARE 宅電防護員
                                         option(value='store-powganite') POWGANITE 耐能鋰離子充電電池
+                                        option(value='store') WIRECARE 宅電防護員
             section
                 .container#store-inner
                     .row.align-items-lg-center.py-3.py-md-5
