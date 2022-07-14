@@ -32,18 +32,18 @@ block content
                         //-         .form-group
                         //-             select.form-control.main-select
                         //-                 option 國家
-                        .col-6.col-md-3
-                            .select-box
-                                .form-group
-                                    select.form-control.main-select
-                                        option 地區
-                        .col-6.col-md-3.mt-4.mt-md-0
+                        //- .col-12.col-md-3
+                        //-     .select-box
+                        //-         .form-group
+                        //-             select.form-control.main-select
+                        //-                 option 地區
+                        .col-12.col-md-3.mt-md-0
                             .select-box
                                 .form-group
                                     select.form-control.main-select(onchange='location = this.value;')
                                         option(value='store-powganite') 充電電池
                                         option(value='store') 居家安全
-                        .col-6.col-md-3.mt-4.mt-md-0
+                        .col-12.col-md-3.mt-4.mt-md-0
                             .select-box
                                 .form-group
                                     select.form-control.main-select(onchange='location = this.value;')
@@ -207,4 +207,12 @@ block content
                                     a.main-btn.btn-border-primary.ml-0.mt-4(href='https://shopping.friday.tw/ec2/product?pid=7851793&cid=34553&sid=0' target='_blank')
                                         //- i.icon-buy(style='font-size: 18px;')
                                         span friDay購物
+                                .col-6.col-lg-4
+                                    a.main-btn.btn-border-primary.ml-0.mt-4(href='https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10251445' target='_blank')
+                                        //- i.icon-buy(style='font-size: 18px;')
+                                        span momo購物
+                                .col-6.col-lg-4
+                                    a.main-btn.btn-border-primary.ml-0.mt-4(href='https://24h.pchome.com.tw/prod/DCABC8-A900F7DYT' target='_blank')
+                                        //- i.icon-buy(style='font-size: 18px;')
+                                        span PChome 24h
             //- +page-navigation
