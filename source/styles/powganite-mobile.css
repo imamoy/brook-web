@@ -3,8 +3,8 @@
 	.block-main-banner-container {
 		height: 600px;
 		margin: 0;
-		background-position: center center;
-		background-size: auto 600px;
+		background-position: bottom -100px center;
+		background-size: auto 700px;
 		background-image: url(./../styles/images/product/pdw/desktop/main-bg-mobile.png);
 	}
 
@@ -30,12 +30,12 @@
 	}
 
 	.block-main-banner-container .content .buy_btn_container {
-		width: 100% !important;
+		width: 120% !important;
 		flex-wrap: wrap;
 		text-align: center;
 		margin: 0;
 		padding: 0;
-		margin: 0 auto;
+		margin: 0 -10%;
 		margin-top: 20px;
 	}
 
