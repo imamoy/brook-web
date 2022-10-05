@@ -1,0 +1,76 @@
+//- index.pug
+extends include/new-layout.pug
+block meta
+    title Be with ZEROPLUS & Brook Livin for CES® 2023 on January 5~8!
+    meta(name='description' content='Being with ZEROPLUS Technology for the most influential tech event in Las Vegas, CES 2023 is now open to register. ')
+    meta(property='image' content='https://brook-livin.com/styles/images/news/en/event-02/meta.jpg')
+    meta(property='og:title' content='Be with ZEROPLUS & Brook Livin for CES® 2023 on January 5~8!')
+    meta(property='og:url' content='https://brook-livin.com/en/activity')
+    meta(property='og:image' content='https://brook-livin.com/styles/images/news/en/event-02/meta.jpg')
+    meta(property='og:description' content='Being with ZEROPLUS Technology for the most influential tech event in Las Vegas, CES 2023 is now open to register. ')
+    meta(property='og:site_name' content='Be with ZEROPLUS & Brook Livin for CES® 2023 on January 5~8!')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 Be with ZEROPLUS & Brook Livin for CES® 2023 on January 5 ~ 8 !
+                        .row
+                            .col-6.text-left
+                                a.tag.t-primary.mr-2(href='#' title='CES') #CES
+                                a.tag.t-primary.mr-2(href='#' title='CES2023') #CES2023
+                                a.tag.t-primary.mr-2(href='#' title='techevent') #techevent
+                                a.tag.t-primary.mr-2(href='#' title='ZEROPLUS') #ZEROPLUS
+                                a.tag.t-primary.mr-2(href='#' title='BrookLivin') #BrookLivin
+                            .col-6.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2022/09/16
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            img.img-fluid(src='../styles/images/news/en/event-02/content-1.png', alt='圖片')
+                            br
+                            br
+                            p Being with ZEROPLUS Technology for the most influential tech event in Las Vegas, CES 2023 is now open to register.
+                            p The booth of ZEROPLUS Technology is located in #[b Las Vegas Convention Center (LVCC)], and #[u the booth number is #15989 in Gaming & Metaverse venue].
+                            p Make your plans to BE IN IT, Jan. 5-8, 2023, in Las Vegas.
+                            br
+                            img.img-fluid(src='../styles/images/news/en/event-02/content-2.png', alt='圖片')
+                            br
+                            br
+                            p If it is happening in the world of technology, it is happening at CES 2023.#[br]When the global industry comes together in one place, opportunity is inevitable.
+                            br
+                            br
+                            img.img-fluid(src='../styles/images/news/en/event-02/content-3.png', alt='圖片')
+                            br
+                            br
+                            p Meet ZEROPLUS, Brook Gaming, Brook Livin and the best team of the world face-to-face. CES 2023 with ZEROPLUS Technology is where you can meet your next connection, and achieve your business goals:
+                            a.t-primary(href="https://www.ces.tech/" target='_blank')
+                                h6 https://www.ces.tech/
+                            br
+                            br
+                            p You — and your business — can’t miss CES with ZEROPLUS & Brook Livin:
+                            a.t-primary(href="https://www.brook-livin.com/en/product/wirecare" target='_blank')
+                                h6 https://www.brook-livin.com/en/product/wirecare
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 Share
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="Be with ZEROPLUS & Brook Livin for CES® 2023 on January 5~8!" data-description="On the global celebration of the 2021-2022 Christmas, the innovative smart home brand【Brook Livin】officially announced the launch of new product 'WIRECARE' in Times Square NYC, USA." data-image="https://brook-livin.com/styles/images/news/en/event-02/meta.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="Be with ZEROPLUS & Brook Livin for CES® 2023 on January 5~8!" data-description="On the global celebration of the 2021-2022 Christmas, the innovative smart home brand【Brook Livin】officially announced the launch of new product 'WIRECARE' in Times Square NYC, USA." data-image="https://brook-livin.com/styles/images/news/en/event-02/meta.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="Be with ZEROPLUS & Brook Livin for CES® 2023 on January 5~8!" data-description="On the global celebration of the 2021-2022 Christmas, the innovative smart home brand【Brook Livin】officially announced the launch of new product 'WIRECARE' in Times Square NYC, USA." data-image="https://brook-livin.com/styles/images/news/en/event-02/meta.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="activities") Back to Menu
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 More News
+                        +main-card('','../styles/images/news/en/new-03/list.png','new-3','2021/12/03','WIRECARE brings a safer and smarter lifestyle for your family',"Do you know the electrical fire is one of the reasons causing the house on fire? Ignoring the dust on the outlets...")
+                        +main-card('','../styles/images/news/en/new-04/list.png','new-4','2021/12/03','An easy and efficient way to protect your love ones and properties',"When accident happened, people's regrets won't bring back your love ones and properties. Hence, checking…")
