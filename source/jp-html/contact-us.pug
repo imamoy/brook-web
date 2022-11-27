@@ -1,9 +1,9 @@
 //- index.pug
 extends include/layout.pug
 block plugins-js
-    script(src="../scripts/plugins/smtp.js") 
+    script(src="../scripts/plugins/smtp.js")
     script(src="../scripts/default/contact_jp.js")
-        
+
 
 block content
     main#page.wrapper
@@ -25,9 +25,9 @@ block content
                                 label.fw-500(for='megType') #[span.t-red *] お客様属性
                                 select#megType.form-control(name='megType' required)
                                     option(value='') お選びください
-                                    option(value='1') 販売店
-                                    option(value='2') マーケティング
-                                    option(value='3') その他
+                                    option(value=1) 販売店
+                                    option(value=2) マーケティング
+                                    option(value=3) その他
                                 .invalid-feedback 項目をお選びください
                         .col.col-md-6.mb-2
                             .form-group

@@ -1,9 +1,9 @@
 //- index.pug
 extends include/layout.pug
 block plugins-js
-    script(src="../scripts/plugins/smtp.js") 
+    script(src="../scripts/plugins/smtp.js")
     script(src="../scripts/default/contact_en.js")
-        
+
 
 block content
     main#page.wrapper
@@ -25,9 +25,9 @@ block content
                                 label.fw-500(for='megType') #[span.t-red *] Message Type
                                 select#megType.form-control(name='megType' required)
                                     option(value='') Select
-                                    option(value='1') Retail Needs
-                                    option(value='2') Marketing Needs
-                                    option(value='3') Other
+                                    option(value=1) Retail Needs
+                                    option(value=2) Marketing Needs
+                                    option(value=3) Other
                                 .invalid-feedback Please Select Item
                         .col.col-md-6.mb-2
                             .form-group

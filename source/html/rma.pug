@@ -1,8 +1,8 @@
 //- index.pug
 extends ./include/layout.pug
 block plugins-js
-    script(src="scripts/plugins/smtp.js") 
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.js") 
+    script(src="scripts/plugins/smtp.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.js")
     script(src="scripts/default/rma.js")
 
 block content
@@ -29,15 +29,15 @@ block content
                             .form-group
                                 label.fw-500(for='productType') #[span.t-red *] 產品系列
                                 select#productType.form-control(name='productType' required)
-                                    option(value="") 請選擇 
-                                    option(value='1') 居家安全
+                                    option(value="") 請選擇
+                                    option(value=1) 居家安全
                                 .invalid-feedback 請選擇項目
                         .col.col-md-6.mb-2
                             .form-group
                                 label.fw-500(for='product') #[span.t-red *] 產品
                                 select#product.form-control(name="product" required)
                                     option(value="") 請選擇
-                                    option(value='1') WIRECARE 宅電防護員
+                                    option(value=1) WIRECARE 宅電防護員
                                     option(value="2") BROOK紫外線消毒盒
                                 .invalid-feedback 請選擇項目
                         .col-12.mb-2
@@ -45,9 +45,9 @@ block content
                                 label.fw-500(for='question') #[span.t-red *] 問題類型
                                 select#question.form-control(name='question' required)
                                     option(value="") 請選擇
-                                    option(value='1') 支援性
-                                    option(value='2') 韌體更新支援
-                                    option(value='3') 損壞
+                                    option(value=1) 支援性
+                                    option(value=2) 韌體更新支援
+                                    option(value=3) 損壞
                                 .invalid-feedback 請選擇項目
                         .col-12.mb-2
                             .form-group
@@ -77,7 +77,7 @@ block content
                                         input#files.form-control-file.my-2(type='file' name='files' accept='image/png, image/jpeg, image/bmp' multiple required)
                                         .upload-name 未選擇任何檔案
                                         .invalid-feedback.file-feedback 請至少上傳1個檔案
-                                        
+
                     hr.my-3.my-md-4.my-mt-0
                     .f-textTitle.mb-3 聯絡資訊
                     .row

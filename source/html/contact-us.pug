@@ -1,9 +1,9 @@
 //- index.pug
 extends ./include/layout.pug
 block plugins-js
-    script(src="scripts/plugins/smtp.js") 
+    script(src="scripts/plugins/smtp.js")
     script(src="scripts/default/contact.js")
-        
+
 
 block content
     main#page.wrapper
@@ -25,9 +25,9 @@ block content
                                 label.fw-500(for='megType') #[span.t-red *] 訊息種類
                                 select#megType.form-control(name='megType' required)
                                     option(value='') 請選擇
-                                    option(value='1') 經銷需求
-                                    option(value='2') 行銷需求
-                                    option(value='3') 其他
+                                    option(value=1) 經銷需求
+                                    option(value=2) 行銷需求
+                                    option(value=3) 其他
                                 .invalid-feedback 請選擇項目
                         .col.col-md-6.mb-2
                             .form-group

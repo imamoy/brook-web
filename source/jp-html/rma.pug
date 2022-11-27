@@ -1,8 +1,8 @@
 //- index.pug
 extends include/layout.pug
 block plugins-js
-    script(src="../scripts/plugins/smtp.js") 
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.js") 
+    script(src="../scripts/plugins/smtp.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.js")
     script(src="../scripts/default/rma_jp.js")
 
 block content
@@ -30,23 +30,23 @@ block content
                                 label.fw-500(for='productType') #[span.t-red *] 製品シリーズ
                                 select#productType.form-control(name='productType' required)
                                     option(value="") お選びください
-                                    option(value='1') 家庭内の安全
+                                    option(value=1) 家庭内の安全
                                 .invalid-feedback 項目をお選びください
                         .col.col-md-6.mb-2
                             .form-group
                                 label.fw-500(for='product') #[span.t-red *] 製品
                                 select#product.form-control(name="product" required)
                                     option(value="") お選びください
-                                    option(value='1') WIRECARE住宅電気の守護者
+                                    option(value=1) WIRECARE住宅電気の守護者
                                 .invalid-feedback 項目をお選びください
                         .col-12.mb-2
                             .form-group
                                 label.fw-500(for='question') #[span.t-red *] 質問カテゴリー
                                 select#question.form-control(name='question' required)
                                     option(value="") お選びください
-                                    option(value='1') サポート
-                                    option(value='2') ファームウェアアップデートのサポート
-                                    option(value='3') 損壊
+                                    option(value=1) サポート
+                                    option(value=2) ファームウェアアップデートのサポート
+                                    option(value=3) 損壊
                                 .invalid-feedback 項目をお選びください
                         .col-12.mb-2
                             .form-group
