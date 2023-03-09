@@ -1,0 +1,55 @@
+//- index.pug
+extends ./include/layout.pug
+
+block content
+    main#page.wrapper
+        .page-hero
+            .container
+                .page-hero_text
+                    h2.f-heroTitle-xs.text-center 最新消息
+                .page-hero_img
+                    img(src='styles/images/news-banner.png', alt='情境圖')
+        #page-nav
+            ul.nav.justify-content-center
+                //- li.nav-item.news-link
+                //-     a.nav-link(href='news') 品牌消息
+                li.nav-item.medias-link
+                    a.nav-link(href='medias') 媒體報導
+                li.nav-item.activities-link
+                    a.nav-link(href='activities') 活動特區
+                li.nav-item.unboxes-link
+                    a.nav-link(href='unboxes') 開箱介紹
+                li.nav-item.unboxes-link
+                    a.nav-link.active(href='knowledges') Livin 知識家
+
+        article.page-inner
+            .filter-row.mb-3.mb-lg-4
+                .container
+                    .row.justify-content-center
+                        .col-6.col-md-4.col-xl-3
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select
+                                        option 居家安全
+                        .col-6.col-md-4.col-xl-3
+                            .select-box
+                                .form-group
+                                    select.form-control.main-select
+                                        option WIRECARE 宅電防護員
+                        .col-12.col-md-4.col-xl-3.mt-4.mt-md-0
+                            .input-group.search-input
+                                input.form-control(type="text" placeholder="搜尋商品" aria-describedby="button-search")
+                                .input-group-append
+                                    button#button-search(type="button")
+                                        i.icon-magnifier
+            section
+                .container
+                    .row#medias-inner
+                        .col-12.col-lg-4.my-lg-2
+                            +main-card('','styles/images/news/tw/knowledge-3/list.jpg','knowledge-3','2022/05/06','疫起宅在家注意用電量 | 高功率電器篇','近5年全台住宅及商業用電量上升7%，注意高功率家電的使用、把關用電量，不僅節能省電外，也能降低插座的消耗。')
+                        .col-12.col-lg-4.my-lg-2
+                            +main-card('','styles/images/news/tw/knowledge-2/list.jpg','knowledge-2','2022/04/28','WIRECARE 常見Q&A | 檢測延長線卻出現橘燈代表什麼','用WIRECARE檢測延長線卻出現橘燈表示什麼？問題是在延長線？還是插座呢？')
+                        .col-12.col-lg-4.my-lg-2
+                            +main-card('','styles/images/news/tw/knowledge-1/list.jpg','knowledge-1','2022/04/26','居家用電量指南 | 檢測區域懶人包','高功率電器提高使用電量，將導致電阻過高產生火災風險！WIRECARE宅電防護員10秒即測各區用電安全。')
+
+            //- +page-navigation

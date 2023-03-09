@@ -1,0 +1,71 @@
+//- index.pug
+extends ./include/new-layout.pug
+block meta
+    title 疫起宅在家注意用電量 | 高功率電器篇
+    meta(name='description' content='近5年全台住宅及商業用電量上升7%，注意高功率家電的使用、把關用電量，不僅節能省電外，也能降低插座的消耗。')
+    meta(property='image' content='https://brook-livin.com/styles/images/news/tw/knowledge-3/meta.jpg')
+    meta(property='og:title' content='疫起宅在家注意用電量 | 高功率電器篇')
+    meta(property='og:url' content='https://brook-livin.com/knowledge-3')
+    meta(property='og:image' content='https://brook-livin.com/styles/images/news/tw/knowledge-3/meta.jpg')
+    meta(property='og:description' content='近5年全台住宅及商業用電量上升7%，注意高功率家電的使用、把關用電量，不僅節能省電外，也能降低插座的消耗。')
+    meta(property='og:site_name' content='疫起宅在家注意用電量 | 高功率電器篇')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 疫起宅在家注意用電量 | 高功率電器篇
+                        .row
+                            .col-12.col-md-9.text-left
+                                a.tag.t-primary.mr-2(href='#' title='BrookLivin') #BrookLivin
+                                a.tag.t-primary.mr-2(href='#' title='WIRECARE') #WIRECARE
+                                a.tag.t-primary.mr-2(href='#' title='用電安全') #用電安全
+                                a.tag.t-primary.mr-2(href='#' title='插座檢測') #插座檢測
+                                a.tag.t-primary.mr-2(href='#' title='高功率電器') #高功率電器
+                                a.tag.t-primary.mr-2(href='#' title='居家安全') #居家安全
+                            .col-12.col-md-3.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2022/5/6
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            p 5月是用電量準備大增的季節，#[br]近5年全台住宅及商業用電量更上升7%！
+
+                            p 加上疫情期間宅在家時間變長，用電需求直線上升好幾個LEVEL。
+                            br
+                            p 因此小編整理了常用的高功率家電，和大家一起注意用電：#[br]➥ 微波爐、熨斗、熱水器#[br]➥ 電磁爐、烤箱、吹風機
+                            br
+                            p ⚠  高功率電器盡量避免同時使用#[br]⚠  使用高功率家電後請拔除插頭#[br]⚠  小家電超過1000瓦皆可算高功率家電喔！
+                            img(src='../styles/images/news/tw/knowledge-3/content.jpg', alt='圖片')
+                            br
+                            br
+                            p 把關用電量不僅節能省電外，也能降低插座的消耗。#[br]再用 WIRECARE宅電防護員，定期檢測插座管線狀態，#[br]用電安全UP、居家安全好安心！
+                            br
+                            h6.t-primary 馬上購買WIRECARE宅電防護員：
+                            a(href="https://www.brook-livin.com/store" target='_blank') - https://www.brook-livin.com/store
+                            br
+                            br
+                            p 數據資料來源：台灣電力公司
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="疫起宅在家注意用電量 | 高功率電器篇" data-description="近5年全台住宅及商業用電量上升7%，注意高功率家電的使用、把關用電量，不僅節能省電外，也能降低插座的消耗。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-3/meta.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="疫起宅在家注意用電量 | 高功率電器篇" data-description="近5年全台住宅及商業用電量上升7%，注意高功率家電的使用、把關用電量，不僅節能省電外，也能降低插座的消耗。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-3/meta.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="疫起宅在家注意用電量 | 高功率電器篇" data-description="近5年全台住宅及商業用電量上升7%，注意高功率家電的使用、把關用電量，不僅節能省電外，也能降低插座的消耗。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-3/meta.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="medias") 回到列表
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多最新消息
+                        +main-card('','styles/images/news/tw/knowledge-3/list.jpg','knowledge-3','2022/05/06','疫起宅在家注意用電量 | 高功率電器篇','近5年全台住宅及商業用電量上升7%，注意高功率家電的使用、把關用電量，不僅節能省電外，也能降低插座的消耗。')
+                        +main-card('','styles/images/news/tw/knowledge-3/list.jpg','knowledge-3','2022/04/28','疫起宅在家注意用電量 | 高功率電器篇','近5年全台住宅及商業用電量上升7%，注意高功率家電的使用、把關用電量，不僅節能省電外，也能降低插座的消耗。')

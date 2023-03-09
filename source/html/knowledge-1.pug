@@ -1,0 +1,79 @@
+//- index.pug
+extends ./include/new-layout.pug
+block meta
+    title 居家用電量指南 | 檢測區域懶人包
+    meta(name='description' content='高功率電器提高使用電量，將導致電阻過高產生火災風險！WIRECARE宅電防護員10秒即測各區用電安全。')
+    meta(property='image' content='https://brook-livin.com/styles/images/news/tw/knowledge-1/meta.jpg')
+    meta(property='og:title' content='居家用電量指南 | 檢測區域懶人包')
+    meta(property='og:url' content='https://brook-livin.com/knowledge-1')
+    meta(property='og:image' content='https://brook-livin.com/styles/images/news/tw/knowledge-1/meta.jpg')
+    meta(property='og:description' content='高功率電器提高使用電量，將導致電阻過高產生火災風險！WIRECARE宅電防護員10秒即測各區用電安全。')
+    meta(property='og:site_name' content='居家用電量指南 | 檢測區域懶人包')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 居家用電量指南 | 檢測區域懶人包
+                        .row
+                            .col-12.col-md-9.text-left
+                                a.tag.t-primary.mr-2(href='#' title='BrookLivin') #BrookLivin
+                                a.tag.t-primary.mr-2(href='#' title='WIRECARE') #WIRECARE
+                                a.tag.t-primary.mr-2(href='#' title='插座檢測') #插座檢測
+                                a.tag.t-primary.mr-2(href='#' title='居家用電量') #居家用電量
+                                a.tag.t-primary.mr-2(href='#' title='用電檢測') #用電檢測
+                                a.tag.t-primary.mr-2(href='#' title='用電安全') #用電安全
+                            .col-12.col-md-3.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2022/4/26
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            p 電費帳單的電都去哪裡了呢？
+                            p 用電量越高區域越需定期檢定管線及插座狀態！
+                            br
+                            p 宅小編速速送上檢測區域懶人包：
+                            p 居家用電量區域排序：廚房>臥室>客廳=倉庫>陽台
+                            p WIRECARE透過測量插座至家用變電盤間的負載阻抗，檢測管線插座老化現象，避免用電過度釀成災情。
+                            img(src='../styles/images/news/tw/knowledge-1/content.jpg', alt='圖片')
+                            br
+                            br
+                            ul
+                                li ⚡  危機雷達：牆面插座及延長線皆可單獨檢測
+                                li ⚡  重複檢測：加強檢測高功率電器使用區、夏/冬季高用電季節。
+                                li ⚡  10秒護10年：複雜水電數據轉換只要10秒
+                                li ⚡  用電安全紅綠燈：三色燈號簡易判斷檢測結果
+                                li ⚡  安全小幫手：隨測隨插 x 摺疊插腳不佔位好收納
+                            br
+                            br
+                            br
+                            p 快拿起WIRECARE強化檢測高用電區域之插座的狀態吧！！
+                            br
+                            br
+                            h6.t-primary 手刀購買插座安全把關神器：
+                            a(href="https://www.brook-livin.com/store" target='_blank') - https://www.brook-livin.com/store
+                            br
+                            br
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="居家用電量指南 | 檢測區域懶人包" data-description="高功率電器提高使用電量，將導致電阻過高產生火災風險！WIRECARE宅電防護員10秒即測各區用電安全。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-1/meta.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="居家用電量指南 | 檢測區域懶人包" data-description="高功率電器提高使用電量，將導致電阻過高產生火災風險！WIRECARE宅電防護員10秒即測各區用電安全。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-1/meta.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="居家用電量指南 | 檢測區域懶人包" data-description="高功率電器提高使用電量，將導致電阻過高產生火災風險！WIRECARE宅電防護員10秒即測各區用電安全。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-1/meta.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="medias") 回到列表
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多最新消息
+                        +main-card('','styles/images/news/tw/media-15/list.jpg','media-15','2022/09/29','防災新法寶「宅電防護員」 電氣安全維護好 居家安全住到老','平時消防人員居家訪視時向民眾宣導老舊電氣設備應汰換，民眾非自身經歷，所以反應平平無感，這次由第二大隊防火宣導教官團使用「宅電防護員」實際測試讓民眾了解。')
+                        +main-card('','styles/images/media-4-list.jpg','media-4','2021/5/12','Brook Livin 成功研發全國第一台「居家用電防災神器」','一週以來，全台高溫直飆 30 度，使民眾居家用電量大增。依據消防署最新火災統計數據，「電氣走火案件…')

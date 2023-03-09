@@ -2,7 +2,7 @@
 extends include/layout.pug
 block plugins-js
     //- script(src="scripts/plugins/slick.js")
-    script(src="../scripts/data/stores_jp.js")
+    //- script(src="../scripts/data/stores_jp.js")
 
 block content
     main#page.wrapper
@@ -49,6 +49,87 @@ block content
             //-                         select.form-control.main-select
             //-                             option 製品
             //-                             option WIRECARE住宅電気の守護者
-            //- section
-            //-     .container#store-inner
+            section
+                .container#store-inner
+                    section
+                        .row.align-items-center.py-3.py-md-5
+                            .col-12.col-lg-6
+                                .store-img
+                                    img(src='../styles/images/store/jp/YAHOO!JAPAN.jpg' alt='store')
+                            .col-12.col-lg-5.py-3.py-lg-5.pl-lg-5.pr-lg-0
+                                h5.f-sc-title YAHOO!JAPAN
+                                hr.my-lg-4
+                                //- address.store-list.mb-4
+                                //-     ul.list-unstyled
+                                //-         li.mb-3
+                                //-             .label.d-inline-block.f-500.f-text-big Phone
+                                //-             a.f-text-big(href='tel:+1 800-390-1119') +1 800-390-1119
+                                //-         li.mb-3
+                                //-             .label.d-inline-block.f-500.f-text-big Business Hours
+                                //-             span.f-text-big 24/7/365
+                                //-         li.mb-3
+                                //-             .label.d-inline-block.f-500.f-text-big Address
+                                //-             a.f-text-big(href='https://goo.gl/maps/FRf1R1ovPUKnLTPZA' target='_blank') 17560 ROWLAND ST CITY OF INDUSTRY, CA 91748, USA
+                                .store-products
+                                    ul.list-inline
+                                        li.list-inline-item WIRECARE
+                                .row
+                                    .col-6.col-lg-4
+                                        a.main-btn.btn-border-primary.ml-0.mt-4(href='https://store.shopping.yahoo.co.jp/flaner-y/f10021453.html' target='_blank')
+                                            //- i.icon-buy(style='font-size: 18px;')
+                                            span Yahoo!
+                    section
+                        .row.align-items-lg-center.py-3.py-md-5
+                            .col-12.col-lg-6
+                                .store-img
+                                    img(src='../styles/images/store/jp/rakuten.jpg' alt='store')
+                            .col-12.col-lg-5.py-3.py-lg-5.pl-lg-5.pr-lg-0
+                                h5.f-sc-title Rakuten
+                                hr.my-lg-4
+                                //- address.store-list.mb-4
+                                //-     ul.list-unstyled
+                                //-         li.mb-3
+                                //-             .label.d-inline-block.f-500.f-text-big Phone
+                                //-             a.f-text-big(href='tel:+1 800-390-1119') +1 800-390-1119
+                                //-         li.mb-3
+                                //-             .label.d-inline-block.f-500.f-text-big Business Hours
+                                //-             span.f-text-big 24/7/365
+                                //-         li.mb-3
+                                //-             .label.d-inline-block.f-500.f-text-big Address
+                                //-             a.f-text-big(href='https://goo.gl/maps/FRf1R1ovPUKnLTPZA' target='_blank') 17560 ROWLAND ST CITY OF INDUSTRY, CA 91748, USA
+                                .store-products
+                                    ul.list-inline
+                                        li.list-inline-item WIRECARE
+                                .row
+                                    .col-6.col-lg-4
+                                        a.main-btn.btn-border-primary.ml-0.mt-4(href='https://item.rakuten.co.jp/flaner/10021453/' target='_blank')
+                                            //- i.icon-buy(style='font-size: 18px;')
+                                            span Rakuten
+                    section
+                        .row.align-items-lg-center.py-3.py-md-5
+                            .col-12.col-lg-6
+                                .store-img
+                                    img(src='../styles/images/store/jp/Amazon.co.jp_logo.jpg' alt='store')
+                            .col-12.col-lg-5.py-3.py-lg-5.pl-lg-5.pr-lg-0
+                                h5.f-sc-title Amazon Japan
+                                hr.my-lg-4
+                                //- address.store-list.mb-4
+                                //-     ul.list-unstyled
+                                //-         li.mb-3
+                                //-             .label.d-inline-block.f-500.f-text-big Phone
+                                //-             a.f-text-big(href='tel:+1 800-390-1119') +1 800-390-1119
+                                //-         li.mb-3
+                                //-             .label.d-inline-block.f-500.f-text-big Business Hours
+                                //-             span.f-text-big 24/7/365
+                                //-         li.mb-3
+                                //-             .label.d-inline-block.f-500.f-text-big Address
+                                //-             a.f-text-big(href='https://goo.gl/maps/FRf1R1ovPUKnLTPZA' target='_blank') 17560 ROWLAND ST CITY OF INDUSTRY, CA 91748, USA
+                                .store-products
+                                    ul.list-inline
+                                        li.list-inline-item WIRECARE
+                                .row
+                                    .col-6.col-lg-4
+                                        a.main-btn.btn-border-primary.ml-0.mt-4(href='https://amzn.to/3ylKpml' target='_blank')
+                                            //- i.icon-buy(style='font-size: 18px;')
+                                            span Amazon
             //- +page-navigation
