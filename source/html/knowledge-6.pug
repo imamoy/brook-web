@@ -1,0 +1,69 @@
+//- index.pug
+extends ./include/new-layout.pug
+block meta
+    title 預防電氣火災| 5不1沒有
+    meta(name='description' content='用電超載、電線綑綁、電源常插可能提高電器走火機率！搭配消防用電守則，居住安全輕鬆GET。')
+    meta(property='image' content='https://brook-livin.com/styles/images/news/tw/knowledge-6/meta.jpg')
+    meta(property='og:title' content='預防電氣火災| 5不1沒有')
+    meta(property='og:url' content='https://brook-livin.com/knowledge-6')
+    meta(property='og:image' content='https://brook-livin.com/styles/images/news/tw/knowledge-6/meta.jpg')
+    meta(property='og:description' content='用電超載、電線綑綁、電源常插可能提高電器走火機率！搭配消防用電守則，居住安全輕鬆GET。')
+    meta(property='og:site_name' content='預防電氣火災| 5不1沒有')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 預防電氣火災| 5不1沒有
+                        .row
+                            .col-12.col-md-9.text-left
+                                a.tag.t-primary.mr-2(href='#' title='BrookLivin') #BrookLivin
+                                a.tag.t-primary.mr-2(href='#' title='WIRECARE') #WIRECARE
+                                a.tag.t-primary.mr-2(href='#' title='預防火災') #預防火災
+                                a.tag.t-primary.mr-2(href='#' title='五不一沒有') #五不一沒有
+                                a.tag.t-primary.mr-2(href='#' title='用電安全') #用電安全
+                            .col-12.col-md-3.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2022/10/20
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            p 【預防電氣火災必懂小知識】
+                            p 用電超載、電線綑綁、電源常插產生「 高阻抗風險」#[br]➥ 高阻抗將提高電器走火機率！
+                            p WIRECARE宅電防護員 10秒立即檢測插座管線阻抗狀態.ᐟ.ᐟ
+                            br
+                            img(src='../styles/images/news/tw/knowledge-6/content.jpg', alt='圖片')
+                            br
+                            p 搭配消防用電守則，居住安全輕鬆GET
+                            br
+                            p 🔥用電不超載#[br]🔥電線不綑綁#[br]🔥電源不常插#[br]🔥電器周圍不放可燃物#[br]🔥插頭不潮溼汙損#[br]❌「沒有」安全標章電器不買不用
+                            br
+                            br
+                            p 定期檢視用電習慣，守護居家安全
+                            span 阻抗檢測雷達 >> #[a.t-primary(href="https://www.brook-livin.com/product/wirecare" target='_blank') - https://www.brook-livin.com/product/wirecare]
+                            br
+                            br
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="預防電氣火災| 5不1沒有" data-description="用電超載、電線綑綁、電源常插可能提高電器走火機率！搭配消防用電守則，居住安全輕鬆GET。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-6/meta.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="預防電氣火災| 5不1沒有" data-description="用電超載、電線綑綁、電源常插可能提高電器走火機率！搭配消防用電守則，居住安全輕鬆GET。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-6/meta.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="預防電氣火災| 5不1沒有" data-description="用電超載、電線綑綁、電源常插可能提高電器走火機率！搭配消防用電守則，居住安全輕鬆GET。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-6/meta.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="medias") 回到列表
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多最新消息
+                        +main-card('','styles/images/news/tw/knowledge-8/list.jpg','knowledge-8','2022/11/24','防災安全小知識 | 層層把關防火用品','災害預防及發生該怎麼準備呢？提高居家安全這樣選就對了！')
+                        +main-card('','styles/images/news/tw/knowledge-7/list.jpg','knowledge-7','2022/11/1','用電安全小知識 |入冬暖氣這樣選好安心','早晚溫差大，暖冬家電買起來！先等等，購買前須知錯誤用電的潛在危機！')
+                        +main-card('','styles/images/news/tw/knowledge-6/list.jpg','knowledge-6','2022/10/20','預防電氣火災| 5不1沒有','用電超載、電線綑綁、電源常插可能提高電器走火機率！搭配消防用電守則，居住安全輕鬆GET。')

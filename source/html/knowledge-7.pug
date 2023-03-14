@@ -1,0 +1,70 @@
+//- index.pug
+extends ./include/new-layout.pug
+block meta
+    title 用電安全小知識 | 入冬暖氣這樣選好安心
+    meta(name='description' content='早晚溫差大，暖冬家電買起來！先等等，購買前須知錯誤用電的潛在危機！')
+    meta(property='image' content='https://brook-livin.com/styles/images/news/tw/knowledge-7/meta.jpg')
+    meta(property='og:title' content='用電安全小知識 |入冬暖氣這樣選好安心')
+    meta(property='og:url' content='https://brook-livin.com/knowledge-7')
+    meta(property='og:image' content='https://brook-livin.com/styles/images/news/tw/knowledge-7/meta.jpg')
+    meta(property='og:description' content='早晚溫差大，暖冬家電買起來！先等等，購買前須知錯誤用電的潛在危機！')
+    meta(property='og:site_name' content='用電安全小知識 |入冬暖氣這樣選好安心')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 用電安全小知識 | 入冬暖氣這樣選好安心
+                        .row
+                            .col-12.col-md-9.text-left
+                                a.tag.t-primary.mr-2(href='#' title='BrookLivin') #BrookLivin
+                                a.tag.t-primary.mr-2(href='#' title='WIRECARE') #WIRECARE
+                                a.tag.t-primary.mr-2(href='#' title='暖氣挑選') #暖氣挑選
+                                a.tag.t-primary.mr-2(href='#' title='插座走火') #插座走火
+                                a.tag.t-primary.mr-2(href='#' title='用電習慣') #用電習慣
+                            .col-12.col-md-3.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2022/11/1
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            p 入冬起手式▸早晚溫差大，暖冬家電買起來！#[br]先等等 !! 購買前須知錯誤用電的潛在危機
+                            p 「高功率家電 X 長插用電習慣」將導致高阻抗插座走火風險 .ᐟ.ᐟ#[br]➥ 隨手拔插頭 + WIRECARE定期檢測插座狀態
+                            p
+                                span 安心指數：
+                                a.t-primary(href="https://www.brook-livin.com/product/wirecare" target='_blank') - https://www.brook-livin.com/product/wirecare
+                            br
+                            img(src='../styles/images/news/tw/knowledge-7/content.jpg', alt='圖片')
+                            br
+                            h6.t-primary ▍ 選購暖氣懶人包
+                            br
+                            p ◉ 全面暖房型 >>葉片、對流、電膜電暖器等類型#[br]適合大空間：客廳、餐廳、主臥等坪數大#[br]參考預算：NT$5,000以上
+                            p ◉ 局部速暖型>>葉片式、對流式、陶瓷PTC、鹵碳素、石英電暖器等類型#[br]適合小空間：個人床邊、椅邊、書房等坪數較小#[br]參考預算：NT$4,000 ~ 2,000以下
+                            br
+                            p 定期檢視用電習慣，守護居家安全 #[a.t-primary(href="https://www.brook-livin.com/product/wirecare" target='_blank') - https://www.brook-livin.com/product/wirecare]
+                            br
+                            br
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="用電安全小知識 |入冬暖氣這樣選好安心" data-description="早晚溫差大，暖冬家電買起來！先等等，購買前須知錯誤用電的潛在危機！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-7/meta.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="用電安全小知識 |入冬暖氣這樣選好安心" data-description="早晚溫差大，暖冬家電買起來！先等等，購買前須知錯誤用電的潛在危機！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-7/meta.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="用電安全小知識 |入冬暖氣這樣選好安心" data-description="早晚溫差大，暖冬家電買起來！先等等，購買前須知錯誤用電的潛在危機！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-7/meta.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="medias") 回到列表
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多最新消息
+                        +main-card('','styles/images/news/tw/knowledge-8/list.jpg','knowledge-8','2022/11/24','防災安全小知識 | 層層把關防火用品','災害預防及發生該怎麼準備呢？提高居家安全這樣選就對了！')
+                        +main-card('','styles/images/news/tw/knowledge-7/list.jpg','knowledge-7','2022/11/1','用電安全小知識 |入冬暖氣這樣選好安心','早晚溫差大，暖冬家電買起來！先等等，購買前須知錯誤用電的潛在危機！')
+                        +main-card('','styles/images/news/tw/knowledge-6/list.jpg','knowledge-6','2022/10/20','預防電氣火災| 5不1沒有','用電超載、電線綑綁、電源常插可能提高電器走火機率！搭配消防用電守則，居住安全輕鬆GET。')
