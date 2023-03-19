@@ -1,0 +1,68 @@
+//- index.pug
+extends ./include/new-layout.pug
+block meta
+    title WIRECARE 常見Q&A | 能搭配外國轉接頭用嗎？
+    meta(name='description' content='WIRECARE外國轉接頭也可以用？')
+    meta(property='image' content='https://brook-livin.com/styles/images/news/tw/knowledge-10/meta.jpg')
+    meta(property='og:title' content='WIRECARE 常見Q&A | 能搭配外國轉接頭用嗎？')
+    meta(property='og:url' content='https://brook-livin.com/knowledge-10')
+    meta(property='og:image' content='https://brook-livin.com/styles/images/news/tw/knowledge-10/meta.jpg')
+    meta(property='og:description' content='WIRECARE外國轉接頭也可以用？')
+    meta(property='og:site_name' content='WIRECARE 常見Q&A | 能搭配外國轉接頭用嗎？')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 WIRECARE 常見Q&A | 能搭配外國轉接頭用嗎？
+                        .row
+                            .col-12.col-md-9.text-left
+                                a.tag.t-primary.mr-2(href='#' title='BrookLivin') #BrookLivin
+                                a.tag.t-primary.mr-2(href='#' title='WIRECARE') #WIRECARE
+                                a.tag.t-primary.mr-2(href='#' title='電阻') #電阻
+                                a.tag.t-primary.mr-2(href='#' title='轉接頭') #轉接頭
+                                a.tag.t-primary.mr-2(href='#' title='插座檢測') #插座檢測
+                            .col-12.col-md-3.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2022/12/29
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            p WIRECARE 外國轉接頭也能用嗎？
+                            p 不建議搭配轉接頭使用 🙅🙅‍♀️
+                            img(src='../styles/images/news/tw/knowledge-10/content.jpg', alt='圖片')
+                            br
+                            br
+                            p 因為各家轉接頭下列因素都將影響檢測結果#[br]▸零件、材質#[br]▸製成程序#[br]雖符合量測電壓範圍，但串接轉接頭時也會新增阻抗
+                            br
+                            p 因此可能影響檢測結果，導致檢測較不準確！#[br]提醒大家要多注意喔～
+                            br
+                            p WIRECARE適用區域 : 台灣/日本/美國之11型插頭
+                            br
+                            p 定期檢測插座狀態，守護居家安全 | ：#[a.t-primary(href="https://www.brook-livin.com/store" target='_blank') - https://www.brook-livin.com/store]
+                            br
+                            br
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="WIRECARE 常見Q&A | 能搭配外國轉接頭用嗎？" data-description="WIRECARE外國轉接頭也可以用？" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-10/meta.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="WIRECARE 常見Q&A | 能搭配外國轉接頭用嗎？" data-description="WIRECARE外國轉接頭也可以用？" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-10/meta.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="WIRECARE 常見Q&A | 能搭配外國轉接頭用嗎？" data-description="WIRECARE外國轉接頭也可以用？" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-10/meta.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="medias") 回到列表
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多最新消息
+                        +main-card('','styles/images/news/tw/knowledge-10/list.jpg','knowledge-10','2022/12/22','WIRECARE 常見Q&A | 能搭配外國轉接頭用嗎？','WIRECARE外國轉接頭也可以用？')
+                        +main-card('','styles/images/news/tw/knowledge-8/list.jpg','knowledge-8','2022/11/24','防災安全小知識 | 層層把關防火用品','災害預防及發生該怎麼準備呢？提高居家安全這樣選就對了！')
+                        +main-card('','styles/images/news/tw/knowledge-7/list.jpg','knowledge-7','2022/11/1','用電安全小知識 |入冬暖氣這樣選好安心','早晚溫差大，暖冬家電買起來！先等等，購買前須知錯誤用電的潛在危機！')

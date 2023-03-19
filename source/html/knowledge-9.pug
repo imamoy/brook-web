@@ -1,0 +1,71 @@
+//- index.pug
+extends ./include/new-layout.pug
+block meta
+    title 用電安全小知識 | 家電遇上高電阻就會火災？
+    meta(name='description' content='電阻學問涉及廣闊，小編精心整理電器及電阻來幫大家科普囉！')
+    meta(property='image' content='https://brook-livin.com/styles/images/news/tw/knowledge-9/meta.jpg')
+    meta(property='og:title' content='用電安全小知識 | 家電遇上高電阻就會火災？')
+    meta(property='og:url' content='https://brook-livin.com/knowledge-9')
+    meta(property='og:image' content='https://brook-livin.com/styles/images/news/tw/knowledge-9/meta.jpg')
+    meta(property='og:description' content='電阻學問涉及廣闊，小編精心整理電器及電阻來幫大家科普囉！')
+    meta(property='og:site_name' content='用電安全小知識 | 家電遇上高電阻就會火災？')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 用電安全小知識 | 家電遇上高電阻就會火災？
+                        .row
+                            .col-12.col-md-9.text-left
+                                a.tag.t-primary.mr-2(href='#' title='BrookLivin') #BrookLivin
+                                a.tag.t-primary.mr-2(href='#' title='WIRECARE') #WIRECARE
+                                a.tag.t-primary.mr-2(href='#' title='高電阻') #高電阻
+                                a.tag.t-primary.mr-2(href='#' title='電阻火災') #電阻火災
+                                a.tag.t-primary.mr-2(href='#' title='電線走火') #電線走火
+                            .col-12.col-md-3.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2022/12/22
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            img(src='../styles/images/news/tw/knowledge-9/content.jpg', alt='圖片')
+                            br
+                            br
+                            p 家電遇上 高電阻 就會火災？
+                            p 電阻學問涉及廣闊，小編精心整理電器及電阻來幫大家科普囉！#[br]透過了解電阻、用電習慣關聯，搭配 WIRECARE 降低走火機率，#[br]電學課開始上課囉！📖
+                            br
+                            p 🔥 電阻與家電、插座的關聯：#[br]家電需要電流才能啟動，電流傳遞時所經過的電線、插座、家電上皆含有電阻#[br]▸電阻一定會存在，因不需電流也具有的固有屬性特質
+                            br
+                            p 🔥 起火=電流的熱效應 ➥ "電能"轉"熱能"#[br]電流通過電阻時會產生熱能，而熱能耗在電線/插座/電器插頭上越多，更容易因高溫引發火災
+                            br
+                            p WIRECARE 檢測電流的中繼站：管線插座#[br]▸▸避免高電阻的火災發生
+                            br
+                            p 根據檢測燈號進行：#[br]🟠 管線+插座修繕更換#[br]🟠 該插座使用狀態調整（該插座減少使用高功率家電）
+                            br
+                            p 定期檢測插座狀態，守護居家安全 | ：#[a.t-primary(href="https://www.brook-livin.com/store" target='_blank') - https://www.brook-livin.com/store]
+                            br
+                            br
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="用電安全小知識 | 家電遇上高電阻就會火災？" data-description="電阻學問涉及廣闊，小編精心整理電器及電阻來幫大家科普囉！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-9/meta.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="用電安全小知識 | 家電遇上高電阻就會火災？" data-description="電阻學問涉及廣闊，小編精心整理電器及電阻來幫大家科普囉！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-9/meta.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="用電安全小知識 | 家電遇上高電阻就會火災？" data-description="電阻學問涉及廣闊，小編精心整理電器及電阻來幫大家科普囉！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-9/meta.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="medias") 回到列表
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多最新消息
+                        +main-card('','styles/images/news/tw/knowledge-8/list.jpg','knowledge-8','2022/11/24','防災安全小知識 | 層層把關防火用品','災害預防及發生該怎麼準備呢？提高居家安全這樣選就對了！')
+                        +main-card('','styles/images/news/tw/knowledge-7/list.jpg','knowledge-7','2022/11/1','用電安全小知識 |入冬暖氣這樣選好安心','早晚溫差大，暖冬家電買起來！先等等，購買前須知錯誤用電的潛在危機！')
+                        +main-card('','styles/images/news/tw/knowledge-6/list.jpg','knowledge-6','2022/10/20','預防電氣火災| 5不1沒有','用電超載、電線綑綁、電源常插可能提高電器走火機率！搭配消防用電守則，居住安全輕鬆GET。')
