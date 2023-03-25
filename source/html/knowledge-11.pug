@@ -1,0 +1,65 @@
+//- index.pug
+extends ./include/new-layout.pug
+block meta
+    title 用電安全小知識 | 插座又黃又髒怎麼清？
+    meta(name='description' content='直接濕抹布清潔？千萬不要，因為濕抹布的水份容易使插孔潮濕而引發短路。')
+    meta(property='image' content='https://brook-livin.com/styles/images/news/tw/knowledge-11/meta.jpg')
+    meta(property='og:title' content='用電安全小知識 | 插座又黃又髒怎麼清？')
+    meta(property='og:url' content='https://brook-livin.com/knowledge-11')
+    meta(property='og:image' content='https://brook-livin.com/styles/images/news/tw/knowledge-11/meta.jpg')
+    meta(property='og:description' content='直接濕抹布清潔？千萬不要，因為濕抹布的水份容易使插孔潮濕而引發短路。')
+    meta(property='og:site_name' content='用電安全小知識 | 插座又黃又髒怎麼清？')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 用電安全小知識 | 插座又黃又髒怎麼清？
+                        .row
+                            .col-12.col-md-9.text-left
+                                a.tag.t-primary.mr-2(href='#' title='BrookLivin') #BrookLivin
+                                a.tag.t-primary.mr-2(href='#' title='WIRECARE') #WIRECARE
+                                a.tag.t-primary.mr-2(href='#' title='插座發黃') #插座發黃
+                                a.tag.t-primary.mr-2(href='#' title='插座清潔') #插座清潔
+                                a.tag.t-primary.mr-2(href='#' title='插座檢測') #插座檢測
+                            .col-12.col-md-3.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2023/2/16
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            img(src='../styles/images/news/tw/knowledge-11/content.jpg', alt='圖片')
+                            br
+                            br
+                            p 插座又黃又髒怎麼清？
+                            p 直接濕抹布清潔？千萬母湯#[br]因為濕抹布的水份容易使插孔潮濕而引發短路💣
+                            p 🧹若插座泛黃、有水漬這樣清#[br]先用乾布或棉花棒清理插座中的灰塵
+                            p 🧹牙膏 : 搭配牙刷或粗面海棉進行清潔#[br]▸ 牙膏 : 搭配牙刷或粗面海棉進行清潔#[br]▸ 橡皮擦 : 直接擦拭插座上泛黃/灰的區域#[br]▸ 少量低濃度酒精 : 乾抹布搭配70%-75%濃度的酒精進行擦拭
+                            br
+                            p 定期檢測插座狀態，守護居家安全 | ：#[a.t-primary(href="https://www.brook-livin.com/store" target='_blank') - https://www.brook-livin.com/store]
+                            br
+                            br
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="用電安全小知識 | 插座又黃又髒怎麼清？" data-description="直接濕抹布清潔？千萬不要，因為濕抹布的水份容易使插孔潮濕而引發短路。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-11/meta.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="用電安全小知識 | 插座又黃又髒怎麼清？" data-description="直接濕抹布清潔？千萬不要，因為濕抹布的水份容易使插孔潮濕而引發短路。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-11/meta.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="用電安全小知識 | 插座又黃又髒怎麼清？" data-description="直接濕抹布清潔？千萬不要，因為濕抹布的水份容易使插孔潮濕而引發短路。" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-11/meta.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="medias") 回到列表
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多最新消息
+                        +main-card('','styles/images/news/tw/knowledge-13/list.jpg','knowledge-13','2023/3/2','電阻檢測大PK | WIRECARE和三用電錶的差別','檢測電阻用三用電錶不就可以了嗎？讓小編告訴大家電阻檢測儀器的差別！')
+                        +main-card('','styles/images/news/tw/knowledge-12/list.jpg','knowledge-12','2023/2/23','用電安全小知識 | 五步驟簡單DIY換插座','已有神夥伴WIRECARE檢測用電安全狀況，需要換插座該怎麼辦？別擔心！小編奉上易懂插座安裝教學，用電安全就交給Brook Livin！ ')
+                        +main-card('','styles/images/news/tw/knowledge-7/list.jpg','knowledge-7','2022/11/1','用電安全小知識 |入冬暖氣這樣選好安心','早晚溫差大，暖冬家電買起來！先等等，購買前須知錯誤用電的潛在危機！')
