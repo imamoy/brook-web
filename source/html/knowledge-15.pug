@@ -1,0 +1,63 @@
+//- index.pug
+extends ./include/new-layout.pug
+block meta
+    title 防災安全小知識 | 清明掃墓用火注意四步驟
+    meta(name='description' content='火點遺留為常見火災的因素之一，清明掃墓用火更要注意！')
+    meta(property='image' content='https://brook-livin.com/styles/images/news/tw/knowledge-15/meta.jpg')
+    meta(property='og:title' content='防災安全小知識 | 清明掃墓用火注意四步驟')
+    meta(property='og:url' content='https://brook-livin.com/knowledge-15')
+    meta(property='og:image' content='https://brook-livin.com/styles/images/news/tw/knowledge-15/meta.jpg')
+    meta(property='og:description' content='火點遺留為常見火災的因素之一，清明掃墓用火更要注意！')
+    meta(property='og:site_name' content='防災安全小知識 | 清明掃墓用火注意四步驟')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 防災安全小知識 | 清明掃墓用火注意四步驟
+                        .row
+                            .col-12.col-md-9.text-left
+                                a.tag.t-primary.mr-2(href='#' title='BrookLivin') #BrookLivin
+                                a.tag.t-primary.mr-2(href='#' title='WIRECARE') #WIRECARE
+                                a.tag.t-primary.mr-2(href='#' title='掃墓用火') #掃墓用火
+                                a.tag.t-primary.mr-2(href='#' title='預防起火') #預防起火
+                            .col-12.col-md-3.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2023/3/31
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            p 【清明掃除就4不怕火🔥】#[br]#[br]火點遺留為常見火災的因素之#[br]#[br]⚠️ 清明掃墓用火更要注意 ⚠️#[br]#[br]守護祖先四步驟
+                            img(src='../styles/images/news/tw/knowledge-15/content.jpg', alt='圖片' style='max-width:500px')
+                            br
+                            br
+                            p 🧯 不燒雜草：使用刀具掃除，降低火點蔓延#[br]🧯 不丟菸蒂：熄滅菸蒂丟入垃圾桶，降低火點出線機率#[br]🧯 冥紙不飛揚：使用金紙爐避免火點飛揚 #[br]🧯 熄滅餘燼：確認火點熄滅避免延燒
+                            br
+                            br
+                            p WIRECARE檢測避免居家用電火點，出門掃墓更安心➥ #[a.t-primary(href="https://www.brook-livin.com/store" target='_blank') - https://www.brook-livin.com/store]
+                            br
+                            br
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="防災安全小知識 | 清明掃墓用火注意四步驟" data-description="火點遺留為常見火災的因素之一，清明掃墓用火更要注意！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-15/meta.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="防災安全小知識 | 清明掃墓用火注意四步驟" data-description="火點遺留為常見火災的因素之一，清明掃墓用火更要注意！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-15/meta.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="防災安全小知識 | 清明掃墓用火注意四步驟" data-description="火點遺留為常見火災的因素之一，清明掃墓用火更要注意！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-15/meta.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="medias") 回到列表
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多最新消息
+                        +main-card('','styles/images/news/tw/knowledge-18/list.jpg','knowledge-18','2023/4/27','用電安全小知識 | 預防電器火災（下集）','預防勝過救火，日常用電安全的管理絕對不能偷懶，必須調整的用電習慣已經整理好，快筆記下來吧！')
+                        +main-card('','styles/images/news/tw/knowledge-17/list.jpg','knowledge-17','2023/4/20','用電安全小知識 | 預防電器火災（上集）','大家都知道電器因素是台灣常見的火災因素，而有哪些是因為用電習慣所導致得的電器火災危機呢？')
+                        +main-card('','styles/images/news/tw/knowledge-16/list.jpg','knowledge-16','2023/4/7','用電安全小知識 | 用電安全注意了梅','即將來襲的梅雨季也有走火危機？快速幫大家科普 「積污導電」與走火的關聯！')

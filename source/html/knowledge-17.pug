@@ -1,0 +1,67 @@
+//- index.pug
+extends ./include/new-layout.pug
+block meta
+    title 用電安全小知識 | 預防電器火災（上集）
+    meta(name='description' content='大家都知道電器因素是台灣常見的火災因素，而有哪些是因為用電習慣所導致得的電器火災危機呢？')
+    meta(property='image' content='https://brook-livin.com/styles/images/news/tw/knowledge-17/meta.jpg')
+    meta(property='og:title' content='用電安全小知識 | 預防電器火災（上集）')
+    meta(property='og:url' content='https://brook-livin.com/knowledge-17')
+    meta(property='og:image' content='https://brook-livin.com/styles/images/news/tw/knowledge-17/meta.jpg')
+    meta(property='og:description' content='大家都知道電器因素是台灣常見的火災因素，而有哪些是因為用電習慣所導致得的電器火災危機呢？')
+    meta(property='og:site_name' content='用電安全小知識 | 預防電器火災（上集）')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 用電安全小知識 | 預防電器火災（上集）
+                        .row
+                            .col-12.col-md-9.text-left
+                                a.tag.t-primary.mr-2(href='#' title='BrookLivin') #BrookLivin
+                                a.tag.t-primary.mr-2(href='#' title='WIRECARE') #WIRECARE
+                                a.tag.t-primary.mr-2(href='#' title='三用電錶') #三用電錶
+                                a.tag.t-primary.mr-2(href='#' title='電阻檢測') #電阻檢測
+                                a.tag.t-primary.mr-2(href='#' title='用電安全') #用電安全
+                            .col-12.col-md-3.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2023/3/2
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            p 大家都知道電器因素是台灣常見的火災因素 🔥#[br]而有哪些是因為用電習慣所導致得的#[b 電器火災危機]#[br]守護居家用電安全，從了解用電習慣開始，GO！
+
+                            img(src='../styles/images/news/tw/knowledge-17/content.jpg', alt='圖片')
+                            br
+                            br
+                            p 🔌 插頭及插座鬆動累積髒污及水分：#[br]長期使用或所在環境潮濕而容易累積塵埃或水分，使原本分開的兩極形成通路，造成積污導電現象而短路著火。
+                            p 🔌   家電電線綑綁：#[br]導致產生的熱量無法逸散，易造成電線溫度升高而熔解絕緣被覆的短路著火。
+                            p 🔌 延長線過載：#[br]同時使用功率超過800W之電器，造成大量電流流通而引起高熱熔解絕緣被覆的短路著火。
+                            p 🔌 不正確拉拔插頭：#[br]使電線內部銅線斷裂或半斷線，造成電流經過時產生過熱或電氣火花。
+                            br
+                            p 用電安全神器WIRECARE，為您把關插座管線安全 ➥ #[a.t-primary(href="https://www.brook-livin.com/store" target='_blank') - https://www.brook-livin.com/store]
+                            br
+                            br
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="用電安全小知識 | 預防電器火災（上集）" data-description="大家都知道電器因素是台灣常見的火災因素，而有哪些是因為用電習慣所導致得的電器火災危機呢？" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-17/meta.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="用電安全小知識 | 預防電器火災（上集）" data-description="大家都知道電器因素是台灣常見的火災因素，而有哪些是因為用電習慣所導致得的電器火災危機呢？" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-17/meta.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="用電安全小知識 | 預防電器火災（上集）" data-description="大家都知道電器因素是台灣常見的火災因素，而有哪些是因為用電習慣所導致得的電器火災危機呢？" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-17/meta.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="medias") 回到列表
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多最新消息
+                        +main-card('','styles/images/news/tw/knowledge-17/list.jpg','knowledge-17','2023/4/20','用電安全小知識 | 預防電器火災（上集）','大家都知道電器因素是台灣常見的火災因素，而有哪些是因為用電習慣所導致得的電器火災危機呢？')
+                        +main-card('','styles/images/news/tw/knowledge-16/list.jpg','knowledge-16','2023/4/7','用電安全小知識 | 用電安全注意了梅','即將來襲的梅雨季也有走火危機？快速幫大家科普 「積污導電」與走火的關聯！')
+                        +main-card('','styles/images/news/tw/knowledge-15/list.jpg','knowledge-15','2023/3/31','防災安全小知識 | 清明掃墓用火注意四步驟','火點遺留為常見火災的因素之一，清明掃墓用火更要注意！')

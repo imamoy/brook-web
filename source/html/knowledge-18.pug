@@ -1,0 +1,68 @@
+//- index.pug
+extends ./include/new-layout.pug
+block meta
+    title 用電安全小知識 | 預防電器火災（下集）
+    meta(name='description' content='預防勝過救火，日常用電安全的管理絕對不能偷懶，必須調整的用電習慣已經整理好，快筆記下來吧！')
+    meta(property='image' content='https://brook-livin.com/styles/images/news/tw/knowledge-18/meta.jpg')
+    meta(property='og:title' content='用電安全小知識 | 預防電器火災（下集）')
+    meta(property='og:url' content='https://brook-livin.com/knowledge-18')
+    meta(property='og:image' content='https://brook-livin.com/styles/images/news/tw/knowledge-18/meta.jpg')
+    meta(property='og:description' content='預防勝過救火，日常用電安全的管理絕對不能偷懶，必須調整的用電習慣已經整理好，快筆記下來吧！')
+    meta(property='og:site_name' content='用電安全小知識 | 預防電器火災（下集）')
+
+block plugins-js
+    script(src="//cdn.jsdelivr.net/npm/goodshare.js@6/goodshare.min.js")
+
+
+block content
+    main#page.wrapper.new-page
+        article.page-inner
+            .container
+                .row
+                    .col-12.col-md-8
+                        h2.f-sc-title.mb-3.mb-md-4 用電安全小知識 | 預防電器火災（下集）
+                        .row
+                            .col-12.col-md-9.text-left
+                                a.tag.t-primary.mr-2(href='#' title='BrookLivin') #BrookLivin
+                                a.tag.t-primary.mr-2(href='#' title='WIRECARE') #WIRECARE
+                                a.tag.t-primary.mr-2(href='#' title='預防火災') #預防火災
+                                a.tag.t-primary.mr-2(href='#' title='用電安全') #用電安全
+                            .col-12.col-md-3.text-right
+                                i.m-1.icon-time
+                                span.f-mini.f-en 2023/4/27
+                        hr.my-3.my-md-4
+                        .new-inner.pb-3.pb-md-5
+                            p 預防勝過救火，日常用電安全的管理絕對不能偷懶 🧑‍🚒
+                            p 除了 #[b WIRECARE神器] 可以 10 秒檢測插座管線狀態避免走火危機以外#[br]必須調整的用電習慣小編也整理好！快筆記下來吧！
+
+                            img(src='../styles/images/news/tw/knowledge-18/content.jpg', alt='圖片')
+                            br
+                            br
+                            p 🧯 定期檢測插座電線的阻抗：#[br]透過WIRECARE檢測阻抗，避免發生電器走火機率！
+                            p 🧯 避免串聯高功率電器：#[br]應分別插在迴路不同的插座，避免過載釀成短路走火。#[br]（高功率電器：電鍋、烤箱、電熱水器、微波爐、電磁爐、烤麵包機等）
+                            p 🧯 壓住插頭拔除：#[br]不使用的電器設備電源插頭應拔除，且不可拉扯電線避免電線內部銅線斷裂。
+                            p 🧯 插座、電器保持乾淨：#[br]定期擦拭避免髒污累積水分，造成積污導電的火災。
+                            p 🧯 選購具有CNS驗證的延長線：#[br]CNS檢驗具有"過負載保護裝置"，但在使用時仍需避免連接800瓦以上的高功率電器。
+                            br
+                            p 用電安全神器WIRECARE，為您把關插座管線安全 ➥ #[a.t-primary(href="https://www.brook-livin.com/store" target='_blank') - https://www.brook-livin.com/store]
+                            br
+                            br
+                        hr
+                        .d-flex.flex-wrap.flex-md-nowrap.justify-content-center.justify-content-md-between.align-items-center
+                            .share-row
+                                span.mx-2 分享至
+                                button.mx-1(style="font-size: 24px;" data-social="facebook" data-title="用電安全小知識 | 預防電器火災（下集）" data-description="預防勝過救火，日常用電安全的管理絕對不能偷懶，必須調整的用電習慣已經整理好，快筆記下來吧！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-18/meta.jpg")
+                                    i.icon-facebook
+                                button.mx-1(style='font-size: 24px;' data-social="twitter" data-title="用電安全小知識 | 預防電器火災（下集）" data-description="預防勝過救火，日常用電安全的管理絕對不能偷懶，必須調整的用電習慣已經整理好，快筆記下來吧！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-18/meta.jpg")
+                                    i.icon-twittwr
+                                button.mx-1(style='font-size: 24px;' data-social="line" data-title="用電安全小知識 | 預防電器火災（下集）" data-description="預防勝過救火，日常用電安全的管理絕對不能偷懶，必須調整的用電習慣已經整理好，快筆記下來吧！" data-image="https://brook-livin.com/styles/images/news/tw/knowledge-18/meta.jpg")
+                                    i.icon-line-1
+                                button#copy-btn.mx-1(style='font-size: 24px;' data-url="")
+                                    i.icon-link
+                            a(href="medias") 回到列表
+
+                    .col-12.col-md-4.mt-5.mt-md-0
+                        h5.f-textTitle.mb-3.mb-md-4 更多最新消息
+                        +main-card('','styles/images/news/tw/knowledge-17/list.jpg','knowledge-17','2023/4/20','用電安全小知識 | 預防電器火災（上集）','大家都知道電器因素是台灣常見的火災因素，而有哪些是因為用電習慣所導致得的電器火災危機呢？')
+                        +main-card('','styles/images/news/tw/knowledge-16/list.jpg','knowledge-16','2023/4/7','用電安全小知識 | 用電安全注意了梅','即將來襲的梅雨季也有走火危機？快速幫大家科普 「積污導電」與走火的關聯！')
+                        +main-card('','styles/images/news/tw/knowledge-15/list.jpg','knowledge-15','2023/3/31','防災安全小知識 | 清明掃墓用火注意四步驟','火點遺留為常見火災的因素之一，清明掃墓用火更要注意！')
