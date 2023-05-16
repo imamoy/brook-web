@@ -100,18 +100,29 @@ $('#files').change(function () {
                                     .then(function (content) {
                                         var dataUri = "data:application/x-zip-compressed;base64," + content;
                                         Email.send({
-                                            SecureToken : "b3015307-af62-4395-8019-796a773045ac",
-                                            To : ['livin_rma@brookaccessory.com','brooklivin@gmail.com','brookbrook048@gmail.com'],
-                                            From : "Brook Livin<rd1@brookaccessory.com>",
-                                            Subject : "RMA維修保固需求",
-                                            Body: body,
-                                            Attachments: [{
-                                                name: name + "RMA維修保固需求附件檔案.zip",
-                                                data: dataUri
-                                            }]
+                                          SecureToken:
+                                            "4a757c75-ec64-45d2-8c68-28c64685550f",
+                                          To: [
+                                            "livin_rma@brookaccessory.com",
+                                            "brooklivin@gmail.com",
+                                            "brookbrook048@gmail.com",
+                                          ],
+                                          From: "Brook Livin<brooklivin@gmail.com>",
+                                          Subject: "RMA維修保固需求",
+                                          Body: body,
+                                          Attachments: [
+                                            {
+                                              name:
+                                                name +
+                                                "RMA維修保固需求附件檔案.zip",
+                                              data: dataUri,
+                                            },
+                                          ],
                                         }).then(function (message) {
-                                            alert("感謝！您的RMA維修保固需求已送出。");
-                                            window.location.href='index.html';
+                                          alert(
+                                            "感謝！您的RMA維修保固需求已送出。"
+                                          );
+                                          window.location.href = "index.html";
                                         });
                                     });
                                 }
